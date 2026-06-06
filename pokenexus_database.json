@@ -1,0 +1,2158 @@
+{
+  "meta": {
+    "game": "PokeNexus",
+    "url": "https://poke-nexus.com",
+    "formerly_known_as": "Pokemon Planet",
+    "name_changed": "March 2024",
+    "description": "Free Monster Catching MMO - battle and level up alongside friends in real time",
+    "database_version": "1.0",
+    "last_updated": "2026-06-05",
+    "sources": [
+      "https://www.ppobuddy.com",
+      "https://pokemon-planet.fandom.com/wiki",
+      "https://www.youtube.com/@PokenexusRG",
+      "https://pokeonecommunity.com"
+    ]
+  },
+
+  "regions": [
+    "Kanto",
+    "Johto",
+    "Hoenn",
+    "Sinnoh",
+    "Unova",
+    "Sevii Islands"
+  ],
+
+  "chat_commands": [
+    { "command": "@usuario mensagem", "description": "Envia mensagem privada para outro jogador" },
+    { "command": "/r", "description": "Responde a última mensagem privada recebida" },
+    { "command": "/trade usuario", "description": "Propõe troca com outro jogador" },
+    { "command": "/battle usuario", "description": "Desafia outro jogador para batalha singles" },
+    { "command": "/battle usuario 2", "description": "Desafia outro jogador para batalha doubles" },
+    { "command": "/battle usuario 3", "description": "Desafia outro jogador para batalha triples" },
+    { "command": "/pokemon", "description": "Exibe os Pokémon selvagens disponíveis na área atual" },
+    { "command": "/time", "description": "Exibe o horário atual dentro do jogo" },
+    { "command": "/exp", "description": "Exibe o total de experiência acumulada" },
+    { "command": "/weeklyexp", "description": "Exibe a experiência acumulada na semana" },
+    { "command": "/pp", "description": "Exibe seus Philanthropist Points atuais e totais" },
+    { "command": "/encounters", "description": "Exibe o total de encontros com Pokémon selvagens" },
+    { "command": "/lle", "description": "Exibe o número de encontros sem encontrar um lendário" },
+    { "command": "/getllerate", "description": "Exibe a taxa atual de LLE (Legendary Luck Encounter)" },
+    { "command": "/setlle", "description": "Atribui LLE legado a um lendário específico (sistema antigo)" },
+    { "command": "/clearchat", "description": "Limpa o chat local" },
+    { "command": "/wbd", "description": "Exibe o dano causado ao World Boss ativo" },
+    { "command": "/wbhp", "description": "Exibe o HP atual do World Boss ativo" },
+    { "command": "/resetencounters", "description": "Reseta o contador de encontros (/encounters)" },
+    { "command": "/swarm", "description": "Exibe informações sobre o swarm ativo no momento" },
+    { "command": "/altar", "description": "Exibe o progresso atual do altar" },
+    { "command": "/chests", "description": "Exibe o número de Treasure Chests ativos" },
+    { "command": "/lures", "description": "Exibe os lures de Honey e Shiny ativos no mapa" },
+    { "command": "/honey", "description": "Exibe um mapa com os locais onde o item Honey foi usado" }
+  ],
+
+  "rarity_tiers": [
+    { "tier": "Common", "abbrev": "C", "rate": "1/1" },
+    { "tier": "Uncommon", "abbrev": "UC", "rate": "Variável" },
+    { "tier": "Rare", "abbrev": "R", "rate": "1/30" },
+    { "tier": "Very Rare", "abbrev": "VR", "rate": "1/300" },
+    { "tier": "Extremely Rare", "abbrev": "ER", "rate": "1/2500" },
+    { "tier": "Legendary", "abbrev": "L", "rate": "1/125000 (base)" },
+    { "tier": "Shiny", "abbrev": "S", "rate": "1/8192 (base)" }
+  ],
+
+  "encounter_rate_modifiers": [
+    { "modifier": "Gold Membership (GM)", "effect": "+50% UC/R/VR/ER/L, +20% Shiny" },
+    { "modifier": "Dark Rock / Lava Rock (Mining)", "effect": "+2x encounter rate" },
+    { "modifier": "Red/Blue/Green/Prism/Pale Rock (Mining)", "effect": "+1.25x encounter rate (exceto lendários)" },
+    { "modifier": "Altering Cave", "effect": "+1.3x encounter rate" },
+    { "modifier": "LLE (Legendary Luck Encounter)", "effect": "Aumenta gradualmente quanto mais você caça sem encontrar o lendário (curva S)" },
+    { "modifier": "Honey", "effect": "+25% encontros não-comuns por 1 hora (todo o mapa)" }
+  ],
+
+  "gold_membership": {
+    "description": "Status premium que oferece bônus significativos de jogo",
+    "benefits": [
+      "+50% EXP em batalhas",
+      "+50% dinheiro de Pokémon selvagens",
+      "+50% taxa de encontro UC/R/VR/ER/Lendários",
+      "+20% taxa de encontro Shiny"
+    ],
+    "tickets": [
+      { "item": "1 Day GM Ticket", "duration": "1 dia" },
+      { "item": "3 Day GM Ticket", "duration": "3 dias" },
+      { "item": "7 Day GM Ticket", "duration": "7 dias" }
+    ],
+    "how_to_get": "Comprar na Credit Shop (moeda premium) ou obter em eventos/Treasure Chests"
+  },
+
+  "move_tutors": [
+    {
+      "name": "Move Tutor",
+      "location": "Vermillion City - prédio a leste do Pokémon Center",
+      "cost": "Gratuito",
+      "function": "Reensina golpes que o Pokémon (na evolução atual) pôde aprender ao subir de nível"
+    },
+    {
+      "name": "Pre-Evolution Move Tutor",
+      "location": "Vermillion City - ao lado do Move Tutor",
+      "cost": "50.000 por golpe",
+      "function": "Reensina golpes de evoluções anteriores do Pokémon"
+    },
+    {
+      "name": "Transfer Move Tutor",
+      "location": "Vermillion City - prédio a leste do Pokémon Center",
+      "cost": "Variável",
+      "function": "Ensina golpes que o Pokémon pode aprender em gerações anteriores (Gen 3+)"
+    },
+    {
+      "name": "Event Move Tutor",
+      "location": "Vermillion City - prédio a leste do Pokémon Center",
+      "cost": "Variável",
+      "function": "Ensina golpes de distribuições de eventos especiais"
+    }
+  ],
+
+  "elite_shop": {
+    "npc": "Lance",
+    "locations": [
+      "Indigo Plateau",
+      "Blackthorn City (fora do ginásio, após derrotar Elite 4 de Kanto)"
+    ],
+    "currency": "Elite Token",
+    "how_to_get_tokens": {
+      "method": "Derrotar Elite Pokémon",
+      "drop_rate": "20%",
+      "elite_pokemon_encounter_rate": "1/200 Pokémon selvagens",
+      "requirement": "Ter derrotado a Elite 4 de Kanto"
+    }
+  },
+
+  "pvp_system": {
+    "battle_queue": {
+      "description": "Sistema de batalha PvP ranqueada",
+      "location": "PvP Building em Vermillion City",
+      "currency": "PvP Tokens",
+      "exchanger": "PvP Prize Exchanger no PvP Building"
+    },
+    "clans": {
+      "description": "Grupos de jogadores para eventos competitivos",
+      "creation_cost": "100.000",
+      "creation_location": "Clan Building em Vermillion City",
+      "clan_wars": {
+        "rewards_per_win": "5 Clan War Tokens",
+        "eligibility": "Ganhar ao menos 1 batalha ou perder ao menos 3",
+        "mvp_bonus": "25 Clan War Tokens + 100 Credits"
+      }
+    }
+  },
+
+  "philanthropist_points": {
+    "abbreviation": "PP",
+    "description": "Moeda especial obtida ao contribuir para a comunidade do jogo",
+    "exchanger_location": "Silph Co. - Saffron City (térreo, canto superior esquerdo)",
+    "command": "/pp",
+    "earn_methods": [
+      { "method": "Doação ao Altar", "amount": "1 PP por $800 doados" },
+      { "method": "Usar Honey", "amount": "700 PP" },
+      { "method": "Colocar Portable PC", "amount": "200 PP" },
+      { "method": "World Blessing / Drop Rate Blessing", "amount": "Até 500 PP (= nº de jogadores online no momento)" },
+      { "method": "Item Bomb", "amount": "1200 PP + nº de jogadores online" },
+      { "method": "Enhanced Item Bomb", "amount": "5000 PP + (2x nº de jogadores online)" }
+    ]
+  },
+
+  "world_boss": {
+    "description": "Boss lendário que aparece no mapa a cada 24-48 horas",
+    "spawn": "Mapa aleatório, a cada 24-48 horas",
+    "mechanic": "HP compartilhado entre todos os jogadores",
+    "damage_tiers": [2500, 10000, 25000, 50000, 100000, 300000, 400000],
+    "minimum_damage_for_reward": 2500,
+    "commands": ["/wbd", "/wbhp"]
+  },
+
+  "treasure_chests": {
+    "requirement": "Ter o Lunar Ticket (obtido ao derrotar a Elite 4 de Sinnoh)",
+    "description": "Baús espalhados pelo mapa contendo itens valiosos",
+    "command": "/chests",
+    "possible_rewards": ["Cherish Ball", "Honey", "GM Tickets", "itens raros"]
+  },
+
+  "swarms": {
+    "description": "Evento em rota específica que aumenta drops especiais",
+    "command": "/swarm",
+    "drops": [
+      "Beedrillite",
+      "Soul Shard (ingrediente para Soul Shard Enhanced)"
+    ],
+    "berry_drops": {
+      "rate": "1/2500",
+      "requirement": "Usar Pokémon líder do tipo correspondente na rota com swarm ativo"
+    }
+  },
+
+  "mining": {
+    "description": "Skill de mineração - use picaxe em rochas para obter gemas e vendê-las",
+    "controls": "Spacebar para minerar rocha adjacente",
+    "levels": {
+      "max": 100,
+      "unlock_better_pickaxes": true
+    },
+    "gems_by_level": [
+      { "level_required": 1, "gem": "Red Gemstone", "sell_value": 50 },
+      { "level_required": 10, "gem": "Blue Gemstone", "sell_value": 100 },
+      { "level_required": 80, "gem": "Rainbow Gemstone", "sell_value": 20000 }
+    ],
+    "pickaxes": [
+      { "name": "Old Pickaxe", "level_required": 1, "where_to_buy": "Mining Guru - Mt. Moon", "cost": 5000 },
+      { "name": "Good Pickaxe", "level_required": "Variável", "where_to_buy": "Mining Guru - Turtle Cove (Three Island)", "cost": "Variável" },
+      { "name": "Steel Pickaxe", "level_required": "Variável", "where_to_buy": "Mining Vendor", "cost": "Variável" },
+      { "name": "Master Pickaxe", "level_required": 100, "how_to_get": "Craftar: Master Ball + Steel Pickaxe", "cost": "Craft" }
+    ],
+    "rock_types_and_bonuses": [
+      { "rock": "Dark Rock / Lava Rock", "encounter_boost": "2x" },
+      { "rock": "Red/Blue/Green/Prism/Pale Rock", "encounter_boost": "1.25x (exceto lendários)" },
+      { "rock": "Gold Rock", "description": "Aparece durante Gold Rush com alta chance de respawn" }
+    ],
+    "gold_rush": {
+      "description": "Evento especial onde rochas em uma caverna viram Gold Rocks",
+      "frequency": "A cada 6-12 horas em caverna aleatória",
+      "bonus": "2x taxa de encontro de lendários durante o evento"
+    },
+    "sell_location": "Mining Vendor (dentro das cavernas)"
+  },
+
+  "fishing": {
+    "description": "Skill de pesca - pressione F voltado para água para pescar",
+    "controls": "F para iniciar, Spacebar para acertar a zona de sucesso no minigame",
+    "tip": "Pokémon com habilidade Suction Cups ou Sticky Hold aumentam a velocidade do gancho",
+    "rods": [
+      { "name": "Old Rod", "level_required": 15, "where_to_get": "Obtido na progressão", "notable": "Pode pescar Dratini, drops Kings Rock" },
+      { "name": "Intermediate Rod", "level_required": 50, "where_to_get": "Lance - Elite Shop por 50 Elite Tokens" },
+      { "name": "Master Rod", "level_required": 100, "how_to_get": "Craftar: Master Ball + Steel Rod" }
+    ],
+    "notable_pokemon": ["Dratini", "Milotic", "Feebas", "Mudkip", "Piplup", "Squirtle"]
+  },
+
+  "crafting": {
+    "how_to_access": "Tecla I (Inventário) → botão 'Crafting' na parte inferior",
+    "recipes": [
+      { "result": "Ability Capsule", "ingredients": ["Stardust", "Silk", "Miracle Berry"] },
+      { "result": "Ancient Key", "ingredients": ["Ancient Key (Tooth Half)", "Ancient Key (Loop Half)"] },
+      { "result": "Golden Effort Brace", "ingredients": ["Macho Brace", "Effort Brace"] },
+      { "result": "Master Pickaxe", "ingredients": ["Master Ball", "Steel Pickaxe"] },
+      { "result": "Master Rod", "ingredients": ["Master Ball", "Steel Rod"] },
+      { "result": "Soul Shard (Enhanced)", "ingredients": ["Soul Shard (x vários)"] }
+    ],
+    "notes": "Miracle Berry dropa em Berry Forest (Three Island, Sevii Islands)"
+  },
+
+  "sevii_islands": {
+    "how_to_access": {
+      "requirements": ["Derrotar Elite 4 de Kanto", "Nível de treinador 80+ em Kanto", "HMs Surf e Waterfall"],
+      "how": "Falar com Bill no porto de Vermillion City"
+    },
+    "passes": {
+      "tri_pass": "Acessa ilhas 1, 2 e 3 (obtido ao começar a quest com Bill/Celio)",
+      "rainbow_pass": "Acessa ilhas 4, 5, 6 e 7 (obtido após completar a quest principal das ilhas)"
+    },
+    "islands": [
+      {
+        "name": "One Island",
+        "key_locations": ["Mt. Ember", "Hellfire Cavern"],
+        "highlights": [
+          "Mt. Ember: único lugar para encontrar Moltres (requer Feather of Moltres no líder)",
+          "Hellfire Cavern: único lugar para encontrar Charmander selvagem"
+        ]
+      },
+      {
+        "name": "Two Island",
+        "key_locations": ["Treasure Beach", "Game Corner"],
+        "highlights": [
+          "Treasure Beach: itens escondidos valiosos que reaparecem todo dia (acessível via Surf ao sul)",
+          "Eccentric Man: pode ser derrotado a cada 2 semanas → 5x Mushroom (usado no Tutor Maniac)"
+        ]
+      },
+      {
+        "name": "Three Island",
+        "key_locations": ["Berry Forest", "Turtle Cove", "Bond Bridge"],
+        "highlights": [
+          "Berry Forest: Drowzee, Exeggcute; Miracle Berry dropa aqui (ingrediente Ability Capsule)",
+          "Berry Forest Boss: Hypno nível 85 (quest obrigatória - resgatar Lostelle)",
+          "Turtle Cove: único lugar para Squirtle selvagem (nível 28-38); Mining Guru vende Good Pickaxe"
+        ]
+      },
+      {
+        "name": "Four Island",
+        "key_locations": ["Icefall Cave"],
+        "highlights": [
+          "Icefall Cave: único lugar para encontrar Lapras selvagem"
+        ]
+      },
+      {
+        "name": "Five Island",
+        "key_locations": ["Rocket Warehouse", "Lost Cave", "Water Maze"],
+        "highlights": [
+          "Rocket Warehouse: base do Team Rocket, obrigatório para quest Sapphire Network",
+          "Lost Cave: dungeon com Pokémon raros",
+          "Water Maze: área aquática de navegação"
+        ]
+      },
+      {
+        "name": "Six Island",
+        "key_locations": ["Pattern Bush", "Outcast Island"],
+        "highlights": [
+          "Pattern Bush: Heracross, Ledyba, Spinarak (exclusivos aqui)",
+          "Outcast Island: Altering Cave (boost de 1.3x em encontros)"
+        ]
+      },
+      {
+        "name": "Seven Island",
+        "key_locations": ["Trainer Tower", "Sevault Canyon", "Tanoby Ruins"],
+        "highlights": [
+          "Trainer Tower: torre de batalha com prêmio ao zerar",
+          "Trainers diários de nível 80+ com 252 EVs em cada stat"
+        ]
+      }
+    ],
+    "main_quest": [
+      { "step": 1, "name": "The Sevii Connection", "task": "Falar com Bill e Celio em One Island" },
+      { "step": 2, "name": "Missing Lostelle", "task": "Ir a Three Island, derrotar Bike Gang, resgatar Lostelle no Berry Forest (Hypno lv.85)" },
+      { "step": 3, "name": "Gemstone Energy", "task": "Pegar o Ruby no Mt. Ember (Ruby Path), derrotar Rocket Catty, entregar a Celio" },
+      { "step": 4, "name": "Sapphire Network", "task": "Resolver puzzle do Dotted Hole, derrotar Ariana, Proton, Jessie & James no Rocket Warehouse (Five Island)" }
+    ],
+    "daily_activities": [
+      { "activity": "Itens escondidos", "location": "Treasure Beach (Two Island)", "frequency": "Diário" },
+      { "activity": "Trainers para EXP", "location": "Ilhas 1, 3, 5, 6, 7", "frequency": "Diário" },
+      { "activity": "Eccentric Man", "location": "Two Island", "frequency": "A cada 2 semanas" },
+      { "activity": "Trainer Tower", "location": "Seven Island", "frequency": "Recorrente" }
+    ]
+  },
+
+  "legendaries": {
+    "general": {
+      "spawn_level": 85,
+      "base_encounter_rate": "1/125000",
+      "with_gm": "~1/83333 (+50%)",
+      "lle_mechanic": "Cada encontro com não-lendário na área do lendário aumenta seu LLE para aquele lendário específico (curva S)"
+    },
+    "kanto_birds": [
+      {
+        "name": "Articuno",
+        "location": "Seafoam Islands",
+        "requirement": "Feather of Articuno no Pokémon líder"
+      },
+      {
+        "name": "Zapdos",
+        "location": "Power Plant Basement",
+        "requirement": "Feather of Zapdos no Pokémon líder"
+      },
+      {
+        "name": "Moltres",
+        "location": "Mt. Ember (One Island, Sevii Islands)",
+        "requirement": "Feather of Moltres no Pokémon líder (dropa no próprio Mt. Ember)"
+      }
+    ],
+    "johto_beasts": [
+      { "name": "Raikou", "location": "Thunder Cavern (Mossy Cave)" },
+      { "name": "Suicune", "location": "Water Cavern" },
+      { "name": "Entei", "location": "Fire Cavern" }
+    ],
+    "others": [
+      {
+        "name": "Mew",
+        "location": "Faraway Island",
+        "requirement": "Derrotar Elite 4 de Johto + Old Sea Map no inventário"
+      },
+      {
+        "name": "Latios / Latias",
+        "location": "Rota aleatória de Hoenn (muda às 0:00 UTC)",
+        "requirement": "Derrotar Elite 4 de Hoenn + Eon Ticket. Rotas possíveis: 101-130 (exceto 107, 108, 109) e Hoenn Safari Zone"
+      },
+      {
+        "name": "Uxie / Mesprit / Azelf",
+        "location": "Rota aleatória de Sinnoh (muda diariamente)",
+        "requirement": "Derrotar Elite 4 de Sinnoh + Lunar Ticket"
+      }
+    ],
+    "unova": {
+      "location": "N Castle (Unova)",
+      "note": "Pássaros de Kanto também podem ser encontrados aqui sem necessidade de Feather"
+    }
+  },
+
+  "grinding": {
+    "best_spots_70_100": [
+      {
+        "location": "Lucky Island",
+        "description": "Melhor spot de EXP do jogo",
+        "highlight": "Chansey aparece 10% (manhã/dia), Blissey dá ~3x mais EXP que a maioria",
+        "tip": "Use Honey para aumentar encontros"
+      },
+      {
+        "location": "Elite 4 (Johto)",
+        "description": "Batalha diária com nível ±5 do seu Pokémon",
+        "tip": "Resetável todo dia, EXP consistente"
+      },
+      {
+        "location": "Sevii Islands Trainers (ilhas 1, 3, 5, 6, 7)",
+        "description": "Trainers diários nível 70-80",
+        "tip": "Completar todo dia para maximizar EXP"
+      },
+      {
+        "location": "Seven Island - Trainer Tower",
+        "description": "Trainers nível 80+ com 252 EVs em todos os stats",
+        "tip": "Requer equipe forte, mas alta EXP"
+      }
+    ],
+    "useful_items": [
+      { "item": "Honey", "effect": "+25% encontros não-comuns (inclui Chansey/Blissey)" },
+      { "item": "Gold Membership", "effect": "+50% EXP em todas as batalhas" },
+      { "item": "XP Share", "effect": "Distribui EXP para Pokémon que não participaram da batalha" }
+    ]
+  },
+
+  "items": [
+    {
+      "name": "Honey",
+      "category": "Consumível",
+      "how_to_get": "Credit Shop (500 créditos) / Treasure Chests",
+      "effect": "+25% taxa de encontros não-comuns por 1 hora (todos os jogadores no mapa)",
+      "pp_reward": "700 PP ao usar",
+      "command": "/lures (ver honey ativo)"
+    },
+    {
+      "name": "Elite Token",
+      "category": "Moeda especial",
+      "how_to_get": "Drop de Elite Pokémon (20% de chance), encontro rate 1/200",
+      "use": "Trocar na Elite Shop com Lance (Indigo Plateau / Blackthorn City)"
+    },
+    {
+      "name": "7 Day GM Ticket",
+      "category": "Premium",
+      "how_to_get": "Credit Shop / eventos / Treasure Chests",
+      "effect": "Ativa 7 dias de Gold Membership (+50% EXP, +50% dinheiro, +50% encontros UC/R/VR/ER/L, +20% Shiny)"
+    },
+    {
+      "name": "3 Day GM Ticket",
+      "category": "Premium",
+      "how_to_get": "Credit Shop / eventos",
+      "effect": "Ativa 3 dias de Gold Membership"
+    },
+    {
+      "name": "1 Day GM Ticket",
+      "category": "Premium",
+      "how_to_get": "Credit Shop / eventos",
+      "effect": "Ativa 1 dia de Gold Membership"
+    },
+    {
+      "name": "Feather of Articuno",
+      "category": "Key Item",
+      "use": "Necessário para encontrar Articuno em Seafoam Islands",
+      "how_to_get": "Drop na área de Articuno"
+    },
+    {
+      "name": "Feather of Zapdos",
+      "category": "Key Item",
+      "use": "Necessário para encontrar Zapdos no Power Plant Basement",
+      "how_to_get": "Drop na área de Zapdos"
+    },
+    {
+      "name": "Feather of Moltres",
+      "category": "Key Item",
+      "use": "Necessário para encontrar Moltres no Mt. Ember",
+      "how_to_get": "Drop no próprio Mt. Ember"
+    },
+    {
+      "name": "Eon Ticket",
+      "category": "Key Item",
+      "use": "Mostra localização atual de Latios/Latias em Hoenn",
+      "how_to_get": "Recompensa por derrotar Elite 4 de Hoenn"
+    },
+    {
+      "name": "Lunar Ticket",
+      "category": "Key Item",
+      "use": "Mostra localização de Uxie/Mesprit/Azelf em Sinnoh + permite ver Treasure Chests",
+      "how_to_get": "Recompensa por derrotar Elite 4 de Sinnoh"
+    },
+    {
+      "name": "Old Sea Map",
+      "category": "Key Item",
+      "use": "Necessário para encontrar Mew em Faraway Island",
+      "how_to_get": "Requer ter derrotado Elite 4 de Johto"
+    },
+    {
+      "name": "Ability Capsule",
+      "category": "Consumível",
+      "use": "Troca a habilidade do Pokémon",
+      "how_to_get": "Craftar: Stardust + Silk + Miracle Berry"
+    },
+    {
+      "name": "Clan War Token",
+      "category": "Moeda especial",
+      "how_to_get": "5 por vitória em Clan War / 25 bônus para MVP",
+      "use": "Trocar por recompensas do sistema de Clãs"
+    },
+    {
+      "name": "PvP Token",
+      "category": "Moeda especial",
+      "how_to_get": "Batalhar na Battle Queue",
+      "use": "PvP Prize Exchanger no PvP Building (Vermillion City)"
+    },
+    {
+      "name": "Mushroom",
+      "category": "Consumível/Ingrediente",
+      "how_to_get": "5x do Eccentric Man (Two Island) a cada 2 semanas",
+      "use": "Usado no Tutor Maniac"
+    },
+    {
+      "name": "Soul Shard",
+      "category": "Ingrediente",
+      "how_to_get": "Drop durante Swarms ativos",
+      "use": "Ingrediente para craftar Soul Shard Enhanced"
+    },
+    {
+      "name": "Beedrillite",
+      "category": "Mega Stone",
+      "how_to_get": "Drop durante Swarms ativos"
+    },
+    {
+      "name": "Item Bomb",
+      "category": "Consumível comunitário",
+      "effect": "Dropa itens para jogadores no mapa + concede 1200 PP + nº de jogadores online"
+    },
+    {
+      "name": "Enhanced Item Bomb",
+      "category": "Consumível comunitário",
+      "effect": "Versão melhorada: 5000 PP + 2x nº de jogadores online"
+    },
+    {
+      "name": "Portable PC",
+      "category": "Utilidade",
+      "effect": "PC portátil + 200 PP ao colocar"
+    }
+  ],
+
+  "npcs": [
+    {
+      "name": "Move Tutor",
+      "location": "Vermillion City - prédio a leste do Pokémon Center",
+      "function": "Reensina golpes (evolução atual) gratuitamente"
+    },
+    {
+      "name": "Pre-Evolution Move Tutor",
+      "location": "Vermillion City - ao lado do Move Tutor",
+      "function": "Reensina golpes de evoluções anteriores por 50.000 cada"
+    },
+    {
+      "name": "Transfer Move Tutor",
+      "location": "Vermillion City - prédio a leste do Pokémon Center",
+      "function": "Ensina golpes de gerações anteriores (Gen 3+)"
+    },
+    {
+      "name": "Event Move Tutor",
+      "location": "Vermillion City - prédio a leste do Pokémon Center",
+      "function": "Ensina golpes de eventos especiais"
+    },
+    {
+      "name": "Lance (Elite Shop)",
+      "location": "Indigo Plateau / Blackthorn City (fora do ginásio)",
+      "function": "Troca Elite Tokens por itens especiais"
+    },
+    {
+      "name": "Philanthropist Point Exchanger",
+      "location": "Silph Co. - Saffron City (térreo, canto superior esquerdo)",
+      "function": "Troca PP por recompensas"
+    },
+    {
+      "name": "PvP Prize Exchanger",
+      "location": "PvP Building - Vermillion City",
+      "function": "Troca PvP Tokens por recompensas"
+    },
+    {
+      "name": "Mining Guru",
+      "location": "Mt. Moon (Old Pickaxe) / Turtle Cove - Three Island (Good Pickaxe)",
+      "function": "Vende picaxes e dá dicas de mineração"
+    },
+    {
+      "name": "Mining Vendor",
+      "location": "Dentro das cavernas",
+      "function": "Compra gemas mineradas"
+    },
+    {
+      "name": "Eccentric Man",
+      "location": "Two Island (Sevii Islands)",
+      "function": "Pode ser derrotado a cada 2 semanas → 5x Mushroom"
+    },
+    {
+      "name": "Celio",
+      "location": "One Island - Pokémon Network Center",
+      "function": "NPC central da quest das Sevii Islands"
+    },
+    {
+      "name": "Bill",
+      "location": "Porto de Vermillion City",
+      "function": "Leva o jogador às Sevii Islands"
+    }
+  ],
+
+  "money_making": {
+    "methods": [
+      {
+        "method": "Mining",
+        "description": "Minerar gemas e vender ao Mining Vendor",
+        "best_gem": "Rainbow Gemstone ($20.000 cada, requer Mining lv.80+)",
+        "tip": "Mining durante Gold Rush maximiza drops"
+      },
+      {
+        "method": "Daily Trainers (Sevii Islands)",
+        "description": "Derrotar trainers diários nas ilhas 1, 3, 5, 6, 7",
+        "tip": "Trainers de Seven Island pagam mais"
+      },
+      {
+        "method": "Treasure Beach (Two Island)",
+        "description": "Coletar itens escondidos diários e vendê-los",
+        "frequency": "Diário"
+      },
+      {
+        "method": "Fishing",
+        "description": "Pescar Pokémon raros e vendê-los no marketplace",
+        "tip": "Dratini via Old Rod é rentável"
+      },
+      {
+        "method": "Elite Pokémon farming",
+        "description": "Farmar Elite Pokémon por Elite Tokens para vender ou usar na Elite Shop"
+      }
+    ]
+  },
+
+  "useful_links": {
+    "game": "https://poke-nexus.com",
+    "database": "https://www.ppobuddy.com",
+    "discord": "https://discord.com/invite/ppo"
+  },
+
+  "clan_wars": {
+    "schedule": "Sábados e domingos — 3 rodadas: 19:00, 19:50 e 20:40 UTC",
+    "tiers": ["Tier 1", "Tier 2", "Tier 3"],
+    "duration_per_round": "40 minutos",
+    "requirements": ["Estar em um clã", "Rank de Warrior ou superior", "Equipe completa de 6 Pokémon"],
+    "location": "Clan Building — Vermillion City",
+    "creation_cost": "100.000",
+    "rewards": {
+      "per_win": "5 Clan War Tokens",
+      "mvp_bonus": "25 Clan War Tokens + 100 Credits",
+      "eligibility": "Ganhar ao menos 1 batalha OU perder ao menos 3"
+    }
+  },
+
+  "casino": {
+    "description": "Cassino no jogo com slot machines e apostas em Poké Dollars",
+    "notable": "Possível ganhar Synchronize Stone e outros itens raros",
+    "cost_per_spin": "100.000 (high stakes)"
+  },
+
+  "ev_training": {
+    "description": "Treinar EVs (Effort Values) para maximizar stats do Pokémon",
+    "mechanic": "Cada 4 EVs em um stat = +1 ponto no stat ao nível 100. Máximo: 510 EVs totais, 252 em um único stat",
+    "kanto_spots": [
+      { "stat": "HP", "location": "Viridian Forest", "pokemon": "Caterpie" },
+      { "stat": "Attack", "location": "Route 22", "pokemon": "Mankey, Spearow" },
+      { "stat": "Defense", "location": "Mt. Moon", "pokemon": "Geodude, Zubat" },
+      { "stat": "Speed", "location": "Route 22", "pokemon": "Spearow" }
+    ],
+    "youtube": "https://www.youtube.com/watch?v=QgIa0fwAl4g"
+  },
+
+  "youtube_channels": [
+    {
+      "name": "Poke Nexus (canal principal)",
+      "description": "Canal oficial com walkthroughs completos de todas as regiões, eventos e guias de mecânicas",
+      "note": "Mesmo canal que publicava como 'Pokemon Planet' antes do rebranding"
+    },
+    {
+      "name": "SuperAndrew04",
+      "url": "https://www.youtube.com/playlist?list=PLunP_gaydBPUIVdO-2rLXTESFd4nLuMbY",
+      "description": "Guias de lendários, updates semanais e conteúdo geral de PokeNexus"
+    }
+  ],
+
+  "youtube_videos": {
+
+    "playlists": [
+      { "title": "Kanto Walkthrough — Guia Completo", "url": "https://www.youtube.com/playlist?list=PLNg_N5cr3vY1seGJ0_uqWA6i1Fa9gTrpU" },
+      { "title": "Johto Walkthrough", "url": "https://www.youtube.com/playlist?list=PLNg_N5cr3vY1E2C_tEBaOxL60xJXNXp9k" },
+      { "title": "Hoenn Walkthrough", "url": "https://www.youtube.com/playlist?list=PLNg_N5cr3vY2Jmtt5KGbYHjnB0KbdYift" },
+      { "title": "Sinnoh Walkthrough", "url": "https://www.youtube.com/playlist?list=PLNg_N5cr3vY2BQXjwXuEY83uZnCWmjqdv" },
+      { "title": "Sevii Islands — Guias", "url": "https://www.youtube.com/playlist?list=PLNg_N5cr3vY1seGJ0_uqWA6i1Fa9gTrpU" },
+      { "title": "PvP — Battle Tower — Clan Wars — Tournaments", "url": "https://www.youtube.com/playlist?list=PLNg_N5cr3vY0GaV0ipRGSjprcjhkVIogz" },
+      { "title": "Tips e Info Guide (mecânicas gerais)", "url": "https://www.youtube.com/playlist?list=PLNg_N5cr3vY1d_rTpOC-P9tFfDFlsEQCX" },
+      { "title": "Events — Guias e Info", "url": "https://www.youtube.com/playlist?list=PLNg_N5cr3vY0QGYff2zuKVhBR62m4KROT" },
+      { "title": "Poke Nexus Bot", "url": "https://www.youtube.com/playlist?list=PLBZqL0985rjOYvhM8ifIl9kpdauOHqU23" },
+      { "title": "SuperAndrew04 — PokeNexus (prev. Pokemon Planet)", "url": "https://www.youtube.com/playlist?list=PLunP_gaydBPUIVdO-2rLXTESFd4nLuMbY" },
+      { "title": "SuperAndrew04 — Update Week", "url": "https://www.youtube.com/playlist?list=PLunP_gaydBPXlP54j4quXBfju5syqyZaI" }
+    ],
+
+    "walkthroughs": [
+      { "title": "Kanto Walkthrough #1 — Gameplay em Detalhe", "url": "https://www.youtube.com/watch?v=GmGlZcUbxYs", "region": "Kanto" },
+      { "title": "Kanto Walkthrough #2 — Brock (Boulder Badge)", "url": "https://www.youtube.com/watch?v=M7_v2vbywIc", "region": "Kanto" },
+      { "title": "Kanto Walkthrough #4 — SS Anne Ticket + HM01 Cut", "url": "https://www.youtube.com/watch?v=Wkh-7v2NMF4", "region": "Kanto" },
+      { "title": "Kanto Walkthrough #8 — Erika (Rainbow Badge)", "url": "https://www.youtube.com/watch?v=OE7tSOxOIZM", "region": "Kanto" },
+      { "title": "Kanto Walkthrough #13 — Giovanni + Victory Road", "url": "https://www.youtube.com/watch?v=INHKJvvNUso", "region": "Kanto" },
+      { "title": "Kanto Elite Four — Como Vencer", "url": "https://www.youtube.com/watch?v=0PEMSHohk0E", "region": "Kanto" },
+      { "title": "Johto Walkthrough #1 — Como chegar + Falkner", "url": "https://www.youtube.com/watch?v=8F9U75MKU9Q", "region": "Johto" },
+      { "title": "Full Johto Guide 2023", "url": "https://www.youtube.com/watch?v=YrQLKJ_JHHM", "region": "Johto" },
+      { "title": "Hoenn Walkthrough #1 — Como chegar + Roxanne", "url": "https://www.youtube.com/watch?v=yFYovHpQVHI", "region": "Hoenn" },
+      { "title": "Hoenn Walkthrough #9 — 8º Ginásio + Cave of Origin + Juan", "url": "https://www.youtube.com/watch?v=T4uR4rUmbRw", "region": "Hoenn" },
+      { "title": "Full Hoenn Guide 2024", "url": "https://www.youtube.com/watch?v=yQruzIsfX2A", "region": "Hoenn" },
+      { "title": "Sinnoh Walkthrough #1 — Como chegar + Roark (Coal Badge)", "url": "https://www.youtube.com/watch?v=tbJHM-QdVXY", "region": "Sinnoh" },
+      { "title": "Sinnoh Walkthrough #2 — Sinnoh Underground", "url": "https://www.youtube.com/watch?v=1IxtcwMup0U", "region": "Sinnoh" },
+      { "title": "Sinnoh Walkthrough #3 — Maylene (Cobble Badge)", "url": "https://www.youtube.com/watch?v=QKOMpjVSqRc", "region": "Sinnoh" },
+      { "title": "Sinnoh Walkthrough #4 — Fen Badge + Safari Zone", "url": "https://www.youtube.com/watch?v=ekYIvtiiDM4", "region": "Sinnoh" },
+      { "title": "Sinnoh Walkthrough #5 — Fantina (Relic Badge)", "url": "https://www.youtube.com/watch?v=KHfKDuaARts", "region": "Sinnoh" },
+      { "title": "Sinnoh Walkthrough #7 — Icicle Badge", "url": "https://www.youtube.com/watch?v=nycKULWiePg", "region": "Sinnoh" },
+      { "title": "Sinnoh Walkthrough #8 — Volkner (Beacon Badge)", "url": "https://www.youtube.com/watch?v=o5c7BFt2aS0", "region": "Sinnoh" },
+      { "title": "Unova Elite 4 — 2023 Update (equipe básica funciona)", "url": "https://www.youtube.com/watch?v=LsxI--XObHs", "region": "Unova" }
+    ],
+
+    "sevii_islands": [
+      { "title": "Sevii Islands — One e Two Island + Move Tutor + Moltres + Hellfire Cavern", "url": "https://www.youtube.com/watch?v=lG1aHa3wbxY" },
+      { "title": "Sevii Islands — Three Island + Turtle Cove + Berry Forest + Ability Capsule", "url": "https://www.youtube.com/watch?v=yF49IjcCdBE" },
+      { "title": "Sevii Islands — Four e Five Island + Icefall Cave + Lost Cave + Water Maze", "url": "https://www.youtube.com/watch?v=fj--1EvvTrw" },
+      { "title": "Sevii Islands — Six e Seven Island + Outcast Island", "url": "https://www.youtube.com/watch?v=vgsnJyRgbkM" }
+    ],
+
+    "mechanics_guides": [
+      { "title": "Mining Guide", "url": "https://www.youtube.com/watch?v=W7cbtV13kFY", "topic": "Mining" },
+      { "title": "Fishing Guide — The Basics", "url": "https://www.youtube.com/watch?v=z7X8GxQ72WY", "topic": "Fishing" },
+      { "title": "Fishing Guide (PokeNexus prev. Pokemon Planet)", "url": "https://www.youtube.com/watch?v=lw7EOuT_t3A", "topic": "Fishing" },
+      { "title": "EV Training — Best Locations em Kanto", "url": "https://www.youtube.com/watch?v=QgIa0fwAl4g", "topic": "EV Training" },
+      { "title": "Re-learn Moves + Move Tutor + HM/TM + Egg Moves + Ticket Moves", "url": "https://www.youtube.com/watch?v=L9b7w_TaCik", "topic": "Move Tutor" },
+      { "title": "Philanthropist Points Guide", "url": "https://www.youtube.com/watch?v=LiroDM1IL_I", "topic": "Philanthropist Points" },
+      { "title": "Legendary Pokémon Guide Completo", "url": "https://www.youtube.com/watch?v=6ZBodX6OITU", "topic": "Legendários" },
+      { "title": "POKE NEXUS LEGENDARY GUIDE — TUDO QUE VOCÊ PRECISA SABER", "url": "https://www.youtube.com/watch?v=JYyntNkq59w", "topic": "Legendários" },
+      { "title": "Como Capturar Lendários — Parte 2", "url": "https://www.youtube.com/watch?v=OGTyzf5zGq4", "topic": "Legendários" },
+      { "title": "Legendary Heatran a 170k LLE — Synchronized!", "url": "https://www.youtube.com/watch?v=Vw_hRPfZdFM", "topic": "LLE / Legendários" },
+      { "title": "Extremely Rare Hunting Guide + Tier List", "url": "https://www.youtube.com/watch?v=lCzzRci1s68", "topic": "ER Hunting" },
+      { "title": "Guia de EXP Rápido — Level Up Fast", "url": "https://www.youtube.com/watch?v=Qh8RG-T8HZk", "topic": "Grinding / EXP" },
+      { "title": "Battle Tower Guide", "url": "https://www.youtube.com/watch?v=Ip_-tZxQhlw", "topic": "Battle Tower" }
+    ],
+
+    "money_making": [
+      { "title": "Como Fazer Dinheiro Rápido — Early Game 2024", "url": "https://www.youtube.com/watch?v=KzWEKIxAEm4", "topic": "Money Making" },
+      { "title": "Money Making Guide Completo", "url": "https://www.youtube.com/watch?v=W_ujUnMGGk0", "topic": "Money Making" },
+      { "title": "Melhores Métodos de Dinheiro em Todas as Regiões 2025", "url": "https://www.youtube.com/watch?v=-8RlI9Rs--I", "topic": "Money Making" },
+      { "title": "Casino Diary — 20M Poké Dollars, 100k por Spin", "url": "https://www.youtube.com/watch?v=SkWQ9L2rIVI", "topic": "Casino" },
+      { "title": "Casino Diary — 12M, 120 Spins", "url": "https://www.youtube.com/watch?v=NuPXqtWQz7g", "topic": "Casino" },
+      { "title": "Casino — Synchronize Stone com 2.6M", "url": "https://www.youtube.com/watch?v=35DusD9SSwg", "topic": "Casino" }
+    ],
+
+    "pvp_competitive": [
+      { "title": "Clan Wars T1 — Team Building", "url": "https://www.youtube.com/watch?v=AB6FT3OG7ps", "topic": "Clan Wars" },
+      { "title": "Clan Wars T2", "url": "https://www.youtube.com/watch?v=NntEy340U48", "topic": "Clan Wars" },
+      { "title": "Melhor Time T1 até agora — Clan Wars", "url": "https://www.youtube.com/watch?v=HZ72u_ZmWjU", "topic": "Clan Wars" },
+      { "title": "Battle Tower Guide", "url": "https://www.youtube.com/watch?v=Ip_-tZxQhlw", "topic": "Battle Tower" }
+    ],
+
+    "events": [
+      { "title": "Halloween Event 2025 — Guia + Corn Maze", "url": "https://www.youtube.com/watch?v=zIWVOMioAnY", "year": 2025 },
+      { "title": "Halloween Event 2024 — Guia Completo + Corn Maze", "url": "https://www.youtube.com/watch?v=HHqIzoB90Ik", "year": 2024 },
+      { "title": "Christmas Event 2024", "url": "https://www.youtube.com/watch?v=5PRVvQV4nxo", "year": 2024 },
+      { "title": "Easter Event 2024 — Novos Mapas + Mais Lendários", "url": "https://www.youtube.com/watch?v=Czu-r24dcNs", "year": 2024 },
+      { "title": "Summer Event 2024", "url": "https://www.youtube.com/watch?v=RMT1hvnbmU8", "year": 2024 },
+      { "title": "Christmas Event 2023", "url": "https://www.youtube.com/watch?v=THRJW2LPRTU", "year": 2023 },
+      { "title": "Summerween 2022 — Yveltal + Volcanion", "url": "https://www.youtube.com/watch?v=89x2mFTQm18", "year": 2022 },
+      { "title": "Christmas Event 2022", "url": "https://www.youtube.com/watch?v=zfctB99xxfI", "year": 2022 },
+      { "title": "Halloween Event 2021 — Yveltal", "url": "https://www.youtube.com/watch?v=0kFeBSnYOOU", "year": 2021 },
+      { "title": "Summer Event 2021 — Volcanion + Sea Shells", "url": "https://www.youtube.com/watch?v=2BeBVTVH0zA", "year": 2021 }
+    ],
+
+    "general_tips": [
+      { "title": "Beginners Guide Walkthrough Ep. 1 — Pick Your Starter!", "url": "https://www.youtube.com/watch?v=1gNZmZLxYVg" },
+      { "title": "Beginners Guide Walkthrough Ep. 2 — Pewter Gym", "url": "https://www.youtube.com/watch?v=NnXrd8OA6m0" },
+      { "title": "Beginners Guide Walkthrough Ep. 3", "url": "https://www.youtube.com/watch?v=ECnsYFXEpd4" },
+      { "title": "Como Jogar PokeNexus — Introdução", "url": "https://www.youtube.com/watch?v=PGA1RQ0WL4E" },
+      { "title": "Melhores Pokémon Básicos e Fáceis de Capturar", "url": "https://www.youtube.com/watch?v=l2xMTjYFPEw" },
+      { "title": "Trading — Como Não Ser Scammado em Eventos", "url": "https://www.youtube.com/watch?v=rHFuJMEa6Ys" },
+      { "title": "PokeNexus — Maior Update do Jogo", "url": "https://www.youtube.com/watch?v=djC8y7PxJ9U" },
+      { "title": "Spreading Honey Todo Dia Até Pegar um Lendário (série)", "url": "https://www.youtube.com/watch?v=N8ItNPyU5_I" },
+      { "title": "Abrindo 100 Starter Pokémon Boxes (Triple Shiny Rate)", "url": "https://www.youtube.com/watch?v=Tp-5GFSl5d4" },
+      { "title": "Sinnoh Underground Guide", "url": "https://www.youtube.com/watch?v=1IxtcwMup0U" },
+      { "title": "Bot Tutorial — Grinding, Mining, Fishing (All in One)", "url": "https://www.youtube.com/watch?v=6Jan9B-bK1s" },
+      { "title": "Full Kanto Guide 2023", "url": "https://www.youtube.com/watch?v=3k49EgXkO4c" }
+    ]
+  },
+
+  "regions_detail": {
+    "kanto": {
+      "order": 1,
+      "how_to_access": "Região inicial do jogo",
+      "gym_leaders": [
+        { "order": 1, "name": "Brock", "city": "Pewter City", "type": "Rock", "badge": "Boulder Badge" },
+        { "order": 2, "name": "Misty", "city": "Cerulean City", "type": "Water", "badge": "Cascade Badge" },
+        { "order": 3, "name": "Lt. Surge", "city": "Vermillion City", "type": "Electric", "badge": "Thunder Badge" },
+        { "order": 4, "name": "Erika", "city": "Celadon City", "type": "Grass", "badge": "Rainbow Badge" },
+        { "order": 5, "name": "Koga", "city": "Fuchsia City", "type": "Poison", "badge": "Soul Badge" },
+        { "order": 6, "name": "Sabrina", "city": "Saffron City", "type": "Psychic", "badge": "Marsh Badge" },
+        { "order": 7, "name": "Blaine", "city": "Cinnabar Island", "type": "Fire", "badge": "Volcano Badge" },
+        { "order": 8, "name": "Giovanni", "city": "Viridian City", "type": "Ground", "badge": "Earth Badge" }
+      ],
+      "elite_four": [
+        { "order": 1, "name": "Lorelei", "type": "Ice" },
+        { "order": 2, "name": "Bruno", "type": "Fighting" },
+        { "order": 3, "name": "Agatha", "type": "Ghost" },
+        { "order": 4, "name": "Lance", "type": "Dragon" }
+      ],
+      "champion": "Blue (Gary)",
+      "notes": "Derrotar a Elite 4 de Kanto desbloqueia as Sevii Islands (com nível 80+) e a Elite 4 de Johto"
+    },
+    "johto": {
+      "order": 2,
+      "how_to_access": "Após derrotar a Elite 4 de Kanto",
+      "gym_leaders": [
+        { "order": 1, "name": "Falkner", "city": "Violet City", "type": "Flying", "badge": "Zephyr Badge" },
+        { "order": 2, "name": "Bugsy", "city": "Azalea Town", "type": "Bug", "badge": "Hive Badge" },
+        { "order": 3, "name": "Whitney", "city": "Goldenrod City", "type": "Normal", "badge": "Plain Badge" },
+        { "order": 4, "name": "Morty", "city": "Ecruteak City", "type": "Ghost", "badge": "Fog Badge" },
+        { "order": 5, "name": "Chuck", "city": "Cianwood City", "type": "Fighting", "badge": "Storm Badge" },
+        { "order": 6, "name": "Jasmine", "city": "Olivine City", "type": "Steel", "badge": "Mineral Badge" },
+        { "order": 7, "name": "Pryce", "city": "Mahogany Town", "type": "Ice", "badge": "Glacier Badge" },
+        { "order": 8, "name": "Clair", "city": "Blackthorn City", "type": "Dragon", "badge": "Rising Badge" }
+      ],
+      "elite_four": [
+        { "order": 1, "name": "Will", "type": "Psychic" },
+        { "order": 2, "name": "Koga", "type": "Poison" },
+        { "order": 3, "name": "Bruno", "type": "Fighting" },
+        { "order": 4, "name": "Karen", "type": "Dark" }
+      ],
+      "champion": "Lance (Dragon)",
+      "notes": "Derrotar a Elite 4 de Johto desbloqueia Faraway Island (Mew) e acesso à Hoenn. A Old Sea Map é necessária para Mew."
+    },
+    "hoenn": {
+      "order": 3,
+      "how_to_access": "Após derrotar a Elite 4 de Johto",
+      "notes_special": "Todos os líderes de ginásio e Elite 4 têm um Pokémon com Mega Stone no time",
+      "gym_leaders": [
+        { "order": 1, "name": "Roxanne", "city": "Rustboro City", "type": "Rock", "badge": "Stone Badge" },
+        { "order": 2, "name": "Brawly", "city": "Dewford Town", "type": "Fighting", "badge": "Knuckle Badge" },
+        { "order": 3, "name": "Wattson", "city": "Mauville City", "type": "Electric", "badge": "Dynamo Badge" },
+        { "order": 4, "name": "Flannery", "city": "Lavaridge Town", "type": "Fire", "badge": "Heat Badge" },
+        { "order": 5, "name": "Norman", "city": "Petalburg City", "type": "Normal", "badge": "Balance Badge" },
+        { "order": 6, "name": "Winona", "city": "Fortree City", "type": "Flying", "badge": "Feather Badge" },
+        { "order": 7, "name": "Tate & Liza", "city": "Mossdeep City", "type": "Psychic", "badge": "Mind Badge" },
+        { "order": 8, "name": "Juan", "city": "Sootopolis City", "type": "Water", "badge": "Rain Badge" }
+      ],
+      "elite_four": [
+        { "order": 1, "name": "Sidney", "type": "Dark" },
+        { "order": 2, "name": "Phoebe", "type": "Ghost" },
+        { "order": 3, "name": "Glacia", "type": "Ice" },
+        { "order": 4, "name": "Drake", "type": "Dragon" }
+      ],
+      "champion": "Wallace (Water)",
+      "notes": "Derrotar a Elite 4 de Hoenn concede o Eon Ticket (rastrear Latios/Latias) e acesso à Sinnoh"
+    },
+    "sinnoh": {
+      "order": 4,
+      "how_to_access": "Após derrotar a Elite 4 de Hoenn",
+      "gym_leaders": [
+        { "order": 1, "name": "Roark", "city": "Oreburgh City", "type": "Rock", "badge": "Coal Badge" },
+        { "order": 2, "name": "Gardenia", "city": "Eterna City", "type": "Grass", "badge": "Forest Badge" },
+        { "order": 3, "name": "Maylene", "city": "Veilstone City", "type": "Fighting", "badge": "Cobble Badge" },
+        { "order": 4, "name": "Crasher Wake", "city": "Pastoria City", "type": "Water", "badge": "Fen Badge" },
+        { "order": 5, "name": "Fantina", "city": "Hearthome City", "type": "Ghost", "badge": "Relic Badge" },
+        { "order": 6, "name": "Byron", "city": "Canalave City", "type": "Steel", "badge": "Mine Badge" },
+        { "order": 7, "name": "Candice", "city": "Snowpoint City", "type": "Ice", "badge": "Icicle Badge" },
+        { "order": 8, "name": "Volkner", "city": "Sunyshore City", "type": "Electric", "badge": "Beacon Badge" }
+      ],
+      "elite_four": [
+        { "order": 1, "name": "Aaron", "type": "Bug", "mega": "Mega Heracross" },
+        { "order": 2, "name": "Bertha", "type": "Ground", "mega": "Mega Steelix" },
+        { "order": 3, "name": "Flint", "type": "Fire", "mega": "Mega Charizard Y" },
+        { "order": 4, "name": "Lucian", "type": "Psychic", "mega": "Mega Gardevoir" }
+      ],
+      "champion": "Cynthia (Dragon/Mixed) — Mega Garchomp + Mega Mewtwo Y",
+      "notes": "Derrotar a Elite 4 de Sinnoh concede o Lunar Ticket (rastrear Uxie/Mesprit/Azelf + ver Treasure Chests) e acesso à Unova"
+    },
+    "unova": {
+      "order": 5,
+      "how_to_access": "Após derrotar a Elite 4 de Sinnoh — pegar ferry para Nuvema Town",
+      "notes_special": "Ginásios têm boost de 40% nos stats dos Pokémon",
+      "travel_costs": [
+        { "location": "Nuvema Town", "cost": 15000, "requirement": "Derrotar Elite 4 de Sinnoh" },
+        { "location": "Castelia City", "cost": 15000, "requirement": "Obter Insect Badge" },
+        { "location": "Driftveil City", "cost": 15000, "requirement": "Obter Quake Badge" },
+        { "location": "Undella Town", "cost": 15000, "requirement": "Obter Legend Badge" }
+      ],
+      "gym_leaders": [
+        { "order": 1, "name": "Chili / Cilan / Cress", "city": "Striaton City", "type": "Fire/Grass/Water", "badge": "Trio Badge" },
+        { "order": 2, "name": "Lenora", "city": "Nacrene City", "type": "Normal", "badge": "Basic Badge" },
+        { "order": 3, "name": "Burgh", "city": "Castelia City", "type": "Bug", "badge": "Insect Badge" },
+        { "order": 4, "name": "Elesa", "city": "Nimbasa City", "type": "Electric", "badge": "Bolt Badge" },
+        { "order": 5, "name": "Clay", "city": "Driftveil City", "type": "Ground", "badge": "Quake Badge" },
+        { "order": 6, "name": "Skyla", "city": "Mistralton City", "type": "Flying", "badge": "Jet Badge" },
+        { "order": 7, "name": "Brycen", "city": "Icirrus City", "type": "Ice", "badge": "Freeze Badge" },
+        { "order": 8, "name": "Drayden", "city": "Opelucid City", "type": "Dragon", "badge": "Legend Badge" }
+      ],
+      "special": {
+        "n_castle": "Pokémon de Kanto (Articuno, Zapdos, Moltres) podem ser encontrados aqui sem necessidade de Feather",
+        "elite_four_2023_update": "Atualização de 2023 facilitou a Elite 4 de Unova — possível vencer com equipe básica",
+        "youtube": "https://www.youtube.com/watch?v=LsxI--XObHs"
+      }
+    }
+  },
+
+  "swarms_detail": {
+    "description": "Evento em rota específica com drops especiais",
+    "command": "/swarm",
+    "drops_always": ["Beedrillite", "Soul Shard"],
+    "soul_shard_use": "Ingrediente para craftar Soul Shard (Enhanced) — boost de 20% na taxa de encontro de Latios/Latias",
+    "berry_drops": {
+      "rate": "1/2500",
+      "note": "Taxa fixa, não pode ser aumentada",
+      "tip": "Use Pokémon com dois tipos para rolar múltiplos drops de berry por encontro",
+      "requirement": "Usar Pokémon líder do tipo correspondente na rota com swarm ativo"
+    }
+  },
+
+  "encounters_structure": {
+    "source": "https://poke-nexus.com/encounters",
+    "terrain_types": [
+      {
+        "terrain": "Grama/Campo (Common)",
+        "example_pokemon": ["Golem", "Golbat", "Beedrill", "Fearow", "Graveler"],
+        "approximate_count": 49
+      },
+      {
+        "terrain": "Grama/Campo (Uncommon)",
+        "example_pokemon": ["Noctowl", "Sandslash", "Furret", "Sandshrew", "Marill"],
+        "approximate_count": 41
+      },
+      {
+        "terrain": "Grama/Campo (Rare)",
+        "example_pokemon": ["Meditite", "Hypno", "Breloom", "Aipom", "Kecleon"],
+        "approximate_count": 59
+      },
+      {
+        "terrain": "Grama/Campo (Very Rare)",
+        "example_pokemon": ["Ursaring", "Floatzel", "Ponyta", "Mareep", "Houndour"],
+        "approximate_count": 69
+      },
+      {
+        "terrain": "Grama/Campo (Extremely Rare)",
+        "example_pokemon": ["Snover", "Swinub", "Sneasel", "Bulbasaur", "Charmander", "Squirtle"],
+        "approximate_count": 60,
+        "note": "Inclui Pokémon iniciais e pré-evoluções raras"
+      },
+      {
+        "terrain": "Aquático (Surf + Fishing)",
+        "note": "5 categorias de raridade (Common a Extremely Rare)",
+        "approximate_count": 90
+      }
+    ],
+    "note": "Para encontros específicos por localização, consultar poke-nexus.com/encounters ou ppobuddy.com/locations"
+  },
+
+  "installation": {
+    "official_download": "Apenas pelo Discord oficial: discord.com/invite/ppo",
+    "warning": "Nunca baixar de fontes não oficiais — risco de vírus",
+    "platforms": [
+      { "platform": "Windows", "notes": "Extrair e executar de qualquer local. Recomendado: %localappdata%\\Poke Nexus\\. Usar 7-Zip se necessário." },
+      { "platform": "Android", "notes": "Requer Android 11+. Mínimo 700MB de espaço. Baixar apenas pelo Discord oficial." },
+      { "platform": "iOS", "notes": "Disponível. Baixar apenas pelo Discord oficial." },
+      { "platform": "Mac", "notes": "Disponível. Baixar apenas pelo Discord oficial." }
+    ],
+    "guides": [
+      { "platform": "Windows", "url": "https://nexus-guide.com/how-to-download-the-game-on-windows/" },
+      { "platform": "Android", "url": "https://nexus-guide.com/how-to-download-the-game-on-andriod/" },
+      { "platform": "iOS", "url": "https://nexus-guide.com/how-to-download-the-game-on-ios/" },
+      { "platform": "Mac", "url": "https://nexus-guide.com/how-to-download-the-game-on-mac/" }
+    ]
+  },
+
+  "starters": [
+    {
+      "name": "Bulbasaur",
+      "type": "Grass/Poison",
+      "recommendation": "Melhor para iniciantes — vantagem de tipo contra os 3 primeiros ginásios",
+      "style": "Mais fácil no início"
+    },
+    {
+      "name": "Charmander",
+      "type": "Fire",
+      "recommendation": "Melhor ataque, fraco no início mas poderoso no late game. Pode ser capturado em Hellfire Cavern (Sevii Islands)",
+      "style": "Desafiador no começo, forte no final"
+    },
+    {
+      "name": "Squirtle",
+      "type": "Water",
+      "recommendation": "Boa defesa, excelente no late game. Pode ser capturado em Turtle Cove (Three Island, Sevii Islands)",
+      "style": "Balanceado — bom para o late game"
+    }
+  ],
+
+  "mining_complete": {
+    "mechanic": "Pressione Spacebar próximo a uma rocha para minerar",
+    "sell_location": "Mining Vendor dentro das cavernas",
+    "gemstones": [
+      { "gem": "Red Gemstone", "mining_level": 1, "sell_value": 50, "encounter_boost": "1.25x" },
+      { "gem": "Blue Gemstone", "mining_level": 10, "sell_value": 100, "encounter_boost": "1.25x" },
+      { "gem": "Green Gemstone", "mining_level": 20, "sell_value": 200, "encounter_boost": "1.25x" },
+      { "gem": "Prism Gemstone", "mining_level": 35, "sell_value": 400, "encounter_boost": "1.25x" },
+      { "gem": "Pale Gemstone", "mining_level": 50, "sell_value": 550, "encounter_boost": "1.25x" },
+      { "gem": "Dark Gemstone", "mining_level": 65, "sell_value": 900, "encounter_boost": "2x" },
+      { "gem": "Rainbow Gemstone", "mining_level": 80, "sell_value": 20000, "encounter_boost": "4x" },
+      { "gem": "Gold Gemstone", "mining_level": "Igual ao da rocha base", "notes": "1/200 chance fora do Gold Rush. Gold Rush: a cada 6-12h em caverna aleatória. Gold gems: 800-1000 EXP cada" }
+    ],
+    "mining_locations": {
+      "kanto": [
+        { "location": "Mt. Moon", "rocks": ["Red", "Blue", "Green"] },
+        { "location": "Diglett's Cave", "rocks": ["Red"] },
+        { "location": "Rock Tunnel", "rocks": ["Red", "Blue"] },
+        { "location": "Seafoam Islands", "rocks": ["Red", "Blue"] },
+        { "location": "Hellfire Cavern", "rocks": ["Red"] },
+        { "location": "Turtle Cove", "rocks": ["Red"] },
+        { "location": "Cerulean Cave", "rocks": ["Red", "Blue", "Green"] },
+        { "location": "Kanto Victory Road", "rocks": ["Red"] },
+        { "location": "Ancient Dungeon", "rocks": ["Prism", "Pale", "Dark", "Rainbow"] }
+      ],
+      "johto": [
+        { "location": "Dark Cave", "rocks": ["Red"] },
+        { "location": "Dragon's Den", "rocks": ["Blue", "Green", "Prism", "Pale"] },
+        { "location": "Mossy Cave", "rocks": ["Green", "Prism", "Pale", "Dark", "Rainbow"] }
+      ],
+      "hoenn": [
+        { "location": "Altering Cave", "rocks": ["Green", "Prism", "Pale", "Dark", "Rainbow"] }
+      ],
+      "sinnoh": [
+        { "location": "Oreburgh Gate", "rocks": ["Green", "Prism"] },
+        { "location": "Deep Oreburgh Mine", "rocks": ["Green", "Prism", "Pale", "Dark"] },
+        { "location": "Sinnoh Underground", "rocks": ["Prism", "Pale", "Dark", "Rainbow"], "level_required": 50 },
+        { "location": "Mt. Coronet", "rocks": ["Red", "Blue", "Green", "Prism", "Pale", "Dark"] },
+        { "location": "Celestic Ruins", "rocks": ["Green", "Prism", "Pale"] },
+        { "location": "Spear Pillar", "rocks": ["Green", "Prism", "Pale", "Dark", "Rainbow"] },
+        { "location": "Sinnoh Safari Zone", "rocks": ["Rainbow"] },
+        { "location": "Stark Mountain", "rocks": ["Pale", "Dark", "Rainbow"] }
+      ]
+    }
+  },
+
+  "fishing_complete": {
+    "mechanic": "Pressione F voltado para água para pescar. Pressione Spacebar na zona verde do minigame para hook perfeito (1.5x EXP e Pokémon)",
+    "tip": "Pokémon com habilidade Suction Cups ou Sticky Hold aumentam velocidade do gancho",
+    "rods": [
+      { "name": "Old Rod", "level_required": 1, "cost": 5000, "where": "Pescador na casa a oeste do Pokémon Center — Vermillion City" },
+      { "name": "Good Rod", "level_required": 5, "cost": 12000, "where": "Pescador na casa a leste do Pokémon Center — Fuchsia City" },
+      { "name": "Super Rod", "level_required": 20, "cost": 35000, "where": "Pescador na Route 12" },
+      { "name": "Elite Rod", "level_required": 50, "cost": "50 Elite Tokens", "where": "Lance — Elite Shop (após derrotar Elite 4 de Kanto)" },
+      { "name": "Master Rod", "level_required": 100, "how_to_get": "Craftar: Master Ball + Steel Rod" }
+    ],
+    "notable_encounters_by_level": [
+      { "level_area": "30", "pokemon": ["Totodile"] },
+      { "level_area": "80", "pokemon": ["Manaphy", "Dratini"] }
+    ]
+  },
+
+  "battle_tower": {
+    "location": "Norte de Seven Island (surfar ao norte)",
+    "how_to_access": "Falar com Bill em Cinnabar Island para ir às Sevii Islands",
+    "battle_level": 100,
+    "mechanic": "Derrotar trainers em sequência — perder manda de volta ao início. A cada 10 batalhas: Tower Tycoon (trainer mais forte)",
+    "difficulty_scaling": "Após trainer 100: +1% de stats a cada 6 batalhas",
+    "max_floor": 400,
+    "after_max": "Reset para o andar 101",
+    "rewards": "Tower Tokens (trocados no Prize Exchanger). Pokémon especiais disponíveis como Zygarde",
+    "youtube": "https://www.youtube.com/watch?v=Ip_-tZxQhlw",
+    "calculator": "https://www.ppobuddy.com/tools/battle-tower"
+  },
+
+  "pvp_battle_queue": {
+    "description": "Batalhas PvP ranqueadas",
+    "location": "PvP Building — Vermillion City",
+    "requirements": "Equipe completa de 6 Pokémon",
+    "token_rewards": {
+      "master_match_win": 18,
+      "master_match_loss": 5
+    },
+    "ranking_decay": "Necessário ao menos 20 batalhas ranqueadas por semana (5 para random) para evitar decaimento de rating",
+    "exchanger": "PvP Prize Exchanger no PvP Building"
+  },
+
+  "cerulean_cave_mewtwo": {
+    "location": "Cerulean Cave F4 — parte sudeste da sala",
+    "access_requirements": [
+      "Derrotar a Elite 4 de Kanto",
+      "600+ Pokémon registrados no Pokédex",
+      "Legendary Map no inventário"
+    ],
+    "drops": ["Dome Shard", "Helix Shard", "Amber Shard"],
+    "shard_use": "Trocar por Kabuto, Omanyte e Aerodactyl no Pokémon Lab de Cinnabar Island",
+    "youtube": "https://www.youtube.com/watch?v=6J12ZxQYIVM"
+  },
+
+  "casino": {
+    "location": "Celadon City — Kanto",
+    "currency": "Casino Tokens",
+    "slots_stakes": {
+      "100_credits": "Premiação baixa",
+      "1000_credits": "Premiação média",
+      "10000_credits": "Premiação alta"
+    },
+    "casino_shop": {
+      "location": "Ao lado do Casino — Celadon City. NPC: Prize Seller",
+      "items": [
+        { "item": "Macho Brace", "cost_tokens": 40000 },
+        { "item": "IV Deductor", "cost_tokens": 7500 },
+        { "item": "Synchronize Stone", "cost_tokens": "Alto (requer ~2.6M em apostas para acumular tokens suficientes)" }
+      ]
+    }
+  },
+
+  "credit_shop": {
+    "description": "Loja premium do jogo. Acesso: ícone da bolsa amarela no canto inferior esquerdo",
+    "currency": "Credits (comprados com dólares americanos)",
+    "note": "Todos os itens do Credit Shop podem ser trocados entre jogadores",
+    "known_items": [
+      { "item": "Honey", "cost_credits": 500 },
+      { "item": "Effort Brace", "cost_credits": 450 },
+      { "item": "World Blessing", "cost_credits": 300, "with_gm_discount": 270 },
+      { "item": "Mystery Box", "cost_credits": 80 },
+      { "item": "Dye Remover", "cost_credits": 100 },
+      { "item": "GM Tickets (1/3/7 dias)", "cost_credits": "Variável" },
+      { "item": "Portable PC", "cost_credits": "Variável" },
+      { "item": "Item Bomb", "cost_credits": "Variável" },
+      { "item": "Drop Rate Blessing", "cost_credits": "Variável" }
+    ]
+  },
+
+  "mystery_box": {
+    "cost_credits": 80,
+    "possible_rewards": [
+      "$ 1.000 a $ 50.000",
+      "Rare Candy",
+      "IV Reset",
+      "30 Day GM Ticket",
+      "7 Day GM Ticket",
+      "Bike Voucher",
+      "Evolutional Stone Box",
+      "World Blessing",
+      "EV Reset",
+      "Ultra Ball",
+      "Max Revive",
+      "Hyper Potion",
+      "Great Ball",
+      "Vitamins",
+      "Super Potion",
+      "TM Box"
+    ]
+  },
+
+  "crafting_complete": {
+    "how_to_access": "Tecla I (Inventário) → botão 'Crafting'",
+    "recipes": [
+      { "result": "Ability Capsule", "ingredients": ["Stardust", "Silk", "Miracle Berry"], "notes": "Miracle Berry dropa em Berry Forest (Three Island)" },
+      { "result": "Ancient Key", "ingredients": ["Ancient Key (Tooth Half)", "Ancient Key (Loop Half)"], "notes": "Tooth Half disponível na PP Shop por 15.000 PP" },
+      { "result": "Golden Effort Brace", "ingredients": ["Macho Brace", "Effort Brace"], "notes": "Macho Brace: 40k Casino Tokens. Effort Brace: 450 Credits" },
+      { "result": "Master Pickaxe", "ingredients": ["Master Ball", "Steel Pickaxe"], "notes": "Requer Mining lv.100" },
+      { "result": "Master Rod", "ingredients": ["Master Ball", "Steel Rod"], "notes": "Requer Fishing lv.100" },
+      { "result": "Soul Shard (Enhanced)", "ingredients": ["Soul Shard (múltiplos)"], "notes": "Soul Shards dropam em Swarms ativos. Enhanced boost: +20% Latios/Latias encounter rate" },
+      { "result": "HP IV Deductor", "ingredients": ["IV Deductor", "HP UP"] },
+      { "result": "Atk IV Deductor", "ingredients": ["IV Deductor", "Protein"] },
+      { "result": "Def IV Deductor", "ingredients": ["IV Deductor", "Iron"] },
+      { "result": "Sp.Atk IV Deductor", "ingredients": ["IV Deductor", "Calcium"] },
+      { "result": "Sp.Def IV Deductor", "ingredients": ["IV Deductor", "Zinc"] },
+      { "result": "Speed IV Deductor", "ingredients": ["IV Deductor", "Carbos"] },
+      { "result": "Undyed Decoration Item", "ingredients": ["Dye Remover", "Qualquer decoration item tingido"] }
+    ],
+    "where_to_get_iv_deductor": "Game Corner — Celadon City: 7.500 Casino Tokens"
+  },
+
+  "global_marketplace": {
+    "location": "Dentro do Pokémart",
+    "description": "Mercado de jogadores para compra e venda de itens e Pokémon",
+    "how_to_sell": "Leilão ou preço fixo",
+    "how_to_search": "Clicar no botão 'Search' (Enter não funciona)",
+    "ppobody_marketplace": "https://www.ppobuddy.com/marketplace"
+  },
+
+  "pp_shop_known_items": [
+    { "item": "Tooth Half (Ancient Key)", "cost_pp": 15000, "notes": "Usado para craftar Ancient Key (+ Loop Half)" },
+    { "item": "Jirachi", "cost_pp": "Alto", "notes": "Pokémon lendário disponível na PP Shop" }
+  ],
+
+  "ev_training_items": [
+    { "item": "Macho Brace", "effect": "2x EVs ganhos, -50% Speed em batalha", "where": "Casino Shop — 40.000 Casino Tokens" },
+    { "item": "Power Bracer", "effect": "+EVs de Attack em cada batalha, -50% Speed", "type": "Power Item" },
+    { "item": "Power Belt", "effect": "+EVs de Defense em cada batalha, -50% Speed", "type": "Power Item" },
+    { "item": "Power Lens", "effect": "+EVs de Sp.Atk em cada batalha, -50% Speed", "type": "Power Item" },
+    { "item": "Power Band", "effect": "+EVs de Sp.Def em cada batalha, -50% Speed", "type": "Power Item" },
+    { "item": "Power Anklet", "effect": "+EVs de Speed em cada batalha, -50% Speed", "type": "Power Item" },
+    { "item": "Effort Brace", "effect": "Aumenta EVs ganhos", "where": "Credit Shop — 450 Credits" },
+    { "item": "Golden Effort Brace", "effect": "Versão melhorada do Effort Brace", "how_to_get": "Craftar: Macho Brace + Effort Brace" }
+  ],
+
+  "hm_moves": {
+    "total": 5,
+    "how_to_buy": "Loja em qualquer cidade → 'Buy Items From NPC' → 'HM Moves' — custo: $250.000 cada",
+    "note": "Comprado uma vez, pode ser ensinado infinitas vezes",
+    "list": [
+      { "hm": "Cut", "use": "Cortar arbustos. Sem uso fora de batalha." },
+      { "hm": "Strength", "use": "Empurrar pedras. Sem uso fora de batalha." },
+      { "hm": "Waterfall", "use": "Subir cachoeiras. Sem uso fora de batalha." },
+      { "hm": "Fly", "use": "Viagem rápida entre cidades. Uso fora de batalha." },
+      { "hm": "Hyper Surf (Surf)", "use": "Nadar em água. Uso fora de batalha." }
+    ],
+    "best_hm_users": ["Dragonite", "Wingull", "Pelipper", "Ducklett", "Swanna", "Mew"]
+  },
+
+  "ivs_and_natures": {
+    "ivs": {
+      "description": "Individual Values — números de 0 a 31, um para cada stat (HP, Attack, Defense, Sp.Atk, Sp.Def, Speed)",
+      "how_to_check": "Abrir Summary do Pokémon → número amarelo em cada stat",
+      "iv_reset": {
+        "effect": "Rerolls todos os IVs do Pokémon",
+        "how_to_get": "Drop extremamente raro de qualquer Pokémon selvagem / Credit Shop",
+        "variants": ["HP IV Reset (rerolls só o HP IV)", "IV Deductor + vitamina = IV Deductor de stat específico"]
+      }
+    },
+    "natures": {
+      "total": 25,
+      "neutral": ["Hardy", "Docile", "Bashful", "Quirky", "Serious"],
+      "mechanic": "+10% em um stat, -10% em outro. Neutras não afetam stats.",
+      "synchronize": "Ter Pokémon com habilidade Synchronize como líder aumenta chance do Pokémon selvagem ter a mesma natureza",
+      "synchronize_stone": "Item que reproduz o efeito de Synchronize sem precisar da habilidade. Obtido via Casino (~2.6M em apostas)"
+    }
+  },
+
+  "blessings": {
+    "world_blessing": {
+      "cost_credits": 300,
+      "cost_with_gm_discount": 270,
+      "effect": "1ª blessing: +20% EXP (x1.2). Cada adicional: +10% (x1.1). Máximo empilhável: x2 (+100%)",
+      "duration": "1 hora",
+      "max_per_hour": "9 world blessings por hora entre todos os jogadores",
+      "pp_reward": "Até 500 PP (= nº de jogadores online no momento)"
+    },
+    "drop_rate_blessing": {
+      "effect": "+20% de chance de Pokémon selvagem dropar item para todo o servidor",
+      "duration": "1 hora",
+      "pp_reward": "Até 500 PP"
+    }
+  },
+
+  "shiny_system": {
+    "base_rate": "1/8192",
+    "boosts": [
+      { "method": "Gold Membership (GM)", "boost": "+20% shiny rate" },
+      { "method": "Shiny Charm", "boost": "+25% shiny rate", "where": "Elite Shop — Lance — 30 Elite Tokens" },
+      { "method": "Altering Cave", "boost": "+1.1x shiny rate" },
+      { "method": "Dark/Lava Rock (Mining)", "boost": "+2x encounter rate (inclui shinies)" },
+      { "method": "Shiny Lure", "boost": "PP reward de 1400 PP ao usar", "note": "Mecanismo exato de boost a confirmar" }
+    ],
+    "shiny_orb": {
+      "description": "Moeda especial obtida ao capturar shinies",
+      "use": "Trocar com o Shiny Merchant por Pokémon e itens especiais"
+    },
+    "shiny_merchant": {
+      "description": "NPC que vende Pokémon e itens em troca de Shiny Orbs"
+    }
+  },
+
+  "safari_zones": [
+    {
+      "name": "Kanto Safari Zone",
+      "location": "Fuchsia City",
+      "ticket_cost": 20000,
+      "ticket_duration": "24 horas"
+    },
+    {
+      "name": "Johto Safari Zone",
+      "location": "Route 48, a oeste de Cianwood City",
+      "ticket_cost": 80000,
+      "ticket_duration": "24 horas"
+    },
+    {
+      "name": "Hoenn Safari Zone",
+      "location": "Hoenn",
+      "ticket_cost": 400000,
+      "ticket_duration": "24 horas",
+      "extra_requirement": "Fishing Level 50+ para pescar na área"
+    }
+  ],
+
+  "altering_cave": {
+    "location": "Hoenn — Route 103_2 (acesso por Outcast Island, Six Island, Sevii Islands)",
+    "ticket": "Altering Cave Ticket — $600.000 — dura 24 horas. Comprar com o salesman na entrada",
+    "wild_pokemon_level": "Igual ao nível médio da equipe do jogador (arredondado para baixo)",
+    "daily_rotation": "2 Pokémon de cada raridade e método são sorteados diariamente de um pool",
+    "encounter_boost": "1.3x encounter rate, 1.1x shiny rate",
+    "cash_drops": "Pokémon aqui NÃO dropam dinheiro",
+    "daily_legendaries": {
+      "fishing_legend": "10% de chance de ser: Articuno, Suicune, Mesprit ou Uxie",
+      "surfing_legend": "10% de chance de ser: Zapdos, Raikou, Latias ou Latios",
+      "fixed": "Diancie aparece todo dia"
+    }
+  },
+
+  "ancient_cave_and_dungeon": {
+    "ancient_cave": {
+      "location": "Dentro de Granite Cave — Dewford Town (Hoenn)",
+      "access": "Craftar Ancient Key: Ancient Key (Tooth Half) + Ancient Key (Loop Half)",
+      "tooth_half": "Disponível na PP Shop por 15.000 PP"
+    },
+    "ancient_dungeon": {
+      "location": "Dentro da Ancient Cave (Hoenn)",
+      "pokemon_boost": "Stats dos Pokémon boosted em 1.65x (exceto Speed)",
+      "benefits": "Maior EXP, maior drop rate, drops de itens únicos e valiosos",
+      "notable_drops": ["Legendary Bait", "Soothe Bell", "Wise Glasses", "Muscle Band"],
+      "legendary": "Um lendário reside no Ancient Dungeon",
+      "youtube_guides": [
+        "https://www.youtube.com/watch?v=v05l8vuLqAM",
+        "https://www.youtube.com/watch?v=0WO8NguiAx4"
+      ]
+    }
+  },
+
+  "mossy_cave": {
+    "location": "Johto — surfar para cima saindo do ginásio em Blackthorn City",
+    "access_requirement": "Capturar 350 Pokémon únicos para receber a Mossy Key",
+    "legendaries": [
+      { "pokemon": "Raikou", "sub_area": "Thunder Cavern" },
+      { "pokemon": "Suicune", "sub_area": "Water Cavern" },
+      { "pokemon": "Entei", "sub_area": "Fire Cavern" }
+    ],
+    "youtube": "https://www.youtube.com/watch?v=N2PUQrWjtaw"
+  },
+
+  "power_plant": {
+    "location": "Kanto — surfar da Route 9",
+    "zapdos_basement": {
+      "access_requirement": "Todos os badges de Kanto E Johto",
+      "legendary": "Zapdos — requer Feather of Zapdos no Pokémon líder"
+    }
+  },
+
+  "lavender_tower": {
+    "location": "Lavender Town — Kanto",
+    "purpose": "Obter o Poké Flute de Mr. Fuji no topo",
+    "requirement": "Silph Scope (obtida no Game Corner de Celadon — derrotar Giovanni)",
+    "reward": "Poké Flute — necessário para acordar Snorlax e acessar Silph Co"
+  },
+
+  "silph_co": {
+    "location": "Saffron City — Kanto",
+    "access": "Precisa do Poké Flute (de Lavender Tower)",
+    "purpose": "Remover Rockets bloqueando edifícios em Saffron City. Derrotar Giovanni.",
+    "floors": "Vários andares com Rockets"
+  },
+
+  "rocket_hideout": {
+    "location": "Basement do Game Corner — Celadon City (Kanto)",
+    "floors": 4,
+    "tip": "Obter Lift Key de um Grunt no 4º andar para ativar o elevador até Giovanni",
+    "reward": "Silph Scope (necessária para Lavender Tower)"
+  },
+
+  "fossil_system": {
+    "shards_needed": 100,
+    "revival_location": "Cientista — Cinnabar Island (Pokémon Lab)",
+    "fossils": [
+      { "shard": "Dome Shard", "pokemon": "Kabuto" },
+      { "shard": "Helix Shard", "pokemon": "Omanyte" },
+      { "shard": "Amber Shard", "pokemon": "Aerodactyl" }
+    ],
+    "where_to_farm": [
+      "Qualquer rocha de mineração (chance aleatória)",
+      "Cerulean Cave F4 (Mining Guru vende Super Pickaxe por $35.000 — maior chance de fossil shards)"
+    ]
+  },
+
+  "bike": {
+    "location": "Bike Shop — Cerulean City",
+    "cost": 50000,
+    "bike_voucher": {
+      "how_to_get": "Pode aparecer como recompensa em Mystery Box",
+      "use": "Resgatar na Bike Shop por uma bicicleta gratuita"
+    }
+  },
+
+  "pokedex_milestones": {
+    "description": "Coletar Pokémon únicos desbloqueia recompensas e áreas especiais",
+    "known_milestones": [
+      { "unique_caught": 350, "reward": "Mossy Key (acesso à Mossy Cave — Raikou, Suicune, Entei)" },
+      { "unique_caught": 600, "reward": "Acesso ao Mewtwo's Lair (Cerulean Cave F4) — também requer Legendary Map" }
+    ],
+    "youtube_collector": [
+      "https://www.youtube.com/watch?v=4Xm1YyNgj9Y",
+      "https://www.youtube.com/watch?v=o7vDMTuWWtU"
+    ]
+  },
+
+  "legendaries_complete": {
+    "general": {
+      "spawn_level": 85,
+      "base_rate": "1/125.000 (média ~1/95k sem GM, ~1/63k com GM)",
+      "lle": "Cada encontro sem achar o lendário aumenta a chance (curva S, por lendário específico)",
+      "cannot_run": true
+    },
+    "kanto": [
+      { "pokemon": "Articuno", "location": "Seafoam Islands", "requirement": "Feather of Articuno no líder", "alternative": "N Castle (sem feather), Altering Cave (10% fishing)" },
+      { "pokemon": "Zapdos", "location": "Power Plant Basement", "requirement": "Feather of Zapdos + todos badges Kanto e Johto", "alternative": "N Castle, Altering Cave (10% surfing)" },
+      { "pokemon": "Moltres", "location": "Mt. Ember (One Island)", "requirement": "Feather of Moltres (dropa no Mt. Ember)", "alternative": "N Castle" },
+      { "pokemon": "Mewtwo", "location": "Cerulean Cave F4 (sudeste)", "requirement": "Elite 4 Kanto + 600 Pokédex únicos + Legendary Map" }
+    ],
+    "johto": [
+      { "pokemon": "Raikou", "location": "Thunder Cavern (dentro de Mossy Cave)", "requirement": "350 Pokédex únicos → Mossy Key" },
+      { "pokemon": "Suicune", "location": "Water Cavern (dentro de Mossy Cave)", "requirement": "350 Pokédex únicos → Mossy Key" },
+      { "pokemon": "Entei", "location": "Fire Cavern (dentro de Mossy Cave)", "requirement": "350 Pokédex únicos → Mossy Key" },
+      { "pokemon": "Lugia", "location": "Whirl Islands (Johto)", "requirement": "Silver Wing" },
+      { "pokemon": "Ho-Oh", "location": "Tin Tower (Ecruteak City, Johto)", "requirement": "Rainbow Wing" },
+      { "pokemon": "Celebi", "location": "A confirmar — via evento ou quest especial" },
+      { "pokemon": "Mew", "location": "Faraway Island", "requirement": "Elite 4 de Johto + Old Sea Map no inventário" }
+    ],
+    "hoenn": [
+      { "pokemon": "Latios / Latias", "location": "Rota aleatória Hoenn (101-130, exceto 107-109) / Hoenn Safari Zone", "requirement": "Elite 4 Hoenn + Eon Ticket. Muda às 0:00 UTC." },
+      { "pokemon": "Latias / Latios (boost)", "alternative": "Soul Shard Enhanced: +20% encounter rate" },
+      { "pokemon": "Regis (Regirock, Regice, Registeel)", "location": "Qualquer rocha de mineração (Mining lv.75+)", "rate": "1/75.000 por rocha", "alternative": "Altering Cave (10% chance diária)" },
+      { "pokemon": "Kyogre / Groudon / Rayquaza", "location": "A confirmar" },
+      { "pokemon": "Deoxys", "location": "A confirmar — via ticket ou evento especial" },
+      { "pokemon": "Jirachi", "location": "PP Shop (custo em PP)" }
+    ],
+    "sinnoh": [
+      { "pokemon": "Uxie / Mesprit / Azelf", "location": "Rota aleatória de Sinnoh (muda às 0:00 UTC)", "requirement": "Elite 4 Sinnoh + Lunar Ticket" },
+      { "pokemon": "Heatran", "location": "Stark Mountain (Battle Island)", "requirement": "Derrotar Elite 4 de Sinnoh → ferry para Battle Island" },
+      { "pokemon": "Darkrai", "location": "Deep New Moon Island", "requirement": "Derrotar Elite 4 de Sinnoh → ferry" },
+      { "pokemon": "Cresselia", "location": "Deep Full Moon Island", "requirement": "Derrotar Elite 4 de Sinnoh → ferry" },
+      { "pokemon": "Giratina", "how_to_get": "Ovo — colocar em 1º/2º/3º no Halloween Event para chance de receber" },
+      { "pokemon": "Dialga / Palkia", "how_to_get": "A confirmar" }
+    ],
+    "unova": [
+      { "pokemon": "Reshiram / Zekrom", "location": "N Castle (Unova)", "requirement": "Parte da história após derrotar Elite 4 de Unova pela primeira vez" },
+      { "pokemon": "Victini", "location": "Battle Queue Prize Shop" },
+      { "pokemon": "Virizion", "location": "Elite Prize Shop" },
+      { "pokemon": "Cobalion / Terrakion", "location": "A confirmar" }
+    ],
+    "altering_cave_pool": ["Articuno", "Zapdos", "Raikou", "Latias", "Latios", "Suicune", "Mesprit", "Uxie", "Diancie (fixo)", "Regirock", "Regice", "Registeel"]
+  },
+
+  "kanto_key_locations": [
+    {
+      "name": "SS Anne",
+      "access": "SS Anne Ticket de Bill (após derrotar Misty). Docas ao sul de Vermillion.",
+      "reward": "HM Cut do Capitão"
+    },
+    {
+      "name": "Power Plant",
+      "access": "Surfar da Route 9. Basement requer todos badges de Kanto + Johto.",
+      "notable": "Zapdos no basement"
+    },
+    {
+      "name": "Lavender Tower",
+      "access": "Silph Scope necessária (de Game Corner/Rocket Hideout)",
+      "reward": "Poké Flute de Mr. Fuji"
+    },
+    {
+      "name": "Rocket Hideout",
+      "access": "Basement do Game Corner — Celadon City. Obter Lift Key no 4º andar.",
+      "reward": "Silph Scope + derrotar Giovanni"
+    },
+    {
+      "name": "Silph Co",
+      "access": "Requer Poké Flute. Saffron City.",
+      "reward": "PP Exchanger fica no térreo. Remover bloqueios de Rockets."
+    },
+    {
+      "name": "Cerulean Cave",
+      "access": "Requer Elite 4 Kanto + 600 Pokédex únicos. Cerulean City.",
+      "floors": 4,
+      "notable": "Mewtwo no F4 (+ Legendary Map). Mining Guru no F4 vende Super Pickaxe por $35k."
+    }
+  ],
+
+  "daycare_breeding": {
+    "locations": "Uma Daycare em cada região",
+    "mechanics": {
+      "breeding": "Dois Pokémon do mesmo egg group e sexos opostos (ou com Ditto) produzem um ovo",
+      "egg_moves": "Se um dos pais tem um golpe que pode ser passado para a espécie do ovo, ele recebe esse golpe"
+    },
+    "items_in_daycare": [
+      { "item": "Ability Pill", "cost": 35000, "effect": "Troca a habilidade do Pokémon" },
+      { "item": "Power Items (6 tipos)", "cost": 10000, "effect": "Carrega um IV específico do pai para o ovo" }
+    ],
+    "daycare_calculator": "https://www.ppobuddy.com/tools/daycare"
+  },
+
+  "encounter_boosts_complete": {
+    "description": "Todos os modificadores de taxa de encontro em PokeNexus — podem ser combinados",
+    "modifiers": [
+      { "source": "Gold Membership (GM)", "boost": "+50% UC/R/VR/ER/Lendários, +20% Shiny", "how_to_get": "GM Ticket (Credit Shop)" },
+      { "source": "Honey", "boost": "+25% todos não-comuns por 1h (todo o mapa)", "how_to_get": "Credit Shop — 500 créditos", "pp_reward": "700 PP" },
+      { "source": "Hunter Charm", "boost": "+20% encounter rate", "requirement": "Pokémon líder vivo segurando o item", "how_to_get": "Drop de World Boss" },
+      { "source": "Rare Charm", "boost": "+10% encounter rate", "requirement": "Pokémon líder vivo segurando o item", "how_to_get": "Drop raro de World Boss" },
+      { "source": "Shiny Charm", "boost": "+25% shiny rate", "how_to_get": "Elite Shop (Lance) — 30 Elite Tokens" },
+      { "source": "Altering Cave", "boost": "+1.3x encounter rate, +1.1x shiny rate", "how_to_get": "Ticket $600k" },
+      { "source": "Dark/Lava Rock (Mining)", "boost": "+2x encounter rate", "type": "Mining" },
+      { "source": "Red/Blue/Green/Prism/Pale Rock (Mining)", "boost": "+1.25x encounter rate (exceto lendários)", "type": "Mining" },
+      { "source": "Rainbow Rock (Mining)", "boost": "+4x encounter rate", "type": "Mining" },
+      { "source": "Gold Rush (Mining)", "boost": "+2x legendary encounter rate durante evento", "type": "Mining" },
+      { "source": "Enhanced Fire Stone", "boost": "+20% Entei", "craft": "Legendary Bait + 3x Fire Stone", "requirement": "Líder vivo segurando" },
+      { "source": "Enhanced Water Stone", "boost": "+20% Suicune", "craft": "Legendary Bait + 3x Water Stone", "requirement": "Líder vivo segurando" },
+      { "source": "Enhanced Thunder Stone", "boost": "+20% Raikou", "craft": "Legendary Bait + 3x Thunder Stone", "requirement": "Líder vivo segurando" },
+      { "source": "Soul Shard (Enhanced)", "boost": "+20% Latios/Latias", "craft": "Legendary Bait + Soul Shard", "requirement": "Líder vivo segurando" },
+      { "source": "Enhanced Feathers (Articuno/Zapdos/Moltres)", "boost": "+20% do respectivo pássaro", "craft": "Feather + Legendary Bait", "requirement": "Líder vivo segurando" },
+      { "source": "LLE (Legendary Luck Encounter)", "boost": "Aumenta gradualmente por lendário específico (s-curve, cap ~600k encontros)" }
+    ]
+  },
+
+  "legendary_bait": {
+    "description": "Item raro usado para craftar itens de boost de lendários",
+    "how_to_get": "Drop raro de qualquer Pokémon no Ancient Dungeon (drop rate aumentado em 3x no dungeon)",
+    "crafting_uses": [
+      { "result": "Enhanced Fire Stone", "ingredients": ["Legendary Bait", "Fire Stone x3"], "boost": "+20% Entei" },
+      { "result": "Enhanced Water Stone", "ingredients": ["Legendary Bait", "Water Stone x3"], "boost": "+20% Suicune" },
+      { "result": "Enhanced Thunder Stone", "ingredients": ["Legendary Bait", "Thunder Stone x3"], "boost": "+20% Raikou" },
+      { "result": "Soul Shard Enhanced", "ingredients": ["Legendary Bait", "Soul Shard"], "boost": "+20% Latios/Latias" },
+      { "result": "Feather Enhanced (qualquer pássaro)", "ingredients": ["Feather do pássaro", "Legendary Bait"], "boost": "+20% encontro do pássaro" }
+    ]
+  },
+
+  "exp_system": {
+    "exp_share": {
+      "effect": "Divide EXP igualmente entre 2 Pokémon (ativo e o que segura o item)",
+      "how_to_get": "Drop de Pokémon selvagens ou captura"
+    },
+    "exp_share_enhanced": {
+      "effect": "75% EXP para o segurador, 25% para o primeiro da equipe",
+      "how_to_get": "Elite Shop (Lance) — 20 Elite Tokens (requer Elite 4 de Kanto)"
+    },
+    "mechanics": [
+      "Pokémon que desmaia não ganha EXP após desmaiar naquela batalha — precisa ser revivido",
+      "Não se ganha EXP em batalhas PvP",
+      "Para maximizar EXP: derrotar inimigos de uma tacada sem tomar dano",
+      "Grind contra inimigos 2-5 níveis abaixo é mais eficiente"
+    ]
+  },
+
+  "pvp_tournaments": {
+    "location": "PVP Center — Vermillion City",
+    "level_setting": "Todos setados para nível 100 (exceto Little Cup: nível 5)",
+    "participation": "Até 2 torneios por dia",
+    "schedule_utc": [
+      { "day": "Monday", "tournament": "Little Cup" },
+      { "day": "Tuesday", "tournament": "Self Caught", "time": "12:00 e 22:00 UTC" },
+      { "day": "Wednesday", "tournament": "Anything Goes", "time": "12:00 e 22:00 UTC" },
+      { "day": "Thursday", "tournament": "Set Level 100", "time": "12:00 e 22:00 UTC" },
+      { "day": "Friday", "tournament": "Mono Type", "time": "12:00 e 22:00 UTC" }
+    ],
+    "formats": [
+      {
+        "name": "Little Cup",
+        "rules": "Só Pokémon que ainda não evoluíram e podem evoluir. Nível 5.",
+        "banned_pokemon": ["Aipom", "Drifloon", "Gligar", "Gothita", "Meditite", "Misdreavus", "Murkrow", "Scyther", "Sneasel", "Swirlix", "Tangela", "Vulpix", "Wingull", "Yanma"],
+        "banned_moves": ["Dragon Rage", "Sonicboom", "Swagger"]
+      },
+      { "name": "Self Caught", "rules": "Apenas Pokémon que você mesmo capturou" },
+      { "name": "Anything Goes", "rules": "Sem restrições além das regras gerais do jogo" },
+      { "name": "Set Level 100", "rules": "Nível 100 fixo. Qualquer Pokémon." },
+      { "name": "Mono Type", "rules": "Todos os 6 Pokémon devem compartilhar ao menos um tipo" }
+    ],
+    "rewards": {
+      "first_place": "200 PvP Tokens + 400 Credits + 1 item aleatório"
+    },
+    "youtube_little_cup": "https://www.youtube.com/watch?v=2L9o04bgGxA",
+    "youtube_monotype": "https://www.youtube.com/watch?v=KVwMSQARC0k"
+  },
+
+  "world_boss_complete": {
+    "description": "Lendário com stats boosted que aparece em mapa aleatório a cada 24-48h",
+    "hp": "Compartilhado entre todos os jogadores",
+    "damage_tiers": [2500, 10000, 25000, 50000, 100000, 300000, 400000],
+    "minimum_for_reward": 2500,
+    "minimum_for_charm": 25000,
+    "killing_blow_bonus": "Quem der o golpe final recebe 1x IV Reset bônus",
+    "top_damage_rewards": {
+      "1st": "15% chance de receber Legendary Egg do lendário derrotado",
+      "2nd": "10% chance",
+      "3rd": "5% chance"
+    },
+    "legendary_egg": "Contém o lendário que foi derrotado no World Boss",
+    "best_pokemon": [
+      { "pokemon": "Krookodile", "move": "Power Trip", "role": "Damage dealer" },
+      { "pokemon": "Scizor", "move": "Fury Cutter", "role": "Damage dealer" },
+      { "pokemon": "Rhyperior", "move": "Rollout", "role": "Damage dealer" },
+      { "pokemon": "Aggron", "move": "Rollout", "role": "Damage dealer" },
+      { "pokemon": "Diggersby", "move": "Variado", "role": "Damage dealer" },
+      { "pokemon": "Whimsicott", "moves": ["Leech Seed", "Worry Seed"], "role": "Utility" },
+      { "pokemon": "Ferrothorn", "role": "Utility/Tank" }
+    ],
+    "strategy": "Set-up sweeps são a melhor forma de atingir danos altos",
+    "commands": ["/wbd (dano causado)", "/wbhp (HP atual do boss)"],
+    "youtube": "https://www.youtube.com/watch?v=SL2jy1Y1xm4"
+  },
+
+  "ferry_system": {
+    "unlock_requirement": "Volcano Badge (derrotar Blaine em Cinnabar Island)",
+    "destinations": {
+      "kanto": {
+        "unlock": "Automático com Volcano Badge",
+        "ports": ["Vermillion City", "Cinnabar Island"]
+      },
+      "johto": {
+        "olivine_city": "Requer Fog Badge (Morty — Ecruteak City)",
+        "blackthorn_city": "Requer Rising Badge (Clair — Blackthorn City)"
+      },
+      "hoenn": {
+        "slateport_city": "Requer Knuckle Badge (Brawly — Dewford Town)",
+        "lilycove_city": "Requer Feather Badge (Winona — Fortree City)"
+      },
+      "sinnoh": {
+        "twinleaf_town": "Requer derrotar Elite 4 de Hoenn",
+        "canalave_city": "Requer derrotar Elite 4 de Hoenn"
+      },
+      "special_islands": {
+        "battle_island": "Requer Elite 4 de Sinnoh (Heatran/Stark Mountain)",
+        "deep_new_moon_island": "Requer Elite 4 de Sinnoh (Darkrai)",
+        "deep_full_moon_island": "Requer Elite 4 de Sinnoh (Cresselia)",
+        "faraway_island": "Old Sea Map obtido via Elite Shop (125 Elite Tokens)"
+      }
+    }
+  },
+
+  "tms_system": {
+    "description": "TMs disponíveis são das Gen 4 ou Gen 6",
+    "how_to_get": [
+      "Drop de Pokémon selvagens que compartilham tipo com a TM",
+      "TM Box (item)",
+      "Celadon Department Store (algumas TMs em estoque ilimitado)"
+    ],
+    "celadon_department_store": {
+      "location": "Celadon City — Kanto",
+      "special": "Único lugar com estoque ilimitado de vitaminas e algumas TMs"
+    }
+  },
+
+  "vitamins": {
+    "cost": 10000,
+    "where_to_buy": "Celadon Department Store (ilimitado) / Global Marketplace",
+    "ev_gain_per_vitamin": 10,
+    "max_per_stat": 252,
+    "total_ev_cap": 510,
+    "list": [
+      { "vitamin": "HP UP", "stat": "HP" },
+      { "vitamin": "Protein", "stat": "Attack" },
+      { "vitamin": "Iron", "stat": "Defense" },
+      { "vitamin": "Calcium", "stat": "Sp. Attack" },
+      { "vitamin": "Zinc", "stat": "Sp. Defense" },
+      { "vitamin": "Carbos", "stat": "Speed" }
+    ]
+  },
+
+  "evolutional_stone_box": {
+    "cost_credits": 250,
+    "cost_with_gm": 225,
+    "description": "Contém uma pedra evolutiva aleatória (todas com mesma chance)",
+    "jackpot_chance": "1% — recompensa: Mega Stone aleatória e tradável",
+    "how_to_get": ["Credit Shop", "Easter Egg", "Mystery Box", "Item Bomb"],
+    "stone_types": ["Fire Stone", "Water Stone", "Thunder Stone", "Leaf Stone", "Moon Stone", "Sun Stone", "Dawn Stone", "Dusk Stone", "Shiny Stone", "Ice Stone", "e outras"]
+  },
+
+  "starter_pokemon_box": {
+    "description": "Contém um Pokémon inicial aleatório",
+    "bonus": "1% de chance de vir com uma onesie decorativa do starter recebido",
+    "how_to_get": "Credit Shop"
+  },
+
+  "items_additional": [
+    { "name": "Hunter Charm", "effect": "+20% encounter rate (líder vivo segurando)", "how_to_get": "Drop de World Boss" },
+    { "name": "Rare Charm", "effect": "+10% encounter rate (líder vivo segurando)", "how_to_get": "Drop raro de World Boss" },
+    { "name": "Legendary Bait", "effect": "Ingrediente para craftar itens enhanced de lendários", "how_to_get": "Drop raro em Ancient Dungeon" },
+    { "name": "Exp Share", "effect": "Divide EXP com outro Pokémon (50/50)", "how_to_get": "Drop de Pokémon selvagens" },
+    { "name": "Exp Share (Enhanced)", "effect": "75% para o segurador, 25% para o líder", "how_to_get": "Elite Shop — 20 Elite Tokens" },
+    { "name": "IV Gem", "effect": "Revela/modifica IVs", "how_to_get": "PPOBuddy item: ppobuddy.com/item/iv-gem" },
+    { "name": "Evolutional Stone Box", "effect": "Pedra evolutiva aleatória. 1% = Mega Stone", "cost_credits": 250 },
+    { "name": "Starter Pokemon Box", "effect": "Pokémon inicial aleatório. 1% = onesie decorativa", "how_to_get": "Credit Shop" },
+    { "name": "Enhanced Fire Stone", "effect": "+20% Entei encounter", "craft": "Legendary Bait + Fire Stone x3" },
+    { "name": "Enhanced Water Stone", "effect": "+20% Suicune encounter", "craft": "Legendary Bait + Water Stone x3" },
+    { "name": "Enhanced Thunder Stone", "effect": "+20% Raikou encounter", "craft": "Legendary Bait + Thunder Stone x3" },
+    { "name": "TM Box", "effect": "TM aleatória", "how_to_get": "Mystery Box / eventos" }
+  ],
+
+  "crafting_additions": [
+    { "result": "Enhanced Fire Stone", "ingredients": ["Legendary Bait", "Fire Stone", "Fire Stone", "Fire Stone"] },
+    { "result": "Enhanced Water Stone", "ingredients": ["Legendary Bait", "Water Stone", "Water Stone", "Water Stone"] },
+    { "result": "Enhanced Thunder Stone", "ingredients": ["Legendary Bait", "Thunder Stone", "Thunder Stone", "Thunder Stone"] },
+    { "result": "Enhanced Feather of Articuno", "ingredients": ["Feather of Articuno", "Legendary Bait"] },
+    { "result": "Enhanced Feather of Zapdos", "ingredients": ["Feather of Zapdos", "Legendary Bait"] },
+    { "result": "Enhanced Feather of Moltres", "ingredients": ["Feather of Moltres", "Legendary Bait"] }
+  ],
+
+  "johto_key_locations": [
+    { "name": "Ilex Forest", "location": "Sul de Azalea Town", "notable": "Shrine de Celebi. Requer HM Cut para avançar." },
+    { "name": "Burned Tower", "location": "Ecruteak City", "notable": "Local onde Raikou, Entei e Suicune fugiram — parte da lore." },
+    { "name": "Tin Tower", "location": "Ecruteak City", "notable": "Local de Ho-Oh. Requer Rainbow Wing." },
+    { "name": "Whirl Islands", "location": "Entre Cianwood e Johto mainland", "notable": "Lugia. Requer Silver Wing + HM Waterfall." },
+    { "name": "Dark Cave", "location": "Route 31/36", "notable": "Mining com Red Rocks. Difícil sem Flash." },
+    { "name": "Ice Path", "location": "Mahogany Town → Blackthorn", "notable": "HM Waterfall encontrado aqui. Puzzles de gelo." },
+    { "name": "Dragon's Den", "location": "Blackthorn City", "notable": "Mining: Blue, Green, Prism, Pale rocks." },
+    { "name": "Mossy Cave", "location": "Johto — surfar acima do ginásio de Blackthorn", "notable": "Raikou, Suicune, Entei. Requer 350 Pokédex únicos." }
+  ],
+
+  "hoenn_key_locations": [
+    { "name": "Granite Cave", "location": "Dewford Town", "notable": "Contém a Ancient Cave (entrada do Ancient Dungeon). Mining disponível." },
+    { "name": "Meteor Falls", "location": "Oeste de Fallarbor Town", "notable": "Caverna com cachoeira interna. Loot e mining." },
+    { "name": "Mt. Pyre", "location": "Ilha sul da Route 121", "notable": "Área de loot. Parte da história." },
+    { "name": "Sky Pillar", "location": "Route 131", "notable": "Rayquaza no topo. Acesso após ajuda de Wallace em Sootopolis." },
+    { "name": "Cave of Origin", "location": "Sootopolis City", "notable": "Parte da quest principal de Hoenn." },
+    { "name": "Altering Cave", "location": "Outcast Island (Six Island, Sevii) / Route 103_2 Hoenn", "notable": "Ticket $600k. Pokémon rotativos diários. Lendários 10%." },
+    { "name": "Ancient Cave / Ancient Dungeon", "location": "Granite Cave — Dewford Town", "notable": "Requer Ancient Key. Pokémon com stats 1.65x. Legendary Bait dropa aqui." }
+  ],
+
+  "sinnoh_key_locations": [
+    { "name": "Sinnoh Underground", "location": "Toda a região Sinnoh", "notable": "Mining: Prism, Pale, Dark, Rainbow (lv.50+ mining). Acesso por escada no jogo." },
+    { "name": "Mt. Coronet", "location": "Centro de Sinnoh", "notable": "Mining: todos os tipos de rocha. Caminho para Spear Pillar." },
+    { "name": "Spear Pillar", "location": "Pico do Mt. Coronet", "notable": "Local lendário de criação de Dialga/Palkia/Giratina. Mining: Green, Prism, Pale, Dark, Rainbow." },
+    { "name": "Stark Mountain", "location": "Battle Island (ferry após Elite 4 Sinnoh)", "notable": "Heatran. Mining: Pale, Dark, Rainbow." },
+    { "name": "Deep New Moon Island", "location": "Ferry após Elite 4 Sinnoh", "notable": "Darkrai." },
+    { "name": "Deep Full Moon Island", "location": "Ferry após Elite 4 Sinnoh", "notable": "Cresselia." },
+    { "name": "Celestic Ruins", "location": "Celestic Town", "notable": "Mining: Green, Prism, Pale." },
+    { "name": "Sinnoh Safari Zone", "location": "Sinnoh", "notable": "Mining: Rainbow Gemstone." }
+  ],
+
+  "pokedex_milestones_complete": {
+    "description": "Capturar Pokémon únicos desbloqueia itens e áreas especiais",
+    "milestones": [
+      { "unique_caught": 350, "reward": "Mossy Key → acesso à Mossy Cave (Raikou, Suicune, Entei)" },
+      { "unique_caught": 500, "reward": "Castle Key → acesso ao N Castle (Unova, lendários de Kanto sem Feather, EXP/drops 1.5x)" },
+      { "unique_caught": 600, "reward": "Mewtwo's Lair (Cerulean Cave F4) — também requer Legendary Map" }
+    ],
+    "youtube": [
+      "https://www.youtube.com/watch?v=o7vDMTuWWtU",
+      "https://www.youtube.com/watch?v=4Xm1YyNgj9Y"
+    ]
+  },
+
+  "n_castle": {
+    "location": "Unova",
+    "access": "Castle Key (capturar 500 Pokémon únicos)",
+    "areas": [
+      {
+        "area": "N Castle (principal)",
+        "pokemon": ["Moltres (sem Feather)", "Typhlosion", "Infernape", "Delphox"]
+      },
+      {
+        "area": "N Castle Basement",
+        "pokemon": ["Zapdos (sem Feather)", "Klefki", "Heliolisk"]
+      }
+    ],
+    "bonuses": "EXP e drop rate boosted em 1.5x para todos os Pokémon",
+    "note": "Articuno, Zapdos e Moltres podem ser encontrados aqui SEM a necessidade de Feather. Enhanced Feathers ainda funcionam para boost de +20%.",
+    "water_temple": {
+      "location": "Dentro do N Castle",
+      "access": "Requer Collector IV (500 Pokémon únicos = Castle Key) + Fishing Level 80 + HM Surf + HM Waterfall",
+      "fishing_requirement": 80,
+      "note": "Pokémon encontrados APENAS via fishing nessa área",
+      "youtube": "https://www.youtube.com/watch?v=7B791dNuuEA"
+    },
+    "youtube": "https://www.youtube.com/watch?v=hYx6q5FXxNA"
+  },
+
+  "events_complete": {
+    "halloween": {
+      "access": "Falar com NPC especial em qualquer Pokémon Center durante o evento",
+      "requirement": "8 badges (Kanto)",
+      "main_pokemon": "Yveltal (forma Black/Red = regular; White/Red = Shiny)",
+      "corn_maze": {
+        "description": "Labirinto de milho — navegar até canto inferior esquerdo para chegar à floresta",
+        "tip": "Yveltal fica na mansion/floresta, não no labirinto"
+      },
+      "event_legendaries": ["Yveltal"],
+      "youtube_guides": [
+        "https://www.youtube.com/watch?v=0kFeBSnYOOU",
+        "https://www.youtube.com/watch?v=5IaoO-WLRzI",
+        "https://www.youtube.com/watch?v=zIWVOMioAnY"
+      ]
+    },
+    "christmas": {
+      "access": "Falar com Delibird em qualquer Pokémon Center durante o evento",
+      "wild_pokemon": ["Delibird", "Stantler"],
+      "shop": "Santa's Shop disponível durante o evento",
+      "event_legendaries": ["Xerneas", "Articuno", "Cresselia", "Kyurem"],
+      "youtube_guides": [
+        "https://www.youtube.com/watch?v=5PRVvQV4nxo",
+        "https://www.youtube.com/watch?v=DLb1Kor2h5A"
+      ]
+    },
+    "easter": {
+      "access": "Falar com Easter Sailor em qualquer Pokémon Center durante o evento",
+      "areas": ["Easter Meadow", "Easter Forest (esquerda)", "Easter Cave (direita)"],
+      "event_legendaries": ["Celebi"],
+      "special_item": "Easter Egg (dropa itens) — possível recompensa: Lucky Egg (via Credit Shop no evento)",
+      "youtube_guides": [
+        "https://www.youtube.com/watch?v=Czu-r24dcNs",
+        "https://www.youtube.com/watch?v=R5Q1VkWEZe8"
+      ]
+    },
+    "summer": {
+      "event_legendaries": ["Volcanion"],
+      "activities": ["Coletar conchas do mar (Sea Shells) para trocar por recompensas"],
+      "youtube_guides": [
+        "https://www.youtube.com/watch?v=2BeBVTVH0zA"
+      ]
+    },
+    "summerween_2022": {
+      "description": "Evento conjunto de Summer + Halloween (temporário)",
+      "event_legendaries": ["Yveltal", "Volcanion"],
+      "youtube": "https://www.youtube.com/watch?v=89x2mFTQm18"
+    }
+  },
+
+  "event_move_tickets": {
+    "description": "Permitem ensinar golpes exclusivos de eventos a Pokémon",
+    "how_to_get": [
+      "Battle Queue Prize Shop (com Competitive Points)",
+      "Global Marketplace (comprar de outros jogadores)"
+    ]
+  },
+
+  "eevee_and_evolutions": {
+    "how_to_get_eevee": "NÃO aparece no selvagem — obtido apenas abrindo Pokémon Boxes (Credit Shop)",
+    "evolutions": [
+      { "evolution": "Vaporeon", "method": "Water Stone" },
+      { "evolution": "Jolteon", "method": "Thunder Stone" },
+      { "evolution": "Flareon", "method": "Fire Stone" },
+      { "evolution": "Espeon", "method": "220+ happiness (nível up durante o DIA)" },
+      { "evolution": "Umbreon", "method": "220+ happiness (nível up durante a NOITE)" },
+      { "evolution": "Leafeon", "method": "Moss Rock ou Leaf Stone" },
+      { "evolution": "Glaceon", "method": "Ice Rock" },
+      { "evolution": "Sylveon", "method": "Amie Stone (comprada na PP Shop — Saffron City)" }
+    ]
+  },
+
+  "fishing_areas_table": {
+    "description": "Áreas de pesca com nível necessário, Pokémon notáveis e drops",
+    "how_to_fish": "Pressione F voltado para água. Spacebar na zona verde = perfect hook (1.5x EXP e Pokémon EXP)",
+    "areas": [
+      { "fishing_level": 1, "rod": "Old Rod", "where_to_buy": "Casa a oeste do Pokémon Center — Vermillion City", "cost": 5000 },
+      { "fishing_level": 5, "rod": "Good Rod", "where_to_buy": "Casa a leste do Pokémon Center — Fuchsia City", "cost": 12000 },
+      { "fishing_level": 15, "notable_pokemon": ["Dratini"], "notable_drops": ["Kings Rock"] },
+      { "fishing_level": 20, "rod": "Super Rod", "where_to_buy": "Pescador na Route 12", "cost": 35000, "notable_pokemon": ["Squirtle"], "notable_drops": ["Dragon Scale"] },
+      { "fishing_level": 25, "notable_pokemon": ["Milotic", "Feebas"], "notable_drops": ["Amber Shard", "Dome Shard", "Helix Shard", "Prism Scale", "Dragon Scale"] },
+      { "fishing_level": 30, "notable_pokemon": ["Totodile"] },
+      { "fishing_level": 35, "notable_drops": ["Kings Rock"] },
+      { "fishing_level": 40, "notable_pokemon": ["Dratini"], "notable_drops": ["Dragon Scale"] },
+      { "fishing_level": 45, "notable_drops": ["Black Sludge", "Bright Powder", "Lagging Tail", "Quick Claw", "Rocky Helmet", "Shell Bell", "Ancient Key (Loop Half)"] },
+      { "fishing_level": 50, "rod": "Elite Rod", "where_to_buy": "Lance — Elite Shop", "cost_tokens": 50, "notable_pokemon": ["Mudkip"], "notable_drops": ["Surfboard"] },
+      { "fishing_level": 60, "notable_pokemon": ["Totodile", "Piplup"], "notable_drops": ["Surfboard"] },
+      { "fishing_level": 80, "location": "Water Temple (N Castle)", "requirement": "Collector IV (500 Pokédex únicos)", "note": "Pokémon exclusivos desta área" },
+      { "fishing_level": 100, "rod": "Master Rod", "how_to_get": "Craftar: Master Ball + Steel Rod" }
+    ]
+  },
+
+  "surfboard": {
+    "description": "Item que dobra a velocidade de Surf",
+    "effect": "2x velocidade ao usar HM Surf (automático ao ter o item)",
+    "how_to_get": "Drop raro EXCLUSIVO do Hoenn Safari Zone",
+    "note": "Equivalente do Bike para surf"
+  },
+
+  "items_craftable": [
+    { "result": "Shiny Egg", "ingredients": ["Lucky Egg", "Shiny Charm"], "description": "Produz um Pokémon shiny ao abrir" }
+  ],
+
+  "lucky_egg": {
+    "effect": "+25% EXP para o Pokémon que segura",
+    "how_to_get": "Credit Shop durante eventos de Easter"
+  },
+
+  "ev_reset": {
+    "effect": "Reseta todos os EVs do Pokémon para 0",
+    "how_to_get": ["Credit Shop", "Drop raro de qualquer Pokémon selvagem", "Global Marketplace (baixo preço)"],
+    "note": "EVs atuais do Pokémon aparecem em verde na Summary"
+  },
+
+  "controls_and_hotkeys": {
+    "movement": {
+      "keys": ["Arrow Keys", "WASD"],
+      "description": "Mover o personagem"
+    },
+    "common_keys": [
+      { "key": "Spacebar", "action": "Interagir com NPCs, objetos, usar Surf, cortar árvores com Cut" },
+      { "key": "B", "action": "Subir/descer da bicicleta" },
+      { "key": "C", "action": "Abrir/fechar interface do clã" },
+      { "key": "F", "action": "Iniciar fishing (voltado para água)" },
+      { "key": "I", "action": "Abrir inventário" }
+    ],
+    "controller": {
+      "supported": true,
+      "youtube": "https://www.youtube.com/watch?v=aNL0F7kT49c"
+    }
+  },
+
+  "global_marketplace_tips": {
+    "access": "Dentro do Pokémart em qualquer cidade",
+    "how_to_search": "Clicar no botão 'Search' (Enter NÃO funciona)",
+    "search_tips": [
+      "Buscar Pokémon de nível específico: ex. '100 Gengar'",
+      "Buscar por natureza: ex. 'Gengar -Timid'",
+      "HMs NÃO podem ser compradas/vendidas aqui"
+    ],
+    "auction": {
+      "how": "Lances com tempo limite. Maior lance no final leva o item.",
+      "refund": "Dinheiro devolvido se alguém der lance maior"
+    },
+    "sell": {
+      "listing_fee": "Taxa cobrada baseada no preço de venda (NÃO devolvida ao cancelar)"
+    },
+    "restriction": "Não pode comprar Pokémon com nível maior que o nível mais alto da sua equipe atual",
+    "anti_scam_video": "https://www.youtube.com/watch?v=rHFuJMEa6Ys"
+  },
+
+  "special_locations_complete": [
+    {
+      "name": "Water Temple",
+      "region": "Unova (dentro de N Castle)",
+      "access": ["Collector IV — 500 Pokémon únicos (Castle Key)", "Fishing Level 80", "HM Surf", "HM Waterfall (para área superior)"],
+      "content": "Pokémon encontrados apenas via fishing"
+    },
+    {
+      "name": "N Castle",
+      "region": "Unova",
+      "access": "Castle Key (500 Pokémon únicos)",
+      "content": "Kanto birds sem Feather, EXP/drop 1.5x, Water Temple interno"
+    },
+    {
+      "name": "Ancient Dungeon",
+      "region": "Hoenn (dentro de Granite Cave — Dewford Town)",
+      "access": "Ancient Key (Tooth Half + Loop Half craftados)",
+      "content": "Pokémon com 1.65x stats, drop rate 3x, Legendary Bait"
+    },
+    {
+      "name": "Mossy Cave",
+      "region": "Johto (surf acima de Blackthorn City)",
+      "access": "Mossy Key (350 Pokémon únicos)",
+      "content": "Raikou, Suicune, Entei"
+    },
+    {
+      "name": "Altering Cave",
+      "region": "Hoenn / Sevii Islands (Six Island)",
+      "access": "Ticket $600k por 24h",
+      "content": "Pokémon rotativos diários, lendários 10% (Articuno/Zapdos/Raikou/Latias/Latios/Suicune/Mesprit/Uxie), Diancie fixo"
+    },
+    {
+      "name": "Mewtwo's Lair (Cerulean Cave F4)",
+      "region": "Kanto",
+      "access": ["Elite 4 Kanto", "600 Pokémon únicos", "Legendary Map no inventário"],
+      "content": "Mewtwo, Mining Guru (Super Pickaxe $35k), Fossil Shards"
+    }
+  ],
+
+  "water_temple": {
+    "location": "Dentro do N Castle — Unova",
+    "access_requirements": [
+      "Collector IV: 500 Pokémon únicos capturados (Castle Key)",
+      "Fishing Level 80",
+      "HM Surf",
+      "HM Waterfall (para área superior)"
+    ],
+    "legendary_pokemon": ["Manaphy", "Phione"],
+    "method": "Pokémon encontrados APENAS via fishing nessa área",
+    "youtube": "https://www.youtube.com/watch?v=7B791dNuuEA"
+  },
+
+  "abilities_outside_battle": {
+    "description": "Habilidades que funcionam fora de batalha. Requer Pokémon líder vivo.",
+    "encounter_rate": [
+      { "ability": "Arena Trap", "effect": "2x chance de encontro com selvagem" },
+      { "ability": "Illuminate", "effect": "2x chance de encontro com selvagem" },
+      { "ability": "No Guard", "effect": "2x chance de encontro com selvagem" },
+      { "ability": "Quick Feet", "effect": "0.5x chance de encontro com selvagem" },
+      { "ability": "Stench", "effect": "0.5x chance de encontro com selvagem" },
+      { "ability": "White Smoke", "effect": "0.5x chance de encontro com selvagem" }
+    ],
+    "item_drops": [
+      { "ability": "Compoundeyes", "effect": "Maior taxa de drop de itens em Pokémon selvagens" }
+    ],
+    "fishing": [
+      { "ability": "Sticky Hold", "effect": "Maior chance de pescar um Pokémon" },
+      { "ability": "Suction Cups", "effect": "Maior chance de pescar um Pokémon" }
+    ],
+    "nature": [
+      {
+        "ability": "Synchronize",
+        "effect": "30% de chance do Pokémon selvagem ter a mesma natureza do líder (40% para lendários)",
+        "also_works_on": ["Casino Pokémon", "PvP Pokémon", "Fósseis", "Pokémon Box"],
+        "alternative": "Synchronize Stone (mesmo efeito sem precisar da habilidade — obtido no Casino)"
+      }
+    ],
+    "money_drop_penalty": "Pokémon encontrados com líder de Arena Trap/Illuminate/No Guard dropam MENOS dinheiro",
+    "youtube_natures": "https://www.youtube.com/watch?v=uJ4o8JDVj_0"
+  },
+
+  "synchronize_best_pokemon": [
+    "Alakazam", "Gardevoir", "Elgyem", "Beheeyem", "Abra", "Kadabra", "Natu", "Xatu"
+  ],
+
+  "hidden_power": {
+    "description": "Golpe cujo tipo é determinado pelos IVs do Pokémon",
+    "possible_types": "Todos os tipos exceto Normal e Fada",
+    "calculator": "https://www.ppobuddy.com/tools/hidden-power",
+    "note": "Use IV Deductors para ajustar IVs e obter o tipo de HP desejado"
+  },
+
+  "ppobuddy_tools": {
+    "description": "Ferramentas online do PPOBuddy para PokeNexus",
+    "url": "https://www.ppobuddy.com/tools",
+    "tools": [
+      { "name": "Damage Calculator", "url": "https://www.ppobuddy.com/tools/damage-calc", "description": "Calcula dano até nível 115, incluindo áreas com stat boost" },
+      { "name": "Encounter Rates Calculator", "url": "https://www.ppobuddy.com/tools/encounter-rates", "description": "Calcula taxa de encontro com todos os modificadores" },
+      { "name": "Hidden Power Calculator", "url": "https://www.ppobuddy.com/tools/hidden-power", "description": "Descobre o tipo do Hidden Power e quais IVs deduzir" },
+      { "name": "Daycare Calculator", "url": "https://www.ppobuddy.com/tools/daycare", "description": "Calcula custos do Daycare e acompanha jobs" },
+      { "name": "Battle Tower Calculator", "url": "https://www.ppobuddy.com/tools/battle-tower", "description": "Calcula recompensas e progresso na Battle Tower" }
+    ]
+  },
+
+  "ppobuddy_guides_list": {
+    "url": "https://www.ppobuddy.com/guides",
+    "guides": [
+      "Grinding", "Legendaries", "Mining", "Fishing", "EV Training",
+      "Natures & IVs", "Crafting", "Philanthropist Points",
+      "World Bosses", "Treasure Chests", "Swarms", "Encounter Rates",
+      "Battle Queue", "Battle Tower", "Clan Wars", "Global Marketplace",
+      "Abilities Outside of Battle", "Controls & Chat"
+    ]
+  },
+
+  "kanto_walkthrough_progression": {
+    "description": "Ordem de progressão no Kanto no PokeNexus",
+    "start": "Pallet Town — escolher starter",
+    "steps": [
+      { "step": 1, "location": "Pallet Town → Route 1 → Viridian City", "note": "Entregar encomenda para o Prof. Oak em Viridian" },
+      { "step": 2, "location": "Viridian City → Route 2 → Viridian Forest → Pewter City", "note": "1º Ginásio: Brock (Rock)" },
+      { "step": 3, "location": "Pewter City → Route 3 → Mt. Moon → Cerulean City", "note": "Mt. Moon: Mining Guru ($5k Old Pickaxe), fossils, Clefairy" },
+      { "step": 4, "location": "Cerulean City", "note": "2º Ginásio: Misty (Water). Após: ir ao Bill (Route 25) para SS Anne Ticket" },
+      { "step": 5, "location": "Cerulean → Route 5/6 → Vermillion City", "note": "SS Anne → Capt → HM Cut. 3º Ginásio: Lt. Surge (Electric)" },
+      { "step": 6, "location": "Vermillion → Route 9 → Lavender Town", "note": "Rock Tunnel no caminho. Lavender Tower requer Silph Scope" },
+      { "step": 7, "location": "Celadon City", "note": "4º Ginásio: Erika (Grass). Game Corner → derrotar Giovanni → Silph Scope" },
+      { "step": 8, "location": "Lavender Town → Pokemon Tower", "note": "Com Silph Scope: subir até o topo → obter Poké Flute de Mr. Fuji" },
+      { "step": 9, "location": "Fuchsia City via Route 12-15 ou Cycling Road", "note": "5º Ginásio: Koga (Poison). Safari Zone ($20k/24h)" },
+      { "step": 10, "location": "Saffron City → Silph Co", "note": "6º Ginásio: Sabrina (Psychic). Silph Co: derrotar Giovanni → PP Exchanger no térreo" },
+      { "step": 11, "location": "Cinnabar Island via Route 19-20", "note": "7º Ginásio: Blaine (Fire). Obtém Volcano Badge → desbloqueia Ferry" },
+      { "step": 12, "location": "Viridian City → Giovanni", "note": "8º e último Ginásio: Giovanni (Ground)" },
+      { "step": 13, "location": "Route 22 → Victory Road → Indigo Plateau", "note": "Elite 4: Lorelei, Bruno, Agatha, Lance → Champion Blue" }
+    ],
+    "key_items_to_collect": [
+      { "item": "Old Pickaxe", "where": "Mt. Moon (Mining Guru — $5.000)" },
+      { "item": "SS Anne Ticket", "where": "Bill (Route 25, norte de Cerulean)" },
+      { "item": "HM Cut", "where": "Capitão do SS Anne" },
+      { "item": "HM Surf / outros HMs", "where": "Loja em qualquer cidade ($250.000 cada)" },
+      { "item": "Silph Scope", "where": "Game Corner (Celadon) — derrotar Giovanni" },
+      { "item": "Poké Flute", "where": "Mr. Fuji no topo do Lavender Tower" },
+      { "item": "Bike", "where": "Bike Shop — Cerulean City ($50.000) ou Bike Voucher" }
+    ]
+  },
+
+  "bot_apollo": {
+    "description": "Bot open-source para automatizar tarefas no PokeNexus",
+    "github": "https://github.com/PokeNexus-Apollo/PokeNexus-Apollo",
+    "features": ["Grinding", "Fishing", "Mining", "EV Training", "Battle Tower (AI)"],
+    "battle_tower_ai": "Capaz de atingir e ganhar o andar 400 da Battle Tower com equipe adequada",
+    "youtube_setup": "https://www.youtube.com/watch?v=E1OVjiw0Jfs",
+    "warning": "Uso de bots pode violar os Termos de Serviço do jogo. Use por sua própria conta e risco."
+  },
+
+  "johto_key_locations_expanded": {
+    "lake_of_rage": {
+      "location": "Norte de Mahogany Town — Johto",
+      "notable": "Red Gyarados (Shiny Gyarados). Lance aparece aqui para ajudar a investigar o Team Rocket.",
+      "team_rocket_connection": "Team Rocket usava ondas de rádio para irritar os Pokémon do lago"
+    },
+    "radio_tower": {
+      "location": "Goldenrod City — Johto",
+      "notable": "Team Rocket toma o controle temporariamente. Derrotá-los é parte da quest Johto."
+    },
+    "ruins_of_alph": {
+      "location": "Sul de Route 36 / Oeste de Route 32 — Johto",
+      "notable": "Puzzles de slide que revelam Unown. Unown pode ser capturado aqui."
+    },
+    "ilex_forest": {
+      "location": "Sul de Azalea Town",
+      "notable": "Shrine de Celebi. Requer HM Cut para avançar."
+    },
+    "whirl_islands": {
+      "location": "Entre Cianwood e mainland Johto",
+      "access": "HM Surf + HM Waterfall. Silver Wing necessária para Lugia.",
+      "notable": "Lugia (Silver Wing)"
+    }
+  },
+
+  "held_items_categories": {
+    "description": "Categorias de itens que Pokémon podem segurar",
+    "categories": [
+      {
+        "category": "Choice Items",
+        "items": [
+          { "name": "Choice Band", "effect": "+50% Attack. Força usar apenas 1 golpe até trocar." },
+          { "name": "Choice Specs", "effect": "+50% Sp. Attack. Força usar apenas 1 golpe até trocar." },
+          { "name": "Choice Scarf", "effect": "+50% Speed. Força usar apenas 1 golpe até trocar." }
+        ]
+      },
+      {
+        "category": "Damage Boost",
+        "items": [
+          { "name": "Life Orb", "effect": "+30% dano em ataques. Gasta 10% do HP máximo do usuário." },
+          { "name": "Muscle Band", "effect": "+10% dano em ataques físicos. Drop no Ancient Dungeon." },
+          { "name": "Wise Glasses", "effect": "+10% dano em ataques especiais. Drop no Ancient Dungeon." }
+        ]
+      },
+      {
+        "category": "Type Gems",
+        "effect": "+30% dano em ataque do tipo correspondente (uso único por batalha)"
+      },
+      {
+        "category": "Type Power Boosts",
+        "examples": ["Charcoal (+Fire)", "Mystic Water (+Water)", "Magnet (+Electric)"],
+        "effect": "+20% dano permanente para o tipo"
+      },
+      {
+        "category": "Healing",
+        "items": [
+          { "name": "Leftovers", "effect": "Recupera 1/16 do HP máximo por turno" },
+          { "name": "Shell Bell", "effect": "Recupera 1/8 do dano causado" }
+        ]
+      },
+      {
+        "category": "Speed Control",
+        "items": [
+          { "name": "Iron Ball", "effect": "Reduz Speed pela metade" },
+          { "name": "Lagging Tail", "effect": "Força o usuário a agir por último" },
+          { "name": "Quick Claw", "effect": "Chance de agir primeiro" }
+        ]
+      },
+      {
+        "category": "EV Training",
+        "items": ["Macho Brace", "Power Bracer", "Power Belt", "Power Lens", "Power Band", "Power Anklet", "Effort Brace", "Golden Effort Brace"]
+      },
+      {
+        "category": "Legendary Hunting",
+        "items": ["Feather of Articuno", "Feather of Zapdos", "Feather of Moltres", "Enhanced versions", "Enhanced Stones", "Soul Shard Enhanced", "Hunter Charm", "Rare Charm", "Shiny Charm"]
+      },
+      {
+        "category": "Field Effect (Lead Pokemon)",
+        "items": ["Hunter Charm (+20% encounter)", "Rare Charm (+10% encounter)", "Shiny Charm (+25% shiny)"]
+      },
+      {
+        "category": "Other Battle Items",
+        "items": [
+          { "name": "Rocky Helmet", "effect": "Causa dano ao oponente que usa ataques de contato" },
+          { "name": "Bright Powder", "effect": "Reduz precisão dos ataques inimigos" },
+          { "name": "Black Sludge", "effect": "Recupera HP de Poison-types, causa dano a outros" },
+          { "name": "Kings Rock", "effect": "Chance de causar Flinch. Evolui Poliwhirl em Politoed e Slowpoke em Slowking." },
+          { "name": "Dragon Scale", "effect": "Evolui Seadra em Kingdra" },
+          { "name": "Prism Scale", "effect": "Evolui Feebas em Milotic" }
+        ]
+      }
+    ]
+  },
+
+  "database_version": "8.0",
+  "last_updated": "2026-06-05"
+}
