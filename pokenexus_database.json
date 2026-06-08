@@ -3253,6 +3253,38 @@
     }
   },
 
+  "exp_share_system": {
+    "description": "Sistema de compartilhamento de experiência no PokeNexus",
+    "standard_exp_share": {
+      "how_to_get": "Drop de Pokémon selvagens (faint ou capturar)",
+      "mechanics": "Arraste para o slot de item do Pokémon — divide XP igualmente"
+    },
+    "enhanced_exp_share": {
+      "how_to_get": "Elite Shop (Lance — Indigo Plateau) — 20 Elite Tokens",
+      "requirement": "Derrotar a Elite 4 de Kanto para desbloquear a Elite Shop",
+      "mechanics": "25% XP vai para o 1º Pokémon da equipe, 75% XP vai para o Pokémon que está segurando"
+    },
+    "stack_rule": "Múltiplos Exp Shares NÃO podem ser empilhados",
+    "lucky_egg": {
+      "how_to_get": "Credit Shop durante evento de Easter (Páscoa)",
+      "effect": "+25% XP para o Pokémon que estiver segurando"
+    }
+  },
+
+  "global_marketplace_complete": {
+    "description": "Mercado global de jogadores no PokeNexus",
+    "access": "Via Pokémart (qualquer cidade)",
+    "modes": ["Leilão (Auction)", "Preço fixo (Set Price)"],
+    "important_note": "Clique no botão 'Search' para buscar — pressionar Enter NÃO funciona",
+    "ppobuddy_tracker": "PPOBuddy.com/marketplace — rastreia listagens de jogadores, atualiza a cada 10 minutos",
+    "money_making_tips": [
+      "Vender gemstones de mineração (renda passiva)",
+      "Grind em Pokémon selvagens de alto nível (mais pokébucks por batalha)",
+      "Vender Pokémon raros no marketplace",
+      "Vender itens valiosos (EV items, IV Resets, etc.)"
+    ]
+  },
+
   "database_version": "18.0",
   "last_updated": "2026-06-08"
 }
