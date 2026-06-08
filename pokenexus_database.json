@@ -2723,6 +2723,92 @@
     "playlist_all": "https://www.youtube.com/playlist?list=PLDQxpEN6K-2QlotsMamxD0uLhebDN3yR1"
   },
 
-  "database_version": "14.0",
-  "last_updated": "2026-06-06"
+  "master_shop": {
+    "description": "Loja especial com itens raros — acesso limitado",
+    "access_methods": [
+      "Ganhar a competição de experiência semanal",
+      "Comprar um Master Shop Pass com 1.500 PvP Tokens",
+      "Comprar um pass com 4.500 Competitive Points"
+    ],
+    "items": [
+      { "item": "Master Ball", "price_ingame": 5000000, "note": "Preço em moeda in-game dentro da loja" }
+    ]
+  },
+
+  "credit_shop_expanded": {
+    "description": "Loja que aceita Créditos (moeda premium) — todos os itens são negociáveis (tradeáveis)",
+    "access": "Ícone de bolsa amarela no canto inferior esquerdo da tela do jogo",
+    "note": "Créditos são a moeda premium do jogo (comprada com dinheiro real)",
+    "items": [
+      { "item": "Mystery Box", "cost_credits": 80, "tradeable": true, "description": "Caixa com item aleatório", "possible_contents": ["$1.000–$50.000 in-game", "Rare Candy", "IV Reset", "30 Day GM Ticket", "7 Day GM Ticket", "Bike Voucher", "Evolutional Stone Box", "World Blessing", "EV Resets", "Ultra Balls", "Max Revives", "Hyper Potions", "Great Balls", "Vitamins", "Super Potions", "TM Box"], "jackpot": "1 Year GM Ticket ou 20 IV Resets", "also_obtainable_from": "Item Bomb" },
+      { "item": "Pokémon Box", "cost_credits": 1000, "tradeable": true, "description": "Contém 1 de 8 Pokémon que não aparecem no mundo selvagem", "known_pokemon": ["Meloetta"] },
+      { "item": "Dye Remover", "cost_credits": 100, "tradeable": true, "description": "Remove a coloração de um Pokémon" },
+      { "item": "Effort Brace", "cost_credits": 450, "tradeable": true, "description": "Item que auxilia no treinamento de EVs" }
+    ]
+  },
+
+  "item_bomb": {
+    "description": "Item que distribui itens para jogadores online aleatoriamente",
+    "how_it_works": "Distribui itens para 10 jogadores online aleatoriamente — o usuário que usa o Item Bomb NÃO recebe item",
+    "pp_reward": {
+      "formula": "1.200 base + número de jogadores online no momento",
+      "example": "Se 350 jogadores online → ganha 1.550 PP"
+    },
+    "enhanced_item_bomb": {
+      "description": "Versão melhorada — recompensa de conquistas (achievements)",
+      "recipients": 30,
+      "includes_user": true,
+      "pp_formula": "5.000 + (2 × jogadores online)"
+    }
+  },
+
+  "casino_shop_expanded": {
+    "description": "Loja do Cassino — aceita Casino Tokens ganhos nos caça-níqueis",
+    "location": "Celadon City, Kanto — ao lado do Cassino",
+    "npc": "Casino Token Prize Seller",
+    "slot_machine_tiers": [
+      { "pull_cost_credits": 100, "reward": "Pequena quantidade de tokens" },
+      { "pull_cost_credits": 1000, "reward": "Quantidade média de tokens" },
+      { "pull_cost_credits": 10000, "reward": "Grande quantidade de tokens" }
+    ],
+    "known_items": [
+      { "item": "Greninja (Battle Bond)", "note": "Greninja comprado aqui SEMPRE terá a habilidade Battle Bond" },
+      { "item": "Synchronize Stone", "note": "Item raro e muito caro em tokens — equivalente a ~2,6 milhões de moeda in-game em gastos de slot" }
+    ],
+    "rocket_game_corner": { "location": "Johto", "note": "Versão do Rocket em Johto — similar ao de Celadon" }
+  },
+
+  "unova_key_locations": {
+    "description": "Locais importantes da região Unova",
+    "access": "Ferry para Nuvema Town após derrotar a Elite 4 de Sinnoh",
+    "region_order": 5,
+    "key_cities": [
+      { "city": "Nuvema Town", "note": "Ponto de entrada via ferry" },
+      { "city": "Striaton City", "badge": "Trio Badge", "gym_type": "Depende do Starter escolhido", "gym_leaders": "Cilan (Grass) vs Oshawott starter, Chili (Fire) vs Snivy starter, Cress (Water) vs Tepig starter" },
+      { "city": "Nacrene City", "badge": "Basic Badge", "gym_type": "Normal", "gym_leader": "Lenora" },
+      { "city": "Castelia City", "badge": "Insect Badge", "gym_type": "Bug", "gym_leader": "Burgh" },
+      { "city": "Nimbasa City", "note": "Centro de entretenimento — Musical Theater, Big Stadium, Roda-gigante Ferris Wheel", "badge": "Bolt Badge", "gym_type": "Electric", "gym_leader": "Elesa" },
+      { "city": "Driftveil City", "note": "Porto oceânico com grande mercado de itens", "badge": "Quake Badge", "gym_type": "Ground", "gym_leader": "Clay" },
+      { "city": "Mistralton City", "badge": "Jet Badge", "gym_type": "Flying", "gym_leader": "Skyla" },
+      { "city": "Icirrus City", "badge": "Freeze Badge", "gym_type": "Ice", "gym_leader": "Brycen" },
+      { "city": "Opelucid City", "badge": "Legend Badge", "gym_type": "Dragon", "gym_leader": "Drayden" },
+      { "city": "Lacunosa Town", "note": "Lar do Giant Chasm — cratera de impacto com Pokémon extraterrestres" }
+    ],
+    "elite_four": [
+      { "name": "Shauntal", "type": "Ghost" },
+      { "name": "Marshal", "type": "Fighting" },
+      { "name": "Grimsley", "type": "Dark" },
+      { "name": "Caitlin", "type": "Psychic" }
+    ],
+    "champion": { "name": "Iris", "type": "Dragon" },
+    "mega_evolutions_used": ["Mega Sableye", "Mega Lucario", "Mega Tyranitar", "Mega Metagross", "Mega Garchomp"],
+    "special_locations": {
+      "N_Castle": "Dentro de Unova — requer 500 Pokémon únicos no Pokédex + Castle Key",
+      "Giant_Chasm": "Lacunosa Town — Pokémon especiais e extraterrestres",
+      "legendary_birds_in_N_Castle": "Zapdos, Moltres e Articuno encontrados dentro do N Castle"
+    }
+  },
+
+  "database_version": "15.0",
+  "last_updated": "2026-06-08"
 }
