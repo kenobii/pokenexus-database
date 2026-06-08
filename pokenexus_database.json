@@ -3038,6 +3038,41 @@
     }
   },
 
+  "ability_capsule_complete": {
+    "description": "Item que rerrola a habilidade de um Pokémon (entre habilidades normais, não Hidden)",
+    "how_to_obtain": "Crafting — combinar os 3 materiais na mesa de crafting",
+    "crafting_recipe": {
+      "ingredients": ["Stardust", "Silk", "Miracle Berry"]
+    },
+    "materials": {
+      "Stardust": {
+        "locations": ["Mt Moon (drop raro)", "Mt Silver (drop raro)"],
+        "alternative": "Craftar com Moonstone"
+      },
+      "Silk": {
+        "locations": ["Viridian Forest (drop raro)", "Ilex Forest — Johto (drop raro)"]
+      },
+      "Miracle_Berry": {
+        "location": "Berry Forest — Three Island (esquerda de Bond Bridge)",
+        "drop_chance": "1/3.000 de qualquer Pokémon na Berry Forest"
+      }
+    }
+  },
+
+  "move_reminder_complete": {
+    "description": "NPCs que reensinar movimentos esquecidos no PokeNexus",
+    "location": "Two Island (Sevii Islands) — direita do Pokémon Center, duas casas próximas de uma cerca de madeira",
+    "move_tutor_free": {
+      "function": "Reensina qualquer move de level-up que o Pokémon esqueceu",
+      "cost": "Gratuito"
+    },
+    "pre_evolution_move_tutor": {
+      "function": "Reensina moves de evoluções anteriores do Pokémon",
+      "cost": "50.000 por move",
+      "location": "Ao lado do Move Tutor em Two Island"
+    }
+  },
+
   "database_version": "16.0",
   "last_updated": "2026-06-08"
 }
