@@ -3327,6 +3327,44 @@
     ]
   },
 
-  "database_version": "18.0",
+  "fossil_system_expanded": {
+    "description": "Detalhes expandidos do sistema de fósseis (complemento ao fossil_system)",
+    "revival_location": "Laboratório na área sudoeste de Cinnabar Island",
+    "shards_required": 100,
+    "shard_sources_by_rock_type": {
+      "any_rock": ["Dome Shard", "Amber Shard", "Helix Shard"],
+      "dark_rocks_only": ["Claw Shard", "Root Shard", "Armor Shard", "Skull Shard", "Cover Shard", "Plume Shard", "Sail Shard", "Jaw Shard"]
+    },
+    "all_fossils": ["Dome", "Amber", "Helix", "Claw", "Root", "Armor", "Skull", "Cover", "Plume", "Sail", "Jaw"]
+  },
+
+  "daily_trainers": {
+    "description": "Treinadores que podem ser rebatidos diariamente para EXP",
+    "cooldown": "24 horas",
+    "note": "Dão grande quantidade de EXP — aguarde altar de EXP duplo antes de rebater para maximizar ganho",
+    "tip": "Combine com Lucky Egg, World Blessing e double EXP altar para máxima eficiência"
+  },
+
+  "fishing_system_expanded": {
+    "description": "Sistema de pesca expandido no PokeNexus",
+    "how_to_fish": "Ficar de frente para a água e pressionar a tecla 'F'",
+    "aiming": {
+      "yellow_box": "Fisga um Pokémon",
+      "green_box_perfect": "Fisga perfeitamente — dá mais Fishing XP"
+    },
+    "rods": [
+      { "name": "Old Rod", "level_required": 1, "cost": 5000, "how_to_get": "Prédio à esquerda do Pokémon Center de Vermilion City" },
+      { "name": "Good Rod", "level_required": 5, "cost": 12000, "how_to_get": "Fuchsia City" },
+      { "name": "Super Rod", "level_required": 20, "cost": 35000, "how_to_get": "Route 12" },
+      { "name": "Steel Rod", "level_required": 50, "how_to_get": "Craftar: Super Rod + Metal Coat + Steel Wire" },
+      { "name": "Master Rod", "level_required": 100, "how_to_get": "Craftar: Steel Rod + Master Ball" }
+    ],
+    "notable_catches_by_level": [
+      { "fishing_level": 15, "pokemon": ["Dratini"] },
+      { "fishing_level": 25, "pokemon": ["Milotic", "Feebas"] }
+    ]
+  },
+
+  "database_version": "19.0",
   "last_updated": "2026-06-08"
 }
