@@ -3132,6 +3132,38 @@
     "haunted_cave_b1": "600 Pokémon únicos no Pokédex"
   },
 
+  "iv_system_complete": {
+    "description": "Sistema completo de Individual Values (IVs) no PokeNexus",
+    "iv_range": "0 a 31 por stat",
+    "how_to_check": "Abrir Summary do Pokémon — número amarelo em cada stat",
+    "iv_reset": {
+      "description": "Gera novos IVs aleatórios para o Pokémon",
+      "how_to_get": [
+        "Comprar no Credit Shop durante eventos (Holiday Events)",
+        "Drop raro de qualquer Pokémon selvagem",
+        "Matando o killing blow em World Boss",
+        "Mystery Box (conteúdo possível)"
+      ]
+    },
+    "iv_deductor": {
+      "description": "Reduz 1 IV de um stat específico — útil para ajustar Hidden Power",
+      "base_item": {
+        "item": "IV Deductor",
+        "how_to_get": "Game Corner (Casino) — 7.500 Casino Tokens",
+        "note": "Não pode ser usado diretamente — precisa ser craftado com vitamina"
+      },
+      "crafting_recipes": [
+        { "combination": "IV Deductor + HP UP", "result": "HP IV Deductor" },
+        { "combination": "IV Deductor + Protein", "result": "Atk IV Deductor" },
+        { "combination": "IV Deductor + Iron", "result": "Def IV Deductor" },
+        { "combination": "IV Deductor + Calcium", "result": "Spec Atk IV Deductor" },
+        { "combination": "IV Deductor + Zinc", "result": "Spec Def IV Deductor" },
+        { "combination": "IV Deductor + Carbos", "result": "Speed IV Deductor" }
+      ],
+      "hidden_power_use": "Use IV Deductors para reduzir IVs e ajustar o tipo do Hidden Power. Calcular em ppobuddy.com/tools/hidden-power"
+    }
+  },
+
   "database_version": "17.0",
   "last_updated": "2026-06-08"
 }
