@@ -2641,6 +2641,53 @@
     ]
   },
 
-  "database_version": "12.0",
+  "beginner_tips": {
+    "description": "Dicas essenciais para jogadores novos no PokeNexus",
+    "essential_mechanics": [
+      "Pokémon se curam automaticamente ao ganhar nível — economiza itens",
+      "Starter Pokémon é intransferível (não pode ser trocado)",
+      "Digite /guide no chat para acessar o guia rápido do jogo",
+      "Configurações permitem desativar animações e música (melhor performance)",
+      "EXP Share: 50% EXP para o líder, 50% dividido entre os outros",
+      "Escape Rope ($550) retorna imediatamente ao último Pokémon Center visitado",
+      "Comando /pokemon mostra quais Pokémon estão na sua localização atual"
+    ],
+    "early_priorities": [
+      "Escolher starter (Bulbasaur recomendado para iniciantes — vantagem nos primeiros ginásios)",
+      "Comprar Old Pickaxe em Mt. Moon ($5.000) e começar a minar",
+      "Completar a quest de Bill (Route 25) para obter o SS Anne Ticket",
+      "Comprar Bike em Cerulean City ($50.000) — tecla B para montar",
+      "Completar os 8 ginásios de Kanto e derrotar a Elite 4",
+      "Desbloquear o sistema de ferry (Badge Volcano de Cinnabar)"
+    ],
+    "important_commands": [
+      "/guide — abre guia rápido do jogo",
+      "/pokemon — lista Pokémon na área atual",
+      "/pp — checar seus Philanthropist Points",
+      "/encounters — total de encontros",
+      "/chests — baús ativos",
+      "/swarm — swarm ativo"
+    ],
+    "movement_options": ["Bike (tecla B)", "Ferry", "HM Surf", "HM Fly"],
+    "global_marketplace_tip": "Use o mercado global para vender itens raros. Buscar por nível específico: '100 Gengar'. Por natureza: 'Gengar -Timid'",
+    "youtube_efficiency": "https://www.youtube.com/watch?v=ilbTaBU1odE"
+  },
+
+  "game_settings": {
+    "available_options": [
+      "Desativar animações de batalha (batalhas mais rápidas)",
+      "Desativar música",
+      "Desativar animações de clima/weather",
+      "Modo de batalha rápido"
+    ],
+    "note": "Recomendado para PCs mais lentos ou para grind mais eficiente"
+  },
+
+  "starter_untradeable": {
+    "note": "O Pokémon inicial escolhido no começo do jogo NÃO pode ser trocado com outros jogadores",
+    "workaround": "Charmander pode ser encontrado selvagem em Hellfire Cavern (One Island). Squirtle em Turtle Cove (Three Island)."
+  },
+
+  "database_version": "13.0",
   "last_updated": "2026-06-06"
 }
