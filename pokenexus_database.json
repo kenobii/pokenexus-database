@@ -2538,6 +2538,58 @@
     ]
   },
 
-  "database_version": "10.0",
+  "hm_locations_complete": {
+    "description": "Como obter cada HM no PokeNexus",
+    "note": "Todos os HMs podem ser comprados na loja por $250.000 cada (exceto Flash)",
+    "shop_hms": ["Cut", "Strength", "Waterfall", "Fly", "Hyper Surf (Surf)"],
+    "flash_hm": {
+      "item": "Flash (HM)",
+      "how_to_get": "Falar com o ajudante do Prof. Oak no segundo prédio sul da entrada da Diglett's Cave (Route 2)",
+      "requirement": "10 espécies diferentes de Pokémon capturadas no Pokédex",
+      "access": "Usar HM Cut para cortar árvores — entrar pela Diglett's Cave"
+    },
+    "fly_location": {
+      "item": "Fly (HM)",
+      "how_to_get": "Falar com Sora no prédio na seção superior de Route 16 (oeste de Celadon City)",
+      "note": "Não precisa de bike para acessar a seção superior"
+    },
+    "surf_location": "Route 10 — após derrotar ginásio de Vermillion (Lt. Surge)",
+    "best_hm_users": ["Dragonite", "Wingull/Pelipper", "Ducklett/Swanna", "Mew"],
+    "youtube_fly_surf": "https://www.youtube.com/watch?v=F-REJBwe2oY"
+  },
+
+  "repel_trick": {
+    "description": "Usar Repel com Pokémon líder de nível alto para filtrar encontros",
+    "mechanic": "Repel bloqueia Pokémon de nível MENOR que o seu líder. Pokémon de nível igual ou maior continuam aparecendo.",
+    "use_case": "Útil para encontrar Pokémon raros de alto nível em uma área sem encontrar os comuns",
+    "limitation": "Não funciona durante fishing. Não funciona com Sweet Scent/Honey."
+  },
+
+  "kanto_additional_locations": [
+    {
+      "name": "Diglett's Cave",
+      "location": "Route 11 (leste de Vermillion City) ↔ Route 2 (sul de Pewter)",
+      "pokemon": ["Diglett", "Dugtrio"],
+      "tip": "Diglett tem vantagem de tipo contra Lt. Surge (Electric)"
+    },
+    {
+      "name": "Route 2 Building (Flash)",
+      "location": "Sul da entrada de Diglett's Cave — Route 2",
+      "reward": "HM Flash (requer 10 Pokémon capturados + HM Cut para acessar)"
+    },
+    {
+      "name": "Route 16 (Fly House)",
+      "location": "Seção superior de Route 16 — oeste de Celadon City",
+      "reward": "HM Fly (falar com Sora)"
+    }
+  ],
+
+  "repel_items": {
+    "repel": { "cost": 350, "duration": "100 passos" },
+    "super_repel": { "cost": 500, "duration": "200 passos" },
+    "max_repel": { "cost": 700, "duration": "250 passos" }
+  },
+
+  "database_version": "11.0",
   "last_updated": "2026-06-06"
 }
