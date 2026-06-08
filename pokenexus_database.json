@@ -2985,6 +2985,59 @@
     }
   },
 
+  "clan_wars_complete": {
+    "description": "Sistema de guerras entre clãs no PokeNexus",
+    "location": "Clan Building em Vermilion City",
+    "schedule": {
+      "days": ["Sábado", "Domingo"],
+      "tier_times_utc": [
+        { "tier": 1, "time": "19:00 UTC" },
+        { "tier": 2, "time": "19:50 UTC" },
+        { "tier": 3, "time": "20:40 UTC" }
+      ],
+      "duration_per_session": "40 minutos"
+    },
+    "eligibility": "Deve ganhar ao menos 1 batalha OU perder ao menos 3 para receber tokens",
+    "mvp_reward": { "bonus_tokens": 25, "bonus_credits": 100, "criteria": "Melhor relação vitórias/derrotas no clã" },
+    "prizes": [
+      { "item": "Egg Move Ticket", "cost_tokens": 50 },
+      { "item": "Move Tutor Ticket", "cost_tokens": 50 },
+      { "item": "Loop Half (chave do N Castle)", "cost_tokens": 800 }
+    ],
+    "exchanger": "Clan War Prize Exchanger — Clan Building, Vermilion City"
+  },
+
+  "move_tutors_expanded": {
+    "description": "Sistema completo de Move Tutors no PokeNexus",
+    "egg_move_tutor": {
+      "location": "Dentro do Clan War Building — Vermilion City",
+      "currency": "Egg Move Ticket (obtido no Clan War Prize Exchanger por 50 tokens)",
+      "function": "Ensina moves que o Pokémon normalmente aprenderia apenas ao nascer do ovo"
+    },
+    "transfer_move_tutor": {
+      "location": "Prédio a leste do Pokémon Center em Vermilion City",
+      "currency": "Transfer Move Ticket",
+      "function": "Ensina moves de gerações anteriores (transfer moves)",
+      "restriction": "Pokémon NÃO pode ter Hidden Ability ao aprender um transfer move"
+    },
+    "event_move_tickets": {
+      "description": "Tickets especiais distribuídos durante eventos",
+      "function": "Ensinam moves exclusivos de eventos"
+    }
+  },
+
+  "weekly_exp_competition": {
+    "description": "Competição semanal de experiência ganha",
+    "how_it_works": "Jogadores competem para ganhar mais XP durante a semana",
+    "rewards": {
+      "first_place": "Acesso ao Master Shop por 1 semana",
+      "alternatives_to_master_shop": [
+        "Comprar Master Shop Pass com 1.500 PvP Tokens",
+        "Comprar com 4.500 Competitive Points"
+      ]
+    }
+  },
+
   "database_version": "16.0",
   "last_updated": "2026-06-08"
 }
