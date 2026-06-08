@@ -3365,6 +3365,31 @@
     ]
   },
 
+  "safari_zones_expanded": {
+    "description": "Dados expandidos das Safari Zones (complemento ao safari_zones)",
+    "kanto": {
+      "location": "Fuchsia City",
+      "ticket_cost": 20000,
+      "ticket_duration": "24 horas",
+      "fishing_level_required": 15,
+      "mandatory_visit": "Darren na ilha central dá o HM Surf — obrigatório para progressão"
+    },
+    "johto": {
+      "location": "Oeste de Cianwood City"
+    },
+    "hoenn": {
+      "location": "Oeste de Lilycove City",
+      "note": "Considerada a melhor Safari Zone para fazer dinheiro e hunting — Pokémon valiosos para PvP"
+    },
+    "sinnoh": {
+      "location": "Norte de Pastoria City",
+      "ticket_cost": 400000,
+      "ticket_duration": "24 horas",
+      "fishing_level_required": 50,
+      "note": "Área premium — muito mais cara que as outras Safari Zones"
+    }
+  },
+
   "database_version": "19.0",
   "last_updated": "2026-06-08"
 }
