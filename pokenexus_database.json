@@ -3285,6 +3285,48 @@
     ]
   },
 
+  "blessings_complete": {
+    "description": "Sistema completo de blessings (bênçãos) no PokeNexus",
+    "world_blessing": {
+      "effect": "Aumenta XP de todos os jogadores no servidor",
+      "stacking": {
+        "first": "+20% (x1.2)",
+        "each_additional": "+10% (x1.1)",
+        "max": "x2 (+100%)"
+      },
+      "cost": "300 Créditos (270 com Gold Membership)",
+      "visible_at": "Canto superior esquerdo da tela",
+      "pp_reward": "PP = número de jogadores online no momento de uso (máximo 500 PP)",
+      "obtainable_from": ["Credit Shop", "Mystery Box (possível conteúdo)", "Craftar Halloween/Christmas Blessings"]
+    },
+    "drop_rate_blessing": {
+      "effect": "+20% chance de Pokémon selvagens droparem itens por 1 hora (server-wide)",
+      "scope": "Afeta todos os jogadores no servidor"
+    },
+    "legacy_blessings": {
+      "halloween_blessing": {
+        "original_effect": "+10% XP por 1 hora (server-wide)",
+        "status": "Não pode mais ser usado diretamente",
+        "can_be_crafted_into": "World Blessing"
+      },
+      "christmas_blessing": {
+        "status": "Não pode mais ser usado diretamente",
+        "can_be_crafted_into": "World Blessing"
+      }
+    }
+  },
+
+  "crafting_additions_v2": {
+    "description": "Receitas de crafting adicionais descobertas",
+    "recipes": [
+      { "ingredients": ["Lucky Egg", "Shiny Charm"], "result": "Shiny Egg", "note": "Shiny Egg produz um Pokémon shiny ao chocar" },
+      { "ingredients": ["Halloween Blessing"], "result": "World Blessing", "note": "Bênção legada → nova" },
+      { "ingredients": ["Christmas Blessing"], "result": "World Blessing", "note": "Bênção legada → nova" },
+      { "ingredients": ["Steel Rod", "Master Rod"], "note": "Varas de pesca de alto nível — ver fishing_areas_table" },
+      { "ingredients": ["Steel Pickaxe", "Master Pickaxe"], "note": "Picaretas de mineração de alto nível — ver mining" }
+    ]
+  },
+
   "database_version": "18.0",
   "last_updated": "2026-06-08"
 }
