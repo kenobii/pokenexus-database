@@ -3164,6 +3164,95 @@
     }
   },
 
-  "database_version": "17.0",
+  "pvp_tournaments_complete": {
+    "description": "Sistema de torneios de PvP no PokeNexus",
+    "schedule": {
+      "days": ["Terça", "Quarta", "Quinta", "Sexta"],
+      "times_utc": ["12:00 UTC", "22:00 UTC"]
+    },
+    "tournament_types_by_day": [
+      { "day": "Terça & Quarta", "type": "Anything Goes (All-Goes)" },
+      { "day": "Quinta", "type": "Set Level 100" },
+      { "day": "Sexta", "type": "Monotype" }
+    ],
+    "all_tournament_types": ["Little Cup", "Self Caught", "Monotype", "Anything Goes", "Set Level 100"],
+    "rules": {
+      "max_per_day": 2,
+      "matchmaking": "Aleatório",
+      "odd_players": "Um jogador recebe free pass para próxima rodada — mesma pessoa não pode receber 2 vezes seguidas"
+    },
+    "prizes": {
+      "first_place": "200 PvP Tokens + 400 Créditos + 1 item aleatório",
+      "second_place": "100 PvP Tokens + 100 Créditos",
+      "participation": "20 PvP Tokens",
+      "per_player_defeated": "+6 PvP Tokens bônus por jogador derrotado"
+    }
+  },
+
+  "synchronize_stone": {
+    "description": "Item que replica o efeito da habilidade Synchronize quando segurado pelo Pokémon líder",
+    "how_to_get": "Casino Shop — Casino Tokens (muito caro, equivalente a ~2,6 milhões em gastos de slot)",
+    "effect": "Aumenta a chance de encontrar Pokémon selvagens com a nature desejada (mesmo efeito que a habilidade Synchronize)",
+    "tip": "Combine com um Pokémon com habilidade Illuminate (ex: Starmie) para encontrar mais Pokémon e com a nature certa mais rápido"
+  },
+
+  "nature_system_complete": {
+    "description": "Sistema de Natures no PokeNexus",
+    "note": "NÃO é possível mudar a nature de um Pokémon após capturá-lo",
+    "base_chance_per_nature": "4% (25 natures = 100%)",
+    "synchronize_boost": {
+      "regular_pokemon": "26% extra → 30% chance de ter a nature do Pokémon com Synchronize na frente",
+      "legendary_pokemon": "40% chance com Synchronize"
+    },
+    "null_natures": ["Hardy", "Docile", "Bashful", "Quirky", "Serious"],
+    "null_note": "Natures neutras — não afetam nenhum stat",
+    "best_natures_by_role": {
+      "physical_attacker": "Adamant (+Atk, -SpAtk) ou Jolly (+Speed, -SpAtk)",
+      "special_attacker": "Modest (+SpAtk, -Atk) ou Timid (+Speed, -Atk)",
+      "tank_physical_def": "Impish (+Def, -SpAtk) ou Bold (+Def, -Atk)",
+      "tank_special_def": "Careful (+SpDef, -SpAtk) ou Calm (+SpDef, -Atk)",
+      "speed_priority": "Jolly (+Speed, -SpAtk) ou Timid (+Speed, -Atk)"
+    }
+  },
+
+  "ev_training_complete": {
+    "description": "Locais de EV training por stat no PokeNexus",
+    "max_evs": { "per_stat": 252, "total": 510 },
+    "ev_formula": {
+      "1st_evolution": "1 EV por derrota",
+      "2nd_evolution": "2 EVs por derrota",
+      "3rd_evolution": "3 EVs por derrota"
+    },
+    "spots_by_region": {
+      "kanto": {
+        "speed": "Route 1 (Rattata — 1 Speed EV)",
+        "attack": "Route 6 / Route 9 (Ekans, Spearow)",
+        "sp_attack": "Seafoam Islands (Seel, Dewgong)",
+        "hp": "Mt Moon (Zubat, Geodude)"
+      },
+      "johto": {
+        "hp": "Union Cave (Wooper — 1 EV, Quagsire — 2 EVs)",
+        "defense": "Union Cave (Sandshrew, Geodude, Onix)",
+        "sp_defense": "Ilex Forest (Caterpie, Oddish)"
+      },
+      "hoenn": {
+        "speed": "Route 110 (Electrike, Wingull — rápido e consistente)",
+        "sp_attack": "Pacifidlog Town surfando (Golduck — melhor do jogo para SpAtk)",
+        "speed_alt": "Cave of Origin (Golbat, Crobat — melhor do jogo para Speed)",
+        "sp_defense": "Surfando em Hoenn (Tentacool — +1 SpDef cada)"
+      },
+      "sinnoh": {
+        "hp": "Rota 212 Sul (entre Hearthome e Pastoria)",
+        "sp_defense": "Route 214 (Burmy, Wormadam)"
+      }
+    },
+    "useful_items": {
+      "Power_Items": "Dobram os EVs ganhos do stat correspondente",
+      "Macho_Brace": "Dobra todos os EVs mas reduz Speed (40.000 Casino Tokens)",
+      "Effort_Brace": "Auxilia no treinamento (450 Créditos na Credit Shop)"
+    }
+  },
+
+  "database_version": "18.0",
   "last_updated": "2026-06-08"
 }
