@@ -3390,6 +3390,305 @@
     }
   },
 
-  "database_version": "19.0",
+  "kanto_walkthrough_complete": {
+    "description": "Walkthrough completo de Kanto com NPCs-chave, itens e desbloqueios",
+    "steps": [
+      {
+        "step": 1,
+        "location": "Pallet Town",
+        "action": "Falar com o Professor Oak para receber o starter Pokémon"
+      },
+      {
+        "step": 2,
+        "location": "Viridian Forest → Pewter City",
+        "action": "Traversar Viridian Forest e derrotar Brock (Pedreira Badge). Usar Bulbasaur ou Squirtle para vantagem de tipo"
+      },
+      {
+        "step": 3,
+        "location": "Route 3 → Mt. Moon → Cerulean City",
+        "action": "Atravessar Mt. Moon (comprar Old Pickaxe do Mining Guru). Chegar em Cerulean City"
+      },
+      {
+        "step": 4,
+        "location": "Cerulean City — Nugget Bridge",
+        "action": "Falar com Bill no topo da Nugget Bridge para receber o SS Anne Ticket"
+      },
+      {
+        "step": 5,
+        "location": "Cerulean City",
+        "gym": "Misty — tipo Água. Cascade Badge = desbloqueia chat global",
+        "tip": "Se não tiver Bulbasaur, caçar Oddish na Route 24 (aprende Mega Drain no nível 19)"
+      },
+      {
+        "step": 6,
+        "location": "Vermilion City — SS Anne",
+        "action": "Usar SS Anne Ticket. Massagear o Capitão para obter HM Cut"
+      },
+      {
+        "step": 7,
+        "location": "Vermilion City",
+        "gym": "Lt. Surge — tipo Elétrico. Thunder Badge",
+        "tip": "Usar Pokémon de Terra ou Planta"
+      },
+      {
+        "step": 8,
+        "location": "Route 9 → Rock Tunnel → Lavender Town",
+        "action": "Nada a fazer em Lavender por enquanto. Seguir para oeste pelo underground path"
+      },
+      {
+        "step": 9,
+        "location": "Celadon City",
+        "gym": "Erika — tipo Planta. Rainbow Badge = desbloqueia acesso a Saffron City",
+        "note": "Comprar Pokemart local e acessar o Game Corner aqui"
+      },
+      {
+        "step": 10,
+        "location": "Celadon City — Rocket Game Corner",
+        "action": "Entrar no Rocket Game Corner. Rocket Hideout fica embaixo (B1F a B4F). Obter Lift Key de um grunt no B4F → usar elevador para chegar a Giovanni → derrotá-lo → obter Silph Scope"
+      },
+      {
+        "step": 11,
+        "location": "Lavender Town — Pokémon Tower",
+        "action": "Usar Silph Scope para acessar o topo da torre. Falar com Mr. Fuji → ele dá o Poke Flute"
+      },
+      {
+        "step": 12,
+        "location": "Route 12 e Route 16",
+        "action": "Usar Poke Flute para acordar os Snorlax que bloqueiam o caminho (pode capturar ou derrotar)"
+      },
+      {
+        "step": 13,
+        "location": "Fuchsia City — Safari Zone",
+        "action": "Pagar $20,000 para entrar na Safari Zone. Falar com Darren na ilha central (precisa de Surf) para obter HM Surf. Obter HM Fly também nesta área"
+      },
+      {
+        "step": 14,
+        "location": "Fuchsia City",
+        "gym": "Koga — tipo Veneno. Soul Badge = permite usar Surf fora de batalha"
+      },
+      {
+        "step": 15,
+        "location": "Saffron City — Silph Co.",
+        "action": "Derrotar Team Rocket dentro do Silph Co. usando o Card Key (obtido dentro do prédio) para abrir portas. Derrotar Giovanni novamente (opcional mas recomendado)"
+      },
+      {
+        "step": 16,
+        "location": "Saffron City",
+        "gym": "Sabrina — tipo Psíquico. Marsh Badge",
+        "tip": "Usar Pokémon do tipo Sombrio, Inseto ou Fantasma"
+      },
+      {
+        "step": 17,
+        "location": "Cinnabar Island — Pokémon Mansion",
+        "action": "Entrar na Pokémon Mansion e ir ao porão para encontrar a Secret Key. Usá-la para abrir o Cinnabar Gym"
+      },
+      {
+        "step": 18,
+        "location": "Cinnabar Island",
+        "gym": "Blaine — tipo Fogo. Volcano Badge",
+        "tip": "Usar Pokémon de Água, Pedra ou Terra"
+      },
+      {
+        "step": 19,
+        "location": "Viridian City",
+        "gym": "Giovanni — tipo Terra. Earth Badge = último ginásio de Kanto"
+      },
+      {
+        "step": 20,
+        "location": "Victory Road → Indigo Plateau",
+        "action": "Precisar de HM Surf para atravessar Victory Road. Derrotar a Elite Four: Lorelei (Gelo), Bruno (Luta), Agatha (Fantasma), Lance (Dragão). Depois derrotar o Campeão Blue"
+      }
+    ],
+    "key_items_kanto": {
+      "SS_Anne_Ticket": "Obtido com Bill no topo da Nugget Bridge",
+      "HM_Cut": "Capitão do SS Anne em Vermilion City",
+      "Silph_Scope": "Giovanni no Rocket Hideout (Celadon Game Corner)",
+      "Poke_Flute": "Mr. Fuji no topo da Pokémon Tower (Lavender Town)",
+      "HM_Surf": "Darren na ilha central da Safari Zone (Fuchsia City)",
+      "Secret_Key": "Porão da Pokémon Mansion (Cinnabar Island)"
+    }
+  },
+
+  "cerulean_cave_complete": {
+    "description": "Cerulean Cave — área end-game de Kanto com mining e Mewtwo's Lair",
+    "access": "Norte de Cerulean City, cruzar o rio com HM Surf. Requer derrota da Elite Four de Kanto",
+    "floors": 4,
+    "gems_available": ["Blue", "Green", "Prism", "Pale", "Dark"],
+    "floor_highlights": {
+      "F4": "Milotic disponível via pesca. Entrada para Mewtwo's Lair no canto sudeste"
+    },
+    "mewtwo_lair": {
+      "location": "Cerulean Cave F4 — canto sudeste",
+      "requirement": "600+ Pokédex únicos capturados",
+      "note": "Mewtwo é Pokémon lendário — aparece no nível 85"
+    },
+    "mining": {
+      "super_pickaxe": {
+        "cost": 35000,
+        "sold_by": "Mining Guru dentro da Cerulean Cave"
+      }
+    },
+    "fossil_drops": {
+      "all_floors": ["Amber Shard", "Helix Shard", "Dome Shard"]
+    },
+    "legendary_gems": {
+      "blue_green_prism_pale": "multiplicador 1.25x na LLE",
+      "dark": "multiplicador 2x na LLE"
+    }
+  },
+
+  "starter_guide": {
+    "description": "Guia para escolha e uso dos starters em Kanto",
+    "note_importante": "Starters são intransferibles (untradeable) — escolha com cuidado",
+    "opcoes": [
+      {
+        "name": "Bulbasaur",
+        "evolucoes": ["Ivysaur (L16)", "Venusaur (L32)"],
+        "vantagem": "Melhor starter para iniciantes. Vantagem de tipo contra Brock (Pedra), Lt. Surge (Elétrico via Vine Whip/Razor Leaf), Misty (Água via Vine Whip)",
+        "tip": "Mais fácil para completar os primeiros ginásios"
+      },
+      {
+        "name": "Squirtle",
+        "evolucoes": ["Wartortle (L16)", "Blastoise (L36)"],
+        "vantagem": "Vantagem contra Brock e Giovanni. Bom para iniciantes também",
+        "tip": "Boa escolha para quem quer um Pokémon de Água forte no time"
+      },
+      {
+        "name": "Charmander",
+        "evolucoes": ["Charmeleon (L16)", "Charizard (L36)"],
+        "vantagem": "Charizard é muito forte no late game e PvP",
+        "desvantagem": "Difícil nos primeiros ginásios — sem vantagem de tipo contra Brock",
+        "tip": "Usar Dragon Rage para superar Brock. Caçar Oddish na Route 24 (aprende Mega Drain no nível 19) para vencer Misty sem Bulbasaur"
+      }
+    ],
+    "alternativa_misty": "Oddish encontrado na Route 24 — aprende Mega Drain no nível 19, eficaz contra Misty mesmo sem Bulbasaur"
+  },
+
+  "pp_shop_complete": {
+    "description": "Philanthropist Points (PP) — sistema de doações com recompensas",
+    "location": "Silph Co., Saffron City — NPC no canto superior esquerdo do andar térreo",
+    "como_ganhar_pp": [
+      "Doação ao Altar: $400 = 1 PP",
+      "Usar uma Blessing (World Blessing, Drop Rate Blessing)",
+      "Usar Portable PC",
+      "Usar Honey (item de 500 créditos)",
+      "Soltar Item Bomb"
+    ],
+    "itens_conhecidos": [
+      {
+        "name": "Ancient Key (Tooth Half)",
+        "pp_cost": 15000,
+        "alternativa": "$1,000,000 no Master Shop",
+        "uso": "Metade da chave para desbloquear área especial (combinar com Jaw Half)"
+      }
+    ],
+    "note": "Lista completa de itens disponível no PPOBuddy (ppobuddy.com/npc/philanthropist-point-exchanger)"
+  },
+
+  "kanto_elite_four_complete": {
+    "description": "Elite Four de Kanto — Indigo Plateau",
+    "requirement": "8 badges de Kanto + HM Surf para Victory Road",
+    "members": [
+      {
+        "name": "Lorelei",
+        "type": "Gelo",
+        "tip": "Usar Pokémon de Elétrico ou Planta. Evitar Fogo (Jynx)"
+      },
+      {
+        "name": "Bruno",
+        "type": "Luta",
+        "tip": "Usar Pokémon de Psíquico ou Voador"
+      },
+      {
+        "name": "Agatha",
+        "type": "Fantasma",
+        "tip": "Usar Pokémon do tipo Sombrio ou Psíquico. Gengar com Shadow Ball funciona"
+      },
+      {
+        "name": "Lance",
+        "type": "Dragão",
+        "tip": "Usar Pokémon de Gelo ou Dragão. Gyarados com Ice Fang é eficaz"
+      }
+    ],
+    "champion": {
+      "name": "Blue",
+      "note": "Time variado — preparar para vários tipos"
+    },
+    "recommended_team": "Gyarados (Dragon Rage, Crunch, Ice Fang) + Gengar (Shadow Ball, Destiny Bond) ou time balanceado nível 50+"
+  },
+
+  "mining_complete": {
+    "description": "Sistema de mineração — como funciona e onde minerar",
+    "mechanics": "Usar Pickaxe em rochas brilhantes para extrair fragmentos de fósseis e gemas de lendários",
+    "pickaxes": [
+      {
+        "name": "Old Pickaxe",
+        "where_to_buy": "Mt. Moon — Mining Guru",
+        "note": "Pickaxe básica para iniciantes"
+      },
+      {
+        "name": "Super Pickaxe",
+        "cost": 35000,
+        "where_to_buy": "Cerulean Cave — Mining Guru",
+        "note": "Pickaxe superior para Cerulean Cave e áreas avançadas"
+      }
+    ],
+    "gem_types_by_rock": {
+      "qualquer_rocha": ["Dome Shard", "Helix Shard", "Amber Shard"],
+      "rochas_escuras_apenas": ["Claw Shard", "Root Shard", "Armor Shard", "Skull Shard", "Cover Shard", "Plume Shard", "Sail Shard", "Jaw Shard"],
+      "rochas_cerulean_cave": ["Blue Gem", "Green Gem", "Prism Gem", "Pale Gem", "Dark Gem"]
+    },
+    "fossil_revival": {
+      "location": "Cinnabar Island Lab — área sudoeste",
+      "shards_required": 100,
+      "note": "100 fragmentos = 1 fóssil para reviver o Pokémon correspondente"
+    },
+    "legendary_gems_effect": {
+      "blue_green_prism_pale": "1.25x multiplicador na LLE (Legendary Likelihood Encounter)",
+      "dark_lava": "2x multiplicador na LLE",
+      "note": "Gemas Cerulean Cave são especialmente valiosas para hunting de lendários"
+    }
+  },
+
+  "johto_elite_four_complete": {
+    "description": "Elite Four de Johto — Mt. Silver region",
+    "members": [
+      {
+        "name": "Will",
+        "type": "Psíquico"
+      },
+      {
+        "name": "Koga",
+        "type": "Veneno",
+        "note": "Mesmo Koga que foi Gym Leader de Fuchsia em Kanto — promovido para E4 em Johto"
+      },
+      {
+        "name": "Bruno",
+        "type": "Luta",
+        "note": "Mesmo Bruno do E4 de Kanto"
+      },
+      {
+        "name": "Karen",
+        "type": "Sombrio"
+      }
+    ],
+    "champion": {
+      "name": "Lance",
+      "note": "Campeão tanto de Kanto quanto de Johto — Dragon-type"
+    }
+  },
+
+  "altering_cave_hoenn": {
+    "description": "Altering Cave — localização em Hoenn",
+    "location": "Route 103, Hoenn",
+    "notable_drop": {
+      "item": "Loop Half (metade da Ancient Key)",
+      "drop_rate": "1/15,000",
+      "alternative_source": "Clan War tokens — 800 tokens no Clan Building de Vermilion City"
+    },
+    "note": "A Loop Half combinada com a Tooth Half forma a Ancient Key completa para acessar áreas especiais"
+  },
+
+  "database_version": "20.0",
   "last_updated": "2026-06-08"
 }
