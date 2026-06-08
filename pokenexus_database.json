@@ -2590,6 +2590,57 @@
     "max_repel": { "cost": 700, "duration": "250 passos" }
   },
 
-  "database_version": "11.0",
+  "location_based_evolutions": {
+    "description": "Pokémon que evoluem em locais específicos ou com itens de localização",
+    "items": [
+      { "item": "Coronet Rock", "evolves": "Magneton → Magnezone", "note": "Item específico do PokeNexus para simular campo magnético do Mt. Coronet" },
+      { "item": "Moss Rock (ou Leaf Stone)", "evolves": "Eevee → Leafeon", "note": "Na floresta de Eterna (Sinnoh)" },
+      { "item": "Ice Rock", "evolves": "Eevee → Glaceon", "note": "Próximo a Snowpoint City / Route 216" }
+    ]
+  },
+
+  "special_pokemon_locations": {
+    "eevee": {
+      "how_to_get": "NÃO aparece selvagem — apenas via Pokémon Boxes (Credit Shop)",
+      "evolutions": {
+        "Vaporeon": "Water Stone",
+        "Jolteon": "Thunder Stone",
+        "Flareon": "Fire Stone",
+        "Espeon": "220+ happiness + level up de DIA",
+        "Umbreon": "220+ happiness + level up de NOITE",
+        "Leafeon": "Moss Rock ou Leaf Stone",
+        "Glaceon": "Ice Rock",
+        "Sylveon": "Amie Stone (PP Shop — Saffron City)"
+      }
+    },
+    "unown": {
+      "location": "Ruins of Alph (Johto — sul da Route 36 / oeste da Route 32)",
+      "note": "No PokeNexus apenas a forma A aparece"
+    },
+    "dratini": {
+      "how_to_get": ["Fishing lv.15", "Fishing lv.40"],
+      "drops": ["Kings Rock (lv.15)", "Dragon Scale (lv.40)"]
+    },
+    "clefairy": {
+      "location": "Mt. Moon (Kanto)",
+      "note": "Moon Stones podem ser encontradas em Mt. Moon"
+    }
+  },
+
+  "pokedex_rarity_colors": {
+    "description": "Sistema de cores usado no Pokédex do PokeNexus para indicar raridade de encontro",
+    "colors": [
+      { "color": "Branco", "rarity": "Common" },
+      { "color": "Verde", "rarity": "Uncommon" },
+      { "color": "Azul", "rarity": "Rare" },
+      { "color": "Rosa", "rarity": "Very Rare" },
+      { "color": "Laranja", "rarity": "Extremely Rare" },
+      { "color": "Amarelo", "rarity": "Legendary" },
+      { "color": "Cinza", "rarity": "Evolução" },
+      { "color": "Turquesa", "rarity": "Outro método de obtenção" }
+    ]
+  },
+
+  "database_version": "12.0",
   "last_updated": "2026-06-06"
 }
