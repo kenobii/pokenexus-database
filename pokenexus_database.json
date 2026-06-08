@@ -3073,6 +3073,65 @@
     }
   },
 
-  "database_version": "16.0",
+  "shiny_system_complete": {
+    "description": "Sistema de Pokémon Shiny no PokeNexus",
+    "base_rate": "1/8.192",
+    "shiny_pokemon_properties": {
+      "ivs": "Pokémon Shiny SEMPRE tem 20+ IVs",
+      "visual": "Coloração alternativa diferente do normal",
+      "chat_message": "Quando alguém encontra um Shiny, uma mensagem é enviada nos chats do servidor"
+    },
+    "ways_to_boost_shiny_odds": [
+      { "method": "Shiny Charm (Elite Shop — Lance por 30 Elite Tokens)", "boost": "+25%" },
+      { "method": "Gold Membership (GM Ticket)", "boost": "+20%" },
+      { "method": "Swarm Maps (mapas com swarm ativo)", "boost": "+10%" }
+    ],
+    "stacking_note": "Os boosts de shiny podem se acumular"
+  },
+
+  "world_boss_rewards_complete": {
+    "description": "Sistema de recompensas do World Boss (complemento)",
+    "damage_tiers": [2500, 10000, 25000, 50000, 100000, 300000, 400000],
+    "minimum_damage_for_reward": 2500,
+    "killing_blow_bonus": "Bônus de IV Reset para quem der o golpe final",
+    "legendary_egg": {
+      "description": "Ovo com o lendário derrotado — NÃO negociável",
+      "chance": {
+        "1st_most_damage": "15% de chance",
+        "2nd_most_damage": "10% de chance",
+        "3rd_most_damage": "5% de chance"
+      }
+    },
+    "viable_pokemon": ["Krookodile", "Scizor", "Rhyperior"],
+    "schedule": "A cada 24-48 horas em um mapa aleatório",
+    "encounter_chance_on_map": "50% ao andar na grama selvagem do mapa onde aparece"
+  },
+
+  "legendary_lle_system": {
+    "description": "LLE (Legendary Likelihood Encounter) — sistema de proteção de azar para lendários",
+    "how_it_works": "Cada encounter de Pokémon não-lendário no mapa do lendário: LLE +1",
+    "effect": "LLE maior = maior chance de encontrar o lendário",
+    "bad_luck_protection_starts": "~100.000 encounters sem encontrar o lendário",
+    "average_encounter_rate": {
+      "without_gm": "~1/95.000",
+      "with_gm": "~1/63.000"
+    },
+    "base_rate_no_items": "1/125.000",
+    "cerulean_cave_mechanic": {
+      "rock_types_boost": {
+        "red_blue_green_prism_pale": "1,25x boost na taxa de encounter",
+        "dark_lava": "2x boost na taxa de encounter"
+      },
+      "requirement": "Derrotar a Elite 4 de Kanto para entrar na Cerulean Cave"
+    }
+  },
+
+  "halloween_event_requirements": {
+    "description": "Requisitos de Pokédex para áreas de evento de Halloween",
+    "haunted_mansion_2f_darkrai": "400 Pokémon únicos no Pokédex",
+    "haunted_cave_b1": "600 Pokémon únicos no Pokédex"
+  },
+
+  "database_version": "17.0",
   "last_updated": "2026-06-08"
 }
