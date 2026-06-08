@@ -2889,6 +2889,102 @@
     "hms_needed": ["Cut", "Surf", "Strength", "Waterfall", "Whirlpool (Johto específico)"]
   },
 
-  "database_version": "15.0",
+  "hoenn_walkthrough_expanded": {
+    "description": "Guia expandido da região Hoenn",
+    "entry": "Ferry para Slateport ou Lilycove após derrotar Elite 4 de Johto",
+    "mega_evolution_note": "A partir de Hoenn, todos os líderes de ginásio e membros da Elite 4 têm 1 Pokémon capaz de Mega Evoluir",
+    "gym_leaders": [
+      { "order": 1, "leader": "Roxanne", "city": "Rustboro City", "type": "Rock", "badge": "Stone Badge" },
+      { "order": 2, "leader": "Brawly", "city": "Dewford Town", "type": "Fighting", "badge": "Knuckle Badge" },
+      { "order": 3, "leader": "Wattson", "city": "Mauville City", "type": "Electric", "badge": "Dynamo Badge" },
+      { "order": 4, "leader": "Flannery", "city": "Lavaridge Town", "type": "Fire", "badge": "Heat Badge" },
+      { "order": 5, "leader": "Norman", "city": "Petalburg City", "type": "Normal", "badge": "Balance Badge" },
+      { "order": 6, "leader": "Winona", "city": "Fortree City", "type": "Flying", "badge": "Feather Badge" },
+      { "order": 7, "leader": "Tate & Liza", "city": "Mossdeep City", "type": "Psychic", "badge": "Mind Badge" },
+      { "order": 8, "leader": "Juan", "city": "Sootopolis City", "type": "Water", "badge": "Rain Badge", "note": "Juan substitui Wallace como líder de ginásio no PokeNexus" }
+    ],
+    "elite_four": [
+      { "name": "Sidney", "type": "Dark" },
+      { "name": "Phoebe", "type": "Ghost" },
+      { "name": "Glacia", "type": "Ice" },
+      { "name": "Drake", "type": "Dragon" }
+    ],
+    "champion": { "name": "Wallace", "type": "Water" },
+    "elite4_note": "Todos os 6os Pokémon dos membros da Elite 4 de Hoenn seguram Mega Stone"
+  },
+
+  "sinnoh_walkthrough_expanded": {
+    "description": "Guia expandido da região Sinnoh",
+    "entry": "Ferry para Twinleaf Town após derrotar Elite 4 de Hoenn",
+    "gym_leaders": [
+      { "order": 1, "leader": "Roark", "city": "Oreburgh City", "type": "Rock", "badge": "Coal Badge" },
+      { "order": 2, "leader": "Gardenia", "city": "Eterna City", "type": "Grass", "badge": "Forest Badge" },
+      { "order": 3, "leader": "Maylene", "city": "Veilstone City", "type": "Fighting", "badge": "Cobble Badge" },
+      { "order": 4, "leader": "Crasher Wake", "city": "Pastoria City", "type": "Water", "badge": "Fen Badge" },
+      { "order": 5, "leader": "Fantina", "city": "Hearthome City", "type": "Ghost", "badge": "Relic Badge" },
+      { "order": 6, "leader": "Byron", "city": "Canalave City", "type": "Steel", "badge": "Mine Badge" },
+      { "order": 7, "leader": "Candice", "city": "Snowpoint City", "type": "Ice", "badge": "Icicle Badge" },
+      { "order": 8, "leader": "Volkner", "city": "Sunyshore City", "type": "Electric", "badge": "Beacon Badge" }
+    ],
+    "elite_four": [
+      { "name": "Aaron", "type": "Bug" },
+      { "name": "Bertha", "type": "Ground" },
+      { "name": "Flint", "type": "Fire" },
+      { "name": "Lucian", "type": "Psychic" }
+    ],
+    "champion": { "name": "Cynthia", "type": "Mixed (Dragon + outros)" }
+  },
+
+  "honey_item": {
+    "description": "Item que aumenta taxa de encontros com Pokémon não-comuns",
+    "how_to_get": "Credit Shop — 500 Créditos",
+    "effect": "Aumenta em 25% o encounter rate de todos os Pokémon exceto comuns por 1 hora",
+    "scope": "Efeito vale para TODOS os jogadores no mesmo mapa",
+    "stacks_with": ["Gold Membership (+50%)", "Hunter Charm (+20%)", "Rare Charm (+10%)"],
+    "headbutt_trees": {
+      "description": "Árvores interativas com o movimento Headbutt (fora de batalha)",
+      "encounters": "Predominantemente pássaros, bugs e macacos",
+      "composition": "2 comuns, 2 intermediários, 1 raro por árvore",
+      "sinnoh_bonus": "Árvores de Sinnoh também podem conter o item Honey"
+    }
+  },
+
+  "evolutional_stone_box_detail": {
+    "description": "Caixa com pedras de evolução — obtida em várias fontes",
+    "cost_credits": 250,
+    "cost_credits_gold_membership": 225,
+    "obtainable_from": ["Credit Shop", "Mystery Box (conteúdo possível)"],
+    "note": "Contém pedras de evolução — útil para evoluções que exigem pedras"
+  },
+
+  "casino_shop_items": {
+    "description": "Itens disponíveis no Casino Token Prize Seller em Celadon City",
+    "location": "Celadon City — ao lado do Casino (Game Corner Prize Shop)",
+    "currency": "Casino Tokens",
+    "known_items": [
+      { "item": "Focus Sash", "cost_tokens": 500, "note": "Versão regular" },
+      { "item": "Focus Sash (Permanente)", "cost_tokens": 50000, "note": "Versão permanente — não precisa ser reativada" },
+      { "item": "Macho Brace", "cost_tokens": 40000, "note": "Reduz velocidade, dobra EVs ganhos" },
+      { "item": "Greninja (Battle Bond)", "note": "Greninja comprado aqui SEMPRE tem a habilidade Battle Bond" },
+      { "item": "Synchronize Stone", "note": "Item muito caro — exige grande investimento de Casino Tokens" }
+    ],
+    "slots_tiers": [
+      { "pull_cost": 100, "note": "Pull básico" },
+      { "pull_cost": 1000, "note": "Pull médio" },
+      { "pull_cost": 10000, "note": "Pull grande" }
+    ]
+  },
+
+  "mega_evolution_system": {
+    "description": "Sistema de Mega Evolução adicionado ao PokeNexus",
+    "note": "A partir da região Hoenn, líderes de ginásio e Elite 4 possuem Pokémon capazes de Mega Evoluir",
+    "sources": "Mega Stones foram adicionadas via atualização — buscar no PPOBuddy.com para lista completa e localizações atualizadas",
+    "known_mega_from_elite4": {
+      "hoenn": "Todos os 6os Pokémon dos membros da Elite 4 de Hoenn seguram Mega Stone",
+      "unova": ["Mega Sableye", "Mega Lucario", "Mega Tyranitar", "Mega Metagross", "Mega Garchomp"]
+    }
+  },
+
+  "database_version": "16.0",
   "last_updated": "2026-06-08"
 }
