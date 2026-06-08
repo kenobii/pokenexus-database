@@ -2153,6 +2153,182 @@
     ]
   },
 
-  "database_version": "8.0",
-  "last_updated": "2026-06-05"
+  "pokeballs": {
+    "description": "Tipos de Pokébola disponíveis no PokeNexus e seus efeitos de captura",
+    "standard": [
+      { "ball": "Poké Ball", "catch_rate": "1x", "cost": 100, "where": "Qualquer Pokemart" },
+      { "ball": "Great Ball", "catch_rate": "1.5x", "cost": 400, "where": "Lavender City ou posterior" },
+      { "ball": "Ultra Ball", "catch_rate": "2x", "cost": 1000, "where": "Fuchsia City ou posterior" },
+      { "ball": "Master Ball", "catch_rate": "Captura garantida (100%)", "where": "Raro — eventos, Mystery Box, Treasure Chests" }
+    ],
+    "special": [
+      { "ball": "Quick Ball", "catch_rate": "5x no 1º turno de batalha", "note": "Melhor bola para usar no início" },
+      { "ball": "Dusk Ball", "catch_rate": "3x em locais escuros/noite", "note": "Ótima para cavernas e noite" },
+      { "ball": "Net Ball", "catch_rate": "3.5x contra Pokémon Bug e Water", "note": "Ideal para capturar Pokémon aquáticos" },
+      { "ball": "Nest Ball", "catch_rate": "Aumenta quanto menor o nível do Pokémon", "note": "Boa para Pokémon de baixo nível" },
+      { "ball": "Repeat Ball", "catch_rate": "3.5x se já possui aquela espécie no Pokédex" },
+      { "ball": "Timer Ball", "catch_rate": "Aumenta a cada turno de batalha (melhor que Ultra Ball após 10 turnos)" },
+      { "ball": "Heal Ball", "catch_rate": "1x, mas cura o Pokémon capturado ao máximo" },
+      { "ball": "Luxury Ball", "catch_rate": "1x, mas aumenta happiness mais rápido" },
+      { "ball": "Cherish Ball", "catch_rate": "1x — item raro de Treasure Chests", "note": "Bola comemorativa especial" }
+    ],
+    "notes": [
+      "Para capturar lendários: use Quick Ball no 1º turno ou Timer Ball após 10+ turnos",
+      "Ultra Ball é o padrão mais eficiente para a maioria dos casos"
+    ]
+  },
+
+  "pokemart_items": {
+    "description": "Itens disponíveis em Pokemarts — variam por localização",
+    "standard_items": [
+      { "item": "Poké Ball", "cost": 100 },
+      { "item": "Great Ball", "cost": 400, "available_from": "Lavender City" },
+      { "item": "Ultra Ball", "cost": 1000, "available_from": "Fuchsia City" },
+      { "item": "Potion", "cost": 100, "effect": "Cura 20 HP" },
+      { "item": "Super Potion", "cost": 500, "effect": "Cura 50 HP", "available_from": "Cerulean City" },
+      { "item": "Hyper Potion", "cost": 1250, "effect": "Cura 100 HP", "available_from": "Saffron City" },
+      { "item": "Max Potion", "cost": 2500, "effect": "Cura HP totalmente" },
+      { "item": "Full Restore", "cost": 3000, "effect": "Cura HP totalmente e remove status" },
+      { "item": "Revive", "cost": 1500, "effect": "Revive Pokémon com metade do HP" },
+      { "item": "Max Revive", "cost": "Não vendido — drop ou Mystery Box", "effect": "Revive com HP máximo" },
+      { "item": "Antidote", "cost": 100, "effect": "Cura envenenamento" },
+      { "item": "Paralyze Heal", "cost": 200, "effect": "Cura paralisia" },
+      { "item": "Burn Heal", "cost": 250, "effect": "Cura queimadura" },
+      { "item": "Ice Heal", "cost": 250, "effect": "Cura congelamento" },
+      { "item": "Awakening", "cost": 250, "effect": "Cura sono" },
+      { "item": "Full Heal", "cost": 600, "effect": "Cura qualquer status" },
+      { "item": "Repel", "cost": 350, "effect": "Reduz encontros com Pokémon de nível menor por 100 passos" },
+      { "item": "Super Repel", "cost": 500, "effect": "Reduz encontros por 200 passos" },
+      { "item": "Max Repel", "cost": 700, "effect": "Reduz encontros por 250 passos" },
+      { "item": "Escape Rope", "cost": 550, "effect": "Escapa de dungeons/cavernas" },
+      { "item": "Vitamins (HP UP, Protein, etc.)", "cost": 10000, "where": "Celadon Department Store (ilimitado)" }
+    ],
+    "celadon_department_store": {
+      "location": "Celadon City — Kanto",
+      "special": "Único local com estoque ilimitado de vitaminas e algumas TMs"
+    }
+  },
+
+  "status_conditions": {
+    "description": "Condições de status no PokeNexus e seus efeitos",
+    "conditions": [
+      {
+        "status": "Queimadura (Burn / BRN)",
+        "effect": "Perde 1/16 do HP máximo por turno. Attack reduzido à metade.",
+        "cure_items": ["Burn Heal", "Full Heal", "Full Restore", "Pokémon Center"],
+        "immunity": "Fire-types não podem ser queimados. Habilidade Water Veil."
+      },
+      {
+        "status": "Envenenamento (Poison / PSN)",
+        "effect": "Perde 1/8 do HP máximo por turno.",
+        "cure_items": ["Antidote", "Full Heal", "Full Restore", "Pokémon Center"],
+        "immunity": "Poison e Steel-types imunes. Habilidade Immunity."
+      },
+      {
+        "status": "Paralisia (Paralysis / PAR)",
+        "effect": "Speed reduzida drasticamente. 25% de chance de não conseguir atacar.",
+        "cure_items": ["Paralyze Heal", "Full Heal", "Full Restore", "Pokémon Center"],
+        "immunity": "Electric-types imunes. Habilidade Limber."
+      },
+      {
+        "status": "Sono (Sleep / SLP)",
+        "effect": "Pokémon não pode agir. Dura 2-5 turnos.",
+        "cure_items": ["Awakening", "Full Heal", "Full Restore", "Pokémon Center"],
+        "note": "Sleep Powder, Hypnosis causam este status"
+      },
+      {
+        "status": "Congelamento (Freeze / FRZ)",
+        "effect": "Pokémon não pode agir. Chance aleatória de descongelar a cada turno.",
+        "cure_items": ["Ice Heal", "Full Heal", "Full Restore", "Pokémon Center"],
+        "immunity": "Ice-types imunes ao congelamento"
+      }
+    ],
+    "note": "Pokémon Centers curam todos os status gratuitamente"
+  },
+
+  "johto_walkthrough_progression": {
+    "access": "Após derrotar Elite 4 de Kanto. Entrar pela portão sul a oeste de Viridian City.",
+    "elite4_location": "Indigo Plateau — à esquerda da Elite 4 de Kanto",
+    "steps": [
+      { "step": 1, "location": "New Bark Town → Route 29 → Cherrygrove City → Route 30/31 → Violet City", "note": "1º Ginásio: Falkner (Flying)" },
+      { "step": 2, "location": "Violet City → Route 32 → Ruins of Alph → Azalea Town", "note": "Ruins of Alph: Unown. 2º Ginásio: Bugsy (Bug). Cortar a Sudowoodo." },
+      { "step": 3, "location": "Azalea Town → Ilex Forest → Route 34 → Goldenrod City", "note": "3º Ginásio: Whitney (Normal). Radio Tower em Goldenrod." },
+      { "step": 4, "location": "Goldenrod → Route 35/36 → Ecruteak City", "note": "4º Ginásio: Morty (Ghost). Burned Tower (Raikou/Suicune/Entei fogem). Lance aparece." },
+      { "step": 5, "location": "Ecruteak → Route 38/39 → Olivine City ou Route 42 → Mahogany Town", "note": "6º Ginásio: Jasmine (Steel) — aguarda em Cianwood. Ou 7º: Pryce (Ice) em Mahogany." },
+      { "step": 6, "location": "Cianwood City (via Surf)", "note": "5º Ginásio: Chuck (Fighting). Johto Safari Zone ao oeste ($80k/24h)." },
+      { "step": 7, "location": "Mahogany Town → Lake of Rage → Rocket HQ", "note": "Red Gyarados. Lance ajuda a derrotar Team Rocket. Rocket HQ embaixo da loja." },
+      { "step": 8, "location": "Goldenrod City → Radio Tower", "note": "Derrotar Team Rocket que tomou a Radio Tower." },
+      { "step": 9, "location": "Mahogany → Route 44 → Ice Path → Blackthorn City", "note": "HM Waterfall encontrado no Ice Path. 8º Ginásio: Clair (Dragon)." },
+      { "step": 10, "location": "Blackthorn → Dragon's Den → Victory Road → Indigo Plateau", "note": "Mossy Cave acessível surfando acima do ginásio (requer 350 Pokédex únicos)." }
+    ],
+    "key_items": [
+      { "item": "Squirt Bottle", "where": "Obtido em Goldenrod — necessário para mover a Sudowoodo" },
+      { "item": "Silver Wing", "where": "Pegado em Johto — necessário para Lugia (Whirl Islands)" },
+      { "item": "Rainbow Wing", "where": "Pegado em Johto — necessário para Ho-Oh (Tin Tower)" },
+      { "item": "HM Waterfall", "where": "Ice Path (antes de Blackthorn City)" }
+    ]
+  },
+
+  "hoenn_walkthrough_progression": {
+    "access": "Após derrotar Elite 4 de Johto. Ferry para Slateport ou Lilycove.",
+    "note": "A partir de Hoenn: cada líder de ginásio e membro da Elite 4 tem um Pokémon com Mega Stone.",
+    "pokemon_levels": "~60 no início até ~80-85 nas rotas finais",
+    "steps": [
+      { "step": 1, "location": "Littleroot Town → Route 101 → Oldale Town → Route 103 → Petalburg City → Rustboro City", "note": "1º Ginásio: Roxanne (Rock)" },
+      { "step": 2, "location": "Rustboro → Dewford Town (via Surf/Ferry)", "note": "2º Ginásio: Brawly (Fighting). Granite Cave aqui (acesso ao Ancient Cave/Dungeon)." },
+      { "step": 3, "location": "Dewford → Slateport City → Route 110 → Mauville City", "note": "3º Ginásio: Wattson (Electric)" },
+      { "step": 4, "location": "Mauville → Route 111/112 → Lavaridge Town", "note": "4º Ginásio: Flannery (Fire)" },
+      { "step": 5, "location": "Lavaridge → Petalburg City", "note": "5º Ginásio: Norman (Normal) — seu pai" },
+      { "step": 6, "location": "Petalburg → Route 118/119 → Fortree City", "note": "6º Ginásio: Winona (Flying)" },
+      { "step": 7, "location": "Fortree → Route 120/121 → Mossdeep City", "note": "7º Ginásio: Tate & Liza (Psychic) — batalha dupla" },
+      { "step": 8, "location": "Mossdeep → Sootopolis City → Cave of Origin → Juan", "note": "8º Ginásio: Juan (Water). Cave of Origin — parte da história. Wallace abre Sky Pillar." },
+      { "step": 9, "location": "Sky Pillar (Route 131)", "note": "Rayquaza no topo. Acesso após pedir ajuda a Wallace." },
+      { "step": 10, "location": "Ever Grande City → Victory Road → Elite 4", "note": "Elite 4: Sidney, Phoebe, Glacia, Drake. Campeão: Wallace. Recompensa: Eon Ticket." }
+    ],
+    "key_items_hoenn": [
+      { "item": "Eon Ticket", "where": "Recompensa por derrotar Elite 4 de Hoenn — mostra localização de Latios/Latias" },
+      { "item": "Ancient Key", "where": "Craftar Tooth Half (PP Shop) + Loop Half (fishing lv.45) → acesso ao Ancient Dungeon" }
+    ]
+  },
+
+  "sinnoh_walkthrough_progression": {
+    "access": "Após derrotar Elite 4 de Hoenn. Ferry para Twinleaf Town ou Canalave City.",
+    "steps": [
+      { "step": 1, "location": "Twinleaf Town → Sandgem Town → Jubilife City → Oreburgh City", "note": "1º Ginásio: Roark (Rock — Coal Badge)" },
+      { "step": 2, "location": "Oreburgh → Route 204 → Eterna City", "note": "2º Ginásio: Gardenia (Grass — Forest Badge). Sinnoh Underground acessível aqui (lv.50+ mining)." },
+      { "step": 3, "location": "Eterna → Route 211 → Hearthome City", "note": "3º Ginásio: Fantina (Ghost — Relic Badge)" },
+      { "step": 4, "location": "Hearthome → Route 212 → Pastoria City", "note": "4º Ginásio: Crasher Wake (Water — Fen Badge)" },
+      { "step": 5, "location": "Pastoria → Celestic Town → Canalave City", "note": "5º Ginásio: Byron (Steel — Mine Badge)" },
+      { "step": 6, "location": "Canalave → Route 216/217 → Snowpoint City", "note": "6º Ginásio: Candice (Ice — Icicle Badge)" },
+      { "step": 7, "location": "Snowpoint → Route 222 → Sunyshore City", "note": "7º Ginásio: Volkner (Electric — Beacon Badge)" },
+      { "step": 8, "location": "Sunyshore → Route 223 → Victory Road → Elite 4", "note": "Elite 4: Aaron, Bertha, Flint, Lucian. Campeão: Cynthia (Mega Garchomp + Mega Mewtwo Y). Recompensa: Lunar Ticket." }
+    ],
+    "key_items_sinnoh": [
+      { "item": "Lunar Ticket", "where": "Recompensa por derrotar Elite 4 de Sinnoh — mostra localização de Uxie/Mesprit/Azelf + permite ver Treasure Chests" }
+    ]
+  },
+
+  "trading_system": {
+    "how_to_trade": "Digitar /trade [usuario] no chat ou usar o comando /trade",
+    "trade_window": "Ambos os jogadores colocam Pokémon/itens na janela. Ambos clicam em aceitar para completar.",
+    "trade_evolutions": {
+      "description": "Alguns Pokémon evoluem ao serem trocados entre jogadores",
+      "items_needed": "Alguns requerem segurar um item específico durante a troca (ex: Kings Rock para Slowking/Politoed, Dragon Scale para Kingdra, Metal Coat para Steelix/Scizor, Prism Scale para Milotic, etc.)",
+      "how_to_obtain_evolution_items": "Fishing drops, Wild Pokémon drops, Global Marketplace"
+    },
+    "anti_scam": "Use /trade apenas com jogadores confiáveis. Vídeo: https://www.youtube.com/watch?v=rHFuJMEa6Ys"
+  },
+
+  "treasure_chests": {
+    "requirement": "Lunar Ticket no inventário (obtido ao derrotar Elite 4 de Sinnoh)",
+    "how_to_open": "Treasure Key — comprar na Elite Shop por 1 Elite Token cada. Chave consumida ao abrir.",
+    "spawn": "A cada ~1-2 horas em local aleatório. Mais frequente durante eventos.",
+    "command": "/chests",
+    "only_one_opener": true,
+    "possible_rewards": ["Cherish Ball", "Honey", "GM Tickets", "Itens raros variados"],
+    "youtube": "https://www.youtube.com/watch?v=SHxZADANJC0"
+  },
+
+  "database_version": "9.0",
+  "last_updated": "2026-06-06"
 }
