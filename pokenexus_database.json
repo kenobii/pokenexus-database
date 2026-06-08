@@ -2329,6 +2329,215 @@
     "youtube": "https://www.youtube.com/watch?v=SHxZADANJC0"
   },
 
-  "database_version": "9.0",
+  "elite_pokemon": {
+    "description": "Versões melhoradas de Pokémon selvagens com stats aumentados",
+    "availability": "Após derrotar Elite 4 de Kanto — todos os Pokémon selvagens podem aparecer como Elite (exceto lendários)",
+    "encounter_rate": "1/200 (NÃO afetado pelo Gold Membership)",
+    "how_to_identify": "[E] antes do nome + mensagem 'An Elite Pokemon has appeared'",
+    "stats": { "hp": "Muito maior", "stats": "1.3x", "move_pp": "2x", "ivs": "10-31", "held_item": "Sempre seguram item (não pode ser roubado)" },
+    "rewards": ["Drop garantido de item", "Muito mais dinheiro", "Muito mais EXP", "20% chance de dropar Elite Token"]
+  },
+
+  "feathers_drop_guide": {
+    "mechanic": "Pokémon no mapa do lendário droparão a Feather se seu líder for do tipo correspondente",
+    "feathers": [
+      { "item": "Feather of Articuno", "location": "Seafoam Islands (F1-F4)", "leader_type": "Ice", "legendary": "Articuno" },
+      { "item": "Feather of Zapdos", "location": "Power Plant Basement (requer todos badges Kanto+Johto)", "leader_type": "Electric", "legendary": "Zapdos" },
+      { "item": "Feather of Moltres", "location": "Mt. Ember (One Island) / Mt. Silver Cave", "leader_type": "Fire", "legendary": "Moltres" }
+    ],
+    "alternative_no_feather": "N Castle (Unova) — todos os 3 pássaros sem Feather",
+    "enhanced_feathers": "Craftar: Feather + Legendary Bait = +20% encounter rate"
+  },
+
+  "mt_silver": {
+    "location": "Route 28 — caminho esquerdo no Pokemon League Reception Gate (oeste de Viridian)",
+    "wild_pokemon": ["Geodude", "Graveler", "Aipom", "Ponyta", "Ursaring", "Donphan", "Machop", "Onix"],
+    "drops": ["Feather of Moltres (Mt. Silver Cave)", "Stardust"],
+    "mining": "Mt. Silver Cave: Red Gemstones (mining lv.65+)",
+    "legendary": "Moltres no Mt. Silver Cave (Feather of Moltres + líder Fire-type)"
+  },
+
+  "grinding_complete": {
+    "tips": [
+      "Derrotar inimigos 2-5 níveis abaixo maximiza EXP",
+      "Matar em 1 hit sem tomar dano = máxima eficiência",
+      "Switch training: lide com Pokémon fraco, troque para o forte imediatamente",
+      "Re-bater trainers tem cooldown de 24h — usar com Double EXP Altar ativo"
+    ],
+    "daily_spots": [
+      { "location": "Lucky Island", "level_range": "70-100", "highlight": "Chansey (10% manhã/dia). Blissey ~3x mais EXP." },
+      { "location": "Elite 4 Kanto (diária)", "level_range": "ajusta ao seu nível ±5" },
+      { "location": "Elite 4 Johto (diária)", "level_range": "ajusta ao seu nível ±5" },
+      { "location": "Sevii Islands Trainers (ilhas 1,3,5,6,7)", "level_range": "70-80" },
+      { "location": "Seven Island — Trainer Tower", "level_range": "80+", "highlight": "252 EVs em todos os stats" },
+      { "location": "Seafoam Islands", "level_range": "50-70", "highlight": "Requer Elite 4 Kanto. Swinub ER." },
+      { "location": "Power Plant Basement", "level_range": "60-80", "highlight": "Todos badges Kanto+Johto. Electabuzz, Zapdos." },
+      { "location": "Nimbasa Stadiums (Unova)", "level_range": "60-70", "highlight": "5-6 trainers diários (Small Court + Big Stadium)" },
+      { "location": "White Tree (Unova)", "level_range": "50-70", "highlight": "2 trainers por andar" },
+      { "location": "N Castle (Unova)", "level_range": "70-85", "highlight": "EXP/drops 1.5x. Requer 500 Pokédex únicos." }
+    ]
+  },
+
+  "mining_gurus": {
+    "locations": [
+      { "npc": "Mining Guru", "location": "Mt. Moon (Kanto)", "sells": "Old Pickaxe", "cost": 5000 },
+      { "npc": "Mining Guru", "location": "Turtle Cove — Three Island (Sevii)", "sells": "Good Pickaxe", "cost": 12000 },
+      { "npc": "Mining Guru", "location": "Cerulean Cave F4", "sells": "Super Pickaxe", "cost": 35000 }
+    ],
+    "youtube": "https://www.youtube.com/watch?v=cpQMm0pd8WQ"
+  },
+
+  "evolution_items_drops": {
+    "items": [
+      { "item": "Metal Coat", "evolves": ["Onix→Steelix (troca)", "Scyther→Scizor (troca)"], "drops_from": ["Onix", "Scyther"], "extra": "Craftar Steel Rod" },
+      { "item": "Kings Rock", "evolves": ["Poliwhirl→Politoed (troca)", "Slowpoke→Slowking (troca)"], "drops_from": ["Fishing lv.15", "Fishing lv.35"] },
+      { "item": "Dragon Scale", "evolves": ["Seadra→Kingdra (troca)"], "drops_from": ["Fishing lv.20", "Fishing lv.40", "Wild Horsea/Seadra"] },
+      { "item": "Prism Scale", "evolves": ["Feebas→Milotic (troca)"], "drops_from": ["Fishing lv.25 (Feebas)"] },
+      { "item": "Electirizer", "evolves": ["Electabuzz→Electivire (troca)"], "drops_from": ["Magnemite", "Magneton", "Steelix"] },
+      { "item": "Amie Stone", "evolves": ["Eevee→Sylveon"], "how_to_get": "PP Shop — Saffron City" },
+      { "item": "Upgrade", "evolves": ["Porygon→Porygon2 (troca)"], "how_to_get": "Drop/Marketplace" },
+      { "item": "Dubious Disc", "evolves": ["Porygon2→Porygon-Z (troca)"], "how_to_get": "Drop/Marketplace" },
+      { "item": "Protector", "evolves": ["Rhydon→Rhyperior (troca)"], "how_to_get": "Drop/Marketplace" },
+      { "item": "Reaper Cloth", "evolves": ["Dusclops→Dusknoir (troca)"], "how_to_get": "Drop/Marketplace" }
+    ],
+    "trade_mechanic": "Evoluções por troca: usar /trade com outro jogador enquanto o Pokémon segura o item"
+  },
+
+  "berries_system": {
+    "miracle_berry": {
+      "location": "Berry Forest (Three Island, Sevii Islands)",
+      "use": "Ingrediente para Ability Capsule (Stardust + Silk + Miracle Berry)"
+    },
+    "swarm_berries": {
+      "mechanic": "Líder do tipo correspondente em rota com Swarm ativo",
+      "drop_rate": "1/2500 (não pode ser aumentada)",
+      "tip": "Pokémon dual-type rola múltiplos berries por encontro",
+      "full_list": "https://www.ppobuddy.com/guides/swarms"
+    }
+  },
+
+  "status_conditions": {
+    "conditions": [
+      { "status": "Burn (BRN)", "effect": "-1/16 HP/turno. Attack -50%", "cure": ["Burn Heal", "Full Heal", "Full Restore", "Pokémon Center"] },
+      { "status": "Poison (PSN)", "effect": "-1/8 HP/turno", "cure": ["Antidote", "Full Heal", "Full Restore", "Pokémon Center"] },
+      { "status": "Paralysis (PAR)", "effect": "Speed reduzida. 25% chance de não atacar", "cure": ["Paralyze Heal", "Full Heal", "Full Restore", "Pokémon Center"] },
+      { "status": "Sleep (SLP)", "effect": "Não pode agir por 2-5 turnos", "cure": ["Awakening", "Full Heal", "Full Restore", "Pokémon Center"] },
+      { "status": "Freeze (FRZ)", "effect": "Não pode agir. Descongela aleatoriamente", "cure": ["Ice Heal", "Full Heal", "Full Restore", "Pokémon Center"] }
+    ]
+  },
+
+  "pokeballs": {
+    "standard": [
+      { "ball": "Poké Ball", "catch_rate": "1x", "cost": 100 },
+      { "ball": "Great Ball", "catch_rate": "1.5x", "cost": 400 },
+      { "ball": "Ultra Ball", "catch_rate": "2x", "cost": 1000 },
+      { "ball": "Master Ball", "catch_rate": "100% garantido", "how_to_get": "Raro — eventos, Mystery Box, Treasure Chests" }
+    ],
+    "special": [
+      { "ball": "Quick Ball", "effect": "5x no 1º turno" },
+      { "ball": "Dusk Ball", "effect": "3x em locais escuros" },
+      { "ball": "Net Ball", "effect": "3.5x contra Bug e Water" },
+      { "ball": "Nest Ball", "effect": "Aumenta conforme menor o nível do alvo" },
+      { "ball": "Repeat Ball", "effect": "3.5x se já possui a espécie no Pokédex" },
+      { "ball": "Timer Ball", "effect": "Aumenta a cada turno — melhor que Ultra após ~10 turnos" },
+      { "ball": "Luxury Ball", "effect": "1x captura, mas aumenta happiness mais rápido" },
+      { "ball": "Cherish Ball", "effect": "1x — item raro de Treasure Chests" }
+    ],
+    "tip_legendaries": "Quick Ball no 1º turno OU Timer Ball após 10+ turnos são as melhores opções para lendários"
+  },
+
+  "johto_walkthrough_progression": {
+    "access": "Após derrotar Elite 4 de Kanto. Portão sul a oeste de Viridian City.",
+    "steps": [
+      { "step": 1, "location": "New Bark → Cherrygrove → Violet City", "note": "1º Ginásio: Falkner (Flying)" },
+      { "step": 2, "location": "Violet → Ruins of Alph → Azalea Town", "note": "2º Ginásio: Bugsy (Bug)" },
+      { "step": 3, "location": "Azalea → Ilex Forest → Goldenrod City", "note": "3º Ginásio: Whitney (Normal)" },
+      { "step": 4, "location": "Goldenrod → Ecruteak City", "note": "4º Ginásio: Morty (Ghost). Burned Tower (beasts fogem)." },
+      { "step": 5, "location": "Ecruteak → Olivine City", "note": "Jasmine espera em Cianwood" },
+      { "step": 6, "location": "Cianwood City (Surf)", "note": "5º Ginásio: Chuck (Fighting). Johto Safari Zone ($80k)." },
+      { "step": 7, "location": "Olivine City", "note": "6º Ginásio: Jasmine (Steel)" },
+      { "step": 8, "location": "Route 42 → Mahogany Town", "note": "Lake of Rage: Red Gyarados. Team Rocket HQ." },
+      { "step": 9, "location": "Goldenrod → Radio Tower", "note": "Derrotar Team Rocket" },
+      { "step": 10, "location": "Mahogany → Ice Path → Blackthorn City", "note": "HM Waterfall no Ice Path. 8º Ginásio: Clair (Dragon)." }
+    ],
+    "key_items": [
+      { "item": "Silver Wing", "use": "Lugia (Whirl Islands)" },
+      { "item": "Rainbow Wing", "use": "Ho-Oh (Tin Tower)" },
+      { "item": "HM Waterfall", "where": "Ice Path" }
+    ]
+  },
+
+  "hoenn_walkthrough_progression": {
+    "access": "Após Elite 4 de Johto. Ferry para Slateport ou Lilycove.",
+    "note": "A partir de Hoenn: gym leaders e Elite 4 têm Pokémon com Mega Stone.",
+    "steps": [
+      { "step": 1, "location": "Littleroot → Rustboro City", "note": "1º Ginásio: Roxanne (Rock)" },
+      { "step": 2, "location": "Rustboro → Dewford Town", "note": "2º Ginásio: Brawly (Fighting). Granite Cave aqui." },
+      { "step": 3, "location": "Dewford → Slateport → Mauville City", "note": "3º Ginásio: Wattson (Electric)" },
+      { "step": 4, "location": "Mauville → Lavaridge Town", "note": "4º Ginásio: Flannery (Fire)" },
+      { "step": 5, "location": "Lavaridge → Petalburg City", "note": "5º Ginásio: Norman (Normal)" },
+      { "step": 6, "location": "Petalburg → Fortree City", "note": "6º Ginásio: Winona (Flying)" },
+      { "step": 7, "location": "Fortree → Mossdeep City", "note": "7º Ginásio: Tate & Liza (Psychic) — dupla" },
+      { "step": 8, "location": "Mossdeep → Sootopolis → Cave of Origin → Juan", "note": "8º Ginásio: Juan (Water). Sky Pillar + Rayquaza." },
+      { "step": 9, "location": "Ever Grande → Victory Road → Elite 4", "note": "Campeão: Wallace. Recompensa: Eon Ticket." }
+    ]
+  },
+
+  "sinnoh_walkthrough_progression": {
+    "access": "Após Elite 4 de Hoenn. Ferry para Twinleaf Town.",
+    "steps": [
+      { "step": 1, "location": "Twinleaf → Oreburgh City", "note": "1º Ginásio: Roark (Rock)" },
+      { "step": 2, "location": "Oreburgh → Eterna City", "note": "2º Ginásio: Gardenia (Grass). Underground (lv.50+ mining)." },
+      { "step": 3, "location": "Eterna → Hearthome City", "note": "3º Ginásio: Fantina (Ghost)" },
+      { "step": 4, "location": "Hearthome → Pastoria City", "note": "4º Ginásio: Crasher Wake (Water)" },
+      { "step": 5, "location": "Pastoria → Canalave City", "note": "5º Ginásio: Byron (Steel)" },
+      { "step": 6, "location": "Canalave → Snowpoint City", "note": "6º Ginásio: Candice (Ice)" },
+      { "step": 7, "location": "Snowpoint → Sunyshore City", "note": "7º Ginásio: Volkner (Electric)" },
+      { "step": 8, "location": "Sunyshore → Victory Road → Elite 4", "note": "Campeão: Cynthia. Recompensa: Lunar Ticket." }
+    ]
+  },
+
+  "trading_system": {
+    "command": "/trade [usuario]",
+    "mechanic": "Ambos colocam itens/Pokémon na janela. Ambos aceitam para completar.",
+    "trade_evolutions": "Alguns Pokémon evoluem ao serem trocados (com ou sem item)",
+    "anti_scam": "https://www.youtube.com/watch?v=rHFuJMEa6Ys"
+  },
+
+  "treasure_chests": {
+    "requirement": "Lunar Ticket (Elite 4 de Sinnoh) para ver os baús",
+    "key": "Treasure Key — 1 Elite Token na Elite Shop. Consumida ao abrir.",
+    "spawn": "~1-2 horas em local aleatório. Mais frequente durante eventos.",
+    "command": "/chests",
+    "only_one_opener": true,
+    "rewards": ["Cherish Ball", "Honey", "GM Tickets", "Itens raros"],
+    "youtube": "https://www.youtube.com/watch?v=SHxZADANJC0"
+  },
+
+  "pokemart_items": {
+    "standard": [
+      { "item": "Poké Ball", "cost": 100 },
+      { "item": "Great Ball", "cost": 400, "from": "Lavender City" },
+      { "item": "Ultra Ball", "cost": 1000, "from": "Fuchsia City" },
+      { "item": "Potion", "cost": 100, "effect": "+20 HP" },
+      { "item": "Super Potion", "cost": 500, "effect": "+50 HP", "from": "Cerulean City" },
+      { "item": "Hyper Potion", "cost": 1250, "effect": "+100 HP", "from": "Saffron City" },
+      { "item": "Max Potion", "cost": 2500, "effect": "HP máximo" },
+      { "item": "Full Restore", "cost": 3000, "effect": "HP máximo + cura status" },
+      { "item": "Revive", "cost": 1500, "effect": "Revive com 50% HP" },
+      { "item": "Antidote", "cost": 100 },
+      { "item": "Paralyze Heal", "cost": 200 },
+      { "item": "Burn Heal", "cost": 250 },
+      { "item": "Ice Heal", "cost": 250 },
+      { "item": "Awakening", "cost": 250 },
+      { "item": "Full Heal", "cost": 600, "effect": "Cura qualquer status" },
+      { "item": "Repel", "cost": 350, "effect": "Reduz encontros por 100 passos" },
+      { "item": "Super Repel", "cost": 500, "effect": "200 passos" },
+      { "item": "Max Repel", "cost": 700, "effect": "250 passos" },
+      { "item": "Escape Rope", "cost": 550 }
+    ]
+  },
+
+  "database_version": "10.0",
   "last_updated": "2026-06-06"
 }
