@@ -2688,6 +2688,41 @@
     "workaround": "Charmander pode ser encontrado selvagem em Hellfire Cavern (One Island). Squirtle em Turtle Cove (Three Island)."
   },
 
-  "database_version": "13.0",
+  "region_progression": {
+    "description": "Ordem de progressão entre as regiões no PokeNexus",
+    "order": [
+      { "order": 1, "region": "Kanto", "how_to_access": "Região inicial do jogo", "unlocks": "Johto (após derrotar Elite 4)" },
+      { "order": 2, "region": "Johto", "how_to_access": "Portal sul a oeste de Viridian City (após Elite 4 Kanto)", "elite4_location": "Indigo Plateau — à esquerda da Elite 4 de Kanto", "unlocks": "Hoenn + Sevii Islands (após Elite 4 Johto)" },
+      { "order": 3, "region": "Hoenn", "how_to_access": "Ferry para Slateport/Lilycove (após Elite 4 Johto)", "unlocks": "Sinnoh (após Elite 4 Hoenn)" },
+      { "order": 4, "region": "Sinnoh", "how_to_access": "Ferry para Twinleaf Town (após Elite 4 Hoenn)", "unlocks": "Unova (após Elite 4 Sinnoh)" },
+      { "order": 5, "region": "Unova", "how_to_access": "Ferry para Nuvema Town (após Elite 4 Sinnoh)", "unlocks": "N Castle (após 500 Pokédex únicos)" }
+    ],
+    "note": "Progressão linear: Kanto → Johto → Hoenn → Sinnoh → Unova",
+    "special_regions": {
+      "Sevii Islands": "Desbloqueado após Elite 4 de Kanto (via Bill em Vermillion City)",
+      "N Castle": "Desbloqueado com 500 Pokémon únicos (Castle Key)",
+      "Water Temple": "Dentro do N Castle — Fishing lv.80"
+    }
+  },
+
+  "pokemon_center": {
+    "description": "Pokémon Center — presente em quase todas as cidades de todas as regiões",
+    "functions": [
+      "Curar toda a equipe gratuitamente (falar com a atendente)",
+      "Acessar o PC/Box de armazenamento de Pokémon (computador no canto superior direito, tecla Space)",
+      "Ponto de respawn após ser derrotado em batalha",
+      "Easter Sailor e outros NPCs de eventos ficam aqui durante eventos"
+    ],
+    "pc_box": "Armazenar Pokémon capturados — trocar com os da equipe pelo topo da tela",
+    "portable_pc": "Item que cria um PC portátil em qualquer lugar (+200 PP ao usar)"
+  },
+
+  "elite4_youtube_guides": {
+    "kanto": "https://www.youtube.com/watch?v=0PEMSHohk0E",
+    "hoenn": "https://www.youtube.com/watch?v=psWYBPjn-nE",
+    "playlist_all": "https://www.youtube.com/playlist?list=PLDQxpEN6K-2QlotsMamxD0uLhebDN3yR1"
+  },
+
+  "database_version": "14.0",
   "last_updated": "2026-06-06"
 }
