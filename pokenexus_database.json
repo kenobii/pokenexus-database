@@ -2844,6 +2844,51 @@
     "tip": "Encontre outro jogador de confiança para fazer a troca e receber de volta — não é necessário dar permanentemente"
   },
 
+  "pvp_battle_queue_complete": {
+    "description": "Sistema de PvP ranqueado (Battle Queue) do PokeNexus",
+    "location_exchanger": "PvP Prize Exchanger — PvP Building em Vermilion City",
+    "requirements": "Equipe completa de 6 Pokémon para partidas ranqueadas",
+    "token_rewards_per_tier": [
+      { "tier": "Unranked", "win": 3, "loss": 0 },
+      { "tier": "Bronze", "win": 4, "loss": 1 },
+      { "tier": "Silver", "win": 6, "loss": 2 },
+      { "tier": "Gold", "win": 8, "loss": 3 },
+      { "tier": "Master", "win": 10, "loss": 4 }
+    ],
+    "bonus_tokens": {
+      "match_20_turns": "+1 token (independente de vitória ou derrota)",
+      "match_40_turns": "+2 tokens (independente de vitória ou derrota)"
+    },
+    "loss_token_requirement": "Partida precisa durar ao menos 10 turnos para receber tokens por derrota",
+    "rating_decay": {
+      "ranked_battles_required_per_week": 20,
+      "random_battles_required_per_week": 5,
+      "penalty_per_missed_battle": "Perde 5 pontos por batalha faltante",
+      "decay_timing": "Toda segunda-feira às 02:00 UTC"
+    },
+    "uses_for_pvp_tokens": [
+      "Trocar por itens no PvP Prize Exchanger (Vermilion City)",
+      "Comprar Master Shop Pass (1.500 PvP Tokens)"
+    ]
+  },
+
+  "johto_walkthrough_expanded": {
+    "description": "Guia expandido de progressão pela região Johto",
+    "entry": "Portão sul a oeste de Viridian City — após derrotar Elite 4 de Kanto",
+    "gym_leaders": [
+      { "order": 1, "leader": "Falkner", "city": "Violet City", "type": "Flying", "badge": "Zephyr Badge" },
+      { "order": 2, "leader": "Bugsy", "city": "Azalea Town", "type": "Bug", "badge": "Hive Badge" },
+      { "order": 3, "leader": "Whitney", "city": "Goldenrod City", "type": "Normal", "badge": "Plain Badge", "key_item_after": "Squirt Bottle (do jardineiro fora da Gym após vencer)" },
+      { "order": 4, "leader": "Morty", "city": "Ecruteak City", "type": "Ghost", "badge": "Fog Badge", "tip": "Haunter sabe Thunderbolt — usar Gengar lv55-60 para sweepear com Crunch" },
+      { "order": 5, "leader": "Chuck", "city": "Cianwood City", "type": "Fighting", "badge": "Storm Badge" },
+      { "order": 6, "leader": "Jasmine", "city": "Olivine City", "type": "Steel", "badge": "Mineral Badge", "unlock": "Derrotar Chuck antes de poder desafiar Jasmine" },
+      { "order": 7, "leader": "Pryce", "city": "Mahogany Town", "type": "Ice", "badge": "Glacier Badge" },
+      { "order": 8, "leader": "Clair", "city": "Blackthorn City", "type": "Dragon", "badge": "Rising Badge" }
+    ],
+    "key_route": "Ecruteak City → Leste (Route 42) → Mahogany Town",
+    "hms_needed": ["Cut", "Surf", "Strength", "Waterfall", "Whirlpool (Johto específico)"]
+  },
+
   "database_version": "15.0",
   "last_updated": "2026-06-08"
 }
