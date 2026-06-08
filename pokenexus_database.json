@@ -2809,6 +2809,41 @@
     }
   },
 
+  "battle_tower_complete": {
+    "description": "Torre de Batalha — desafio de combate em sequência com recompensas crescentes",
+    "location": "Norte da Seven Island (Sevii Islands) — surfe para acessar",
+    "how_to_reach": "Falar com Bill na Cinnabar Island para ir às Sevii Islands → Seven Island → surfe norte",
+    "mechanics": {
+      "objective": "Derrotar o maior número possível de treinadores em sequência",
+      "all_battles_level": 100,
+      "pokemon_gain_xp": false,
+      "after_each_battle": "Pode sair da arena, trocar equipe e usar Potions entre batalhas",
+      "tower_tycoon": "A cada 10 batalhas aparece um Tower Tycoon com Pokémon mais fortes",
+      "max_floor": 400,
+      "after_max_floor": "Ao atingir o andar 400, volta para o andar 101",
+      "after_floor_120": "Tycoons a partir do andar 120 dão o dobro de Tower Tokens"
+    },
+    "rewards": {
+      "currency": "Tower Tokens",
+      "exchanger": "Prize Exchanger (dentro da Battle Tower)",
+      "notable_rewards": ["Zygarde (Pokémon exclusivo da Battle Tower)"],
+      "note": "Battle Tower é boa fonte de dinheiro e Pokémon únicos com estratégia correta"
+    }
+  },
+
+  "trade_evolutions": {
+    "description": "Pokémon que evoluem via troca com outro jogador no PokeNexus",
+    "how_it_works": "Você precisa realizar uma troca com outro jogador real — o Pokémon evolui no momento da troca",
+    "note": "Não existe item alternativo para isso no PokeNexus — troca real é obrigatória",
+    "pokemon": [
+      { "from": "Kadabra", "to": "Alakazam", "held_item_required": null },
+      { "from": "Graveler", "to": "Golem", "held_item_required": null },
+      { "from": "Machoke", "to": "Machamp", "held_item_required": null },
+      { "from": "Haunter", "to": "Gengar", "held_item_required": null }
+    ],
+    "tip": "Encontre outro jogador de confiança para fazer a troca e receber de volta — não é necessário dar permanentemente"
+  },
+
   "database_version": "15.0",
   "last_updated": "2026-06-08"
 }
