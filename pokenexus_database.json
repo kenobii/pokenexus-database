@@ -4487,8 +4487,9 @@
       { "name": "Heatran", "location": "Stark Mountain (Sinnoh)" },
       { "name": "Regigigas", "location": "Somente via Legendary Egg (World Boss top 3 ou PvP Tournament)" },
       { "name": "Giratina", "location": "Somente via Egg do Halloween Event (1º/2º/3º no ranking)" },
-      { "name": "Dialga", "location": "Spear Pillar (topo do Mt. Coronet)", "requirement": "Adamant Fragment no inventário", "how_to_get_fragment": "a confirmar (não obtido via mining segundo buscas)" },
-      { "name": "Palkia", "location": "Spear Pillar (topo do Mt. Coronet)", "requirement": "Lustrous Fragment no inventário", "how_to_get_fragment": "a confirmar" }
+      { "name": "Dialga", "location": "Spear Pillar (topo do Mt. Coronet)", "requirement": "Adamant Fragment no inventário", "how_to_get_fragment": "a confirmar" },
+      { "name": "Palkia", "location": "Spear Pillar (topo do Mt. Coronet)", "requirement": "Lustrous Fragment no inventário", "how_to_get_fragment": "a confirmar" },
+      { "name": "Shaymin", "location": "Flower Paradise (Sinnoh — norte de Route 224)" }
     ]
   },
 
