@@ -3843,6 +3843,138 @@
     "note": "Todos os wild legendaries aparecem no nível 85. Ver legendary_lle_system para mecânicas de encontro"
   },
 
-  "database_version": "21.0",
-  "last_updated": "2026-06-08"
+  "legendary_birds_complete": {
+    "description": "Sistema completo de encontro com os Legendary Birds — requer Feather específica",
+    "mechanics": {
+      "feather_drop_rule": "A Feather cai de qualquer Pokémon do mapa correspondente quando o Pokémon líder está vivo e é do tipo correto",
+      "feather_persistence": "Feathers NÃO desaparecem após encontrar o lendário — podem ser reutilizadas",
+      "enhanced_boost": "Enhanced Feather: +20% na taxa de encontro",
+      "enhanced_craft": "Feather + Legendary Bait = Enhanced Feather (Legendary Bait dropa no Ancient Dungeon)",
+      "check_command": "/pokemon — verificar quais lendários estão disponíveis para encontro (lista 'Legendary')"
+    },
+    "birds": [
+      {
+        "name": "Articuno",
+        "type": "Gelo/Voador",
+        "location": "Seafoam Islands F1-F4",
+        "feather": "Feather of Articuno",
+        "how_to_get_feather": "Drop de qualquer Pokémon em Seafoam Islands — líder deve estar vivo e ser tipo Gelo"
+      },
+      {
+        "name": "Zapdos",
+        "type": "Elétrico/Voador",
+        "location": "Power Plant Basement (Kanto)",
+        "feather": "Feather of Zapdos",
+        "how_to_get_feather": "Drop de qualquer Pokémon no Power Plant Basement — líder deve estar vivo e ser tipo Elétrico",
+        "note": "Power Plant Basement requer todos os badges de Kanto e Johto para acessar"
+      },
+      {
+        "name": "Moltres",
+        "type": "Fogo/Voador",
+        "location": "Mt. Ember (One Island) e Mt. Silver Cave",
+        "feather": "Feather of Moltres",
+        "how_to_get_feather": "Drop de qualquer Pokémon em Mt. Ember ou Mt. Silver Cave — líder deve estar vivo e ser tipo Fogo"
+      }
+    ],
+    "alternative_location": {
+      "place": "N Castle (Unova)",
+      "note": "Articuno, Zapdos e Moltres podem ser encontrados em N Castle SEM precisar da Feather. Enhanced Feathers ainda aumentam a taxa lá também"
+    }
+  },
+
+  "mossy_cave_complete": {
+    "description": "Mossy Cave — área especial em Johto para Legendary Beasts",
+    "location": "Johto — Dragon's Den (Blackthorn City). Surfar para cima a partir da academia",
+    "requirement": {
+      "item": "Mossy Key",
+      "how_to_get": "Recompensa por capturar 350 Pokémon únicos no Pokédex"
+    },
+    "legendary_beasts": [
+      {
+        "name": "Entei",
+        "cavern": "Fire Cavern (esquerda)",
+        "feather_type": "Tipo Fogo no líder para dropar Feather of Entei"
+      },
+      {
+        "name": "Suicune",
+        "cavern": "Water Cavern (centro)",
+        "feather_type": "Tipo Água no líder para dropar Feather of Suicune"
+      },
+      {
+        "name": "Raikou",
+        "cavern": "Thunder Cavern (direita)",
+        "feather_type": "Tipo Elétrico no líder para dropar Feather of Raikou"
+      }
+    ],
+    "other_pokemon": ["Yanma", "Exeggcute", "Ferroseed", "Scyther", "Pinsir", "Heracross", "Skorupi", "Klefki", "Sandile", "Chespin", "Milotic"]
+  },
+
+  "ancient_dungeon_complete": {
+    "description": "Ancient Dungeon — área especial dentro de Granite Cave (Hoenn)",
+    "location": "Granite Cave, Hoenn",
+    "mechanics": {
+      "stat_boost": "Wild Pokémon têm 1.65x boost nos stats",
+      "cant_run": "Não é possível fugir de batalhas",
+      "exp_boost": "EXP e Drop rates são maiores que áreas normais",
+      "held_items": "Pokémon selvagens podem carregar held items"
+    },
+    "notable_pokemon": ["Regigigas", "Deino"],
+    "notable_drops": [
+      {
+        "item": "Legendary Bait",
+        "rarity": "raro",
+        "use": "Craftar Enhanced Feathers — Feather + Legendary Bait = Enhanced Feather (+20% taxa de encontro com lendários)"
+      },
+      { "item": "Muscle Band", "use": "Held item que aumenta dano físico" },
+      { "item": "Soothe Bell", "use": "Acelera amizade (happiness)" },
+      { "item": "Wise Glasses", "use": "Held item que aumenta dano especial" }
+    ]
+  },
+
+  "sinnoh_legendaries_note": {
+    "description": "Notas sobre lendários de Sinnoh",
+    "spawn_mechanic": "Lendários de Sinnoh ficam restritos a mapas de Sinnoh. Área de spawn muda diariamente às 0:00 UTC",
+    "encounter_types": "Podem ser encontrados em terra e na água (surfing)",
+    "giratina": {
+      "availability": "Giratina NÃO está disponível no wild",
+      "how_to_get": "Apenas através de Egg — recompensa de 1º, 2º ou 3º lugar no evento de Halloween (chance, não garantido)"
+    },
+    "uxie_azelf_note": "Uxie e Azelf não possuem mais os moves Memento ou Explosion (removidos em patch)"
+  },
+
+  "johto_birds_note": {
+    "description": "Ho-Oh e Lugia — disponibilidade em PokeNexus",
+    "ho_oh": {
+      "wild": false,
+      "note": "Ho-Oh NÃO aparece no wild em PokeNexus"
+    },
+    "lugia": {
+      "wild": false,
+      "note": "Lugia NÃO aparece no wild em PokeNexus"
+    },
+    "obtainment": "Ambos provavelmente obtidos via eventos especiais ou trades — verificar eventos sazonais"
+  },
+
+  "legendary_commands_tips": {
+    "description": "Comandos úteis e dicas gerais para hunting de lendários",
+    "commands": [
+      {
+        "command": "/pokemon",
+        "use": "Ver lista de lendários disponíveis para encontro atualmente"
+      }
+    ],
+    "general_tips": [
+      "Todos os wild legendaries aparecem no nível 85",
+      "Taxa base: 1/125.000 de encontrar um lendário",
+      "Com Gold Membership (GM): +50% na taxa de encontro",
+      "Bad luck protection aumenta a taxa gradualmente após muitos encontros",
+      "Sincronize Stone + Illuminate (Starmie) para maximizar encontros",
+      "Usar gemas da Cerulean Cave no líder: Pale/Blue/Green/Prism = 1.25x, Dark = 2x",
+      "Enhanced Feather (Feather + Legendary Bait): +20% na taxa",
+      "Sem GM: média ~1/95.000 encontros. Com GM: ~1/63.000 encontros"
+    ]
+  },
+
+  "database_version": "22.0",
+  "last_updated": "2026-06-09"
 }
