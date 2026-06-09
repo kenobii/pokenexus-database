@@ -73,10 +73,11 @@
   "gold_membership": {
     "description": "Status premium que oferece bônus significativos de jogo",
     "benefits": [
-      "+50% EXP em batalhas",
+      "+50% EXP em batalhas (NÃO se aplica a Mining EXP ou Fishing EXP)",
       "+50% dinheiro de Pokémon selvagens",
       "+50% taxa de encontro UC/R/VR/ER/Lendários",
-      "+20% taxa de encontro Shiny"
+      "+20% taxa de encontro Shiny",
+      "NÃO afeta encounter rate de Elite Pokémon (sempre 1/200)"
     ],
     "tickets": [
       { "item": "1 Day GM Ticket", "duration": "1 dia" },
@@ -199,16 +200,23 @@
       "unlock_better_pickaxes": true
     },
     "gems_by_level": [
-      { "level_required": 1, "gem": "Red Gemstone", "sell_value": 50 },
-      { "level_required": 10, "gem": "Blue Gemstone", "sell_value": 100 },
+      { "level_required": 1,  "gem": "Red Gemstone",     "sell_value": 50 },
+      { "level_required": 10, "gem": "Blue Gemstone",    "sell_value": 100 },
+      { "level_required": 20, "gem": "Green Gemstone",   "sell_value": "a confirmar" },
+      { "level_required": 35, "gem": "Prism Gemstone",   "sell_value": "a confirmar" },
+      { "level_required": 50, "gem": "Pale Gemstone",    "sell_value": "a confirmar" },
       { "level_required": 80, "gem": "Rainbow Gemstone", "sell_value": 20000 }
     ],
+    "rock_notes": "Rainbow e Gold rocks NÃO contêm itens. Rochas de nível mais alto = itens de melhor qualidade",
+    "item_drops_from_rocks": "Metal Coat, Steel Wire (usados em crafting de Steel Pickaxe/Rod)",
     "pickaxes": [
-      { "name": "Old Pickaxe", "level_required": 1, "where_to_buy": "Mining Guru - Mt. Moon", "cost": 5000 },
-      { "name": "Good Pickaxe", "level_required": "Variável", "where_to_buy": "Mining Guru - Turtle Cove (Three Island)", "cost": "Variável" },
-      { "name": "Steel Pickaxe", "level_required": "Variável", "where_to_buy": "Mining Vendor", "cost": "Variável" },
-      { "name": "Master Pickaxe", "level_required": 100, "how_to_get": "Craftar: Master Ball + Steel Pickaxe", "cost": "Craft" }
+      { "name": "Old Pickaxe",    "level_required": 1,   "where_to_buy": "Mining Guru - Mt. Moon", "cost": 5000 },
+      { "name": "Good Pickaxe",   "level_required": "variável", "where_to_buy": "Mining Guru - Turtle Cove (Three Island)", "cost": "variável" },
+      { "name": "Super Pickaxe",  "level_required": "variável", "where_to_buy": "Mining Vendor", "cost": "variável" },
+      { "name": "Steel Pickaxe",  "level_required": 50,  "how_to_get": "Craftar: Metal Coat + Steel Wire + Super Pickaxe" },
+      { "name": "Master Pickaxe", "level_required": 100, "how_to_get": "Craftar: Master Ball + Steel Pickaxe" }
     ],
+    "double_drop": "Cada pickaxe de nível mais alto: velocidade maior + mais chance de double drop (2x gemas + EXP)",
     "rock_types_and_bonuses": [
       { "rock": "Dark Rock / Lava Rock", "encounter_boost": "2x" },
       { "rock": "Red/Blue/Green/Prism/Pale Rock", "encounter_boost": "1.25x (exceto lendários)" },
@@ -2346,8 +2354,10 @@
     "availability": "Após derrotar Elite 4 de Kanto — todos os Pokémon selvagens podem aparecer como Elite (exceto lendários)",
     "encounter_rate": "1/200 (NÃO afetado pelo Gold Membership)",
     "how_to_identify": "[E] antes do nome + mensagem 'An Elite Pokemon has appeared'",
-    "stats": { "hp": "Muito maior", "stats": "1.3x", "move_pp": "2x", "ivs": "10-31", "held_item": "Sempre seguram item (não pode ser roubado)" },
-    "rewards": ["Drop garantido de item", "Muito mais dinheiro", "Muito mais EXP", "20% chance de dropar Elite Token"]
+    "stats": { "hp": "Muito maior", "stats": "1.3x", "move_pp": "2x", "ivs": "10-31", "held_item": "Sempre seguram item (não pode ser roubado ou derrubado)" },
+    "catch_note": "Ao capturar, o Pokémon PERDE todos os bônus de stat e o item segurado — fica como um Pokémon normal",
+    "altering_cave_boost": "Altering Cave (Hoenn) dá 1.3x de encontros com Elite Pokémon",
+    "rewards": ["Drop garantido de item", "Muito mais dinheiro", "Muito mais EXP", "20% chance de dropar Elite Token", "EXP de Mining/Fishing aumentada apenas por encontrar o Elite"]
   },
 
   "feathers_drop_guide": {
