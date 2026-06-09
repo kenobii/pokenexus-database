@@ -3975,6 +3975,70 @@
     ]
   },
 
-  "database_version": "22.0",
+  "swarm_system_complete": {
+    "description": "Sistema de Swarms — enxames de Pokémon com boost de encontros e drops de berry",
+    "how_to_check": "Canto superior esquerdo da tela mostra swarms ativos",
+    "bonuses": {
+      "encounter_rate": "+25% em todos os encontros no mapa de swarm",
+      "legendary_encounter": "+10% na taxa de encontro de lendários",
+      "shiny_rate": "+10% na taxa de shiny"
+    },
+    "berry_farming": {
+      "mechanic": "Usar Pokémon do tipo correto como líder em mapa de swarm → wild Pokémon dropam a berry correspondente",
+      "drop_rate": "1/2.500 — taxa fixa, não pode ser aumentada por nenhum meio",
+      "dual_type_advantage": "Pokémon dual-type rola TODAS as berries elegíveis por encontro — altamente recomendado para grinding de berries",
+      "berry_by_type": {
+        "Fire": "Occa Berry",
+        "Water": "Passho Berry",
+        "Electric": "Wacan Berry",
+        "Grass": "Rindo Berry",
+        "Ice": "Yache Berry",
+        "Fighting": "Chople Berry",
+        "Poison": "Kebia Berry",
+        "Ground": "Shuca Berry",
+        "Flying": "Coba Berry",
+        "Psychic": "Payapa Berry",
+        "Bug": "Tanga Berry",
+        "Rock": "Charti Berry",
+        "Ghost": "Kasib Berry",
+        "Dragon": "Haban Berry",
+        "Dark": "Colbur Berry",
+        "Steel": "Babiri Berry",
+        "Fairy": "Roseli Berry",
+        "Normal": "Chilan Berry"
+      },
+      "note": "Berries de resistência por tipo — cada tipo de líder dropa a berry que resiste àquele tipo"
+    }
+  },
+
+  "pvp_rules_complete": {
+    "description": "Regras e cláusulas do PvP em PokeNexus",
+    "standard_clauses": {
+      "description": "Aplicadas em todos os formatos EXCETO Anything Goes",
+      "clauses": [
+        "Species Clause — sem duplicata da mesma espécie no time",
+        "Evasion Clause — proibido usar moves de evasão (Double Team, Minimize)",
+        "Sleep Clause — não pode colocar mais de 1 Pokémon inimigo para dormir simultâneamente",
+        "Freeze Clause — não pode congelar mais de 1 Pokémon inimigo simultâneamente",
+        "Baton Pass Clause — Baton Pass proibido",
+        "Banned Abilities — certas abilities são proibidas",
+        "Banned Pokémon — certos Pokémon são proibidos",
+        "Banned Moves — certos moves são proibidos"
+      ]
+    },
+    "tournament_formats": {
+      "anything_goes": "Sem cláusulas — qualquer coisa permitida (Terças e Quartas)",
+      "set_level_100": "Time fixo em nível 100 (Quintas)",
+      "monotype": "Todos os Pokémon devem ser do mesmo tipo (Sextas)"
+    },
+    "little_cup_banned_pokemon": [
+      "Aipom", "Drifloon", "Gligar", "Gothita", "Meditite",
+      "Misdreavus", "Murkrow", "Scyther", "Sneasel", "Swirlix",
+      "Tangela", "Vulpix", "Wingull", "Yanma"
+    ],
+    "little_cup_banned_moves": ["Dragon Rage", "Sonicboom", "Swagger"]
+  },
+
+  "database_version": "23.0",
   "last_updated": "2026-06-09"
 }
