@@ -3382,6 +3382,9 @@
     },
     "hoenn": {
       "location": "Oeste de Lilycove City",
+      "ticket_cost": 400000,
+      "ticket_duration": "24 horas",
+      "rock_smash_areas": "Áreas 4 e 6 (Rock Smash para encontrar Pokémon selvagens)",
       "note": "Considerada a melhor Safari Zone para fazer dinheiro e hunting — Pokémon valiosos para PvP"
     },
     "sinnoh": {
@@ -4256,12 +4259,43 @@
   },
 
   "chat_commands": {
-    "description": "Comandos úteis no chat de PokeNexus",
-    "commands": [
-      { "command": "/pokemon", "use": "Ver lista de lendários disponíveis para encontro no momento (categoria 'Legendary')" },
-      { "command": "/chests", "use": "Ver se há Treasure Chests ativos no mundo neste momento" }
+    "description": "Comandos completos do chat de PokeNexus",
+    "communication": [
+      { "command": "@username mensagem", "use": "Mensagem privada para outro jogador" },
+      { "command": "/r", "use": "Responder ao último PM recebido" },
+      { "command": "/trade username", "use": "Iniciar troca com outro jogador" }
     ],
-    "note": "Outros comandos podem existir — verificar in-game ou wiki oficial"
+    "battle": [
+      { "command": "/battle username", "use": "Batalhar outro jogador (singles)" },
+      { "command": "/battle username 2", "use": "Batalhar outro jogador (doubles)" },
+      { "command": "/battle username 3", "use": "Batalhar outro jogador (triples)" }
+    ],
+    "game_info": [
+      { "command": "/pokemon", "use": "Ver lista de lendários disponíveis para encontro na área atual" },
+      { "command": "/chests", "use": "Ver quantos Treasure Chests estão ativos no mundo" },
+      { "command": "/time", "use": "Ver hora in-game" },
+      { "command": "/exp", "use": "Ver XP total acumulado" },
+      { "command": "/weeklyexp", "use": "Ver XP ganho na semana" },
+      { "command": "/pp", "use": "Ver Philanthropist Points atuais e totais" },
+      { "command": "/encounters", "use": "Ver total de encontros acumulados" },
+      { "command": "/resetencounters", "use": "Resetar contador /encounters" }
+    ],
+    "legendary_hunting": [
+      { "command": "/swarm", "use": "Informações sobre o Swarm ativo no momento" },
+      { "command": "/lle", "use": "Ver número de encounters sem encontrar um lendário (LLE atual)" },
+      { "command": "/setlle", "use": "Atribuir LLE legacy a um lendário específico" },
+      { "command": "/getllerate", "use": "Ver a taxa de LLE atual" }
+    ],
+    "world_boss": [
+      { "command": "/wbd", "use": "Ver dano causado ao World Boss ativo" },
+      { "command": "/wbhp", "use": "Ver HP atual do World Boss ativo" }
+    ],
+    "other": [
+      { "command": "/lures", "use": "Ver mapas ativos com Honey e Shiny Lure" },
+      { "command": "/altar", "use": "Ver progresso do altar" },
+      { "command": "/bts", "use": "Ver Battle Tower" },
+      { "command": "/clearchat", "use": "Limpar o chat" }
+    ]
   },
 
   "trainer_skills_complete": {
