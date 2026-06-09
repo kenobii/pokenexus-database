@@ -5186,6 +5186,108 @@
     "end_game_unlock": "N Castle → Water Temple → Manaphy"
   },
 
-  "database_version": "32.1",
+  "sinnoh_walkthrough": {
+    "description": "Guia passo a passo da região de Sinnoh — 4ª região do jogo",
+    "prerequisite": "Completar Hoenn (8 badges) + derrotar Hoenn Elite Four",
+    "how_to_enter": "Ferry para Twinleaf Town após derrotar Hoenn Elite Four",
+    "starter_pokemon": ["Turtwig (Grass)", "Chimchar (Fire)", "Piplup (Water)"],
+    "steps": [
+      {
+        "step": 1,
+        "location": "Twinleaf Town → Sandgem Town → Jubilife City",
+        "action": "Obter starter com Professor Rowan em Sandgem Town → ir para Jubilife City"
+      },
+      {
+        "step": 2,
+        "location": "Jubilife City",
+        "action": "Ir à Trainer School para entregar item para Barry → falar com homem na rua para missão dos clowns (3 cupons = Pokétch) → sair pelo lado leste → batalhar com Barry"
+      },
+      {
+        "step": 3,
+        "location": "Oreburgh City — Ginásio 1",
+        "gym_leader": "Roark (Rock)",
+        "badge": "Coal Badge",
+        "action": "Roark está na Oreburgh Mine ao sul → retornar ao ginásio para enfrentá-lo"
+      },
+      {
+        "step": 4,
+        "location": "Eterna City — Ginásio 2",
+        "gym_leader": "Gardenia (Grass)",
+        "badge": "Forest Badge",
+        "action": "Seguir para norte → Eterna Forest → Eterna City → derrotar Gardenia"
+      },
+      {
+        "step": 5,
+        "location": "Hearthome City",
+        "action": "Ir ao sul de Eterna → Route 206 → Hearthome City. Fantina (Ghost Gym) não está disponível ainda — continuar para Veilstone City primeiro"
+      },
+      {
+        "step": 6,
+        "location": "Veilstone City — Ginásio 3",
+        "gym_leader": "Maylene (Fighting)",
+        "badge": "Cobble Badge",
+        "action": "Seguir ao leste de Hearthome → Veilstone City → derrotar Maylene"
+      },
+      {
+        "step": 7,
+        "location": "Pastoria City — Ginásio 4",
+        "gym_leader": "Crasher Wake (Water)",
+        "badge": "Fen Badge",
+        "action": "Seguir ao sul de Veilstone → Route 213 → Pastoria City → derrotar Crasher Wake"
+      },
+      {
+        "step": 8,
+        "location": "Hearthome City — Ginásio 5",
+        "gym_leader": "Fantina (Ghost)",
+        "badge": "Relic Badge",
+        "action": "Retornar a Hearthome City — Fantina agora está no ginásio"
+      },
+      {
+        "step": 9,
+        "location": "Canalave City — Ginásio 6",
+        "gym_leader": "Byron (Steel)",
+        "badge": "Mine Badge",
+        "action": "Seguir ao oeste → Canalave City → batalhar com Barry na ponte → derrotar Byron. Após: Iron Island com Riley (HM Strength)"
+      },
+      {
+        "step": 10,
+        "location": "Lake Valor → Lake Verity → Celestic Town",
+        "action": "Seguir para os lagos de Sinnoh → Galactic HQ → Celestic Town → Mt. Coronet"
+      },
+      {
+        "step": 11,
+        "location": "Snowpoint City — Ginásio 7",
+        "gym_leader": "Candice (Ice)",
+        "badge": "Icicle Badge",
+        "action": "Mt. Coronet → Acuity Lakefront → Snowpoint City → derrotar Candice. Desbloqueia HM Rock Climb"
+      },
+      {
+        "step": 12,
+        "location": "Sunyshore City — Ginásio 8",
+        "gym_leader": "Volkner (Electric)",
+        "badge": "Beacon Badge",
+        "action": "Seguir ao leste → Sunyshore City → derrotar Volkner"
+      },
+      {
+        "step": 13,
+        "location": "Victory Road → Pokemon League",
+        "action": "Route 222 → Pokémon League → Victory Road → Elite Four"
+      },
+      {
+        "step": 14,
+        "location": "Sinnoh Elite Four",
+        "action": "Derrotar Aaron → Bertha → Flint → Lucian → Cynthia (Champion, usa Mega Garchomp e Mega Mewtwo Y). Recompensa: Lunar Ticket"
+      },
+      {
+        "step": 15,
+        "location": "Spear Pillar (Pós-E4)",
+        "action": "Com Adamant Fragment no inventário → encontrar Dialga. Com Lustrous Fragment → encontrar Palkia. Ambos em Spear Pillar (topo de Mt. Coronet)"
+      }
+    ],
+    "key_hms_needed": ["Cut", "Surf", "Strength", "Rock Climb", "Fly", "Flash", "Defog"],
+    "post_game_unlock": "Unova via ferry. Também: Treasure Chests (Lunar Ticket), Deep New Moon Island (Darkrai), Deep Full Moon Island (Cresselia)"
+  },
+
+  "database_version": "32.2",
   "last_updated": "2026-06-09"
 }
