@@ -237,14 +237,23 @@
   "crafting": {
     "how_to_access": "Tecla I (Inventário) → botão 'Crafting' na parte inferior",
     "recipes": [
-      { "result": "Ability Capsule", "ingredients": ["Stardust", "Silk", "Miracle Berry"] },
-      { "result": "Ancient Key", "ingredients": ["Ancient Key (Tooth Half)", "Ancient Key (Loop Half)"] },
+      { "result": "Ability Capsule", "ingredients": ["Stardust", "Silk", "Miracle Berry"], "notes": "Miracle Berry dropa em Berry Forest (Three Island, Sevii Islands)" },
+      { "result": "Ancient Key", "ingredients": ["Ancient Key (Tooth Half)", "Ancient Key (Loop Half)"], "notes": "Abre o Ancient Cavern em Hoenn" },
       { "result": "Golden Effort Brace", "ingredients": ["Macho Brace", "Effort Brace"] },
-      { "result": "Master Pickaxe", "ingredients": ["Master Ball", "Steel Pickaxe"] },
-      { "result": "Master Rod", "ingredients": ["Master Ball", "Steel Rod"] },
-      { "result": "Soul Shard (Enhanced)", "ingredients": ["Soul Shard (x vários)"] }
+      { "result": "Master Pickaxe", "ingredients": ["Master Ball", "Steel Pickaxe"], "requirement": "Mining Level 100" },
+      { "result": "Master Rod", "ingredients": ["Master Ball", "Steel Rod"], "requirement": "Fishing Level 100" },
+      { "result": "Shiny Egg", "ingredients": ["Lucky Egg", "Shiny Charm"] },
+      { "result": "Soul Shard Enhanced", "ingredients": ["Legendary Bait", "Soul Shard"], "notes": "Aumenta chance de encontrar Latios/Latias" },
+      { "result": "Steel Pickaxe", "ingredients": ["Steel Wire", "Metal Coat", "Super Pickaxe"], "requirement": "Mining Level 50" },
+      { "result": "Steel Rod", "ingredients": ["Steel Wire", "Metal Coat", "Super Rod"], "requirement": "Fishing Level 50" }
     ],
-    "notes": "Miracle Berry dropa em Berry Forest (Three Island, Sevii Islands)"
+    "ingredient_sources": {
+      "Miracle Berry": "Berry Forest — Three Island (Sevii Islands)",
+      "Ancient Key Tooth Half": "15.000 PP no PP Shop (Silph Co.) OU 1.000.000 no Master Shop",
+      "Ancient Key Loop Half": "Drop em Altering Cave, Hoenn (1/15.000) OU 800 Clan War Tokens (Clan Building, Vermilion City)",
+      "Legendary Bait": "Drop raro em Ancient Dungeon (Ancient Cavern, Hoenn)",
+      "Shiny Charm": "Obtida via sistema de achievements ou itens especiais"
+    }
   },
 
   "sevii_islands": {
@@ -5049,6 +5058,124 @@
     "region_unlock": "Após completar Hoenn → acesso à região de Sinnoh"
   },
 
-  "database_version": "32.0",
+  "ancient_dungeon": {
+    "description": "Ancient Dungeon — área exclusiva dentro do Ancient Cavern em Hoenn",
+    "location": "Hoenn — Ancient Cavern (acessível com Ancient Key)",
+    "how_to_unlock": {
+      "ancient_key": "Craftar com Ancient Key (Tooth Half) + Ancient Key (Loop Half)",
+      "tooth_half": "15.000 PP no PP Shop (Silph Co.) OU 1.000.000 no Master Shop",
+      "loop_half": "Drop em Altering Cave, Hoenn (1/15.000) OU 800 Clan War Tokens (Clan Building, Vermilion City)"
+    },
+    "mechanics": {
+      "boosted_stats": "Todos os Pokémon selvagens têm stats aumentados",
+      "held_items": "Pokémon selvagens podem carregar itens",
+      "higher_exp_drops": true,
+      "wild_level": 85
+    },
+    "exclusive_pokemon": ["Goomy"],
+    "notable_drops": ["Legendary Bait (drop raro)", "Soothe Bell", "Wise Glasses", "Muscle Band"],
+    "legendary_access": "Pokémon lendários disponíveis dentro do dungeon",
+    "note": "Legendary Bait é ingredient necessário para craftar Soul Shard Enhanced (para Latios/Latias)"
+  },
+
+  "unova_walkthrough": {
+    "description": "Guia passo a passo da região de Unova — 5ª e última região do jogo",
+    "prerequisite": "Completar Sinnoh (8 badges) + derrotar Sinnoh Elite Four",
+    "how_to_enter": "Ferry para Nuvema Town após derrotar Sinnoh Elite Four",
+    "starter_pokemon": ["Snivy (Grass)", "Tepig (Fire)", "Oshawott (Water)"],
+    "first_gym_depends_on_starter": {
+      "Snivy": "Enfrenta Chili (Fire)",
+      "Tepig": "Enfrenta Cress (Water)",
+      "Oshawott": "Enfrenta Cilan (Grass)"
+    },
+    "steps": [
+      {
+        "step": 1,
+        "location": "Nuvema Town",
+        "action": "Escolher starter Pokémon com Professor Juniper"
+      },
+      {
+        "step": 2,
+        "location": "Rota 1 → Accumula Town",
+        "action": "Percorrer a Rota 1 ao norte até Accumula Town"
+      },
+      {
+        "step": 3,
+        "location": "Rota 2 → Striaton City — Ginásio 1",
+        "gym_leaders": "Cilan / Cress / Chili (depende do starter escolhido)",
+        "type": "Grass / Water / Fire",
+        "badge": "Trio Badge",
+        "action": "Derrotar o líder correspondente ao starter adversário"
+      },
+      {
+        "step": 4,
+        "location": "Pinwheel Forest → Nacrene City — Ginásio 2",
+        "gym_leader": "Lenora (Normal)",
+        "badge": "Basic Badge",
+        "action": "Atravessar Pinwheel Forest → Nacrene City"
+      },
+      {
+        "step": 5,
+        "location": "Rota 4 → Desert Resort → Castelia City — Ginásio 3",
+        "gym_leader": "Burgh (Bug)",
+        "badge": "Insect Badge",
+        "action": "Seguir ao sul pela Rota 4 através do Desert Resort até Castelia City"
+      },
+      {
+        "step": 6,
+        "location": "Rota 5 → Nimbasa City — Ginásio 4",
+        "gym_leader": "Elesa (Electric)",
+        "badge": "Bolt Badge",
+        "action": "Seguir pela Rota 5 e Rota 16 até Nimbasa City"
+      },
+      {
+        "step": 7,
+        "location": "Rota 5 → Driftveil City — Ginásio 5",
+        "gym_leader": "Clay (Ground)",
+        "badge": "Quake Badge",
+        "action": "Seguir ao oeste de Nimbasa → Driftveil City"
+      },
+      {
+        "step": 8,
+        "location": "Rota 6 → Chargestone Cave → Mistralton City — Ginásio 6",
+        "gym_leader": "Skyla (Flying)",
+        "badge": "Jet Badge",
+        "action": "Atravessar Chargestone Cave até Mistralton City"
+      },
+      {
+        "step": 9,
+        "location": "Rota 7 → Twist Mountain → Icirrus City — Ginásio 7",
+        "gym_leader": "Brycen (Ice)",
+        "badge": "Freeze Badge",
+        "action": "Atravessar Twist Mountain até Icirrus City"
+      },
+      {
+        "step": 10,
+        "location": "Rota 9 → Opelucid City — Ginásio 8",
+        "gym_leader": "Drayden (Dragon)",
+        "badge": "Legend Badge",
+        "action": "Seguir pela Rota 9 até Opelucid City"
+      },
+      {
+        "step": 11,
+        "location": "Rota 10 → Victory Road → Pokemon League",
+        "action": "Seguir ao norte de Opelucid → Rota 10 → Victory Road → Pokemon League"
+      },
+      {
+        "step": 12,
+        "location": "Unova Elite Four",
+        "action": "Derrotar Shauntal → Marshal → Grimsley → Caitlin → Iris (Champion)"
+      },
+      {
+        "step": 13,
+        "location": "N Castle",
+        "action": "Após derrotar Iris, acessar N Castle (requer Collector IV — 500 Pokémon diferentes capturados). Manaphy disponível via pesca (Fishing Level 80) na Water Temple dentro de N Castle"
+      }
+    ],
+    "key_hms_needed": ["Surf", "Fly", "Strength", "Flash"],
+    "end_game_unlock": "N Castle → Water Temple → Manaphy"
+  },
+
+  "database_version": "32.1",
   "last_updated": "2026-06-09"
 }
