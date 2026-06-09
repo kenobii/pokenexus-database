@@ -4634,9 +4634,24 @@
     "credit_shop_access": "Ícone de bolsa amarela no canto inferior esquerdo do jogo"
   },
 
-  "clan_wars_complete": {
-    "description": "Sistema de guerras entre clãs de PokeNexus",
-    "how_tokens_work": "Todos os membros online que participaram da guerra recebem Clan War Tokens. Requisito mínimo: vencer ao menos 1 batalha OU perder ao menos 3",
+  "clans_system_complete": {
+    "description": "Sistema de Clãs de PokeNexus — PvP organizado e recompensas",
+    "how_to_access": "Tecla C para abrir o clan window",
+    "clan_building": {
+      "location": "Vermilion City",
+      "features": ["Criar clã", "Gerenciar membros", "Egg Move Tutor NPC (50 tokens por move)", "Move Tutor NPC (50 tokens por move)"]
+    },
+    "create_clan": {
+      "cost": 100000,
+      "note": "Nome único obrigatório. Criador vira líder automaticamente. Limite inicial: 10 membros (upgradável)"
+    },
+    "join_clan": "Abrir clan window (tecla C) e aplicar a um clã existente",
+    "clan_wars": {
+      "requirements": "Estar no clã, ter rank Warrior+ (mínimo 7 dias de membro), partido cheio",
+      "rewards_per_win": "5 Clan War Tokens por vitória individual",
+      "token_eligibility": "Todos online na guerra que venceram ≥1 batalha OU perderam ≥3 batalhas",
+      "mvp_bonus": "25 tokens extras + 100 Credits para quem tiver melhor ratio vitórias/derrotas"
+    },
     "prize_shop": {
       "location": "Prize Exchanger no Clan War Center",
       "items": [
@@ -4645,8 +4660,25 @@
         { "item": "Egg Move Ticket", "cost_tokens": 50 },
         { "item": "Move Tutor Ticket", "cost_tokens": 50 }
       ]
+    }
+  },
+
+  "global_marketplace": {
+    "description": "Mercado global de PokeNexus — compra/venda/leilão entre jogadores",
+    "how_to_access": "Via interface do jogo (botão na UI)",
+    "selling": {
+      "modes": ["Preço fixo", "Leilão"],
+      "listing_fee": "Cobrança proporcional ao preço de venda. NÃO reembolsável se cancelar.",
+      "can_sell": ["Itens do inventário", "Pokémon do party"]
     },
-    "note": "Egg Move Ticket permite ensinar Egg Moves a um Pokémon via NPC (alternativa ao Daycare). Move Tutor Ticket similar para Move Tutor."
+    "buying": {
+      "how_to_search": "Clicar em 'Search' no canto superior direito para ver listagens",
+      "search_tips": [
+        "Adicionar número antes do nome para filtrar por nível (ex: '100 Gengar' = Gengar nível 100)",
+        "Adicionar '-Natureza' para filtrar por natureza (ex: 'Gengar -Timid')"
+      ],
+      "purchased_items_go_to": "Item Box — acessado pelo botão no canto inferior direito do Inventário"
+    }
   },
 
   "n_castle_complete": {
