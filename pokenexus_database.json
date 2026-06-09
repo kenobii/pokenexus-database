@@ -4422,6 +4422,59 @@
     }
   },
 
-  "database_version": "28.0",
+  "sinnoh_legendaries_complete": {
+    "description": "Localização completa dos lendários de Sinnoh em PokeNexus",
+    "general": "Lendários de Sinnoh ficam restritos a mapas de Sinnoh. Área de spawn muda diariamente às 0:00 UTC",
+    "lunar_ticket_system": {
+      "unlock": "Derrotar Sinnoh Elite Four → receber Lunar Ticket",
+      "use": "Clicar duas vezes no Lunar Ticket para ver localização atual de Uxie/Mesprit/Azelf",
+      "dual_use": "Lunar Ticket TAMBÉM é necessário para ver Treasure Chests no mundo"
+    },
+    "legendaries": [
+      { "name": "Uxie", "location": "Rotação diária via Lunar Ticket (Sinnoh)", "note": "Não tem mais Memento ou Explosion" },
+      { "name": "Mesprit", "location": "Rotação diária via Lunar Ticket (Sinnoh)", "note": "Não tem mais Memento ou Explosion" },
+      { "name": "Azelf", "location": "Rotação diária via Lunar Ticket (Sinnoh)", "note": "Não tem mais Memento ou Explosion" },
+      { "name": "Darkrai", "location": "Deep New Moon Island (Sinnoh) — também no Halloween Event Haunted Mansion 2F (400 Pokédex)" },
+      { "name": "Cresselia", "location": "Deep Full Moon Island (Sinnoh)" },
+      { "name": "Heatran", "location": "Stark Mountain (Sinnoh)" },
+      { "name": "Regigigas", "location": "Somente via Legendary Egg (World Boss top 3 ou PvP Tournament)" },
+      { "name": "Giratina", "location": "Somente via Egg do Halloween Event (1º/2º/3º no ranking)" },
+      { "name": "Dialga", "location": "Sinnoh — localização específica a confirmar (possivelmente sistema de spawn diário)" },
+      { "name": "Palkia", "location": "Sinnoh — localização específica a confirmar (possivelmente sistema de spawn diário)" }
+    ]
+  },
+
+  "hoenn_legendaries_complete": {
+    "description": "Localização de lendários de Hoenn em PokeNexus",
+    "legendaries": [
+      {
+        "name": "Latias",
+        "location": "Rotação diária via Eon Ticket em mapas de Hoenn",
+        "note": "Ver latias_latios_complete para detalhes"
+      },
+      {
+        "name": "Latios",
+        "location": "Rotação diária via Eon Ticket em mapas de Hoenn",
+        "note": "Ver latias_latios_complete para detalhes"
+      },
+      {
+        "name": "Regirock",
+        "location": "Mining rocks (Mining Level 75+, 1/75.000 por rocha) ou Altering Cave (10% legendary pool)"
+      },
+      {
+        "name": "Regice",
+        "location": "Mining rocks (Mining Level 75+, 1/75.000 por rocha) ou Altering Cave (10% legendary pool)"
+      },
+      {
+        "name": "Registeel",
+        "location": "Mining rocks (Mining Level 75+, 1/75.000 por rocha) ou Altering Cave (10% legendary pool)"
+      },
+      { "name": "Kyogre", "location": "Hoenn — localização específica a confirmar" },
+      { "name": "Groudon", "location": "Hoenn — localização específica a confirmar" },
+      { "name": "Rayquaza", "location": "Hoenn — localização específica a confirmar" }
+    ]
+  },
+
+  "database_version": "29.0",
   "last_updated": "2026-06-09"
 }
