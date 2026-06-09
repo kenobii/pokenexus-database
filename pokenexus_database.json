@@ -3657,6 +3657,21 @@
     }
   },
 
+  "johto_gyms": {
+    "description": "8 Ginásios de Johto em ordem",
+    "gyms": [
+      { "city": "Violet City", "leader": "Falkner", "type": "Flying", "badge": "Zephyr Badge" },
+      { "city": "Azalea Town", "leader": "Bugsy", "type": "Bug", "badge": "Hive Badge" },
+      { "city": "Goldenrod City", "leader": "Whitney", "type": "Normal", "badge": "Plain Badge" },
+      { "city": "Ecruteak City", "leader": "Morty", "type": "Ghost", "badge": "Fog Badge" },
+      { "city": "Cianwood City", "leader": "Chuck", "type": "Fighting", "badge": "Storm Badge" },
+      { "city": "Olivine City", "leader": "Jasmine", "type": "Steel", "badge": "Mineral Badge" },
+      { "city": "Mahogany Town", "leader": "Pryce", "type": "Ice", "badge": "Glacier Badge" },
+      { "city": "Blackthorn City", "leader": "Clair", "type": "Dragon", "badge": "Rising Badge" }
+    ],
+    "note": "Elite Four de Johto fica no Indigo Plateau — à esquerda da Elite Four de Kanto"
+  },
+
   "johto_elite_four_complete": {
     "description": "Elite Four de Johto — Mt. Silver region",
     "members": [
@@ -4584,6 +4599,20 @@
         "requirement": "Derrotar Blaine (7º Ginásio Kanto)"
       }
     }
+  },
+
+  "hoenn_gyms": {
+    "description": "8 Ginásios de Hoenn em ordem",
+    "gyms": [
+      { "city": "Rustboro City", "leader": "Roxanne", "type": "Rock", "badge": "Stone Badge" },
+      { "city": "Dewford Town", "leader": "Brawley", "type": "Fighting", "badge": "Knuckle Badge" },
+      { "city": "Mauville City", "leader": "Wattson", "type": "Electric", "badge": "Dynamo Badge" },
+      { "city": "Lavaridge Town", "leader": "Flannery", "type": "Fire", "badge": "Heat Badge" },
+      { "city": "Petalburg City", "leader": "Norman", "type": "Normal", "badge": "Balance Badge" },
+      { "city": "Fortree City", "leader": "Winona", "type": "Flying", "badge": "Feather Badge" },
+      { "city": "Mossdeep City", "leaders": "Tate & Liza", "type": "Psychic", "format": "Double Battle", "badge": "Mind Badge" },
+      { "city": "Sootopolis City", "leader": "Wallace", "type": "Water", "badge": "Rain Badge" }
+    ]
   },
 
   "hoenn_elite_four": {
