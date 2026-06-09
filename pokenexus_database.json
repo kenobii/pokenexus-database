@@ -4550,6 +4550,33 @@
     }
   },
 
+  "hoenn_elite_four": {
+    "description": "Elite Four de Hoenn em PokeNexus",
+    "members": [
+      { "name": "Sidney", "type": "Dark" },
+      { "name": "Phoebe", "type": "Ghost" },
+      { "name": "Glacia", "type": "Ice" },
+      { "name": "Drake", "type": "Dragon" },
+      { "name": "Wallace", "title": "Champion", "type": "Water" }
+    ],
+    "unlock_requirement": "Derrotar Johto Elite Four",
+    "reward": "Desbloqueio de Sinnoh + Eon Ticket (Latias/Latios)"
+  },
+
+  "sinnoh_gyms": {
+    "description": "8 Ginásios de Sinnoh em ordem",
+    "gyms": [
+      { "city": "Oreburgh City", "leader": "Roark", "type": "Rock", "badge": "Coal Badge" },
+      { "city": "Eterna City", "leader": "Gardenia", "type": "Grass", "badge": "Forest Badge" },
+      { "city": "Veilstone City", "leader": "Maylene", "type": "Fighting", "badge": "Cobble Badge" },
+      { "city": "Pastoria City", "leader": "Crasher Wake", "type": "Water", "badge": "Fen Badge" },
+      { "city": "Hearthome City", "leader": "Fantina", "type": "Ghost", "badge": "Relic Badge" },
+      { "city": "Canalave City", "leader": "Byron", "type": "Steel", "badge": "Mine Badge" },
+      { "city": "Snowpoint City", "leader": "Candice", "type": "Ice", "badge": "Icicle Badge" },
+      { "city": "Sunyshore City", "leader": "Volkner", "type": "Electric", "badge": "Beacon Badge" }
+    ]
+  },
+
   "sinnoh_elite_four": {
     "description": "Elite Four de Sinnoh em PokeNexus — usa Pokémon com Mega Evoluções",
     "members": [
