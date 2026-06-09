@@ -4112,6 +4112,75 @@
     ]
   },
 
-  "database_version": "24.0",
+  "hm_locations_complete": {
+    "description": "Localização de todos os HMs em PokeNexus (Kanto base)",
+    "hms": [
+      {
+        "hm": "HM01 Cut",
+        "location": "SS Anne — Capitão em Vermilion City (massagear as costas dele)",
+        "badge_required": "Thunder Badge (Lt. Surge)"
+      },
+      {
+        "hm": "HM02 Fly",
+        "location": "Route 16 — casa ao oeste de Celadon City",
+        "badge_required": "Rainbow Badge (Erika)"
+      },
+      {
+        "hm": "HM03 Surf",
+        "location": "Safari Zone (Fuchsia City) — Darren na ilha central (precisa de Surf para chegar!). HM dado por Darren",
+        "note": "Paradoxal: precisa de Surf para alcançar Darren mas Darren dá o Surf. Use Pokémon de outro jogador ou cheque se há forma de acessar a ilha"
+      },
+      {
+        "hm": "HM04 Strength",
+        "location": "Fuchsia City area ou Safari Zone — verificar guia completo",
+        "badge_required": "Soul Badge (Koga)"
+      },
+      {
+        "hm": "HM05 Flash",
+        "location": "Início de Diglett's Cave (Route 2 / Route 11 area)",
+        "badge_required": "Boulder Badge (Brock)"
+      },
+      {
+        "hm": "HM06 Rock Smash",
+        "location": "Route (Johto/Hoenn) — necessário para progressão",
+        "note": "Localização específica a confirmar"
+      },
+      {
+        "hm": "HM07 Waterfall",
+        "location": "Icefall Cave — Four Island (Sevii Islands, requer Rainbow Pass e HM Surf)"
+      }
+    ]
+  },
+
+  "elite_shop_complete": {
+    "description": "Elite Shop — NPC Lance no Indigo Plateau, aceita Elite Tokens",
+    "location": "Indigo Plateau (após derrotar Kanto Elite 4). Lance também fica fora da academia de Blackthorn City",
+    "how_to_get_tokens": "Derrotar Elite Pokémon (wild Pokémon especiais com stats elevados que aparecem em certas áreas)",
+    "items_known": [
+      {
+        "name": "Shiny Charm",
+        "cost_tokens": 30,
+        "effect": "+25% taxa de shiny (se soma com GM +20% e outros bônus)"
+      },
+      {
+        "name": "EXP Share (Enhanced)",
+        "cost_tokens": 20,
+        "effect": "Divide EXP: 25% para o Pokémon na batalha, 75% para o que segurou — não acumula com outro EXP Share"
+      },
+      {
+        "name": "Old Sea Map",
+        "cost_tokens": 125,
+        "effect": "Acesso a Faraway Island via ferry de Hoenn para caçar Mew (muda localização diariamente em 12 áreas)"
+      },
+      {
+        "name": "Treasure Key",
+        "cost_tokens": 1,
+        "effect": "Usada para abrir Treasure Chests (consumida ao usar)"
+      }
+    ],
+    "note": "Lista parcial — visitar PPOBuddy (ppobuddy.com/npc/lance-elite-shop) para lista completa atualizada"
+  },
+
+  "database_version": "25.0",
   "last_updated": "2026-06-09"
 }
