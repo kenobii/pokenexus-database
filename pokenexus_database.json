@@ -3689,6 +3689,160 @@
     "note": "A Loop Half combinada com a Tooth Half forma a Ancient Key completa para acessar áreas especiais"
   },
 
-  "database_version": "20.0",
+  "sevii_islands_complete": {
+    "description": "Guia completo das Sevii Islands — desbloqueio, quests e recursos",
+    "how_to_access": "Falar com Bill em Cinnabar Island após derrotar Blaine (7º Ginásio de Kanto). Bill leva o jogador até One Island",
+    "tri_pass": {
+      "description": "Permite acesso a One, Two e Three Island",
+      "how_to_get": "Celio (Pokemon Network Center, One Island) dá o Tri-Pass na chegada"
+    },
+    "rainbow_pass": {
+      "description": "Permite acesso a Four, Five, Six e Seven Island",
+      "how_to_get": "Completar a Ruby Quest no Mt. Ember (One Island) → entregar Ruby para Celio → Rainbow Pass"
+    },
+    "islands": {
+      "one_island": {
+        "features": ["Pokemon Network Center (Celio)", "Hellfire Cavern (Charmander catchable)", "Mt. Ember (Moltres + Ruby quest)"],
+        "charmander_location": "Hellfire Cavern — catchable aqui para quem não escolheu Charmander como starter",
+        "moltres": "Mt. Ember (requer Feather of Moltres drop da mesma área)"
+      },
+      "two_island": {
+        "features": ["Move Tutor (reaprender movimentos — grátis)", "Game Corner owner (pai da Lostelle)", "Pre-Evolution Move Tutor ($50.000 por move)"],
+        "lostelle_quest": {
+          "description": "Game Corner owner pede para achar a filha Lostelle",
+          "trigger": "Entregar Meteorite ao Game Corner owner (item dado por Bill em One Island)",
+          "resolution": "Achar Lostelle em Berry Forest (Three Island) → derrotar Hypno selvagem → retornar"
+        }
+      },
+      "three_island": {
+        "features": ["Bond Bridge", "Berry Forest (Miracle Berry 1/3.000)", "Turtle Cove (Squirtle catchable)"],
+        "squirtle_location": "Turtle Cove — norte de Three Island via Distant Isles — catchable para quem não escolheu Squirtle",
+        "berry_forest": {
+          "notable_item": "Miracle Berry (drop 1/3.000) — necessário para craftar Ability Capsule",
+          "lostelle": "Lostelle fica noroeste do Berry Forest. Derrotar Hypno (selvagem) para resgatá-la"
+        },
+        "bikers": "Grupo de bikers ocupa Three Island — precisar derrotá-los"
+      },
+      "four_island": {
+        "features": ["Daycare Center (breeding e eggs)", "Lorelei quest"],
+        "daycare": {
+          "location": "Four Island",
+          "egg_hatch_time": "3-7 horas de jogo",
+          "note": "Único Daycare Center do jogo para breeding"
+        },
+        "lorelei_quest": "Treinar 2 Golduck com a habilidade Cloud Nine"
+      },
+      "five_island": {
+        "note": "Acessível via Rainbow Pass. Memorial Pillar área com lendários"
+      },
+      "six_island": {
+        "features": ["Blue (rival) no Pokécenter", "Ruin Valley", "Dotted Cave (Sapphire quest)"],
+        "blue_quest": {
+          "description": "Blue pede para recuperar o Sapphire de Ruin Valley e Dotted Cave",
+          "riddle": "Adivinhe o Pokémon: 'Talvez não tenha o Speed Stat mais alto, mas ninguém nada mais rápido que eu'",
+          "riddle_answer": "Golduck"
+        }
+      },
+      "seven_island": {
+        "features": ["Battle Tower (ao norte)", "Rocket activity quest (Celio)"],
+        "rocket_quest": {
+          "description": "Celio pede para investigar atividade Rocket em Seven Island",
+          "note": "Derrotar o guarda do meio na ponte (nível 80+)"
+        },
+        "battle_tower": {
+          "access": "Norte de Seven Island via Bill em Cinnabar Island",
+          "note": "Já documentado em battle_tower_complete"
+        }
+      }
+    }
+  },
+
+  "gemstone_values": {
+    "description": "Valores de gemstones obtidas por mining — podem ser vendidas a Mining Vendors",
+    "gems": [
+      { "name": "Red Gemstone", "value_each": 50 },
+      { "name": "Blue Gemstone", "value_each": 100 },
+      { "name": "Green Gemstone", "value_each": 200 },
+      { "name": "Prism Gemstone", "value_each": 400 },
+      { "name": "Pale Gemstone", "value_each": 550 },
+      { "name": "Dark Gemstone", "value_each": 900 },
+      { "name": "Rainbow Gemstone", "value_each": 20000 }
+    ],
+    "note": "Dark Gems têm 2x multiplicador na LLE e alto valor de venda. Rainbow Gems são raras e muito valiosas"
+  },
+
+  "money_making_guide": {
+    "description": "Melhores métodos para ganhar PokéDollars em PokeNexus",
+    "methods": [
+      {
+        "method": "Mining de gemas",
+        "description": "Comprar Old Pickaxe ($5.000) no Mt. Moon Mining Guru. Minerar gemas e vender a Mining Vendors. Cerulean Cave tem as gemas mais valiosas (Pale, Dark)",
+        "efficiency": "Excelente para renda passiva e constante"
+      },
+      {
+        "method": "Grinding em mapa de alto nível",
+        "description": "Wild Pokémon de nível mais alto dropam mais PokéDollars. Usar o mapa mais difícil acessível",
+        "efficiency": "Boa renda enquanto treina Pokémon"
+      },
+      {
+        "method": "Hoenn Safari Zone",
+        "description": "Capturar Pokémon valiosos para PvP na Hoenn Safari (Oeste de Lilycove, $25.000). Vender no Global Marketplace",
+        "efficiency": "Alta rentabilidade para Pokémon raros e de PvP"
+      },
+      {
+        "method": "Drops de itens específicos",
+        "description": "Caçar itens raros para vender: Snorlax → Leftovers; Onix/Scyther → Metal Coat; Berry Forest → Miracle Berry (1/3.000)",
+        "efficiency": "Alta rentabilidade para itens raros mas inconsistente"
+      },
+      {
+        "method": "Global Marketplace",
+        "description": "Vender Pokémon shiny, IV altos, raros ou lendários obtidos durante grinding/hunting",
+        "efficiency": "Pode gerar grandes valores por venda"
+      }
+    ]
+  },
+
+  "treasure_chests_complete": {
+    "description": "Sistema de Treasure Chests — caixas de tesouro que aparecem no mundo",
+    "mechanics": {
+      "spawn_time": "Aproximadamente a cada 1-2 horas em área aleatória do mundo",
+      "one_opener": "Apenas 1 jogador pode abrir cada chest",
+      "check_command": "/chests — ver se há chests ativos no momento",
+      "event_bonus": "Chests aparecem com mais frequência durante eventos"
+    },
+    "requirements": {
+      "to_see_chests": "Lunar Ticket no inventário — obtido como recompensa por derrotar o E4 de Sinnoh",
+      "to_open_chests": "Treasure Key (consumida ao usar)"
+    },
+    "treasure_key": {
+      "source": "Elite Shop — 1 Elite Token por chave",
+      "alternative": "Obtida de outros jogadores ou Global Marketplace"
+    },
+    "possible_rewards": ["Cherish Ball", "Honey", "outros itens valiosos"],
+    "note": "Sistema competitivo — chegar primeiro ao chest antes de outros jogadores"
+  },
+
+  "special_legendaries": {
+    "description": "Lendários especiais com mecânicas únicas de acesso",
+    "mew": {
+      "how_to_access": "Comprar Old Sea Map no Elite Shop por 125 Elite Tokens → usar no ferry de Hoenn → Faraway Island",
+      "mechanic": "12 áreas dentro de Faraway Island. Mew muda sua localização diariamente",
+      "note": "Requer investimento significativo em Elite Tokens"
+    },
+    "jirachi": {
+      "how_to_access": "Disponível no PP Shop (Philanthropist Points) em Silph Co."
+    },
+    "moltres_altering_cave": {
+      "primary_location": "Mossy Cave — Fire Cavern",
+      "secondary_location": "Altering Cave (Hoenn) — chance baixa de spawn"
+    },
+    "zapdos_altering_cave": {
+      "primary_location": "Mossy Cave — Thunder Cavern",
+      "secondary_location": "Altering Cave (Hoenn) — chance baixa de spawn"
+    },
+    "note": "Todos os wild legendaries aparecem no nível 85. Ver legendary_lle_system para mecânicas de encontro"
+  },
+
+  "database_version": "21.0",
   "last_updated": "2026-06-08"
 }
