@@ -4861,6 +4861,194 @@
     "note": "Doação ao Altar não afeta encounter rates de lendários — para LLE usar o sistema próprio (/lle)"
   },
 
-  "database_version": "31.0",
+  "nature_system": {
+    "description": "Sistema de natures (personalidades) dos Pokémon — afetam stats em +10% e -10%",
+    "cannot_change_after_catch": true,
+    "synchronize_mechanics": {
+      "description": "Usar Synchronize para influenciar a nature de Pokémon encontrados",
+      "synchronize_ability": {
+        "requirement": "Pokémon com Synchronize deve ser o lead e estar vivo",
+        "chance": "30% (base 4% por nature + 26% bônus do Synchronize)"
+      },
+      "synchronize_stone": {
+        "description": "Item segurado que ativa efeito do Synchronize sem precisar ser o lead",
+        "benefit": "Permite colocar o Pokémon com Synchronize em qualquer posição do time"
+      },
+      "note": "Sem Synchronize cada nature tem 4% de chance — total de 25 natures"
+    },
+    "neutral_natures": ["Hardy", "Docile", "Bashful", "Quirky", "Serious"],
+    "natures": [
+      { "name": "Hardy",    "plus": null,  "minus": null  },
+      { "name": "Lonely",   "plus": "Atk", "minus": "Def" },
+      { "name": "Brave",    "plus": "Atk", "minus": "Spe" },
+      { "name": "Adamant",  "plus": "Atk", "minus": "SpA" },
+      { "name": "Naughty",  "plus": "Atk", "minus": "SpD" },
+      { "name": "Bold",     "plus": "Def", "minus": "Atk" },
+      { "name": "Docile",   "plus": null,  "minus": null  },
+      { "name": "Relaxed",  "plus": "Def", "minus": "Spe" },
+      { "name": "Impish",   "plus": "Def", "minus": "SpA" },
+      { "name": "Lax",      "plus": "Def", "minus": "SpD" },
+      { "name": "Timid",    "plus": "Spe", "minus": "Atk" },
+      { "name": "Hasty",    "plus": "Spe", "minus": "Def" },
+      { "name": "Serious",  "plus": null,  "minus": null  },
+      { "name": "Jolly",    "plus": "Spe", "minus": "SpA" },
+      { "name": "Naive",    "plus": "Spe", "minus": "SpD" },
+      { "name": "Modest",   "plus": "SpA", "minus": "Atk" },
+      { "name": "Mild",     "plus": "SpA", "minus": "Def" },
+      { "name": "Quiet",    "plus": "SpA", "minus": "Spe" },
+      { "name": "Bashful",  "plus": null,  "minus": null  },
+      { "name": "Rash",     "plus": "SpA", "minus": "SpD" },
+      { "name": "Calm",     "plus": "SpD", "minus": "Atk" },
+      { "name": "Gentle",   "plus": "SpD", "minus": "Def" },
+      { "name": "Sassy",    "plus": "SpD", "minus": "Spe" },
+      { "name": "Careful",  "plus": "SpD", "minus": "SpA" },
+      { "name": "Quirky",   "plus": null,  "minus": null  }
+    ],
+    "stat_modifier": "±10% no stat indicado"
+  },
+
+  "iv_system": {
+    "description": "Individual Values (IVs) — valores únicos por Pokémon que determinam potencial de cada stat",
+    "iv_range": "0 a 31 por stat (HP, Atk, Def, SpA, SpD, Spe)",
+    "effect": "Cada IV adiciona 1 ponto ao stat correspondente",
+    "total_ivs": 6,
+    "iv_reset_items": {
+      "iv_reset": {
+        "effect": "Rerola TODOS os 6 IVs aleatoriamente",
+        "consumed_on_use": true
+      },
+      "stat_specific_resets": {
+        "HP IV Reset": "Rerola apenas o IV de HP",
+        "Attack IV Reset": "Rerola apenas o IV de Ataque",
+        "Defense IV Reset": "Rerola apenas o IV de Defesa",
+        "SpAtk IV Reset": "Rerola apenas o IV de Ataque Especial",
+        "SpDef IV Reset": "Rerola apenas o IV de Defesa Especial",
+        "Speed IV Reset": "Rerola apenas o IV de Velocidade",
+        "consumed_on_use": true
+      }
+    },
+    "how_to_obtain_iv_reset": {
+      "mystery_box_jackpot": "20 IV Resets como jackpot do Mystery Box",
+      "philanthropist_point_exchanger": "Disponível no exchanger de PP em Silph Co."
+    },
+    "view_ivs": "Verificar IVs no menu do Pokémon na tela de status"
+  },
+
+  "mega_evolution_system": {
+    "description": "Mega Evolution — transformação temporária de batalha com Mega Stone",
+    "availability": "Sistema presente no PokeNexus — NPCs (Elite Four, Champions) usam Mega Pokémon",
+    "player_usage": {
+      "requirement": "Segurar o Mega Stone correto no Pokémon correspondente durante batalha",
+      "limit": "1 Mega Evolution por batalha por treinador",
+      "duration": "Apenas durante a batalha — Pokémon reverte após a luta"
+    },
+    "how_to_obtain_mega_stones": {
+      "evolutional_stone_box": {
+        "chance": "1% de jackpot = Mega Stone aleatória tradeable",
+        "note": "Principal método para jogadores obterem Mega Stones"
+      },
+      "other_sources": "a confirmar"
+    },
+    "known_npc_mega_users": {
+      "sinnoh_champion_cynthia": ["Mega Garchomp", "Mega Mewtwo Y"],
+      "note": "A partir de Hoenn, líderes de ginásio e Elite Four usam um Mega Pokémon cada — o 6º Pokémon do campeão/E4 pode ter Mega Stone"
+    },
+    "evolutional_stone_box": {
+      "description": "Caixa que pode conter Evolution Stones ou Mega Stones",
+      "jackpot_chance": "1%",
+      "jackpot_reward": "Mega Stone aleatória (tradeable)"
+    }
+  },
+
+  "hoenn_walkthrough": {
+    "description": "Guia passo a passo da região de Hoenn — 3ª região do jogo",
+    "prerequisite": "Completar Kanto (8 badges) + Johto (8 badges) + derrotar Johto Elite Four",
+    "how_to_enter": "Ir para o oeste de Viridian City → portão de entrada para Hoenn",
+    "starter_pokemon": ["Treecko (Grass)", "Torchic (Fire)", "Mudkip (Water)"],
+    "steps": [
+      {
+        "step": 1,
+        "location": "Littleroot Town",
+        "action": "Escolher starter Pokémon com Professor Birch"
+      },
+      {
+        "step": 2,
+        "location": "Rota 101 → Oldale Town",
+        "action": "Ir ao norte. May te desafia logo ao norte de Oldale Town. Derrotá-la e seguir para Rustboro City"
+      },
+      {
+        "step": 3,
+        "location": "Rustboro City — Ginásio 1",
+        "gym_leader": "Roxanne (Rock)",
+        "action": "Derrotar Roxanne → Team Aqua rouba partes da Devon Corporation em Rusturf Tunnel → recuperar as partes"
+      },
+      {
+        "step": 4,
+        "location": "Rota 104 → Dewford Town",
+        "action": "Falar com Mr. Briney na praia da Rota 104. Team Aqua roubou seu barco e Peeko. Navegar até Dewford Town"
+      },
+      {
+        "step": 5,
+        "location": "Dewford Town — Ginásio 2",
+        "gym_leader": "Brawly (Fighting)",
+        "action": "Derrotar Brawly → entregar partes da Devon ao Capitão Stern no Oceanic Museum de Slateport City → derrotar 2 grunts e Maxie no museu"
+      },
+      {
+        "step": 6,
+        "location": "Slateport City → Mauville City — Ginásio 3",
+        "gym_leader": "Wattson (Electric)",
+        "action": "Navegar de Dewford até Slateport → ir ao norte pela Rota 110 até Mauville → derrotar Wattson → missão New Mauville com Wattson"
+      },
+      {
+        "step": 7,
+        "location": "Lavaridge Town — Ginásio 4",
+        "gym_leader": "Flannery (Fire)",
+        "action": "Ir ao oeste de Mauville → subir pela Rota 111 → Mt. Chimney → Jagged Pass → Lavaridge Town → derrotar Flannery"
+      },
+      {
+        "step": 8,
+        "location": "Petalburg City — Ginásio 5",
+        "gym_leader": "Norman (Normal)",
+        "action": "Voltar a Petalburg City → derrotar seu pai Norman (requer 4 badges)"
+      },
+      {
+        "step": 9,
+        "location": "Fortree City — Ginásio 6",
+        "gym_leader": "Winona (Flying)",
+        "action": "Seguir pela Rota 118 → 119 → Fortree City → derrotar Winona"
+      },
+      {
+        "step": 10,
+        "location": "Mossdeep City — Ginásio 7",
+        "gym_leader": "Tate & Liza (Psychic)",
+        "action": "Navegar pela Rota 124 até Mossdeep → derrotar a dupla Tate & Liza"
+      },
+      {
+        "step": 11,
+        "location": "Seafloor Cavern",
+        "action": "Surfar ao sul de Mossdeep → Rota 128 → Dive → entrar no Seafloor Cavern → confrontar Team Aqua/Magma"
+      },
+      {
+        "step": 12,
+        "location": "Sootopolis City — Ginásio 8",
+        "gym_leader": "Wallace (Water)",
+        "action": "Voar de volta a Mossdeep → surfar ao oeste → encontrar área de água profunda → Dive → cave entrance → Sootopolis City → derrotar Wallace"
+      },
+      {
+        "step": 13,
+        "location": "Ever Grande City → Elite Four",
+        "action": "Surfar ao leste de Mossdeep → usar Waterfall na grande cachoeira → Ever Grande City → desafiar o Hoenn Elite Four (requer todos os 8 badges de Hoenn)"
+      },
+      {
+        "step": 14,
+        "location": "Hoenn Elite Four",
+        "action": "Derrotar Sidney → Phoebe → Glacia → Drake → Wallace (Champion). Recompensa: Eon Ticket"
+      }
+    ],
+    "key_hms_needed": ["Surf", "Dive", "Waterfall", "Strength", "Rock Smash", "Fly"],
+    "region_unlock": "Após completar Hoenn → acesso à região de Sinnoh"
+  },
+
+  "database_version": "32.0",
   "last_updated": "2026-06-09"
 }
