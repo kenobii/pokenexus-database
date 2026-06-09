@@ -4365,6 +4365,63 @@
     }
   },
 
-  "database_version": "27.0",
+  "encounter_rates_complete": {
+    "description": "Tabela completa de encounter rates por raridade em PokeNexus",
+    "base_rates": [
+      { "rarity": "Common", "note": "Mais comum — sem taxa específica divulgada" },
+      { "rarity": "Uncommon (UC)", "base_rate": "~1/7.7" },
+      { "rarity": "Rare (R)", "base_rate": "1/60" },
+      { "rarity": "Very Rare (VR)", "base_rate": "1/600" },
+      { "rarity": "Extremely Rare (ER)", "base_rate": "1/5.000" },
+      { "rarity": "Event Legendary", "base_rate": "1/80.000" },
+      { "rarity": "Legendary (LLE)", "base_rate": "1/125.000 base, média ~1/95k sem GM, ~1/63k com GM" },
+      { "rarity": "Shiny", "base_rate": "1/8.192" },
+      { "rarity": "Elite Pokemon", "base_rate": "1/200 — NÃO afetado por qualquer boost" }
+    ],
+    "boosts": {
+      "gold_membership": "+50% para raridades UC, R, VR, ER, L; +20% shiny",
+      "shiny_charm": "+25% shiny (Elite Shop, 30 tokens)",
+      "swarm_map": "+25% encounter geral, +10% legendary, +10% shiny",
+      "altering_cave": "1.3x encounter rate boost",
+      "cerulean_gems": "Pale/Blue/Green/Prism = 1.25x LLE; Dark = 2x LLE",
+      "enhanced_feather": "+20% LLE para o lendário específico"
+    }
+  },
+
+  "regi_legendaries": {
+    "description": "Localização dos Regis em PokeNexus",
+    "regirock_regice_registeel": {
+      "method": "Mining — qualquer rocha quando Mining Level é 75 ou maior",
+      "rate": "1/75.000 por rocha",
+      "alternative": "Altering Cave (10% de chance de ser um destes no spawn de lendário)"
+    },
+    "regigigas": {
+      "method": "Somente via Legendary Egg (intransferível)",
+      "sources": [
+        "World Boss: top 3 dano (15%/10%/5% chance)",
+        "PvP Tournament: prêmio de certos torneios"
+      ]
+    }
+  },
+
+  "latias_latios_complete": {
+    "description": "Latias e Latios — encontro pós Hoenn Elite Four",
+    "unlock": "Derrotar Hoenn Elite Four → receber Eon Ticket",
+    "eon_ticket": {
+      "use": "Clicar duas vezes no Eon Ticket para ver a localização atual de Latios/Latias",
+      "spawn_change": "Área de spawn muda diariamente às 0:00 UTC"
+    },
+    "encounter_details": {
+      "region": "Exclusivos a mapas de Hoenn (não aparecem em Kanto, Johto, etc.)",
+      "encounter_types": "Terrestre e na água (surfing)"
+    },
+    "boost_item": {
+      "name": "Soul Shard Enhanced",
+      "effect": "Aumenta taxa de encontro com Latios/Latias",
+      "how_to_get": "Craftar Soul Shard Enhanced (verificar receita de crafting)"
+    }
+  },
+
+  "database_version": "28.0",
   "last_updated": "2026-06-09"
 }
