@@ -4275,6 +4275,81 @@
     }
   },
 
-  "database_version": "26.0",
+  "seasonal_events_complete": {
+    "description": "Eventos sazonais recorrentes de PokeNexus",
+    "halloween_event": {
+      "period": "Outubro/Novembro (anual)",
+      "how_to_access": "Evento automático — mapas especiais ficam disponíveis",
+      "structure": {
+        "corn_maze": "Início do evento. Ir para o canto inferior esquerdo do labirinto → Haunted Forest",
+        "haunted_forest": {
+          "mechanic": "Todos os Pokémon selvagens dropam 'Brains' quando capturados ou derrotados",
+          "store": "Halloween Store — falar com qualquer Witch NPC para trocar Brains por itens",
+          "store_items": ["Trick or Treat Bag (abre com item aleatório)"]
+        },
+        "haunted_mansion": {
+          "1f": "Gengar disponível para caçar",
+          "2f": {
+            "pokemon": "Darkrai",
+            "requirement": "400 Pokémon únicos no Pokédex"
+          },
+          "yveltal": "Yveltal (Pokémon da Destruição) SOMENTE disponível na Haunted Mansion. Forma normal = preto/vermelho, Shiny = branco/vermelho"
+        },
+        "haunted_cave": {
+          "b1": {
+            "requirement": "600 Pokémon únicos no Pokédex",
+            "note": "Área post-game avançada do evento"
+          }
+        }
+      },
+      "special_eggs": "Giratina obtível via Egg — recompensa de 1º/2º/3º no ranking do evento (não garantido)"
+    },
+    "christmas_event": {
+      "period": "Dezembro/Janeiro (anual)",
+      "how_to_access": "Falar com o Delibird em qualquer Pokémon Center",
+      "features": {
+        "catchable_pokemon": ["Delibird", "Stantler"],
+        "special_legendary": "Xerneas (Pokémon da Vida) disponível durante o evento",
+        "santas_shop": "Loja especial com itens exclusivos do evento",
+        "christmas_presents": "Podem conter Gold Membership, Blessings, e outros itens valiosos"
+      }
+    },
+    "easter_event": {
+      "period": "Março/Abril (anual)",
+      "how_to_access": "Falar com o Easter Sailor em qualquer Pokémon Center → acesso a novos mapas",
+      "features": {
+        "lucky_egg": "Disponível no Credit Shop durante o evento Easter (+25% XP ao segurar)",
+        "easter_eggs": "Easter Eggs (item) podem conter vários loot ao abrir",
+        "new_maps": "Mapas exclusivos com Pokémon especiais do evento"
+      }
+    },
+    "egg_rewards_world_boss": {
+      "description": "Eggs de World Boss — itens separados do sistema de breeding",
+      "types": ["Common Egg", "Uncommon Egg", "Rare Egg", "Very Rare Egg", "Extremely Rare Egg", "Legendary Egg (untradeable)"],
+      "how_to_get": "Recompensa por dano ao World Boss. Top 3 dano = Legendary Egg (15%/10%/5% chance)",
+      "note": "Estes eggs são DIFERENTES do daycare breeding — são itens que spawniam um Pokémon aleatório da raridade correspondente"
+    }
+  },
+
+  "daycare_breeding_complete": {
+    "description": "Daycare — sistema de breeding e Egg Moves em PokeNexus",
+    "location": "Four Island (Sevii Islands — requer Rainbow Pass)",
+    "mechanics": {
+      "hatch_time": "3-7 horas de jogo in-game para o egg aparecer/eclodir",
+      "compatibility": "Padrão da série Pokémon — mesmo egg group, gêneros opostos, não lendários",
+      "egg_level": "Pokémon eclode no nível 1"
+    },
+    "egg_moves": {
+      "how_to_get_via_daycare": "Breed com Pokémon pai que conhece o move desejado → filho herda o egg move",
+      "alternative": "Egg Move Tutor no Clan Building de Vermilion City (Egg Move Ticket — 50 tokens de Clan War por move)"
+    },
+    "egg_move_ticket": {
+      "cost": "50 Clan War tokens por move",
+      "source": "Clan War — prêmio por participação/MVP",
+      "note": "Alternativa ao breeding tradicional para obter egg moves"
+    }
+  },
+
+  "database_version": "27.0",
   "last_updated": "2026-06-09"
 }
