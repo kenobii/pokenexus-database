@@ -1126,6 +1126,7 @@
 
   "mystery_box": {
     "cost_credits": 80,
+    "how_to_obtain": "Credit Shop (80 créditos) OU como prêmio de Item Bomb",
     "possible_rewards": [
       "$ 1.000 a $ 50.000",
       "Rare Candy",
@@ -1143,7 +1144,8 @@
       "Vitamins",
       "Super Potion",
       "TM Box"
-    ]
+    ],
+    "jackpot": "1 Year Gold Membership Ticket OU 20 IV Resets (chance baixa)"
   },
 
   "crafting_complete": {
@@ -3093,6 +3095,7 @@
     "description": "Sistema de recompensas do World Boss (complemento)",
     "damage_tiers": [2500, 10000, 25000, 50000, 100000, 300000, 400000],
     "minimum_damage_for_reward": 2500,
+    "minimum_damage_for_charms": 25000,
     "killing_blow_bonus": "Bônus de IV Reset para quem der o golpe final",
     "legendary_egg": {
       "description": "Ovo com o lendário derrotado — NÃO negociável",
@@ -4545,6 +4548,46 @@
         "requirement": "Derrotar Blaine (7º Ginásio Kanto)"
       }
     }
+  },
+
+  "sinnoh_elite_four": {
+    "description": "Elite Four de Sinnoh em PokeNexus — usa Pokémon com Mega Evoluções",
+    "members": [
+      { "name": "Aaron", "type": "Bug", "notable": "Mega Heracross (com Skill Link)" },
+      { "name": "Bertha", "type": "Ground", "notable": "Mega Steelix" },
+      { "name": "Flint", "type": "Fire", "notable": "Mega Charizard Y" },
+      { "name": "Lucian", "type": "Psychic", "notable": "Mega Gardevoir" },
+      { "name": "Cynthia", "title": "Champion", "type": "Mixed (Dragon focus)", "notable": "Mega Garchomp e Mega Mewtwo Y" }
+    ],
+    "unlock_requirement": "Derrotar Hoenn Elite Four",
+    "reward": "Desbloqueio de Unova + Lunar Ticket"
+  },
+
+  "unova_elite_four": {
+    "description": "Elite Four de Unova em PokeNexus — última E4 disponível",
+    "members": [
+      { "name": "Shauntal", "type": "Ghost" },
+      { "name": "Marshal", "type": "Fighting" },
+      { "name": "Grimsley", "type": "Dark" },
+      { "name": "Caitlin", "type": "Psychic" },
+      { "name": "Iris", "title": "Champion", "type": "Dragon" }
+    ],
+    "unlock_requirement": "Derrotar Sinnoh Elite Four",
+    "reward": "Acesso a N Castle (com Collector IV — 500 Pokémon)"
+  },
+
+  "unova_gyms": {
+    "description": "8 Ginásios de Unova em ordem",
+    "gyms": [
+      { "city": "Striaton City", "leaders": "Cilan, Cress ou Chili (depende do starter)", "type": "Grass/Water/Fire", "badge": "Trio Badge", "tm": "TM83 Work Up" },
+      { "city": "Nacrene City", "leader": "Lenora", "type": "Normal", "badge": "Basic Badge" },
+      { "city": "Castelia City", "leader": "Burgh", "type": "Bug", "badge": "Insect Badge", "tm": "TM76 Struggle Bug" },
+      { "city": "Nimbasa City", "leader": "Elesa", "type": "Electric", "badge": "Bolt Badge" },
+      { "city": "Driftveil City", "leader": "Clay", "type": "Ground", "badge": "Quake Badge", "tm": "TM78 Bulldoze" },
+      { "city": "Mistralton City", "leader": "Skyla", "type": "Flying", "badge": "Jet Badge" },
+      { "city": "Icirrus City", "leader": "Brycen", "type": "Ice", "badge": "Freeze Badge" },
+      { "city": "Opelucid City", "leader": "Drayden", "type": "Dragon", "badge": "Legend Badge", "tm": "TM82 Dragon Tail" }
+    ]
   },
 
   "legendaries_not_in_game": {
