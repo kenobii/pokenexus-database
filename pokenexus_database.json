@@ -4475,6 +4475,43 @@
     ]
   },
 
-  "database_version": "29.0",
+  "region_unlock_progression": {
+    "description": "Ordem e requisitos para desbloquear cada região em PokeNexus",
+    "progression": [
+      {
+        "order": 1,
+        "region": "Kanto",
+        "unlock": "Região inicial — começa aqui"
+      },
+      {
+        "order": 2,
+        "region": "Johto",
+        "unlock": "Derrotar Kanto Elite Four",
+        "how_to_enter": "Sul da Reception Gate (oeste de Viridian City)"
+      },
+      {
+        "order": 3,
+        "region": "Hoenn",
+        "unlock": "Derrotar Johto Elite Four",
+        "how_to_enter": "Esquerda na Reception Gate (oeste de Viridian City) → ferry"
+      },
+      {
+        "order": 4,
+        "region": "Sinnoh",
+        "unlock": "Derrotar Hoenn Elite Four",
+        "how_to_enter": "Ferry para Twinleaf Town"
+      },
+      {
+        "order": 5,
+        "region": "Unova",
+        "unlock": "Derrotar Sinnoh Elite Four",
+        "how_to_enter": "Ferry para Nuvema Town"
+      }
+    ],
+    "total_badges": "40 badges no total (8 por região × 5 regiões)",
+    "note": "Cada E4 derrotada também desbloqueia mecânicas adicionais: Elite Pokémon (após Kanto E4), Mossy Key (350 Pokédex), Eon Ticket (Hoenn E4), Lunar Ticket (Sinnoh E4)"
+  },
+
+  "database_version": "30.0",
   "last_updated": "2026-06-09"
 }
