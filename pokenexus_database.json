@@ -4337,7 +4337,15 @@
       "features": {
         "lucky_egg": "Disponível no Credit Shop durante o evento Easter (+25% XP ao segurar)",
         "easter_eggs": "Easter Eggs (item) podem conter vários loot ao abrir",
-        "new_maps": "Mapas exclusivos com Pokémon especiais do evento"
+        "new_maps": "Mapas exclusivos com Pokémon especiais do evento",
+        "easter_meadow": "Mapa especial do evento — único local onde Celebi pode ser encontrado no wild"
+      },
+      "special_legendary": {
+        "celebi": {
+          "location": "Easter Meadow",
+          "availability": "Somente durante o Easter Event",
+          "note": "Celebi também pode ser obtido via Cherish Ball (de Treasure Chests) fora do evento"
+        }
       }
     },
     "egg_rewards_world_boss": {
@@ -4539,6 +4547,100 @@
     }
   },
 
-  "database_version": "30.1",
+  "legendaries_not_in_game": {
+    "description": "Lendários confirmados como NÃO disponíveis em PokeNexus (nem em wild, nem via item)",
+    "hoenn_weather_trio": {
+      "kyogre": "Não pode ser capturado no jogo",
+      "groudon": "Não pode ser encontrado no wild",
+      "rayquaza": "Não pode ser encontrado no wild"
+    },
+    "unova_legendaries": {
+      "reshiram": "Não disponível",
+      "zekrom": "Não disponível",
+      "cobalion": "Não disponível",
+      "terrakion": "Não disponível",
+      "virizion": "Não disponível",
+      "thundurus": "Não disponível",
+      "tornadus": "Não disponível",
+      "landorus": "Não disponível",
+      "kyurem_black_white": "Não disponível (apenas Kyurem normal via Clan War shop)"
+    },
+    "johto_birds": "Ho-Oh e Lugia não disponíveis no wild (confirmado anteriormente)",
+    "source": "pokemon-planet.fandom.com/wiki/Legendary"
+  },
+
+  "cherish_ball": {
+    "description": "Item especial que contém um Pokémon lendário aleatório de nível 40",
+    "how_to_obtain": "Chance baixa ao abrir Treasure Chests (requer Lunar Ticket para ver os chests)",
+    "level": 40,
+    "possible_legendaries": [
+      "Articuno", "Moltres", "Zapdos",
+      "Suicune", "Entei", "Raikou",
+      "Regice", "Regirock", "Registeel",
+      "Xerneas", "Yveltal", "Celebi", "Volcanion"
+    ],
+    "note": "Pokémon vem no nível 40, diferente dos encontros no wild que são nível 85"
+  },
+
+  "pokemon_box_credit_shop": {
+    "description": "Caixa misteriosa vendida no Credit Shop que contém 1 de 8 Pokémon exclusivos não encontráveis no wild",
+    "cost_credits": 1000,
+    "pool_size": 8,
+    "known_included": ["Meloetta"],
+    "note": "Pode ser comercializado com outros jogadores. Todos os Pokémon vêm no nível 3",
+    "credit_shop_access": "Ícone de bolsa amarela no canto inferior esquerdo do jogo"
+  },
+
+  "clan_wars_complete": {
+    "description": "Sistema de guerras entre clãs de PokeNexus",
+    "how_tokens_work": "Todos os membros online que participaram da guerra recebem Clan War Tokens. Requisito mínimo: vencer ao menos 1 batalha OU perder ao menos 3",
+    "prize_shop": {
+      "location": "Prize Exchanger no Clan War Center",
+      "items": [
+        { "item": "Keldeo", "cost_tokens": "a confirmar" },
+        { "item": "Kyurem (Normal)", "cost_tokens": "a confirmar" },
+        { "item": "Egg Move Ticket", "cost_tokens": 50 },
+        { "item": "Move Tutor Ticket", "cost_tokens": 50 }
+      ]
+    },
+    "note": "Egg Move Ticket permite ensinar Egg Moves a um Pokémon via NPC (alternativa ao Daycare). Move Tutor Ticket similar para Move Tutor."
+  },
+
+  "n_castle_complete": {
+    "description": "Castelo de N em Unova — área pós-jogo de alto nível",
+    "region": "Unova",
+    "unlock_requirement": "Collector IV achievement: capturar 500 espécies diferentes de Pokémon",
+    "level_range": "Pokémon de alto nível",
+    "sub_areas": {
+      "water_temple": {
+        "description": "Templo aquático dentro do N Castle, lar de Manaphy e Phione",
+        "how_to_reach": "Dentro do N Castle (requer N Castle desbloqueado)",
+        "manaphy": {
+          "method": "Pescar dentro do Water Temple",
+          "fishing_level_required": 80,
+          "note": "Phione também pode ser pescado aqui"
+        }
+      }
+    },
+    "available_legendaries": ["Articuno (via N Castle, sem Feather)", "Moltres (via N Castle, sem Feather)", "Zapdos (via N Castle, sem Feather)"],
+    "note": "N Castle alternativa para Kanto birds sem precisar de Feather (confirmado anteriormente)"
+  },
+
+  "hm_strength_rock_smash": {
+    "description": "Localizações de HM Strength e HM Rock Smash — completando hm_locations_complete",
+    "hm04_strength": {
+      "location": "Safari Zone Warden — Fuchsia City",
+      "how_to_get": "Encontrar Gold Teeth no Safari Zone (próximos à Secret House onde se pega Surf). Entregar os Gold Teeth ao Safari Zone Warden na casa a leste do Pokémon Center de Fuchsia City.",
+      "region": "Kanto"
+    },
+    "hm06_rock_smash": {
+      "location": "Mauville City / Rusturf Tunnel — Hoenn",
+      "how_to_get": "Recebido de um NPC em Mauville City (Hoenn) OU de Wally após ajudá-lo no Rusturf Tunnel",
+      "region": "Hoenn",
+      "note": "Necessário para abrir o caminho completo no Rusturf Tunnel"
+    }
+  },
+
+  "database_version": "31.0",
   "last_updated": "2026-06-09"
 }
