@@ -3679,14 +3679,29 @@
   },
 
   "altering_cave_hoenn": {
-    "description": "Altering Cave — localização em Hoenn",
-    "location": "Route 103, Hoenn",
+    "description": "Altering Cave — área especial em Hoenn com lendários e mecânicas únicas",
+    "location": "Route 103_2, Hoenn",
+    "access": {
+      "item": "Altering Cave Ticket",
+      "cost": 600000,
+      "duration": "24 horas"
+    },
+    "mechanics": {
+      "wild_level": "Nível dos wild Pokémon = nível médio do time do jogador (arredondado para baixo)",
+      "no_money": "Wild Pokémon não dropam dinheiro aqui",
+      "encounter_boost": "1.3x encounter rate boost",
+      "daily_rotation": "Pokémon mudam diariamente — 2 por raridade/método são sorteados de um pool"
+    },
+    "legendary_spawn": {
+      "chance": "10% de chance de spawnar um lendário",
+      "legendaries": ["Moltres", "Articuno", "Zapdos", "Raikou", "Entei", "Suicune", "Regirock", "Regice", "Registeel", "Shaymin"]
+    },
     "notable_drop": {
       "item": "Loop Half (metade da Ancient Key)",
-      "drop_rate": "1/15,000",
+      "drop_rate": "1/15.000",
       "alternative_source": "Clan War tokens — 800 tokens no Clan Building de Vermilion City"
     },
-    "note": "A Loop Half combinada com a Tooth Half forma a Ancient Key completa para acessar áreas especiais"
+    "note": "Loop Half + Tooth Half = Ancient Key completa para acesso a áreas especiais"
   },
 
   "sevii_islands_complete": {
