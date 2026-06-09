@@ -5077,15 +5077,20 @@
       "loop_half": "Drop em Altering Cave, Hoenn (1/15.000) OU 800 Clan War Tokens (Clan Building, Vermilion City)"
     },
     "mechanics": {
-      "boosted_stats": "Todos os Pokémon selvagens têm stats aumentados",
+      "boosted_stats": "1.65x stats (exceto Speed) para todos os Pokémon selvagens",
       "held_items": "Pokémon selvagens podem carregar itens",
       "higher_exp_drops": true,
       "wild_level": 85
     },
     "exclusive_pokemon": ["Goomy"],
+    "legendary": {
+      "regigigas": {
+        "location": "Ancient Dungeon",
+        "moveset": ["Payback", "Zen Headbutt", "Wide Guard", "Revenge"]
+      }
+    },
     "notable_drops": ["Legendary Bait (drop raro)", "Soothe Bell", "Wise Glasses", "Muscle Band"],
-    "legendary_access": "Pokémon lendários disponíveis dentro do dungeon",
-    "note": "Legendary Bait é ingredient necessário para craftar Soul Shard Enhanced (para Latios/Latias)"
+    "note": "Legendary Bait é ingrediente necessário para craftar Soul Shard Enhanced (para Latios/Latias)"
   },
 
   "unova_walkthrough": {
@@ -5288,6 +5293,24 @@
     "post_game_unlock": "Unova via ferry. Também: Treasure Chests (Lunar Ticket), Deep New Moon Island (Darkrai), Deep Full Moon Island (Cresselia)"
   },
 
-  "database_version": "32.2",
+  "collector_achievements": {
+    "description": "Sistema de achievements baseado em número de Pokémon únicos capturados",
+    "command": "/pokedex para ver progresso",
+    "tiers": [
+      { "tier": "Collector I",   "requirement": "a confirmar", "reward": "a confirmar" },
+      { "tier": "Collector II",  "requirement": "a confirmar", "reward": "a confirmar" },
+      { "tier": "Collector III", "requirement": "350 Pokémon únicos capturados", "reward": "Mossy Key (acesso ao Mossy Cave — Legendary Dogs)" },
+      { "tier": "Collector IV",  "requirement": "500 Pokémon únicos capturados", "reward": "Castle Key (acesso ao N Castle + Water Temple)" },
+      { "tier": "Collector V",   "requirement": "a confirmar (provável 600+)", "reward": "a confirmar" }
+    ],
+    "special_unlocks_by_pokédex_count": [
+      { "count": 350, "unlock": "Mossy Cave (Legendary Dogs: Entei, Raikou, Suicune)" },
+      { "count": 400, "unlock": "Darkrai no Halloween Event — Haunted Mansion 2F" },
+      { "count": 500, "unlock": "N Castle (Kanto birds sem Feather + Water Temple com Manaphy)" },
+      { "count": 600, "unlock": "Mewtwo em Cerulean Cave F4 + Legendary Map" }
+    ]
+  },
+
+  "database_version": "32.3",
   "last_updated": "2026-06-09"
 }
