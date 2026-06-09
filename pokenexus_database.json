@@ -4777,6 +4777,45 @@
     }
   },
 
+  "battle_tower_complete": {
+    "description": "Battle Tower — desafio PvE de sequências de batalhas com recompensas",
+    "location": "Norte de Seven Island (Sevii Islands). Acesso via Surf de Seven Island",
+    "how_to_get_to_seven_island": "Falar com Bill em Cinnabar Island → Rainbow Pass → Seven Island",
+    "mechanics": {
+      "format": "Nível 100 forçado em todas as batalhas",
+      "how_it_works": "Derrotar o máximo de treinadores consecutivos possível. Perder = reiniciar (com exceções de streak alta)",
+      "tower_tycoon": "Aparece a cada 10 vitórias — treinador mais poderoso",
+      "leave_between_battles": "Pode sair da arena, trocar de time e usar itens entre batalhas"
+    },
+    "streak_scaling": {
+      "past_100_wins": "Stats dos oponentes +1% a cada 4 vitórias adicionais",
+      "lose_at_100+": "Recomeça no floor 30",
+      "lose_at_200+": "Recomeça no floor 60",
+      "lose_at_300+": "Recomeça no floor 90",
+      "lose_at_400+": "Recomeça no floor 120"
+    },
+    "reward_scaling": {
+      "tycoon_payout_doubles_at": 120,
+      "normal_trainer_tokens_double_at": 200
+    },
+    "rewards": {
+      "currency": "Tower Tokens",
+      "prize_exchanger": "Troca Tower Tokens por recompensas",
+      "notable_prizes": ["Zygarde"]
+    }
+  },
+
+  "altar_system": {
+    "description": "Altar em Vermilion City — doação de dinheiro por Philanthropist Points",
+    "location": "Vermilion City — Kanto",
+    "command": "/altar",
+    "pp_rate": "1 PP a cada $800 doados (arredondado para baixo)",
+    "special_blessing": {
+      "diancie_altar_blessing": "Dobra o EXP de Mining enquanto ativo"
+    },
+    "note": "Doação ao Altar não afeta encounter rates de lendários — para LLE usar o sistema próprio (/lle)"
+  },
+
   "database_version": "31.0",
   "last_updated": "2026-06-09"
 }
