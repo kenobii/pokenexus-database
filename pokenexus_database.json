@@ -4039,6 +4039,79 @@
     "little_cup_banned_moves": ["Dragon Rage", "Sonicboom", "Swagger"]
   },
 
-  "database_version": "23.0",
+  "gold_membership_complete": {
+    "description": "Gold Membership (GM) — assinatura premium de PokeNexus",
+    "benefits": [
+      "+50% EXP de Pokémon selvagens (NÃO se aplica a Mining XP ou Fishing XP)",
+      "+50% dinheiro de Pokémon selvagens",
+      "+50% taxa de encontro para raridades UC/R/VR/ER/L",
+      "+20% taxa de shiny",
+      "Nome amarelo no chat global",
+      "10% de desconto no Credit Shop"
+    ],
+    "how_to_get": [
+      "Credit Shop — tickets de 7 dias ou 30 dias",
+      "Trade chat ou Global Marketplace (comprar de outros jogadores)",
+      "Recompensa de certos Achievements",
+      "Recompensa de Torneios",
+      "Easter Eggs",
+      "Mystery Boxes",
+      "Christmas Presents",
+      "Drop raro de Pokémon shiny"
+    ],
+    "note": "GM não afeta EXP de Mining nem Fishing. Boost de shiny (+20%) se soma com Shiny Charm (+25%) e outros bônus"
+  },
+
+  "crafting_additions_v3": {
+    "description": "Receitas de crafting adicionais descobertas",
+    "recipes": [
+      {
+        "result": "Ancient Key (completa)",
+        "ingredients": ["Ancient Key (Tooth Half)", "Ancient Key (Loop Half)"],
+        "use": "Acesso a área especial do jogo"
+      },
+      {
+        "result": "Steel Rod",
+        "ingredients": ["Super Rod", "Metal Coat", "Steel Wire"],
+        "level_required": "Fishing level 50",
+        "note": "Abre a receita para Master Rod"
+      },
+      {
+        "result": "Master Rod",
+        "ingredients": ["Steel Rod", "Master Ball"],
+        "level_required": "Fishing level 100"
+      },
+      {
+        "result": "Steel Pickaxe",
+        "ingredients": ["Super Pickaxe", "Metal Coat", "Steel Wire"],
+        "level_required": "Mining level 50",
+        "note": "Abre a receita para Master Pickaxe"
+      },
+      {
+        "result": "Master Pickaxe",
+        "ingredients": ["Steel Pickaxe", "Master Ball"],
+        "level_required": "Mining level 100"
+      },
+      {
+        "result": "Stardust",
+        "ingredients": ["Moonstone"],
+        "note": "Moonstone pode ser crafteado em Stardust. Alternativa ao farm em Mt. Moon ou Mt. Silver"
+      },
+      {
+        "result": "Golden Effort Brace",
+        "ingredients": ["Macho Brace", "Effort Brace"],
+        "effect": "Dobra EVs ganhos, NÃO reduz speed do portador, previne ganho de EXP de wild Pokémon — melhor item para EV training eficiente",
+        "note": "Macho Brace = Casino 40.000 tokens; Effort Brace = Elite Shop 450 créditos"
+      },
+      {
+        "result": "Enhanced Feather (qualquer lendário)",
+        "ingredients": ["Feather do lendário correspondente", "Legendary Bait"],
+        "effect": "+20% taxa de encontro com o lendário",
+        "note": "Legendary Bait dropa raramente no Ancient Dungeon (Granite Cave, Hoenn)"
+      }
+    ]
+  },
+
+  "database_version": "24.0",
   "last_updated": "2026-06-09"
 }
