@@ -1425,7 +1425,8 @@
       { "pokemon": "Darkrai", "location": "Deep New Moon Island", "requirement": "Derrotar Elite 4 de Sinnoh → ferry" },
       { "pokemon": "Cresselia", "location": "Deep Full Moon Island", "requirement": "Derrotar Elite 4 de Sinnoh → ferry" },
       { "pokemon": "Giratina", "how_to_get": "Ovo — colocar em 1º/2º/3º no Halloween Event para chance de receber" },
-      { "pokemon": "Dialga / Palkia", "how_to_get": "A confirmar" }
+      { "pokemon": "Dialga", "location": "Spear Pillar", "how_to_get": "Ter Adamant Fragment no inventário ao entrar em Spear Pillar" },
+      { "pokemon": "Palkia", "location": "Spear Pillar", "how_to_get": "Ter Lustrous Fragment no inventário ao entrar em Spear Pillar" }
     ],
     "unova": [
       { "pokemon": "Reshiram / Zekrom", "location": "N Castle (Unova)", "requirement": "Parte da história após derrotar Elite 4 de Unova pela primeira vez" },
@@ -4486,8 +4487,8 @@
       { "name": "Heatran", "location": "Stark Mountain (Sinnoh)" },
       { "name": "Regigigas", "location": "Somente via Legendary Egg (World Boss top 3 ou PvP Tournament)" },
       { "name": "Giratina", "location": "Somente via Egg do Halloween Event (1º/2º/3º no ranking)" },
-      { "name": "Dialga", "location": "Sinnoh — localização específica a confirmar (possivelmente sistema de spawn diário)" },
-      { "name": "Palkia", "location": "Sinnoh — localização específica a confirmar (possivelmente sistema de spawn diário)" }
+      { "name": "Dialga", "location": "Spear Pillar (topo do Mt. Coronet)", "requirement": "Adamant Fragment no inventário", "how_to_get_fragment": "a confirmar (não obtido via mining segundo buscas)" },
+      { "name": "Palkia", "location": "Spear Pillar (topo do Mt. Coronet)", "requirement": "Lustrous Fragment no inventário", "how_to_get_fragment": "a confirmar" }
     ]
   },
 
