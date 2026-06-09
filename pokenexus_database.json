@@ -3840,9 +3840,11 @@
   "special_legendaries": {
     "description": "Lendários especiais com mecânicas únicas de acesso",
     "mew": {
-      "how_to_access": "Comprar Old Sea Map no Elite Shop por 125 Elite Tokens → usar no ferry de Hoenn → Faraway Island",
+      "how_to_access": "Comprar Old Sea Map no Elite Shop por 125 Elite Tokens → ferry qualquer região → aba 'Hoenn' → Faraway Island ($50.000 de ferry)",
+      "requirements": "Derrotar Johto Elite Four + Old Sea Map no inventário",
       "mechanic": "12 áreas dentro de Faraway Island. Mew muda sua localização diariamente",
-      "note": "Requer investimento significativo em Elite Tokens"
+      "strategy": "Usar Pokémon bulky não fraco a Pedra para paralisar. Steel types resistentes funcionam bem: Steelix, Excadrill, Bastiodon, Probopass",
+      "note": "Requer 125 Elite Tokens — investimento significativo no endgame"
     },
     "jirachi": {
       "how_to_access": "Disponível no PP Shop (Philanthropist Points) em Silph Co."
@@ -4512,6 +4514,31 @@
     "note": "Cada E4 derrotada também desbloqueia mecânicas adicionais: Elite Pokémon (após Kanto E4), Mossy Key (350 Pokédex), Eon Ticket (Hoenn E4), Lunar Ticket (Sinnoh E4)"
   },
 
-  "database_version": "30.0",
+  "ferry_system": {
+    "description": "Sistema de ferries para navegação entre regiões e ilhas especiais",
+    "how_to_use": "Falar com o NPC de ferry nas cidades portuárias. Algumas abas especiais aparecem (Hoenn, Sevii Islands, etc.)",
+    "kanto_ferries": {
+      "vermilion_city": "Auto-desbloqueado com Volcano Badge (Blaine). Acesso a Cinnabar Island e Sevii Islands",
+      "cinnabar_island": "Auto-desbloqueado com Volcano Badge"
+    },
+    "hoenn_ferries": [
+      { "city": "Dewford", "cost": 9000, "badge_required": "Knuckle Badge (Brawley)" },
+      { "city": "Slateport", "cost": 9000, "badge_required": "Dynamo Badge (Wattson, Mauville)" },
+      { "city": "Lilycove", "cost": 9000, "badge_required": "Feather Badge (Winona, Fortree)" }
+    ],
+    "special_destinations": {
+      "faraway_island": {
+        "access": "Aba 'Hoenn' no ferry → Faraway Island",
+        "cost": 50000,
+        "requirement": "Old Sea Map no inventário + Johto E4 derrotada"
+      },
+      "sevii_islands": {
+        "access": "Bill em Cinnabar Island → One Island → demais ilhas via ferry de One Island",
+        "requirement": "Derrotar Blaine (7º Ginásio Kanto)"
+      }
+    }
+  },
+
+  "database_version": "30.1",
   "last_updated": "2026-06-09"
 }
