@@ -3657,6 +3657,20 @@
     }
   },
 
+  "kanto_gyms": {
+    "description": "8 Ginásios de Kanto em ordem",
+    "gyms": [
+      { "city": "Pewter City", "leader": "Brock", "type": "Rock", "badge": "Boulder Badge" },
+      { "city": "Cerulean City", "leader": "Misty", "type": "Water", "badge": "Cascade Badge" },
+      { "city": "Vermilion City", "leader": "Lt. Surge", "type": "Electric", "badge": "Thunder Badge" },
+      { "city": "Celadon City", "leader": "Erika", "type": "Grass", "badge": "Rainbow Badge" },
+      { "city": "Fuchsia City", "leader": "Koga", "type": "Poison", "badge": "Soul Badge" },
+      { "city": "Saffron City", "leader": "Sabrina", "type": "Psychic", "badge": "Marsh Badge" },
+      { "city": "Cinnabar Island", "leader": "Blaine", "type": "Fire", "badge": "Volcano Badge", "note": "Após Blaine: ferry desbloqueia automaticamente (Sevii Islands)" },
+      { "city": "Viridian City", "leader": "Giovanni", "type": "Ground", "badge": "Earth Badge", "note": "Último ginásio Kanto. Giovanni é o chefe do Team Rocket" }
+    ]
+  },
+
   "johto_gyms": {
     "description": "8 Ginásios de Johto em ordem",
     "gyms": [
