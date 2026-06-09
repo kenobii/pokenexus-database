@@ -4181,6 +4181,100 @@
     "note": "Lista parcial — visitar PPOBuddy (ppobuddy.com/npc/lance-elite-shop) para lista completa atualizada"
   },
 
-  "database_version": "25.0",
+  "elite_pokemon_system": {
+    "description": "Elite Pokémon — versões aprimoradas de wild Pokémon com drops garantidos",
+    "unlock": "Disponíveis após derrotar a Kanto Elite Four",
+    "identifier": "Prefixo [E] no nome do Pokémon. Mensagem 'An Elite Pokemon has appeared' no chat",
+    "encounter_rate": "1/200 — NÃO afetado pelo Gold Membership",
+    "stats": {
+      "stat_boost": "1.3x em todos os stats",
+      "hp": "Também aumentado",
+      "pp": "Double PP em todos os moves",
+      "ivs": "Sempre entre 10 e 31"
+    },
+    "held_items": "Elites sempre carregam um held item. Não pode ser roubado ou removido com Knock Off",
+    "rewards": {
+      "item_drop": "Drop de item garantido ao derrotar",
+      "money": "Muito mais dinheiro que wild Pokémon normal",
+      "exp": "Mais EXP que wild Pokémon normal"
+    },
+    "restrictions": {
+      "no_legendary_elites": "Lendários NÃO podem aparecer como Elite",
+      "stat_boost_areas": "Em áreas que já boosteam stats (Battle Zone, Ancient Dungeon) → Elite não recebe o boost 1.3x de stats (apenas HP permanece boosted)"
+    },
+    "spawn": "Qualquer área do jogo após derrotar o Kanto E4"
+  },
+
+  "mt_silver_complete": {
+    "description": "Mt. Silver — área post-game avançada entre Kanto e Johto",
+    "access": "Pokemon League Reception Gate (esquerda de Viridian City em Kanto) — tomar o corredor à esquerda em vez de subir para Victory Road",
+    "mt_silver_entrance": {
+      "level_range": "L60-80",
+      "use": "Treinar Pokémon de L60-80. Bom para hunting de VR (Very Rare) encounters",
+      "moltres": "Mt. Silver Cave também tem Moltres (precisa de Feather of Moltres com líder Fire-type)"
+    },
+    "summit": {
+      "wild_pokemon": false,
+      "boss": {
+        "name": "Red",
+        "pokemon_level": 125,
+        "team_start": ["Pikachu", "Venusaur", "Blastoise"],
+        "note": "Red é o treinador mais forte do Kanto/Johto post-game — desafio máximo"
+      }
+    }
+  },
+
+  "power_plant_basement": {
+    "description": "Power Plant Basement — área especial para Zapdos",
+    "location": "Kanto — Power Plant (Route 10, nordeste de Cerulean City)",
+    "access_requirement": "Todos os gym badges de Kanto E Johto (8+8=16 badges) + Feather of Zapdos (Electric-type como líder para dropar)",
+    "legendary": {
+      "name": "Zapdos",
+      "feather_required": "Feather of Zapdos (drop com Electric-type como líder no Power Plant Basement)",
+      "level": 85
+    }
+  },
+
+  "chat_commands": {
+    "description": "Comandos úteis no chat de PokeNexus",
+    "commands": [
+      { "command": "/pokemon", "use": "Ver lista de lendários disponíveis para encontro no momento (categoria 'Legendary')" },
+      { "command": "/chests", "use": "Ver se há Treasure Chests ativos no mundo neste momento" }
+    ],
+    "note": "Outros comandos podem existir — verificar in-game ou wiki oficial"
+  },
+
+  "trainer_skills_complete": {
+    "description": "Trainer Skills — habilidades que o jogador pode desenvolver (Mining e Fishing)",
+    "mining": {
+      "start": "Comprar Old Pickaxe ($5.000) com Mining Guru em Mt. Moon F1",
+      "progression": [
+        { "item": "Old Pickaxe", "cost": 5000, "where": "Mt. Moon — Mining Guru" },
+        { "item": "Super Pickaxe", "cost": 35000, "where": "Cerulean Cave — Mining Guru" },
+        { "item": "Steel Pickaxe", "craft": "Super Pickaxe + Metal Coat + Steel Wire", "level_required": 50 },
+        { "item": "Master Pickaxe", "craft": "Steel Pickaxe + Master Ball", "level_required": 100 }
+      ],
+      "rewards": "Gemas vendáveis. Gemas da Cerulean Cave têm valor alto e boost na LLE de lendários"
+    },
+    "fishing": {
+      "start": "Comprar Old Rod ($5.000) em Vermilion City",
+      "progression": [
+        { "item": "Old Rod", "cost": 5000, "where": "Vermilion City" },
+        { "item": "Good Rod", "cost": 12000, "where": "Fuchsia City" },
+        { "item": "Super Rod", "cost": 35000, "where": "Route 12" },
+        { "item": "Steel Rod", "craft": "Super Rod + Metal Coat + Steel Wire", "level_required": 50 },
+        { "item": "Master Rod", "craft": "Steel Rod + Master Ball", "level_required": 100 }
+      ],
+      "mechanic": "Pressionar F para pescar. Caixa amarela = fisgada, caixa verde = perfeita (mais Fishing XP)",
+      "milestones": [
+        { "fishing_level": 15, "unlock": "Dratini disponível para pescar" },
+        { "fishing_level": 25, "unlock": "Milotic e Feebas disponíveis" },
+        { "fishing_level": 50, "unlock": "Craft do Steel Rod" },
+        { "fishing_level": 100, "unlock": "Craft do Master Rod" }
+      ]
+    }
+  },
+
+  "database_version": "26.0",
   "last_updated": "2026-06-09"
 }
