@@ -48,7 +48,18 @@
     { "command": "/altar", "description": "Exibe o progresso atual do altar" },
     { "command": "/chests", "description": "Exibe o número de Treasure Chests ativos" },
     { "command": "/lures", "description": "Exibe os lures de Honey e Shiny ativos no mapa" },
-    { "command": "/honey", "description": "Exibe um mapa com os locais onde o item Honey foi usado" }
+    { "command": "/honey", "description": "Exibe um mapa com os locais onde o item Honey foi usado" },
+    { "command": "/createchat nome", "description": "Cria um chat de grupo privado" },
+    { "command": "/chatinvite usuario", "description": "Convida jogador para o chat de grupo" },
+    { "command": "/chatkick usuario", "description": "Remove jogador do chat de grupo" },
+    { "command": "/chatmembers", "description": "Lista membros do chat de grupo" },
+    { "command": "/chatdisband", "description": "Dissolve o chat de grupo" },
+    { "command": "/chatleave", "description": "Sai do chat de grupo atual" },
+    { "command": "/highscores", "description": "Exibe ranking de jogadores" },
+    { "command": "/patchnotes", "description": "Exibe notas da última atualização" },
+    { "command": "/rules", "description": "Exibe as regras do jogo" },
+    { "command": "/discord", "description": "Link para o Discord oficial" },
+    { "command": "/help", "description": "Exibe lista de comandos disponíveis" }
   ],
 
   "rarity_tiers": [
@@ -1473,6 +1484,7 @@
     "general": {
       "spawn_level": 85,
       "base_rate": "1/125.000 (média ~1/95k sem GM, ~1/63k com GM)",
+      "event_legendary_rate": "1/80.000 (lendários de eventos sazonais têm taxa diferente)",
       "lle": "Cada encontro sem achar o lendário aumenta a chance (curva S, por lendário específico)",
       "cannot_run": true
     },
@@ -1496,8 +1508,8 @@
       { "pokemon": "Latias / Latios (boost)", "alternative": "Soul Shard Enhanced: +20% encounter rate" },
       { "pokemon": "Regis (Regirock, Regice, Registeel)", "location": "Qualquer rocha de mineração (Mining lv.75+)", "rate": "1/75.000 por rocha", "alternative": "Altering Cave (10% chance diária)" },
       { "pokemon": "Kyogre", "location": "Summer Event Maps — disponível durante o evento anual de Verão" },
-      { "pokemon": "Groudon", "location": "A confirmar" },
-      { "pokemon": "Rayquaza", "location": "A confirmar" },
+      { "pokemon": "Groudon", "location": "Provavelmente Summer Event Maps (evidência: vídeo de caça em Jul/2024; Fandom wiki diz 'not in the wild')" },
+      { "pokemon": "Rayquaza", "location": "A confirmar — também não encontrável no wild segundo Fandom wiki" },
       { "pokemon": "Deoxys", "location": "A confirmar — via ticket ou evento especial" },
       { "pokemon": "Jirachi", "location": "PP Shop (custo em PP)" }
     ],
@@ -3147,7 +3159,8 @@
   },
 
   "ability_capsule_complete": {
-    "description": "Item que rerrola a habilidade de um Pokémon (entre habilidades normais, não Hidden)",
+    "description": "Item que rerrola a habilidade de um Pokémon — pode trocar para Hidden Ability também",
+    "note": "Pokémon com Hidden Ability NÃO pode aprender Transfer Moves",
     "how_to_obtain": "Crafting — combinar os 3 materiais na mesa de crafting",
     "crafting_recipe": {
       "ingredients": ["Stardust", "Silk", "Miracle Berry"]
@@ -4653,8 +4666,8 @@
         "location": "Mining rocks (Mining Level 75+, 1/75.000 por rocha) ou Altering Cave (10% legendary pool)"
       },
       { "name": "Kyogre", "location": "Summer Event Maps — disponível durante o evento anual de Verão" },
-      { "name": "Groudon", "location": "Hoenn — localização específica a confirmar" },
-      { "name": "Rayquaza", "location": "Hoenn — localização específica a confirmar" }
+      { "name": "Groudon", "location": "Provavelmente Summer Event Maps (vídeo de caça em Jul/2024 confirma ser caçável)" },
+      { "name": "Rayquaza", "location": "A confirmar — não disponível no wild fora de evento" }
     ]
   },
 
