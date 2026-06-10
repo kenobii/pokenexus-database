@@ -5659,6 +5659,51 @@
     "source": "ppobuddy.com/item/lustrous-fragment"
   },
 
-  "database_version": "33.3",
+  "mounts_system": {
+    "description": "Sistema de montarias de PokeNexus — substituem Bicicleta (land) e Surf (water)",
+    "categories": {
+      "land_mounts": "Funcionalmente idênticos à Bicicleta",
+      "surf_mounts": "Funcionalmente idênticos ao HM Surf"
+    },
+    "how_to_obtain": {
+      "primary": "Comprar no Credit Shop com Créditos (moeda premium — dinheiro real ou prêmio de torneio)",
+      "arcanine_mount": "Obtido via quest especial do Arcanine Mount — missão disponível em Fuchsia City (requer 3 Pokémon)",
+      "shiny_versions": "Existem versões shiny para todos os mounts"
+    },
+    "notable_mounts": ["Arcanine Mount", "Primal Groudon Mount", "Shiny Primal Groudon Mount"],
+    "note": "Créditos podem ser ganhos também vencendo torneios — não exigem necessariamente dinheiro real"
+  },
+
+  "onesies_system": {
+    "description": "Cosméticos de traje Pokémon para o personagem do jogador",
+    "how_to_obtain": {
+      "starter_pokemon_box": {
+        "description": "Caixa de Starter Pokémon disponível no Credit Shop",
+        "drop_chance": "1% de chance de receber o onesie do starter obtido na caixa",
+        "tradeable": true
+      }
+    },
+    "confirmed_onesies": ["Fennekin Onesie", "Snivy Onesie", "Chimchar Onesie"],
+    "note": "Um onesie corresponde ao starter recebido na caixa — se abrir uma caixa de Snivy, pode receber o Snivy Onesie"
+  },
+
+  "battle_mechanics_special": {
+    "description": "Mecânicas de batalha especiais exclusivas ou notáveis do PokeNexus",
+    "ghost_type_flee": {
+      "description": "Pokémon tipo Ghost no lead pode fugir de qualquer batalha selvagem com 100% de sucesso",
+      "use_case": "Útil para evitar batalhas em zonas onde não pode usar Repel ou em áreas de alto nível"
+    },
+    "no_guard_ability": {
+      "description": "Pokémon com No Guard como lead (mesmo que faintado) — 100% de taxa de encounter com selvagens",
+      "equivalent_to": "Illuminate ability"
+    },
+    "illuminate_ability": {
+      "description": "Pokémon com Illuminate como lead — dobra a taxa de encontros selvagens",
+      "use_case": "Útil para farming de drops de Pokémon selvagens"
+    },
+    "lead_pokemon_role": "O lead (1º Pokémon) é sempre relevante para mecânicas de encontro e fuga — mesmo que faintado para No Guard"
+  },
+
+  "database_version": "33.4",
   "last_updated": "2026-06-10"
 }
