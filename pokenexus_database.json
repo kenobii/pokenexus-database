@@ -126,7 +126,16 @@
       "drop_rate": "20%",
       "elite_pokemon_encounter_rate": "1/200 Pokémon selvagens",
       "requirement": "Ter derrotado a Elite 4 de Kanto"
-    }
+    },
+    "items": [
+      { "item": "Shiny Charm", "cost_tokens": 30, "effect": "Aumenta chance de encontrar Pokémon Shiny" },
+      { "item": "EXP Share (Enhanced)", "cost_tokens": 20, "effect": "Compartilha EXP com todos os Pokémon da equipe simultaneamente" },
+      { "item": "Intermediate Rod", "cost_tokens": 50, "effect": "Cana intermediária para pescar Pokémon de nível mais alto" },
+      { "item": "Elite Rod", "cost_tokens": 50, "effect": "Cana de elite para pescar Pokémon raros de nível alto" },
+      { "item": "Old Sea Map", "cost_tokens": 125, "effect": "Acesso à ilha especial (Faraway Island — Mew)" },
+      { "item": "Treasure Key", "cost_tokens": 1, "effect": "Abre baús de tesouro em masmorras" },
+      { "item": "Virizion", "cost_tokens": "a confirmar", "note": "Lendário disponível na loja" }
+    ]
   },
 
   "pvp_system": {
@@ -1777,18 +1786,32 @@
 
   "events_complete": {
     "halloween": {
-      "access": "Falar com NPC especial em qualquer Pokémon Center durante o evento",
+      "access": "Falar com a Witch em qualquer Pokémon Center durante o evento",
       "requirement": "8 badges (Kanto)",
-      "main_pokemon": "Yveltal (forma Black/Red = regular; White/Red = Shiny)",
-      "corn_maze": {
-        "description": "Labirinto de milho — navegar até canto inferior esquerdo para chegar à floresta",
-        "tip": "Yveltal fica na mansion/floresta, não no labirinto"
+      "duration": "~3 semanas durante Halloween",
+      "areas": {
+        "corn_maze": {
+          "description": "Labirinto de milho — navegar até canto inferior esquerdo para chegar à floresta",
+          "tip": "Yveltal fica na mansion/floresta, não no labirinto"
+        },
+        "haunted_mansion_1f": {
+          "description": "Encontros especiais de Pokémon durante o evento"
+        },
+        "haunted_mansion_2f": {
+          "pokemon": "Darkrai",
+          "requirement": "400+ Pokémon únicos registrados no Pokédex"
+        },
+        "haunted_cave_b1": {
+          "requirement": "600+ Pokémon únicos registrados no Pokédex"
+        }
       },
-      "event_legendaries": ["Yveltal"],
+      "event_legendaries": ["Yveltal", "Darkrai"],
+      "yveltal_forms": "Black/Red = regular; White/Red = Shiny",
       "youtube_guides": [
         "https://www.youtube.com/watch?v=0kFeBSnYOOU",
         "https://www.youtube.com/watch?v=5IaoO-WLRzI",
-        "https://www.youtube.com/watch?v=zIWVOMioAnY"
+        "https://www.youtube.com/watch?v=zIWVOMioAnY",
+        "https://www.youtube.com/watch?v=1orkFTR28so"
       ]
     },
     "christmas": {
@@ -5311,6 +5334,40 @@
     ]
   },
 
-  "database_version": "32.3",
-  "last_updated": "2026-06-09"
+  "philanthropist_point_shop": {
+    "npc": "Philanthropist Point Exchanger",
+    "location": "Silph Co. — Saffron City (andar térreo, canto superior esquerdo)",
+    "currency": "Philanthropist Points (PP)",
+    "how_to_earn_pp": {
+      "altar_donation": "1 PP a cada $400 doados no Altar",
+      "portable_pc": "PP ao usar Portable PC",
+      "honey": "PP ao usar Honey",
+      "item_bomb": "PP ao usar Item Bomb",
+      "blessing": "PP ao usar Blessing"
+    },
+    "items": [
+      { "item": "Ancient Key (Tooth Half)", "cost_pp": 15000, "note": "Uma das duas metades para acessar o Ancient Dungeon" },
+      { "item": "Jirachi", "cost_pp": "a confirmar", "note": "Lendário disponível na loja" }
+    ],
+    "note": "Lista completa de itens parcialmente confirmada — verificar PPOBuddy para itens adicionais"
+  },
+
+  "pvp_prize_exchanger_items": {
+    "location": "PvP Building — Vermillion City",
+    "currency": "PvP Tokens",
+    "token_earn_rates": {
+      "unranked_win": 3,
+      "unranked_loss": 0,
+      "master_win": 10,
+      "master_loss": 4
+    },
+    "items": [
+      { "item": "Victini", "cost_tokens": "a confirmar", "note": "Lendário disponível" },
+      { "item": "Master Pass", "cost_tokens": 1500, "note": "Permite acesso a batalhas Master tier" }
+    ],
+    "note": "Lista completa não confirmada — verificar PPOBuddy para todos os itens"
+  },
+
+  "database_version": "32.4",
+  "last_updated": "2026-06-10"
 }
