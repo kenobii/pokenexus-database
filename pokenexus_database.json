@@ -167,7 +167,7 @@
       { "method": "Usar Honey", "amount": "700 PP" },
       { "method": "Colocar Portable PC", "amount": "200 PP" },
       { "method": "World Blessing / Drop Rate Blessing", "amount": "Até 500 PP (= nº de jogadores online no momento)" },
-      { "method": "Item Bomb", "amount": "1200 PP + nº de jogadores online" },
+      { "method": "Item Bomb", "amount": "1500 PP + nº de jogadores online" },
       { "method": "Enhanced Item Bomb", "amount": "5000 PP + (2x nº de jogadores online)" }
     ]
   },
@@ -2831,8 +2831,8 @@
     "description": "Item que distribui itens para jogadores online aleatoriamente",
     "how_it_works": "Distribui itens para 10 jogadores online aleatoriamente — o usuário que usa o Item Bomb NÃO recebe item",
     "pp_reward": {
-      "formula": "1.200 base + número de jogadores online no momento",
-      "example": "Se 350 jogadores online → ganha 1.550 PP"
+      "formula": "1.500 base + número de jogadores online no momento",
+      "example": "Se 350 jogadores online → ganha 1.850 PP"
     },
     "enhanced_item_bomb": {
       "description": "Versão melhorada — recompensa de conquistas (achievements)",
@@ -5488,6 +5488,19 @@
     "altering_cave_note": "Articuno e Zapdos aparecem em Altering Cave SEM necessidade de Feather. Enhanced Feathers AINDA funcionam para boost de +20% lá."
   },
 
-  "database_version": "32.5",
+  "stark_mountain": {
+    "location": "Battle Island — Sinnoh (norte da Battle Zone, Route 227)",
+    "access": "Ferry após derrotar Elite 4 de Sinnoh",
+    "hms_required": ["Strength", "Rock Smash"],
+    "wild_pokemon_boost": "1.5x stats em todos os Pokémon selvagens — não é possível fugir",
+    "legendary": {
+      "pokemon": "Heatran",
+      "level": 85,
+      "moveset": ["Crunch", "Scary Face", "Lava Plume", "Metal Sound"],
+      "catch_tips": "Metal Sound baixa Sp. Def — usar Tentacruel/Regirock com Clear Body, Torkoal com White Smoke, ou Intimidate (Gyarados/Arcanine) para reduzir dano de Crunch"
+    }
+  },
+
+  "database_version": "32.6",
   "last_updated": "2026-06-10"
 }
