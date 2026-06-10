@@ -3526,7 +3526,9 @@
       "mandatory_visit": "Darren na ilha central dá o HM Surf — obrigatório para progressão"
     },
     "johto": {
-      "location": "Oeste de Cianwood City"
+      "location": "Route 48, oeste de Cianwood City",
+      "ticket_cost": 80000,
+      "ticket_duration": "24 horas"
     },
     "hoenn": {
       "location": "Oeste de Lilycove City",
