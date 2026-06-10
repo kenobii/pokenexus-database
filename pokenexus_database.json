@@ -4122,9 +4122,11 @@
     "description": "Ancient Dungeon — área especial dentro de Granite Cave (Hoenn)",
     "location": "Granite Cave, Hoenn",
     "mechanics": {
-      "stat_boost": "Wild Pokémon têm 1.65x boost nos stats",
+      "stat_boost": "Wild Pokémon têm 1.65x boost nos stats (exceto Speed)",
       "cant_run": "Não é possível fugir de batalhas",
       "exp_boost": "EXP e Drop rates são maiores que áreas normais",
+      "drop_rate_multiplier": "x3 (+200%) em relação a áreas normais",
+      "money_tax": "30% de imposto sobre dinheiro dropado (área de map control)",
       "held_items": "Pokémon selvagens podem carregar held items"
     },
     "notable_pokemon": ["Regigigas", "Deino"],
@@ -5634,6 +5636,7 @@
     "legendary": "Darkrai (nível 85)",
     "wild_pokemon_boost": "1.5x stats em todos os Pokémon selvagens",
     "cannot_run": true,
+    "notable_wild": ["Sneasel", "Pawniard"],
     "note": "Não é possível fugir de batalhas selvagens nesta área. Darkrai também aparece na Haunted Mansion 2F durante o Halloween Event (requer 400 Pokédex únicos)."
   },
 
