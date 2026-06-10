@@ -1504,7 +1504,7 @@
       { "pokemon": "Raikou", "location": "Thunder Cavern (dentro de Mossy Cave)", "requirement": "350 Pokédex únicos → Mossy Key" },
       { "pokemon": "Suicune", "location": "Water Cavern (dentro de Mossy Cave)", "requirement": "350 Pokédex únicos → Mossy Key" },
       { "pokemon": "Entei", "location": "Fire Cavern (dentro de Mossy Cave)", "requirement": "350 Pokédex únicos → Mossy Key" },
-      { "pokemon": "Lugia", "location": "Whirl Islands (Johto)", "requirement": "Silver Wing" },
+      { "pokemon": "Lugia", "location": "Whirl Islands (Johto)", "requirement": "Silver Wing", "alternative": "Pesca nível 100 com Master Rod (confirmar localização exata)" },
       { "pokemon": "Ho-Oh", "location": "Tin Tower (Ecruteak City, Johto)", "requirement": "Rainbow Wing" },
       { "pokemon": "Celebi", "location": "Easter Event Maps — disponível durante o evento anual de Páscoa" },
       { "pokemon": "Mew", "location": "Faraway Island", "requirement": "Elite 4 de Johto + Old Sea Map no inventário" }
@@ -1965,7 +1965,7 @@
       { "fishing_level": 50, "rod": "Elite Rod", "where_to_buy": "Lance — Elite Shop", "cost_tokens": 50, "notable_pokemon": ["Mudkip"], "notable_drops": ["Surfboard"] },
       { "fishing_level": 60, "notable_pokemon": ["Totodile", "Piplup"], "notable_drops": ["Surfboard"] },
       { "fishing_level": 80, "location": "Water Temple (N Castle)", "requirement": "Collector IV (500 Pokédex únicos)", "note": "Pokémon exclusivos desta área" },
-      { "fishing_level": 100, "rod": "Master Rod", "how_to_get": "Craftar: Master Ball + Steel Rod" }
+      { "fishing_level": 100, "rod": "Master Rod", "how_to_get": "Craftar: Master Ball + Steel Rod", "legendary_encounters": ["Kyogre", "Lugia"], "note": "Lendários aparecem via pesca com Master Rod em nível 100 — confirmar se são capturáveis ou apenas encontráveis" }
     ]
   },
 
@@ -4483,7 +4483,7 @@
         { "fishing_level": 15, "unlock": "Dratini disponível para pescar" },
         { "fishing_level": 25, "unlock": "Milotic e Feebas disponíveis" },
         { "fishing_level": 50, "unlock": "Craft do Steel Rod" },
-        { "fishing_level": 100, "unlock": "Craft do Master Rod" }
+        { "fishing_level": 100, "unlock": "Craft do Master Rod + encontros com Kyogre e Lugia via pesca" }
       ]
     }
   },
@@ -4833,9 +4833,9 @@
   "legendaries_not_in_game": {
     "description": "Lendários confirmados como NÃO disponíveis em PokeNexus (nem em wild, nem via item)",
     "hoenn_weather_trio": {
-      "kyogre": "Não pode ser capturado no jogo",
-      "groudon": "Não pode ser encontrado no wild",
-      "rayquaza": "Não pode ser encontrado no wild"
+      "kyogre": "Disponível no Summer Event Maps (anual) + encontrável via pesca nível 100 (capturabilidade a confirmar)",
+      "groudon": "Provavelmente Summer Event Maps (vídeo de caça Jul/2024)",
+      "rayquaza": "Não disponível fora de evento — origem ainda não confirmada"
     },
     "unova_legendaries": {
       "reshiram": "Não disponível",
@@ -5650,6 +5650,6 @@
     "source": "ppobuddy.com/item/lustrous-fragment"
   },
 
-  "database_version": "33.2",
+  "database_version": "33.3",
   "last_updated": "2026-06-10"
 }
