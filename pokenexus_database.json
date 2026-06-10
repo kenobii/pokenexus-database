@@ -209,19 +209,20 @@
       "unlock_better_pickaxes": true
     },
     "gems_by_level": [
-      { "level_required": 1,  "gem": "Red Gemstone",     "sell_value": 50 },
-      { "level_required": 10, "gem": "Blue Gemstone",    "sell_value": 100 },
-      { "level_required": 20, "gem": "Green Gemstone",   "sell_value": "a confirmar" },
-      { "level_required": 35, "gem": "Prism Gemstone",   "sell_value": "a confirmar" },
-      { "level_required": 50, "gem": "Pale Gemstone",    "sell_value": "a confirmar" },
-      { "level_required": 80, "gem": "Rainbow Gemstone", "sell_value": 20000 }
+      { "level_required": 1,  "gem": "Red Gemstone",     "sell_value": 50,    "mining_exp": "15-30" },
+      { "level_required": 10, "gem": "Blue Gemstone",    "sell_value": 100,   "mining_exp": "40-55" },
+      { "level_required": 20, "gem": "Green Gemstone",   "sell_value": "a confirmar", "mining_exp": "a confirmar" },
+      { "level_required": 35, "gem": "Prism Gemstone",   "sell_value": "a confirmar", "mining_exp": "170-220" },
+      { "level_required": 50, "gem": "Pale Gemstone",    "sell_value": "a confirmar", "mining_exp": "330-480" },
+      { "level_required": 65, "gem": "Dark Gemstone",    "sell_value": "a confirmar", "mining_exp": "150-200" },
+      { "level_required": 80, "gem": "Rainbow Gemstone", "sell_value": 20000, "mining_exp": "3000-4000" }
     ],
     "rock_notes": "Rainbow e Gold rocks NÃO contêm itens. Rochas de nível mais alto = itens de melhor qualidade",
     "item_drops_from_rocks": "Metal Coat, Steel Wire (usados em crafting de Steel Pickaxe/Rod)",
     "pickaxes": [
-      { "name": "Old Pickaxe",    "level_required": 1,   "where_to_buy": "Mining Guru - Mt. Moon", "cost": 5000 },
-      { "name": "Good Pickaxe",   "level_required": "variável", "where_to_buy": "Mining Guru - Turtle Cove (Three Island)", "cost": "variável" },
-      { "name": "Super Pickaxe",  "level_required": "variável", "where_to_buy": "Mining Vendor", "cost": "variável" },
+      { "name": "Old Pickaxe",    "level_required": 1,   "where_to_buy": "Mining Guru - Mt. Moon F1", "cost": 5000 },
+      { "name": "Good Pickaxe",   "level_required": "a confirmar", "where_to_buy": "Mining Guru - Turtle Cove (Three Island)", "cost": "a confirmar" },
+      { "name": "Super Pickaxe",  "level_required": 20,  "where_to_buy": "Mining Guru - Cerulean Cave F4", "cost": 35000 },
       { "name": "Steel Pickaxe",  "level_required": 50,  "how_to_get": "Craftar: Metal Coat + Steel Wire + Super Pickaxe" },
       { "name": "Master Pickaxe", "level_required": 100, "how_to_get": "Craftar: Master Ball + Steel Pickaxe" }
     ],
@@ -244,8 +245,10 @@
     "controls": "F para iniciar, Spacebar para acertar a zona de sucesso no minigame",
     "tip": "Pokémon com habilidade Suction Cups ou Sticky Hold aumentam a velocidade do gancho",
     "rods": [
-      { "name": "Old Rod", "level_required": 15, "where_to_get": "Obtido na progressão", "notable": "Pode pescar Dratini, drops Kings Rock" },
+      { "name": "Old Rod", "level_required": 1, "where_to_get": "Fisherman - Vermilion City (casa a oeste do Pokémon Center)", "cost": 5000, "notable": "Pode pescar Dratini, drops Kings Rock" },
       { "name": "Intermediate Rod", "level_required": 50, "where_to_get": "Lance - Elite Shop por 50 Elite Tokens" },
+      { "name": "Elite Rod", "level_required": "a confirmar", "where_to_get": "Lance - Elite Shop por 50 Elite Tokens" },
+      { "name": "Steel Rod", "level_required": 50, "how_to_get": "Craftar: Metal Coat + Steel Wire + Super Rod" },
       { "name": "Master Rod", "level_required": 100, "how_to_get": "Craftar: Master Ball + Steel Rod" }
     ],
     "notable_pokemon": ["Dratini", "Milotic", "Feebas", "Mudkip", "Piplup", "Squirtle"]
@@ -4662,9 +4665,14 @@
     ],
     "special_destinations": {
       "faraway_island": {
-        "access": "Aba 'Hoenn' no ferry → Faraway Island",
+        "access": "Aba 'Hoenn' no ferry → Faraway Island (também possível via Mr. Briney em Lilycove ou Slateport)",
         "cost": 50000,
-        "requirement": "Old Sea Map no inventário + Johto E4 derrotada"
+        "requirement": "Old Sea Map no inventário + Johto E4 derrotada",
+        "mew_encounter": {
+          "level": 30,
+          "mechanic": "Mew se esconde na grama longa em 1 das 12 ilhas — muda de ilha diariamente. Cauda aparece ocasionalmente para revelar posição.",
+          "how_to_get_old_sea_map": "Elite Shop — Lance — 125 Elite Tokens"
+        }
       },
       "sevii_islands": {
         "access": "Bill em Cinnabar Island → One Island → demais ilhas via ferry de One Island",
@@ -5382,6 +5390,20 @@
       { "item": "Master Pass", "cost_tokens": 1500, "note": "Permite acesso a batalhas Master tier" }
     ],
     "note": "Lista completa não confirmada — verificar PPOBuddy para todos os itens"
+  },
+
+  "treasure_chests": {
+    "description": "Baús que aparecem periodicamente pelo mundo do jogo",
+    "spawn_interval": "~1-2 horas em área aleatória",
+    "event_note": "Spawn mais frequente durante eventos",
+    "how_to_check": "Comando /chests para ver baús ativos no momento",
+    "requirements": {
+      "see_chests": "Lunar Ticket no inventário (recompensa por derrotar Elite 4 de Sinnoh)",
+      "open_chest": "Treasure Key (1 Elite Token cada, obtida via Elite Shop ou Global Marketplace)"
+    },
+    "key_note": "Treasure Key é consumida ao abrir o baú. Apenas 1 jogador pode abrir cada baú.",
+    "possible_rewards": ["Cherish Ball", "Honey", "Itens raros variados"],
+    "guide": "https://www.ppobuddy.com/guides/treasure-chests"
   },
 
   "legendary_encounter_items": {
