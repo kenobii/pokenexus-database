@@ -5550,6 +5550,15 @@
     "altering_cave_note": "Articuno e Zapdos aparecem em Altering Cave SEM necessidade de Feather. Enhanced Feathers AINDA funcionam para boost de +20% lá."
   },
 
+  "sinnoh_battle_zone": {
+    "description": "Área pós-jogo de Sinnoh acessível via ferry após derrotar Elite 4 de Sinnoh",
+    "sub_areas": ["Fight Area", "Survival Area", "Resort Area"],
+    "wild_pokemon_boost": "1.5x stats em todos os Pokémon selvagens",
+    "cannot_run": true,
+    "battle_island": "Heatran em Stark Mountain (norte da Battle Zone, Route 227)",
+    "note": "Mesma mecânica de stat boost e no-run que Deep New Moon Island e Deep Full Moon Island"
+  },
+
   "stark_mountain": {
     "location": "Battle Island — Sinnoh (norte da Battle Zone, Route 227)",
     "access": "Ferry após derrotar Elite 4 de Sinnoh",

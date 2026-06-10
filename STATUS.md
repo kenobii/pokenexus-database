@@ -1,9 +1,9 @@
 # PokeNexus DB — Status de Evolução
 
-## Versão Atual: 33.0
+## Versão Atual: 33.4
 
-**Último commit:** `b49c1fd`
-**Total de seções:** ~250+
+**Último commit:** (pendente)
+**Total de seções:** ~255+
 **Atualizado em:** 2026-06-10
 
 ---
@@ -32,7 +32,7 @@
 - [x] Master Shop Tooth Half → 1.000.000
 - [x] Water Temple → HM Dive necessário
 
-### Sessão atual (commit b49c1fd)
+### Sessão atual (v33.1–v33.4)
 
 - [x] Egg Move Tutor → moveset Gen 7 USUM confirmado
 - [x] Deep New Moon Island → seção nova: 1.5x boost, não pode fugir, Darkrai lv.85
@@ -40,6 +40,13 @@
 - [x] Giratina → confirmado: SOMENTE via Halloween Event egg (1º/2º/3º no ranking)
 - [x] Zygarde → confirmado: Battle Tower Prize Shop
 - [x] Daycare → confirmado como serviço player-to-player para levelar (não é breeding NPC)
+- [x] Lustrous Fragment → receita completa de crafting adicionada
+- [x] Natures → nota "não pode alterar após captura, sem Mints"
+- [x] Fishing lv.100 → Kyogre e Lugia via Master Rod confirmados
+- [x] Kyogre → corrigido: Summer Event + pesca lv.100 (era "não pode ser capturado")
+- [x] Lugia → alternativa: pesca lv.100
+- [x] Sinnoh Underground completo → 5 seções, 5 pontos de entrada, gems, fossil shards
+- [x] Sinnoh Battle Zone → seção nova: Fight Area/Survival Area/Resort Area, 1.5x boost, não pode fugir
 
 ---
 
@@ -74,7 +81,7 @@
 - [ ] Pré-evolução mechanics (itens para evoluir: Moonstone etc.)
 - [ ] Sevii Islands — ilhas 4, 5, 6, 7 em detalhe
 - [ ] Unova post-game completo
-- [ ] Sinnoh Battle Zone completo
+- [x] Sinnoh Battle Zone — documentado (Fight/Survival/Resort, 1.5x, no-run)
 - [ ] Hoenn Safari Zone completo (raro loot)
 
 ---
