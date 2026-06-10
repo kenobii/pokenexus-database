@@ -1320,9 +1320,10 @@
   "safari_zones": [
     {
       "name": "Kanto Safari Zone",
-      "location": "Fuchsia City",
+      "location": "Fuchsia City — norte da cidade",
       "ticket_cost": 20000,
-      "ticket_duration": "24 horas"
+      "ticket_duration": "24 horas",
+      "notable_rare_pokemon": ["Scyther", "Nidoran♂/♀", "Tauros"]
     },
     {
       "name": "Johto Safari Zone",
@@ -1335,6 +1336,15 @@
       "location": "Hoenn",
       "ticket_cost": 400000,
       "ticket_duration": "24 horas",
+      "extra_requirement": "Fishing Level 50+ para pescar na área"
+    },
+    {
+      "name": "Sinnoh Safari Zone",
+      "location": "Norte de Pastoria City — Sinnoh",
+      "ticket_cost": 400000,
+      "ticket_duration": "24 horas",
+      "zones": "6 zonas em padrão 2x3",
+      "notable": "Bom para encontrar Pokémon iniciais de Sinnoh",
       "extra_requirement": "Fishing Level 50+ para pescar na área"
     }
   ],
