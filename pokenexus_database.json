@@ -1295,6 +1295,7 @@
       "total": 25,
       "neutral": ["Hardy", "Docile", "Bashful", "Quirky", "Serious"],
       "mechanic": "+10% em um stat, -10% em outro. Neutras não afetam stats.",
+      "cannot_change": "IMPORTANTE: Natureza NÃO pode ser alterada após captura. Não existem Mints. Pokémon com natureza desejada têm alto valor no mercado.",
       "synchronize": "Ter Pokémon com habilidade Synchronize como líder aumenta chance do Pokémon selvagem ter a mesma natureza",
       "synchronize_stone": "Item que reproduz o efeito de Synchronize sem precisar da habilidade. Obtido via Casino (~2.6M em apostas)"
     }
@@ -4644,8 +4645,8 @@
       { "name": "Heatran", "location": "Stark Mountain (Sinnoh)" },
       { "name": "Regigigas", "location": "Somente via Legendary Egg (World Boss top 3 ou PvP Tournament)" },
       { "name": "Giratina", "location": "Somente via Egg do Halloween Event (1º/2º/3º no ranking)" },
-      { "name": "Dialga", "location": "Spear Pillar (topo do Mt. Coronet)", "requirement": "Adamant Fragment no inventário", "how_to_get_fragment": "a confirmar" },
-      { "name": "Palkia", "location": "Spear Pillar (topo do Mt. Coronet)", "requirement": "Lustrous Fragment no inventário", "how_to_get_fragment": "a confirmar" },
+      { "name": "Dialga", "location": "Spear Pillar (topo do Mt. Coronet)", "requirement": "Adamant Fragment no inventário", "how_to_get_fragment": "a confirmar — provávelmente crafting similar à Lustrous Fragment" },
+      { "name": "Palkia", "location": "Spear Pillar (topo do Mt. Coronet)", "requirement": "Lustrous Fragment no inventário", "how_to_get_fragment": "Crafting — ver lustrous_fragment_crafting" },
       { "name": "Shaymin", "location": "Flower Paradise (Sinnoh — norte de Route 224)" }
     ]
   },
@@ -5609,6 +5610,46 @@
     "note": "Não é possível fugir de batalhas selvagens nesta área."
   },
 
-  "database_version": "33.0",
+  "sinnoh_underground_complete": {
+    "description": "Rede de túneis subterrâneos sob toda a região Sinnoh",
+    "access": "Falar com o Underground Man (NPC) em 5 pontos diferentes — requer Mining Level 50+",
+    "entry_points": [
+      { "location": "Oreburgh City", "position": "Sul do Pokémon Center" },
+      { "location": "Celestic Town", "position": "Norte do Pokémon Center" },
+      { "location": "Sunnyshore City", "position": "Sudeste, após a ponte" },
+      { "location": "Fight Area", "position": "Leste do Pokémon Center" },
+      { "location": "Full Moon Island", "position": "Norte do ferry" }
+    ],
+    "sections": 5,
+    "gems_available": ["Prism", "Pale", "Dark", "Rainbow"],
+    "fossil_shards": {
+      "any_rock": ["Dome Shard", "Amber Shard", "Helix Shard"],
+      "dark_rocks_plus": ["Claw Shard", "Root Shard", "Armor Shard", "Skull Shard", "Cover Shard", "Plume Shard", "Sail Shard", "Jaw Shard"]
+    },
+    "fossil_revival": "Juntar 100 shards do tipo desejado → entregar ao cientista de Cinnabar Island",
+    "treasure_chests": ["Bottom Left", "Bottom Right", "Middle Left", "Middle Right", "Top Left", "Top Right"]
+  },
+
+  "lustrous_fragment_crafting": {
+    "description": "Item necessário para encontrar Palkia em Spear Pillar — deve estar no inventário",
+    "use": "Entrar em Spear Pillar com Lustrous Fragment no inventário → Palkia spawna",
+    "crafting_recipe": {
+      "note": "Receita de alto custo — itens raros necessários",
+      "ingredients": [
+        { "item": "Mega Stone (qualquer)", "quantity": 1 },
+        { "item": "Dragon Scale", "quantity": 5 },
+        { "item": "Prism Scale", "quantity": 3 },
+        { "item": "EV Reset", "quantity": 150 },
+        { "item": "Wise Glasses", "quantity": 2 },
+        { "item": "Lagging Tail", "quantity": 5 },
+        { "item": "Coronet Rock", "quantity": 5 },
+        { "item": "Water Stone", "quantity": 25 },
+        { "item": "Shiny Orb", "quantity": 20 }
+      ]
+    },
+    "source": "ppobuddy.com/item/lustrous-fragment"
+  },
+
+  "database_version": "33.2",
   "last_updated": "2026-06-10"
 }
