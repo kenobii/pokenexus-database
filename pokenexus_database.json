@@ -1531,7 +1531,7 @@
       { "pokemon": "Latias / Latios (boost)", "alternative": "Soul Shard Enhanced: +20% encounter rate" },
       { "pokemon": "Regis (Regirock, Regice, Registeel)", "location": "Qualquer rocha de mineração (Mining lv.75+)", "rate": "1/75.000 por rocha", "alternative": "Altering Cave (10% chance diária)" },
       { "pokemon": "Kyogre", "location": "Summer Event Maps — disponível durante o evento anual de Verão" },
-      { "pokemon": "Groudon", "location": "Provavelmente Summer Event Maps (evidência: vídeo de caça em Jul/2024; Fandom wiki diz 'not in the wild')" },
+      { "pokemon": "Groudon", "location": "Summer Event Maps — disponível durante o evento anual de Verão (confirmado via PPOBuddy)" },
       { "pokemon": "Rayquaza", "location": "A confirmar — também não encontrável no wild segundo Fandom wiki" },
       { "pokemon": "Deoxys", "location": "A confirmar — via ticket ou evento especial" },
       { "pokemon": "Jirachi", "location": "PP Shop (custo em PP)" }
@@ -4709,7 +4709,7 @@
         "location": "Mining rocks (Mining Level 75+, 1/75.000 por rocha) ou Altering Cave (10% legendary pool)"
       },
       { "name": "Kyogre", "location": "Summer Event Maps — disponível durante o evento anual de Verão" },
-      { "name": "Groudon", "location": "Provavelmente Summer Event Maps (vídeo de caça em Jul/2024 confirma ser caçável)" },
+      { "name": "Groudon", "location": "Summer Event Maps — disponível durante o evento anual de Verão (confirmado via PPOBuddy)" },
       { "name": "Rayquaza", "location": "A confirmar — não disponível no wild fora de evento" }
     ]
   },
@@ -5737,6 +5737,45 @@
     "lead_pokemon_role": "O lead (1º Pokémon) é sempre relevante para mecânicas de encontro e fuga — mesmo que faintado para No Guard"
   },
 
-  "database_version": "33.5",
+  "grinding_hotspots": {
+    "description": "Melhores locais para grind de EXP em PokeNexus por faixa de nível",
+    "general_tips": [
+      "Sempre treinar contra Pokémon 2-5 níveis abaixo do seu para máximo de EXP",
+      "Re-batalhar treinadores (cooldown 24h) dá muito EXP — priorizar quando Altar de EXP está ativo",
+      "Battle Tower também dá EXP e Tower Tokens simultaneamente"
+    ],
+    "early_game_1_30": [
+      { "location": "Viridian Forest (Kanto)", "level_range": "3-8", "note": "Primeirissimo estágio do jogo" },
+      { "location": "Mt. Moon (Kanto)", "level_range": "8-15", "note": "Onde começa o Mining — HM Flash útil" },
+      { "location": "Diglett's Cave (Kanto)", "level_range": "15-22", "note": "Bom para EV de Velocidade; acesso por Route 2 (requer Cut)" },
+      { "location": "Rock Tunnel F1/F2 (Kanto)", "level_range": "18-25", "note": "HM Flash recomendado; bom EXP para o período" }
+    ],
+    "mid_game_30_60": [
+      { "location": "Deep Viridian Forest (Kanto)", "level_range": "22-32", "note": "Requer HM Cut + Surf — custom map exclusivo do PokeNexus" },
+      { "location": "Deep Viridian Forest 2 (Kanto)", "level_range": "28-38", "note": "Segunda área custom — mais difícil que DVF1" },
+      { "location": "Kanto Safari Zone", "level_range": "22-37", "note": "Ticket 20.000 por 24h — bons drops, bom EXP" },
+      { "location": "Route 22 / Route 23 (Kanto)", "level_range": "30-45", "note": "Requer todos os 8 badges de Kanto para cruzar o portão" }
+    ],
+    "late_game_60_85": [
+      { "location": "Mt. Silver / Route 28 (Johto)", "level_range": "45-65", "note": "Acessível após Elite 4 de Johto" },
+      { "location": "Unova Victory Road", "level_range": "60-75", "note": "Bons Pokémon para dropar itens também" },
+      { "location": "N Castle (Unova)", "level_range": "65-80", "note": "Requer Castle Key — Pokémon nível 68+ com boa variedade de tipos" },
+      { "location": "Water Temple (Unova)", "level_range": "70-85", "note": "Requer Castle Key + Surf + Dive — excelente EXP no endgame de Unova" }
+    ],
+    "endgame_85_100": [
+      { "location": "Deep New Moon Island (Sinnoh)", "level_range": "80-100", "note": "1.5x stat boost em todos os Pokémon selvagens; não pode fugir; requer E4 Sinnoh" },
+      { "location": "Deep Full Moon Island (Sinnoh)", "level_range": "80-100", "note": "1.5x stat boost; não pode fugir; Scyther e Skarmory disponíveis; requer E4 Sinnoh" },
+      { "location": "Sinnoh Battle Zone (Fight/Survival/Resort Area)", "level_range": "80-100", "note": "1.5x stat boost; não pode fugir; acessível via ferry após E4 Sinnoh" },
+      { "location": "Ancient Dungeon", "level_range": "85-100", "note": "1.65x boost (exceto Velocidade); x3 drop rate; 30% tax no dinheiro; requer mapa da guilda" }
+    ],
+    "special_methods": {
+      "trainer_rebattles": "Re-batalhar treinadores (cooldown 24h) — muito mais EXP que wild; ideal com altar ativo",
+      "elite_four_runs": "Completar Elite 4 repetidamente — boa soma de EXP e dinheiro",
+      "altar_exp_boost": "World Blessing / Drop Rate Blessing — aumentam EXP global temporariamente",
+      "lucky_egg": "Lucky Egg (held item) aumenta EXP recebido por Pokémon"
+    }
+  },
+
+  "database_version": "33.6",
   "last_updated": "2026-06-10"
 }
