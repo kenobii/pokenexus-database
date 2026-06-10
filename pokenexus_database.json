@@ -4618,6 +4618,8 @@
       "gold_membership": "+50% para raridades UC, R, VR, ER, L; +20% shiny",
       "shiny_charm": "+25% shiny (Elite Shop, 30 tokens)",
       "swarm_map": "+25% encounter geral, +10% legendary, +10% shiny",
+      "honey": "+25% para encontros UC e acima (não afeta Common)",
+      "dark_lava_rocks": "2x encounter rate boost (rochas escuras/lava no mapa)",
       "altering_cave": "1.3x encounter rate boost",
       "cerulean_gems": "Pale/Blue/Green/Prism = 1.25x LLE; Dark = 2x LLE",
       "enhanced_feather": "+20% LLE para o lendário específico"
@@ -5735,6 +5737,6 @@
     "lead_pokemon_role": "O lead (1º Pokémon) é sempre relevante para mecânicas de encontro e fuga — mesmo que faintado para No Guard"
   },
 
-  "database_version": "33.4",
+  "database_version": "33.5",
   "last_updated": "2026-06-10"
 }
