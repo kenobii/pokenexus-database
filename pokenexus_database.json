@@ -1471,9 +1471,14 @@
   "pokedex_milestones": {
     "description": "Coletar Pokémon únicos desbloqueia recompensas e áreas especiais",
     "known_milestones": [
-      { "unique_caught": 350, "reward": "Mossy Key (acesso à Mossy Cave — Raikou, Suicune, Entei)" },
-      { "unique_caught": 600, "reward": "Acesso ao Mewtwo's Lair (Cerulean Cave F4) — também requer Legendary Map" }
+      { "unique_caught": 350, "reward": "Mossy Key → Collector III → acesso à Mossy Cave (Raikou, Suicune, Entei)" },
+      { "unique_caught": 400, "reward": "Acesso ao Haunted Mansion 2F durante Halloween Event (Darkrai)" },
+      { "unique_caught": 500, "reward": "Castle Key → Collector IV → acesso ao N Castle Water Temple (Manaphy, Phione)" },
+      { "unique_caught": 600, "reward": "Collector IV & acesso ao Mewtwo's Lair (Cerulean Cave F4) — também requer Legendary Map. Acesso ao Haunted Cave B1 durante Halloween Event." }
     ],
+    "collector_tiers": {
+      "note": "Collector I e II thresholds ainda não confirmados. III=350, IV=500, V=a confirmar"
+    },
     "youtube_collector": [
       "https://www.youtube.com/watch?v=4Xm1YyNgj9Y",
       "https://www.youtube.com/watch?v=o7vDMTuWWtU"
@@ -1520,7 +1525,8 @@
       { "pokemon": "Cresselia", "location": "Deep Full Moon Island", "requirement": "Derrotar Elite 4 de Sinnoh → ferry" },
       { "pokemon": "Giratina", "how_to_get": "Ovo — colocar em 1º/2º/3º no Halloween Event para chance de receber" },
       { "pokemon": "Dialga", "location": "Spear Pillar", "how_to_get": "Ter Adamant Fragment no inventário ao entrar em Spear Pillar" },
-      { "pokemon": "Palkia", "location": "Spear Pillar", "how_to_get": "Ter Lustrous Fragment no inventário ao entrar em Spear Pillar" }
+      { "pokemon": "Palkia", "location": "Spear Pillar", "how_to_get": "Ter Lustrous Fragment no inventário ao entrar em Spear Pillar" },
+      { "pokemon": "Shaymin", "location": "Flower Paradise (Sinnoh — após Victory Road de Sinnoh, norte de Route 224)", "requirement": "Derrotar Elite 4 de Sinnoh", "note": "Pode fugir (incomum para lendário). Sem PC na área. Também aparece em Altering Cave (pool geral 10%)." }
     ],
     "unova": [
       { "pokemon": "Reshiram", "location": "Dragonspiral Tower (Unova)", "requirement": "White Sphere no inventário" },
@@ -2066,6 +2072,7 @@
       "Collector IV: 500 Pokémon únicos capturados (Castle Key)",
       "Fishing Level 80",
       "HM Surf",
+      "HM Dive",
       "HM Waterfall (para área superior)"
     ],
     "legendary_pokemon": ["Manaphy", "Phione"],
@@ -2287,7 +2294,7 @@
       { "ball": "Timer Ball", "catch_rate": "Aumenta a cada turno de batalha (melhor que Ultra Ball após 10 turnos)" },
       { "ball": "Heal Ball", "catch_rate": "1x, mas cura o Pokémon capturado ao máximo" },
       { "ball": "Luxury Ball", "catch_rate": "1x, mas aumenta happiness mais rápido" },
-      { "ball": "Cherish Ball", "catch_rate": "1x — item raro de Treasure Chests", "note": "Bola comemorativa especial" }
+      { "ball": "Cherish Ball", "type": "CONTAINER (não é Poké Ball de captura)", "how_to_get": "Treasure Chests (drop raro)", "effect": "Contém um Lendário aleatório nível 40", "possible_legendaries": ["Articuno", "Moltres", "Zapdos", "Suicune", "Entei", "Raikou", "Regice", "Regirock", "Registeel", "Xerneas", "Celebi", "Yveltal", "Volcanion"] }
     ],
     "notes": [
       "Para capturar lendários: use Quick Ball no 1º turno ou Timer Ball após 10+ turnos",
@@ -2560,7 +2567,7 @@
       { "ball": "Repeat Ball", "effect": "3.5x se já possui a espécie no Pokédex" },
       { "ball": "Timer Ball", "effect": "Aumenta a cada turno — melhor que Ultra após ~10 turnos" },
       { "ball": "Luxury Ball", "effect": "1x captura, mas aumenta happiness mais rápido" },
-      { "ball": "Cherish Ball", "effect": "1x — item raro de Treasure Chests" }
+      { "ball": "Cherish Ball", "effect": "CONTAINER — dá um Lendário aleatório nível 40 (drop raro de Treasure Chests). NÃO é uma Poké Ball de captura." }
     ],
     "tip_legendaries": "Quick Ball no 1º turno OU Timer Ball após 10+ turnos são as melhores opções para lendários"
   },
@@ -2850,8 +2857,10 @@
       "Comprar um pass com 4.500 Competitive Points"
     ],
     "items": [
-      { "item": "Master Ball", "price_ingame": 5000000, "note": "Preço em moeda in-game dentro da loja" }
-    ]
+      { "item": "Master Ball", "price_ingame": 5000000 },
+      { "item": "Ancient Key (Tooth Half)", "price_ingame": 1000000, "note": "Alternativa mais cara ao PP Shop (15.000 PP)" }
+    ],
+    "status_note": "Fandom wiki (possivelmente desatualizada) indica que a loja foi removida do jogo. Confirmar se ainda existe em 2025."
   },
 
   "credit_shop_expanded": {
@@ -5550,6 +5559,19 @@
       "moveset": ["Crunch", "Scary Face", "Lava Plume", "Metal Sound"],
       "catch_tips": "Metal Sound baixa Sp. Def — usar Tentacruel/Regirock com Clear Body, Torkoal com White Smoke, ou Intimidate (Gyarados/Arcanine) para reduzir dano de Crunch"
     }
+  },
+
+  "cherish_ball": {
+    "description": "Item especial que contém um Lendário aleatório nível 40 — NÃO é uma Poké Ball de captura",
+    "how_to_get": "Drop raro de Treasure Chests",
+    "level": 40,
+    "possible_legendaries": [
+      "Articuno", "Moltres", "Zapdos",
+      "Raikou", "Entei", "Suicune",
+      "Regirock", "Regice", "Registeel",
+      "Xerneas", "Yveltal", "Celebi", "Volcanion"
+    ],
+    "note": "Volcanion e outros lendários de evento podem ser obtidos exclusivamente assim fora do período do evento"
   },
 
   "dragonspiral_tower": {
