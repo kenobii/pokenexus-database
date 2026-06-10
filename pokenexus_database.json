@@ -669,6 +669,14 @@
       "per_win": "5 Clan War Tokens",
       "mvp_bonus": "25 Clan War Tokens + 100 Credits",
       "eligibility": "Ganhar ao menos 1 batalha OU perder ao menos 3"
+    },
+    "prize_exchanger": {
+      "location": "Clan War Center",
+      "items": [
+        { "item": "Ancient Key (Loop Half)", "cost_tokens": 800, "note": "Uma das duas metades para acessar o Ancient Dungeon" },
+        { "item": "Egg Move Ticket", "cost_tokens": 50, "note": "Permite ensinar um Egg Move a um Pokémon" },
+        { "item": "Move Tutor Ticket", "cost_tokens": 50, "note": "Permite ensinar um golpe de Move Tutor" }
+      ]
     }
   },
 
@@ -1095,9 +1103,16 @@
     "description": "Batalhas PvP ranqueadas",
     "location": "PvP Building — Vermillion City",
     "requirements": "Equipe completa de 6 Pokémon",
-    "token_rewards": {
-      "master_match_win": 18,
-      "master_match_loss": 5
+    "token_rewards_by_tier": {
+      "unranked": { "win": 3, "loss": 0 },
+      "bronze": { "win": 4, "loss": 1 },
+      "silver": { "win": 6, "loss": 2 },
+      "gold": { "win": 8, "loss": 3 },
+      "master": { "win": 10, "loss": 4 }
+    },
+    "bonus_tokens": {
+      "battle_20_turns": "+1 PvP Token extra",
+      "battle_40_turns": "+2 PvP Tokens extra"
     },
     "ranking_decay": "Necessário ao menos 20 batalhas ranqueadas por semana (5 para random) para evitar decaimento de rating",
     "exchanger": "PvP Prize Exchanger no PvP Building"
@@ -1341,13 +1356,14 @@
   },
 
   "mossy_cave": {
-    "location": "Johto — surfar para cima saindo do ginásio em Blackthorn City",
-    "access_requirement": "Capturar 350 Pokémon únicos para receber a Mossy Key",
+    "location": "Johto — Dragon's Den — surfar para cima saindo do ginásio em Blackthorn City",
+    "access_requirement": "Capturar 350 Pokémon únicos para receber a Mossy Key (Collector III)",
     "legendaries": [
-      { "pokemon": "Raikou", "sub_area": "Thunder Cavern" },
-      { "pokemon": "Suicune", "sub_area": "Water Cavern" },
-      { "pokemon": "Entei", "sub_area": "Fire Cavern" }
+      { "pokemon": "Entei", "sub_area": "Fire Cavern", "direction": "esquerda" },
+      { "pokemon": "Suicune", "sub_area": "Water Cavern", "direction": "centro" },
+      { "pokemon": "Raikou", "sub_area": "Thunder Cavern", "direction": "direita" }
     ],
+    "wild_pokemon": ["Yanma", "Exeggcute", "Ferroseed", "Scyther", "Pinsir", "Heracross", "Skorupi", "Klefki", "Sandile", "Chespin", "Milotic"],
     "youtube": "https://www.youtube.com/watch?v=N2PUQrWjtaw"
   },
 
@@ -5368,6 +5384,46 @@
     "note": "Lista completa não confirmada — verificar PPOBuddy para todos os itens"
   },
 
-  "database_version": "32.4",
+  "legendary_encounter_items": {
+    "description": "Itens que aumentam a taxa de encontro com lendários específicos em +20% (LLE boost)",
+    "mechanics": {
+      "effect": "+20% de LLE (Legendary Luck Encounter) quando equipado no Pokémon líder",
+      "requirement": "Líder da equipe deve estar vivo",
+      "reusable": true,
+      "note": "Não desaparecem após o encontro com o lendário"
+    },
+    "feathers": {
+      "feather_of_articuno": {
+        "legendary": "Articuno",
+        "where_to_farm": "Drop em Seafoam Islands — líder tipo Gelo deve estar vivo",
+        "enhanced_version": "Feather of Articuno (Enhanced) — craftar com Legendary Bait"
+      },
+      "feather_of_zapdos": {
+        "legendary": "Zapdos",
+        "where_to_farm": "Drop no Power Plant Basement — líder tipo Elétrico deve estar vivo",
+        "enhanced_version": "Feather of Zapdos (Enhanced) — craftar com Legendary Bait"
+      },
+      "feather_of_moltres": {
+        "legendary": "Moltres",
+        "where_to_farm": "Drop em Mt. Ember ou Mt. Silver Cave — líder tipo Fogo deve estar vivo",
+        "enhanced_version": "Feather of Moltres (Enhanced) — craftar com Legendary Bait"
+      }
+    },
+    "enhanced_stones": {
+      "enhanced_fire_stone": { "legendary": "Entei", "boost": "+20% encounter rate" },
+      "enhanced_water_stone": { "legendary": "Suicune", "boost": "+20% encounter rate" },
+      "enhanced_thunder_stone": { "legendary": "Raikou", "boost": "+20% encounter rate" }
+    },
+    "other_enhanced_items": {
+      "soul_shard_enhanced": {
+        "legendaries": ["Latios", "Latias"],
+        "boost": "+20% encounter rate",
+        "craft": "Soul Shard + Legendary Bait"
+      }
+    },
+    "altering_cave_note": "Articuno e Zapdos aparecem em Altering Cave SEM necessidade de Feather. Enhanced Feathers AINDA funcionam para boost de +20% lá."
+  },
+
+  "database_version": "32.5",
   "last_updated": "2026-06-10"
 }
