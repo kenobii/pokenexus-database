@@ -246,7 +246,10 @@
     "gold_rush": {
       "description": "Evento especial onde rochas em uma caverna viram Gold Rocks",
       "frequency": "A cada 6-12 horas em caverna aleatória",
-      "bonus": "2x taxa de encontro de lendários durante o evento"
+      "duration": "1 hora",
+      "bonus": "2x taxa de encontro de lendários + alta taxa de respawn de Gold Rocks",
+      "notification": "Anunciado no canto superior esquerdo da tela (ao lado das blessings)",
+      "note": "Competição — o ouro não é seu até você minerar a rocha. Alta concorrência."
     },
     "sell_location": "Mining Vendor (dentro das cavernas)"
   },
@@ -2027,6 +2030,8 @@
       "HM Waterfall (para área superior)"
     ],
     "legendary_pokemon": ["Manaphy", "Phione"],
+    "notable_wild": ["Manaphy", "Dratini"],
+    "notable_drops": ["Dragon Scale"],
     "method": "Pokémon encontrados APENAS via fishing nessa área",
     "youtube": "https://www.youtube.com/watch?v=7B791dNuuEA"
   },
