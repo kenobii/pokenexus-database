@@ -175,10 +175,21 @@
   "world_boss": {
     "description": "Boss lendário que aparece no mapa a cada 24-48 horas",
     "spawn": "Mapa aleatório, a cada 24-48 horas",
-    "mechanic": "HP compartilhado entre todos os jogadores",
+    "mechanic": "HP compartilhado entre todos os jogadores — é necessário cooperação",
+    "how_to_know_next": "Power Ticket (obtido ao derrotar Kanto E4) — revela tempo até próximo world boss",
+    "notification": "Aparece no canto superior esquerdo (ao lado das blessings) quando ativo",
     "damage_tiers": [2500, 10000, 25000, 50000, 100000, 300000, 400000],
     "minimum_damage_for_reward": 2500,
-    "commands": ["/wbd", "/wbhp"]
+    "rewards": {
+      "legendary_egg": {
+        "chance": { "top_1_damage": "15%", "top_2_damage": "10%", "top_3_damage": "5%" },
+        "note": "Egg é intransferível e contém o lendário derrotado"
+      },
+      "killing_blow_bonus": "IV Reset (quem dá o último golpe)"
+    },
+    "status": "Atualmente desativado — em reformulação",
+    "commands": ["/wbd (ver dano causado)", "/wbhp (ver HP atual do boss)"],
+    "guide": "https://www.ppobuddy.com/guides/world-bosses"
   },
 
   "treasure_chests": {
@@ -1233,7 +1244,7 @@
     { "item": "Power Band", "effect": "+EVs de Sp.Def em cada batalha, -50% Speed", "type": "Power Item" },
     { "item": "Power Anklet", "effect": "+EVs de Speed em cada batalha, -50% Speed", "type": "Power Item" },
     { "item": "Effort Brace", "effect": "Aumenta EVs ganhos", "where": "Credit Shop — 450 Credits" },
-    { "item": "Golden Effort Brace", "effect": "Versão melhorada do Effort Brace", "how_to_get": "Craftar: Macho Brace + Effort Brace" }
+    { "item": "Golden Effort Brace", "effect": "Dobra EVs ganhos, NÃO reduz Speed (ao contrário do Macho Brace), previne ganho de EXP de wild Pokémon — melhor item para EV training eficiente", "how_to_get": "Craftar: Macho Brace + Effort Brace" }
   ],
 
   "hm_moves": {
@@ -5390,6 +5401,32 @@
       { "item": "Master Pass", "cost_tokens": 1500, "note": "Permite acesso a batalhas Master tier" }
     ],
     "note": "Lista completa não confirmada — verificar PPOBuddy para todos os itens"
+  },
+
+  "swarm_system": {
+    "description": "Evento que faz uma rota aleatória ter Pokémon diferentes por 2 horas",
+    "frequency": "A cada 3-6 horas",
+    "duration": "2 horas",
+    "spawn_composition": {
+      "common": 3,
+      "uncommon": 2,
+      "rare": 2,
+      "very_rare": 2,
+      "extremely_rare": 2,
+      "note": "Substituem completamente os Pokémon selvagens normais da rota"
+    },
+    "boosts": {
+      "encounter_rate": "+25% (reduzido para +10% para lendários)",
+      "shiny_rate": "+10%",
+      "applies_to": "Encontros terrestres apenas — mining não incluso"
+    },
+    "berry_drops": {
+      "chance": "1/2.500",
+      "condition": "Líder do tipo correto derrotando Pokémon selvagens na rota com swarm ativo",
+      "note": "Chance fixa — não pode ser aumentada por nenhum boost"
+    },
+    "how_to_check": "Comando /swarm para ver swarm ativo",
+    "guide": "https://www.ppobuddy.com/guides/swarms"
   },
 
   "treasure_chests": {
