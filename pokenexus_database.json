@@ -692,7 +692,8 @@
       "items": [
         { "item": "Ancient Key (Loop Half)", "cost_tokens": 800, "note": "Uma das duas metades para acessar o Ancient Dungeon" },
         { "item": "Egg Move Ticket", "cost_tokens": 50, "note": "Permite ensinar um Egg Move a um Pokémon" },
-        { "item": "Move Tutor Ticket", "cost_tokens": 50, "note": "Permite ensinar um golpe de Move Tutor" }
+        { "item": "Move Tutor Ticket", "cost_tokens": 50, "note": "Permite ensinar um golpe de Move Tutor" },
+        { "item": "Keldeo", "cost_tokens": "a confirmar", "note": "Lendário disponível na loja" }
       ]
     }
   },
@@ -1229,9 +1230,14 @@
   "global_marketplace": {
     "location": "Dentro do Pokémart",
     "description": "Mercado de jogadores para compra e venda de itens e Pokémon",
-    "how_to_sell": "Leilão ou preço fixo",
+    "sell_options": {
+      "fixed_price": "Preço fixo definido pelo vendedor",
+      "auction": "Lance livre por tempo limitado — maior lance no fim leva. Lance perdedor é reembolsado."
+    },
     "how_to_search": "Clicar no botão 'Search' (Enter não funciona)",
-    "ppobody_marketplace": "https://www.ppobuddy.com/marketplace"
+    "listing_fee": "Taxa proporcional ao preço de venda — NÃO é reembolsada se cancelar antes de vender",
+    "ppobody_marketplace": "https://www.ppobuddy.com/marketplace",
+    "guide": "https://www.ppobuddy.com/guides/global-marketplace"
   },
 
   "pp_shop_known_items": [
@@ -1357,10 +1363,15 @@
     "encounter_boost": "1.3x encounter rate, 1.1x shiny rate",
     "cash_drops": "Pokémon aqui NÃO dropam dinheiro",
     "daily_legendaries": {
-      "fishing_legend": "10% de chance de ser: Articuno, Suicune, Mesprit ou Uxie",
-      "surfing_legend": "10% de chance de ser: Zapdos, Raikou, Latias ou Latios",
-      "fixed": "Diancie aparece todo dia"
-    }
+      "fixed": "Diancie aparece todo dia",
+      "fishing_legend": "10% de chance diária de ser um de: Articuno, Suicune, Mesprit ou Uxie",
+      "surfing_legend": "10% de chance diária de ser um de: Zapdos, Raikou, Latias ou Latios",
+      "general_pool": {
+        "chance": "10%",
+        "pool": ["Moltres", "Articuno", "Zapdos", "Raikou", "Entei", "Suicune", "Regirock", "Regice", "Registeel", "Shaymin"]
+      }
+    },
+    "how_to_check_rotation": "Usar Altering Cave Scroll para ver os encontros do dia"
   },
 
   "ancient_cave_and_dungeon": {
@@ -1374,7 +1385,7 @@
       "pokemon_boost": "Stats dos Pokémon boosted em 1.65x (exceto Speed)",
       "benefits": "Maior EXP, maior drop rate, drops de itens únicos e valiosos",
       "notable_drops": ["Legendary Bait", "Soothe Bell", "Wise Glasses", "Muscle Band"],
-      "legendary": "Um lendário reside no Ancient Dungeon",
+      "legendary": "Genesect — requer Paleozoic Tracker no inventário. Também aparece em Mossy Cave e Ancient Cave R5 com o mesmo tracker.",
       "youtube_guides": [
         "https://www.youtube.com/watch?v=v05l8vuLqAM",
         "https://www.youtube.com/watch?v=0WO8NguiAx4"
@@ -1477,14 +1488,16 @@
       { "pokemon": "Entei", "location": "Fire Cavern (dentro de Mossy Cave)", "requirement": "350 Pokédex únicos → Mossy Key" },
       { "pokemon": "Lugia", "location": "Whirl Islands (Johto)", "requirement": "Silver Wing" },
       { "pokemon": "Ho-Oh", "location": "Tin Tower (Ecruteak City, Johto)", "requirement": "Rainbow Wing" },
-      { "pokemon": "Celebi", "location": "A confirmar — via evento ou quest especial" },
+      { "pokemon": "Celebi", "location": "Easter Event Maps — disponível durante o evento anual de Páscoa" },
       { "pokemon": "Mew", "location": "Faraway Island", "requirement": "Elite 4 de Johto + Old Sea Map no inventário" }
     ],
     "hoenn": [
       { "pokemon": "Latios / Latias", "location": "Rota aleatória Hoenn (101-130, exceto 107-109) / Hoenn Safari Zone", "requirement": "Elite 4 Hoenn + Eon Ticket. Muda às 0:00 UTC." },
       { "pokemon": "Latias / Latios (boost)", "alternative": "Soul Shard Enhanced: +20% encounter rate" },
       { "pokemon": "Regis (Regirock, Regice, Registeel)", "location": "Qualquer rocha de mineração (Mining lv.75+)", "rate": "1/75.000 por rocha", "alternative": "Altering Cave (10% chance diária)" },
-      { "pokemon": "Kyogre / Groudon / Rayquaza", "location": "A confirmar" },
+      { "pokemon": "Kyogre", "location": "Summer Event Maps — disponível durante o evento anual de Verão" },
+      { "pokemon": "Groudon", "location": "A confirmar" },
+      { "pokemon": "Rayquaza", "location": "A confirmar" },
       { "pokemon": "Deoxys", "location": "A confirmar — via ticket ou evento especial" },
       { "pokemon": "Jirachi", "location": "PP Shop (custo em PP)" }
     ],
@@ -1498,10 +1511,14 @@
       { "pokemon": "Palkia", "location": "Spear Pillar", "how_to_get": "Ter Lustrous Fragment no inventário ao entrar em Spear Pillar" }
     ],
     "unova": [
-      { "pokemon": "Reshiram / Zekrom", "location": "N Castle (Unova)", "requirement": "Parte da história após derrotar Elite 4 de Unova pela primeira vez" },
+      { "pokemon": "Reshiram", "location": "Dragonspiral Tower (Unova)", "requirement": "White Sphere no inventário" },
+      { "pokemon": "Zekrom", "location": "Dragonspiral Tower (Unova)", "requirement": "Black Sphere no inventário" },
+      { "pokemon": "Articuno / Zapdos / Moltres", "location": "N Castle (Unova)", "note": "Pássaros de Kanto em N Castle — sem necessidade de Feather, Enhanced Feathers ainda aumentam a taxa" },
       { "pokemon": "Victini", "location": "Battle Queue Prize Shop" },
       { "pokemon": "Virizion", "location": "Elite Prize Shop" },
-      { "pokemon": "Cobalion / Terrakion", "location": "A confirmar" }
+      { "pokemon": "Cobalion", "location": "Battle Tower Prize Shop (Tower Tokens) e PvP Prize Shop (PvP Tokens)" },
+      { "pokemon": "Terrakion", "location": "PvP Battle Queue Prize Shop (PvP Tokens)" },
+      { "pokemon": "Keldeo", "location": "Clan Wars Prize Shop (Clan War Tokens)" }
     ],
     "altering_cave_pool": ["Articuno", "Zapdos", "Raikou", "Latias", "Latios", "Suicune", "Mesprit", "Uxie", "Diancie (fixo)", "Regirock", "Regice", "Registeel"]
   },
@@ -3092,7 +3109,8 @@
     "prizes": [
       { "item": "Egg Move Ticket", "cost_tokens": 50 },
       { "item": "Move Tutor Ticket", "cost_tokens": 50 },
-      { "item": "Loop Half (chave do N Castle)", "cost_tokens": 800 }
+      { "item": "Loop Half (chave do N Castle)", "cost_tokens": 800 },
+      { "item": "Keldeo", "cost_tokens": "a confirmar", "note": "Lendário disponível na loja" }
     ],
     "exchanger": "Clan War Prize Exchanger — Clan Building, Vermilion City"
   },
@@ -4634,7 +4652,7 @@
         "name": "Registeel",
         "location": "Mining rocks (Mining Level 75+, 1/75.000 por rocha) ou Altering Cave (10% legendary pool)"
       },
-      { "name": "Kyogre", "location": "Hoenn — localização específica a confirmar" },
+      { "name": "Kyogre", "location": "Summer Event Maps — disponível durante o evento anual de Verão" },
       { "name": "Groudon", "location": "Hoenn — localização específica a confirmar" },
       { "name": "Rayquaza", "location": "Hoenn — localização específica a confirmar" }
     ]
@@ -4938,7 +4956,7 @@
     "rewards": {
       "currency": "Tower Tokens",
       "prize_exchanger": "Troca Tower Tokens por recompensas",
-      "notable_prizes": ["Zygarde"]
+      "notable_prizes": ["Zygarde", "Cobalion"]
     }
   },
 
@@ -5408,11 +5426,21 @@
     "token_earn_rates": {
       "unranked_win": 3,
       "unranked_loss": 0,
+      "bronze_win": 4,
+      "bronze_loss": 1,
+      "silver_win": 6,
+      "silver_loss": 2,
+      "gold_win": 8,
+      "gold_loss": 3,
       "master_win": 10,
-      "master_loss": 4
+      "master_loss": 4,
+      "bonus_20_turns": "+1 token (ranked matches apenas)",
+      "bonus_40_turns": "+2 tokens (ranked matches apenas)"
     },
     "items": [
       { "item": "Victini", "cost_tokens": "a confirmar", "note": "Lendário disponível" },
+      { "item": "Cobalion", "cost_tokens": "a confirmar", "note": "Lendário disponível — também obtível na Battle Tower Shop" },
+      { "item": "Terrakion", "cost_tokens": "a confirmar", "note": "Lendário disponível" },
       { "item": "Master Pass", "cost_tokens": 1500, "note": "Permite acesso a batalhas Master tier" }
     ],
     "note": "Lista completa não confirmada — verificar PPOBuddy para todos os itens"
@@ -5511,6 +5539,23 @@
     }
   },
 
-  "database_version": "32.6",
+  "dragonspiral_tower": {
+    "location": "Unova — norte de Icirrus City (Route 7)",
+    "access": "Disponível após derrotar Elite 4 de Unova",
+    "notes": "Tem Treasure Chests nos andares 1F, 2F e teto (Roof)",
+    "legendaries": [
+      {
+        "pokemon": "Reshiram",
+        "requirement": "White Sphere no inventário"
+      },
+      {
+        "pokemon": "Zekrom",
+        "requirement": "Black Sphere no inventário"
+      }
+    ],
+    "how_to_get_spheres": "A confirmar — verificar drops ou crafting no PokeNexus"
+  },
+
+  "database_version": "32.7",
   "last_updated": "2026-06-10"
 }
