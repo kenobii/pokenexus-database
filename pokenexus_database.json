@@ -154,7 +154,25 @@
       "description": "Sistema de batalha PvP ranqueada",
       "location": "PvP Building em Vermillion City",
       "currency": "PvP Tokens",
-      "exchanger": "PvP Prize Exchanger no PvP Building"
+      "exchanger": "PvP Prize Exchanger no PvP Building",
+      "token_rates": {
+        "unranked":  { "win": 3, "lose": 0 },
+        "bronze":    { "win": 4, "lose": 1 },
+        "silver":    { "win": 6, "lose": 2 },
+        "gold":      { "win": 8, "lose": 3 },
+        "master":    { "win": 10, "lose": 4 }
+      },
+      "turn_bonus": {
+        "min_turns_for_lose_tokens": 10,
+        "bonus_20_turns": "+1 token extra (Ranked only)",
+        "bonus_40_turns": "+2 tokens extra (Ranked only)"
+      },
+      "tournament_prizes": {
+        "1st_place": 200,
+        "2nd_place": 100,
+        "participation": 20
+      },
+      "known_prizes": ["Victini (BQ Prize Shop)", "Terrakion (BQ Prize Shop)"]
     },
     "clans": {
       "description": "Grupos de jogadores para eventos competitivos",
