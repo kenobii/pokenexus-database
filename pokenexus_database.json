@@ -3141,7 +3141,8 @@
     "egg_move_tutor": {
       "location": "Dentro do Clan War Building — Vermilion City",
       "currency": "Egg Move Ticket (obtido no Clan War Prize Exchanger por 50 tokens)",
-      "function": "Ensina moves que o Pokémon normalmente aprenderia apenas ao nascer do ovo"
+      "function": "Ensina moves que o Pokémon normalmente aprenderia apenas ao nascer do ovo",
+      "moveset_generation": "Segue Gen 7 USUM movesets"
     },
     "transfer_move_tutor": {
       "location": "Prédio a leste do Pokémon Center em Vermilion City",
@@ -5591,6 +5592,23 @@
     "how_to_get_spheres": "A confirmar — verificar drops ou crafting no PokeNexus"
   },
 
-  "database_version": "32.7",
+  "deep_new_moon_island": {
+    "location": "Sinnoh — acessível via ferry após derrotar Elite 4 de Sinnoh",
+    "legendary": "Darkrai (nível 85)",
+    "wild_pokemon_boost": "1.5x stats em todos os Pokémon selvagens",
+    "cannot_run": true,
+    "note": "Não é possível fugir de batalhas selvagens nesta área. Darkrai também aparece na Haunted Mansion 2F durante o Halloween Event (requer 400 Pokédex únicos)."
+  },
+
+  "deep_full_moon_island": {
+    "location": "Sinnoh — acessível via ferry após derrotar Elite 4 de Sinnoh",
+    "legendary": "Cresselia (nível 85, fêmea exclusiva)",
+    "wild_pokemon_boost": "1.5x stats em todos os Pokémon selvagens",
+    "cannot_run": true,
+    "notable_wild": ["Scyther", "Skarmory"],
+    "note": "Não é possível fugir de batalhas selvagens nesta área."
+  },
+
+  "database_version": "33.0",
   "last_updated": "2026-06-10"
 }
