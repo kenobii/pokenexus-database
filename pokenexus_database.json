@@ -4895,10 +4895,10 @@
   },
 
   "pokemon_box_credit_shop": {
-    "description": "Caixa misteriosa vendida no Credit Shop que contém 1 de 8 Pokémon exclusivos não encontráveis no wild",
+    "description": "Caixa misteriosa vendida no Credit Shop que contém 1 de 9 Pokémon exclusivos não encontráveis no wild",
     "cost_credits": 1000,
-    "pool_size": 8,
-    "known_included": ["Meloetta"],
+    "pool_size": 9,
+    "known_included": ["Lickitung", "Meloetta", "Lapras", "Eevee", "Porygon", "Togepi", "Tyrogue", "Swirlix", "Flabebe"],
     "note": "Pode ser comercializado com outros jogadores. Todos os Pokémon vêm no nível 3",
     "credit_shop_access": "Ícone de bolsa amarela no canto inferior esquerdo do jogo"
   },
