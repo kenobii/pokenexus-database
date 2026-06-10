@@ -3532,7 +3532,9 @@
       "location": "Oeste de Lilycove City",
       "ticket_cost": 400000,
       "ticket_duration": "24 horas",
+      "fishing_level_required": 50,
       "rock_smash_areas": "Áreas 4 e 6 (Rock Smash para encontrar Pokémon selvagens)",
+      "notable_pokemon": ["Heracross", "Pikachu", "Smeargle"],
       "note": "Considerada a melhor Safari Zone para fazer dinheiro e hunting — Pokémon valiosos para PvP"
     },
     "sinnoh": {
@@ -3922,16 +3924,23 @@
         "bikers": "Grupo de bikers ocupa Three Island — precisar derrotá-los"
       },
       "four_island": {
-        "features": ["Daycare Center (breeding e eggs)", "Lorelei quest"],
+        "features": ["Daycare Center (breeding e eggs)", "Lorelei quest", "Icefall Cave"],
         "daycare": {
           "location": "Four Island",
           "egg_hatch_time": "3-7 horas de jogo",
           "note": "Único Daycare Center do jogo para breeding"
         },
-        "lorelei_quest": "Treinar 2 Golduck com a habilidade Cloud Nine"
+        "lorelei_quest": "Treinar 2 Golduck com a habilidade Cloud Nine",
+        "icefall_cave": {
+          "location": "Far right da Four Island",
+          "hms_required": ["Surf", "Waterfall"],
+          "note": "Rare spawns dentro — caverna de gelo"
+        }
       },
       "five_island": {
-        "note": "Acessível via Rainbow Pass. Memorial Pillar área com lendários"
+        "features": ["Water Labyrinth", "Lost Cave", "Memorial Pillar"],
+        "water_labyrinth": "Combinações únicas de spawns aquáticos",
+        "lost_cave": "Pokémon únicos dentro — acessível após Rainbow Pass"
       },
       "six_island": {
         "features": ["Blue (rival) no Pokécenter", "Ruin Valley", "Dotted Cave (Sapphire quest)"],
