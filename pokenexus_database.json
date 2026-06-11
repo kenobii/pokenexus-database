@@ -252,7 +252,7 @@
     "gems_by_level": [
       { "level_required": 1,  "gem": "Red Gemstone",     "sell_value": 50,    "mining_exp": "15-30" },
       { "level_required": 10, "gem": "Blue Gemstone",    "sell_value": 100,   "mining_exp": "40-55" },
-      { "level_required": 20, "gem": "Green Gemstone",   "sell_value": 200,   "mining_exp": "a confirmar" },
+      { "level_required": 20, "gem": "Green Gemstone",   "sell_value": 200,   "mining_exp": "90-120",  "respawn_seconds": 13 },
       { "level_required": 35, "gem": "Prism Gemstone",   "sell_value": 400,   "mining_exp": "170-220", "respawn_seconds": "25-28" },
       { "level_required": 50, "gem": "Pale Gemstone",    "sell_value": 550,   "mining_exp": "330-480" },
       { "level_required": 65, "gem": "Dark Gemstone",    "sell_value": 900,   "mining_exp": "150-200", "respawn_seconds": "120-180" },
