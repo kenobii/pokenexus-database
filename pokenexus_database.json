@@ -1993,6 +1993,7 @@
       "access": "Falar com Delibird em qualquer Pokémon Center durante o evento",
       "wild_pokemon": ["Delibird", "Stantler"],
       "shop": "Santa's Shop disponível durante o evento",
+      "gift_drop": "Pokémon raros de evento têm chance de dropar um Gift ao serem capturados/derrotados",
       "event_legendaries": ["Xerneas", "Articuno", "Cresselia", "Kyurem"],
       "youtube_guides": [
         "https://www.youtube.com/watch?v=5PRVvQV4nxo",
