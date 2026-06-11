@@ -250,10 +250,10 @@
     "gems_by_level": [
       { "level_required": 1,  "gem": "Red Gemstone",     "sell_value": 50,    "mining_exp": "15-30" },
       { "level_required": 10, "gem": "Blue Gemstone",    "sell_value": 100,   "mining_exp": "40-55" },
-      { "level_required": 20, "gem": "Green Gemstone",   "sell_value": "a confirmar", "mining_exp": "a confirmar" },
-      { "level_required": 35, "gem": "Prism Gemstone",   "sell_value": "a confirmar", "mining_exp": "170-220" },
-      { "level_required": 50, "gem": "Pale Gemstone",    "sell_value": "a confirmar", "mining_exp": "330-480" },
-      { "level_required": 65, "gem": "Dark Gemstone",    "sell_value": "a confirmar", "mining_exp": "150-200" },
+      { "level_required": 20, "gem": "Green Gemstone",   "sell_value": 200,   "mining_exp": "a confirmar" },
+      { "level_required": 35, "gem": "Prism Gemstone",   "sell_value": 400,   "mining_exp": "170-220" },
+      { "level_required": 50, "gem": "Pale Gemstone",    "sell_value": 550,   "mining_exp": "330-480" },
+      { "level_required": 65, "gem": "Dark Gemstone",    "sell_value": 900,   "mining_exp": "150-200" },
       { "level_required": 80, "gem": "Rainbow Gemstone", "sell_value": 20000, "mining_exp": "3000-4000" }
     ],
     "rock_notes": "Rainbow e Gold rocks NÃO contêm itens. Rochas de nível mais alto = itens de melhor qualidade",
@@ -279,7 +279,37 @@
       "notification": "Anunciado no canto superior esquerdo da tela (ao lado das blessings)",
       "note": "Competição — o ouro não é seu até você minerar a rocha. Alta concorrência."
     },
-    "sell_location": "Mining Vendor (dentro das cavernas)"
+    "sell_location": "Mining Vendor (dentro das cavernas)",
+    "gem_locations": {
+      "note": "Gems de nível mais alto aparecem somente em locais específicos",
+      "kanto": [
+        { "location": "Mt. Moon", "gems": ["Red", "Blue", "Green"] },
+        { "location": "Diglett's Cave", "gems": ["Red", "Blue"] },
+        { "location": "Rock Tunnel", "gems": ["Red", "Blue", "Green"] },
+        { "location": "Seafoam Islands", "gems": ["Red", "Blue", "Green", "Prism"] },
+        { "location": "Hellfire Cavern", "gems": ["Red", "Blue", "Green", "Prism", "Pale"] },
+        { "location": "Turtle Cove", "gems": ["Red", "Blue", "Green", "Prism"] },
+        { "location": "Victory Road (Kanto)", "gems": ["Red", "Blue", "Green", "Prism", "Pale", "Dark"] },
+        { "location": "Cerulean Cave", "gems": ["Blue", "Green", "Prism", "Pale", "Dark"] }
+      ],
+      "johto": [
+        { "location": "Dragon's Den", "gems": ["Blue", "Green", "Prism", "Pale"] },
+        { "location": "Mossy Cave", "gems": ["Green", "Prism", "Pale", "Dark", "Rainbow"] }
+      ],
+      "sinnoh_unova": [
+        { "location": "Ancient Dungeon", "gems": ["Dark", "Rainbow"] },
+        { "location": "Spear Pillar", "gems": ["Dark", "Rainbow"] },
+        { "location": "Sinnoh Underground", "gems": ["Dark", "Rainbow"] },
+        { "location": "Sinnoh Safari Zone", "gems": ["Rainbow"] },
+        { "location": "Twist Mountain", "gems": ["Dark", "Rainbow"] },
+        { "location": "Deep Giant Chasm", "gems": ["Dark", "Rainbow"] },
+        { "location": "Reversal Mountain", "gems": ["Dark", "Rainbow"] },
+        { "location": "Unova Victory Road", "gems": ["Dark", "Rainbow"] },
+        { "location": "Water Temple", "gems": ["Dark", "Rainbow"] }
+      ],
+      "rainbow_respawn": "~20-30 minutos",
+      "dark_respawn": "~120-180 segundos"
+    }
   },
 
   "fishing": {
@@ -735,12 +765,49 @@
   "ev_training": {
     "description": "Treinar EVs (Effort Values) para maximizar stats do Pokémon",
     "mechanic": "Cada 4 EVs em um stat = +1 ponto no stat ao nível 100. Máximo: 510 EVs totais, 252 em um único stat",
+    "ev_yields_rule": "Pokémon de 1ª estágio = 1 EV; 2ª estágio = 2 EVs; 3ª estágio = 3 EVs (geralmente)",
     "kanto_spots": [
-      { "stat": "HP", "location": "Viridian Forest", "pokemon": "Caterpie" },
-      { "stat": "Attack", "location": "Route 22", "pokemon": "Mankey, Spearow" },
-      { "stat": "Defense", "location": "Mt. Moon", "pokemon": "Geodude, Zubat" },
-      { "stat": "Speed", "location": "Route 22", "pokemon": "Spearow" }
+      { "stat": "HP",      "location": "Viridian Forest", "pokemon": "Caterpie (+1 HP EV)" },
+      { "stat": "HP",      "location": "Mt. Moon / Route 3", "pokemon": "Clefairy (+2 HP EV)" },
+      { "stat": "Attack",  "location": "Route 22", "pokemon": "Mankey (+1 Atk EV), Spearow (+1 Atk EV)" },
+      { "stat": "Attack",  "location": "Diglett's Cave", "pokemon": "Diglett (+1 Spd EV) — usar Paras (Route 24) para Atk puro" },
+      { "stat": "Defense", "location": "Mt. Moon", "pokemon": "Geodude (+1 Def EV)" },
+      { "stat": "SpAtk",   "location": "Lavender Town / Pokemon Tower", "pokemon": "Gastly (+1 SpAtk EV), Haunter (+2 SpAtk EV)" },
+      { "stat": "SpDef",   "location": "Surfing (qualquer rota costeira)", "pokemon": "Tentacool (+1 SpDef EV), Tentacruel (+2 SpDef EV)" },
+      { "stat": "Speed",   "location": "Diglett's Cave", "pokemon": "Diglett (+1 Spd EV), Dugtrio (+2 Spd EV)" }
     ],
+    "hoenn_spots": [
+      { "stat": "Speed", "location": "Route 110", "pokemon": "Wingull (+1 Spd EV), Electrike (+1 Spd EV)" }
+    ],
+    "ev_items": {
+      "macho_brace": {
+        "effect": "Dobra EVs ganhos em batalha; reduz Speed do portador durante batalha",
+        "note": "Não afeta EVs de vitaminas ou asas"
+      },
+      "power_items": {
+        "description": "+4 EVs adicionais no stat correspondente por batalha (acumulável com Macho Brace)",
+        "list": [
+          { "item": "Power Weight",  "stat": "HP" },
+          { "item": "Power Bracer",  "stat": "Attack" },
+          { "item": "Power Belt",    "stat": "Defense" },
+          { "item": "Power Lens",    "stat": "SpAtk" },
+          { "item": "Power Band",    "stat": "SpDef" },
+          { "item": "Power Anklet",  "stat": "Speed" }
+        ]
+      },
+      "vitamins": {
+        "description": "+10 EVs no stat correspondente. Limite: não funciona quando o stat já tem 100+ EVs",
+        "list": ["HP Up (HP)", "Protein (Attack)", "Iron (Defense)", "Calcium (SpAtk)", "Zinc (SpDef)", "Carbos (Speed)"]
+      },
+      "wings": {
+        "description": "+1 EV no stat correspondente. Sem limite de uso (diferente das vitaminas)",
+        "list": ["Health Wing (HP)", "Muscle Wing (Atk)", "Resist Wing (Def)", "Genius Wing (SpAtk)", "Clever Wing (SpDef)", "Swift Wing (Spd)"]
+      }
+    },
+    "ev_reset": {
+      "description": "Apaga todos os EVs de um Pokémon — permite redistribuição completa",
+      "how": "Usar EV Reset item — disponível na loja ou como drop (a confirmar método exato)"
+    },
     "youtube": "https://www.youtube.com/watch?v=QgIa0fwAl4g"
   },
 
@@ -5829,12 +5896,12 @@
       { "item": "Razor Fang", "drop_from": "a confirmar", "use": "Gligar → Gliscor (level up noite)" }
     ],
     "shiny_stone": {
-      "evolves": ["Togetic → Togekiss", "Roselia → Roserade", "Minccino → Cinccino"],
-      "how_to_get": "a confirmar (não vem no Evolutional Stone Box padrão)"
+      "evolves": ["Togetic → Togekiss", "Roselia → Roserade", "Minccino → Cinccino", "Floette → Florges"],
+      "how_to_get": "Dropa de qualquer Pokémon Fairy-type selvagem (taxa baixa — % exata desconhecida). Não vem no Evolutional Stone Box padrão"
     },
     "note": "Para evoluções por trade-hold, o PokeNexus tem um mecanismo de trade — verificar se existe NPC de trade ou se requer outro jogador"
   },
 
-  "database_version": "33.7",
+  "database_version": "33.8",
   "last_updated": "2026-06-11"
 }
