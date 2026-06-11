@@ -1432,7 +1432,10 @@
       "location": "Fuchsia City — norte da cidade",
       "ticket_cost": 20000,
       "ticket_duration": "24 horas",
-      "notable_rare_pokemon": ["Scyther", "Nidoran♂/♀", "Tauros"]
+      "wild_pokemon_level_range": "22-37",
+      "notable_rare_pokemon": ["Scyther", "Nidoran♂/♀", "Tauros"],
+      "fishing_requirement": 15,
+      "notable_fishing_pokemon": ["Dratini"]
     },
     {
       "name": "Johto Safari Zone",
