@@ -1968,7 +1968,8 @@
           "tip": "Yveltal fica na mansion/floresta, não no labirinto"
         },
         "haunted_mansion_1f": {
-          "description": "Encontros especiais de Pokémon durante o evento"
+          "description": "Encontros especiais de Pokémon durante o evento",
+          "notable": "Giratina aparece aqui durante o evento"
         },
         "haunted_mansion_2f": {
           "pokemon": "Darkrai",
@@ -1978,7 +1979,7 @@
           "requirement": "600+ Pokémon únicos registrados no Pokédex"
         }
       },
-      "event_legendaries": ["Yveltal", "Darkrai"],
+      "event_legendaries": ["Yveltal", "Darkrai", "Giratina (via Haunted Mansion 1F)"],
       "yveltal_forms": "Black/Red = regular; White/Red = Shiny",
       "youtube_guides": [
         "https://www.youtube.com/watch?v=0kFeBSnYOOU",
