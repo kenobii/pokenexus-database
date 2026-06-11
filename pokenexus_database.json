@@ -1554,7 +1554,11 @@
       { "pokemon": "Virizion", "location": "Elite Prize Shop" },
       { "pokemon": "Cobalion", "location": "Battle Tower Prize Shop (Tower Tokens) e PvP Prize Shop (PvP Tokens)" },
       { "pokemon": "Terrakion", "location": "PvP Battle Queue Prize Shop (PvP Tokens)" },
-      { "pokemon": "Keldeo", "location": "Clan Wars Prize Shop (Clan War Tokens)" }
+      { "pokemon": "Keldeo", "location": "Clan Wars Prize Shop (Clan War Tokens)" },
+      { "pokemon": "Kyurem", "location": "Clan Wars Prize Shop (Clan War Tokens)" },
+      { "pokemon": "Tornadus", "location": "A confirmar — Unova routes (confirmed available via PPOBuddy)" },
+      { "pokemon": "Thundurus", "location": "A confirmar — Unova routes (confirmed available via PPOBuddy)" },
+      { "pokemon": "Landorus", "location": "A confirmar — provavelmente Abundant Shrine após ter Tornadus e Thundurus (mecânica BW original)" }
     ],
     "altering_cave_pool": ["Articuno", "Zapdos", "Raikou", "Latias", "Latios", "Suicune", "Mesprit", "Uxie", "Diancie (fixo)", "Regirock", "Regice", "Registeel"]
   },
@@ -5759,7 +5763,7 @@
     "late_game_60_85": [
       { "location": "Mt. Silver / Route 28 (Johto)", "level_range": "45-65", "note": "Acessível após Elite 4 de Johto" },
       { "location": "Unova Victory Road", "level_range": "60-75", "note": "Bons Pokémon para dropar itens também" },
-      { "location": "N Castle (Unova)", "level_range": "65-80", "note": "Requer Castle Key — Pokémon nível 68+ com boa variedade de tipos" },
+      { "location": "N Castle (Unova)", "level_range": "65-80", "note": "Requer Castle Key (500 Pokémon únicos) — 1.5x EXP + 1.5x drop rate para todos os Pokémon do mapa; lendários Kanto disponíveis sem Feather" },
       { "location": "Water Temple (Unova)", "level_range": "70-85", "note": "Requer Castle Key + Surf + Dive — excelente EXP no endgame de Unova" }
     ],
     "endgame_85_100": [
