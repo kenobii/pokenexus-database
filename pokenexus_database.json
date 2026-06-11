@@ -1459,7 +1459,7 @@
   "altering_cave": {
     "location": "Hoenn — Route 103_2 (acesso por Outcast Island, Six Island, Sevii Islands)",
     "ticket": "Altering Cave Ticket — $600.000 — dura 24 horas. Comprar com o salesman na entrada",
-    "wild_pokemon_level": "Igual ao nível médio da equipe do jogador (arredondado para baixo)",
+    "wild_pokemon_level": 80,
     "daily_rotation": "2 Pokémon de cada raridade e método são sorteados diariamente de um pool",
     "encounter_boost": "1.3x encounter rate, 1.1x shiny rate",
     "cash_drops": "Pokémon aqui NÃO dropam dinheiro",
