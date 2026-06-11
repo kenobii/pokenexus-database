@@ -228,8 +228,10 @@
   },
 
   "swarms": {
-    "description": "Evento em rota específica que aumenta drops especiais",
+    "description": "A cada 3-6 horas, um swarm aparece em rota aleatória de qualquer região",
     "command": "/swarm",
+    "how_to_track": "Canto superior esquerdo da tela mostra swarm ativo",
+    "pokemon_pool": "3 comuns, 2 incomuns, 2 raros, 2 muito raros e 2 extremamente raros substituem os Pokémon selvagens normais da rota",
     "drops": [
       "Beedrillite",
       "Soul Shard (ingrediente para Soul Shard Enhanced)"
