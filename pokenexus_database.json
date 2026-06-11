@@ -2188,7 +2188,7 @@
       { "ability": "White Smoke", "effect": "0.5x chance de encontro com selvagem" }
     ],
     "item_drops": [
-      { "ability": "Compoundeyes", "effect": "Maior taxa de drop de itens em Pokémon selvagens" }
+      { "ability": "Compound Eyes", "effect": "Maior taxa de drop de itens em Pokémon selvagens" }
     ],
     "fishing": [
       { "ability": "Sticky Hold", "effect": "Maior chance de pescar um Pokémon" },
@@ -2201,6 +2201,9 @@
         "also_works_on": ["Casino Pokémon", "PvP Pokémon", "Fósseis", "Pokémon Box"],
         "alternative": "Synchronize Stone (mesmo efeito sem precisar da habilidade — obtido no Casino)"
       }
+    ],
+    "flee": [
+      { "ability": "Run Away", "effect": "Foge de batalhas com Pokémon selvagens sem falhar" }
     ],
     "money_drop_penalty": "Pokémon encontrados com líder de Arena Trap/Illuminate/No Guard dropam MENOS dinheiro",
     "youtube_natures": "https://www.youtube.com/watch?v=uJ4o8JDVj_0"
