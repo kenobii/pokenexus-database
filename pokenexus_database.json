@@ -2991,7 +2991,18 @@
       { "from": "Kadabra", "to": "Alakazam", "held_item_required": null },
       { "from": "Graveler", "to": "Golem", "held_item_required": null },
       { "from": "Machoke", "to": "Machamp", "held_item_required": null },
-      { "from": "Haunter", "to": "Gengar", "held_item_required": null }
+      { "from": "Haunter", "to": "Gengar", "held_item_required": null },
+      { "from": "Onix", "to": "Steelix", "held_item_required": "Metal Coat" },
+      { "from": "Scyther", "to": "Scizor", "held_item_required": "Metal Coat" },
+      { "from": "Seadra", "to": "Kingdra", "held_item_required": "Dragon Scale" },
+      { "from": "Poliwhirl", "to": "Politoed", "held_item_required": "King's Rock" },
+      { "from": "Slowpoke", "to": "Slowking", "held_item_required": "King's Rock" },
+      { "from": "Porygon", "to": "Porygon2", "held_item_required": "Upgrade" },
+      { "from": "Porygon2", "to": "Porygon-Z", "held_item_required": "Dubious Disc" },
+      { "from": "Rhydon", "to": "Rhyperior", "held_item_required": "Protector" },
+      { "from": "Electabuzz", "to": "Electivire", "held_item_required": "Electrizer" },
+      { "from": "Magmar", "to": "Magmortar", "held_item_required": "Magmarizer" },
+      { "from": "Feebas", "to": "Milotic", "held_item_required": "Prism Scale" }
     ],
     "tip": "Encontre outro jogador de confiança para fazer a troca e receber de volta — não é necessário dar permanentemente"
   },
