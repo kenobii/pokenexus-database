@@ -5797,6 +5797,33 @@
     }
   },
 
-  "database_version": "33.6",
-  "last_updated": "2026-06-10"
+  "evolution_items_system": {
+    "description": "Itens de evolução em PokeNexus — como obter e para que servem",
+    "stone_box": {
+      "name": "Evolutional Stone Box",
+      "cost": "250 Credits no Credit Shop (225 com Gold Membership)",
+      "contents": ["Water Stone", "Thunder Stone", "Fire Stone", "Leaf Stone", "Moon Stone", "Sun Stone", "Dawn Stone", "Dusk Stone"],
+      "note": "Todas as pedras têm a mesma chance. Também pode vir de Easter Egg, Mystery Box e Item Bomb"
+    },
+    "held_item_drops": [
+      { "item": "Dragon Scale", "drop_from": ["Horsea", "Seadra"], "use": "Seadra → Kingdra (trade)" },
+      { "item": "Metal Coat", "drop_from": ["Onix", "Scyther"], "use": "Onix → Steelix, Scyther → Scizor (trade)" },
+      { "item": "King's Rock", "drop_from": "Fishing (Dratini, Feebas e outros)", "use": "Poliwhirl → Politoed, Slowpoke → Slowking (trade)" },
+      { "item": "Electrizer", "drop_from": "Elekid/Electabuzz (a confirmar)", "use": "Electabuzz → Electivire (trade)" },
+      { "item": "Magmarizer", "drop_from": "Magby/Magmar (a confirmar)", "use": "Magmar → Magmortar (trade)" },
+      { "item": "Protector", "drop_from": "a confirmar", "use": "Rhydon → Rhyperior (trade)" },
+      { "item": "Upgrade", "drop_from": "a confirmar", "use": "Porygon → Porygon2 (trade)" },
+      { "item": "Dubious Disc", "drop_from": "a confirmar", "use": "Porygon2 → Porygon-Z (trade)" },
+      { "item": "Razor Claw", "drop_from": "a confirmar", "use": "Sneasel → Weavile (level up noite)" },
+      { "item": "Razor Fang", "drop_from": "a confirmar", "use": "Gligar → Gliscor (level up noite)" }
+    ],
+    "shiny_stone": {
+      "evolves": ["Togetic → Togekiss", "Roselia → Roserade", "Minccino → Cinccino"],
+      "how_to_get": "a confirmar (não vem no Evolutional Stone Box padrão)"
+    },
+    "note": "Para evoluções por trade-hold, o PokeNexus tem um mecanismo de trade — verificar se existe NPC de trade ou se requer outro jogador"
+  },
+
+  "database_version": "33.7",
+  "last_updated": "2026-06-11"
 }
