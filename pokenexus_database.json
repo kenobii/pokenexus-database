@@ -452,8 +452,8 @@
       },
       {
         "name": "Moltres",
-        "location": "Mt. Ember (One Island, Sevii Islands)",
-        "requirement": "Feather of Moltres no Pokémon líder (dropa no próprio Mt. Ember)"
+        "location": "Mt. Ember (One Island, Sevii Islands) ou Mt. Silver Cave",
+        "requirement": "Feather of Moltres segurada pelo líder (obtida caçando com líder Fire no Mt. Ember ou Mt. Silver Cave)"
       }
     ],
     "johto_beasts": [
@@ -551,20 +551,23 @@
     {
       "name": "Feather of Articuno",
       "category": "Key Item",
-      "use": "Necessário para encontrar Articuno em Seafoam Islands",
-      "how_to_get": "Drop na área de Articuno"
+      "use": "Líder deve estar vivo e SEGURANDO a Feather — encontra Articuno em Seafoam Islands F1-F4",
+      "how_to_get": "Drop de qualquer Pokémon em Seafoam Islands com líder vivo e do tipo Ice",
+      "reusable": true
     },
     {
       "name": "Feather of Zapdos",
       "category": "Key Item",
-      "use": "Necessário para encontrar Zapdos no Power Plant Basement",
-      "how_to_get": "Drop na área de Zapdos"
+      "use": "Líder deve estar vivo e SEGURANDO a Feather — encontra Zapdos no Power Plant Basement",
+      "how_to_get": "Drop de qualquer Pokémon no Power Plant Basement com líder vivo e do tipo Electric",
+      "reusable": true
     },
     {
       "name": "Feather of Moltres",
       "category": "Key Item",
-      "use": "Necessário para encontrar Moltres no Mt. Ember",
-      "how_to_get": "Drop no próprio Mt. Ember"
+      "use": "Líder deve estar vivo e SEGURANDO a Feather — encontra Moltres no Mt. Ember e Mt. Silver Cave",
+      "how_to_get": "Drop de qualquer Pokémon no Mt. Ember ou Mt. Silver Cave com líder vivo e do tipo Fire",
+      "reusable": true
     },
     {
       "name": "Eon Ticket",
