@@ -1976,7 +1976,8 @@
           "requirement": "400+ Pokémon únicos registrados no Pokédex"
         },
         "haunted_cave_b1": {
-          "requirement": "600+ Pokémon únicos registrados no Pokédex"
+          "requirement": "600+ Pokémon únicos registrados no Pokédex",
+          "notable_pokemon": ["Spiritomb"]
         }
       },
       "event_legendaries": ["Yveltal", "Darkrai", "Giratina (via Haunted Mansion 1F)"],
@@ -4649,6 +4650,7 @@
         "haunted_cave": {
           "b1": {
             "requirement": "600 Pokémon únicos no Pokédex",
+            "notable_pokemon": ["Spiritomb"],
             "note": "Área post-game avançada do evento"
           }
         }
