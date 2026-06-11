@@ -1373,7 +1373,8 @@
       "iv_reset": {
         "effect": "Rerolls todos os IVs do Pokémon",
         "how_to_get": "Drop extremamente raro de qualquer Pokémon selvagem / Credit Shop",
-        "variants": ["HP IV Reset (rerolls só o HP IV)", "IV Deductor + vitamina = IV Deductor de stat específico"]
+        "variants": ["HP IV Reset (rerolls só o HP IV)", "IV Powder + IV Gem + Vitamina = reroll de 1 stat específico (crafting)"],
+        "world_boss_bonus": "Jogador que der o golpe final no World Boss recebe 1 IV Reset bônus"
       }
     },
     "natures": {
@@ -3040,7 +3041,8 @@
       "tower_tycoon": "A cada 10 batalhas aparece um Tower Tycoon com Pokémon mais fortes",
       "max_floor": 400,
       "after_max_floor": "Ao atingir o andar 400, volta para o andar 101",
-      "after_floor_120": "Tycoons a partir do andar 120 dão o dobro de Tower Tokens"
+      "after_floor_120": "Tycoons a partir do andar 120 dão o dobro de Tower Tokens",
+      "stat_scaling": "A partir do andar 100, inimigos ganham +1% em todos os stats a cada 6 batalhas"
     },
     "rewards": {
       "currency": "Tower Tokens",
@@ -5904,6 +5906,6 @@
     "note": "Para evoluções por trade-hold, o PokeNexus tem um mecanismo de trade — verificar se existe NPC de trade ou se requer outro jogador"
   },
 
-  "database_version": "33.9",
+  "database_version": "34.0",
   "last_updated": "2026-06-11"
 }
