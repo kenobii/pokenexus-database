@@ -1908,7 +1908,7 @@
   "sinnoh_key_locations": [
     { "name": "Sinnoh Underground", "location": "Toda a região Sinnoh", "notable": "Mining: Prism, Pale, Dark, Rainbow (lv.50+ mining). Acesso por escada no jogo." },
     { "name": "Mt. Coronet", "location": "Centro de Sinnoh", "notable": "Mining: todos os tipos de rocha. Caminho para Spear Pillar." },
-    { "name": "Spear Pillar", "location": "Pico do Mt. Coronet", "notable": "Local lendário de criação de Dialga/Palkia/Giratina. Mining: Green, Prism, Pale, Dark, Rainbow." },
+    { "name": "Spear Pillar", "location": "Pico do Mt. Coronet", "access": "Falar com Cynthia no Spear Pillar para ser teleportado ao mapa interno. Requer 600+ Pokédex únicos capturados.", "notable": "Local lendário de criação de Dialga/Palkia/Giratina. Mining: Green, Prism, Pale, Dark, Rainbow." },
     { "name": "Stark Mountain", "location": "Battle Island (ferry após Elite 4 Sinnoh)", "notable": "Heatran. Mining: Pale, Dark, Rainbow." },
     { "name": "Deep New Moon Island", "location": "Ferry após Elite 4 Sinnoh", "notable": "Darkrai." },
     { "name": "Deep Full Moon Island", "location": "Ferry após Elite 4 Sinnoh", "notable": "Cresselia." },
@@ -4778,8 +4778,8 @@
       { "name": "Heatran", "location": "Stark Mountain (Sinnoh)" },
       { "name": "Regigigas", "location": "Somente via Legendary Egg (World Boss top 3 ou PvP Tournament)" },
       { "name": "Giratina", "location": "Somente via Egg do Halloween Event (1º/2º/3º no ranking)" },
-      { "name": "Dialga", "location": "Spear Pillar (topo do Mt. Coronet)", "requirement": "Adamant Fragment no inventário", "how_to_get_fragment": "a confirmar — provávelmente crafting similar à Lustrous Fragment" },
-      { "name": "Palkia", "location": "Spear Pillar (topo do Mt. Coronet)", "requirement": "Lustrous Fragment no inventário", "how_to_get_fragment": "Crafting — ver lustrous_fragment_crafting" },
+      { "name": "Dialga", "location": "Spear Pillar (topo do Mt. Coronet)", "requirement": "Adamant Fragment no inventário + 600+ Pokédex únicos para entrar no mapa", "how_to_get_fragment": "a confirmar — provávelmente crafting similar à Lustrous Fragment", "access": "Falar com Cynthia no Spear Pillar para ser teleportado" },
+      { "name": "Palkia", "location": "Spear Pillar (espaço — área separada)", "requirement": "Lustrous Fragment no inventário + 600+ Pokédex únicos para entrar no mapa", "how_to_get_fragment": "Crafting — ver lustrous_fragment_crafting", "access": "Falar com Cynthia no Spear Pillar para ser teleportado" },
       { "name": "Shaymin", "location": "Flower Paradise (Sinnoh — norte de Route 224)" }
     ]
   },
@@ -5906,6 +5906,6 @@
     "note": "Para evoluções por trade-hold, o PokeNexus tem um mecanismo de trade — verificar se existe NPC de trade ou se requer outro jogador"
   },
 
-  "database_version": "34.0",
+  "database_version": "34.1",
   "last_updated": "2026-06-11"
 }
