@@ -1438,7 +1438,8 @@
       "name": "Johto Safari Zone",
       "location": "Route 48, a oeste de Cianwood City",
       "ticket_cost": 80000,
-      "ticket_duration": "24 horas"
+      "ticket_duration": "24 horas",
+      "sub_areas": ["Savannah", "Wasteland", "Forest", "Swamp", "Marshland", "Wetland", "Meadow", "Plains", "Desert"]
     },
     {
       "name": "Hoenn Safari Zone",
