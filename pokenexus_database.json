@@ -344,7 +344,7 @@
     "ingredient_sources": {
       "Miracle Berry": "Berry Forest — Three Island (Sevii Islands)",
       "Ancient Key Tooth Half": "15.000 PP no PP Shop (Silph Co.) OU 1.000.000 no Master Shop",
-      "Ancient Key Loop Half": "Drop em Altering Cave, Hoenn (1/15.000) OU 800 Clan War Tokens (Clan Building, Vermilion City)",
+      "Ancient Key Loop Half": "Drop em Altering Cave, Hoenn (1/15.000) OU 700 CW Tokens (Clan Wars Prize Shop) OU 800 CW Tokens (Clan Building, Vermilion City)",
       "Legendary Bait": "Drop raro em Ancient Dungeon (Ancient Cavern, Hoenn)",
       "Shiny Charm": "Obtida via sistema de achievements ou itens especiais"
     }
@@ -750,7 +750,7 @@
     "prize_exchanger": {
       "location": "Clan War Center",
       "items": [
-        { "item": "Ancient Key (Loop Half)", "cost_tokens": 800, "note": "Uma das duas metades para acessar o Ancient Dungeon" },
+        { "item": "Ancient Key (Loop Half)", "cost_tokens_cw_prize_shop": 700, "cost_tokens_clan_building": 800, "note": "Uma das duas metades para acessar o Ancient Dungeon. Também dropa em Altering Cave (1/15k)" },
         { "item": "Egg Move Ticket", "cost_tokens": 50, "note": "Permite ensinar um Egg Move a um Pokémon" },
         { "item": "Move Tutor Ticket", "cost_tokens": 50, "note": "Permite ensinar um golpe de Move Tutor" },
         { "item": "Keldeo", "cost_tokens": "a confirmar", "note": "Lendário disponível na loja" }
