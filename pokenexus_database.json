@@ -1189,7 +1189,8 @@
       "items": [
         { "item": "Macho Brace", "cost_tokens": 40000 },
         { "item": "IV Deductor", "cost_tokens": 7500 },
-        { "item": "Synchronize Stone", "cost_tokens": "Alto (requer ~2.6M em apostas para acumular tokens suficientes)" }
+        { "item": "Synchronize Stone", "cost_tokens": "Alto (requer ~2.6M em apostas para acumular tokens suficientes)" },
+        { "item": "Greninja (Battle Bond)", "cost_tokens": "a confirmar", "note": "Greninja vendido aqui sempre vem com Battle Bond ability" }
       ]
     }
   },
@@ -1703,7 +1704,8 @@
       "2nd": "10% chance",
       "3rd": "5% chance"
     },
-    "legendary_egg": "Contém o lendário que foi derrotado no World Boss",
+    "legendary_egg": "Contém o lendário que foi derrotado no World Boss — intransferível",
+    "possible_bosses": ["Articuno", "Azelf", "Cresselia", "Darkrai", "Entei", "Heatran", "Latias", "Latios", "Mesprit", "Moltres", "Mew", "Raikou", "Regigigas", "Shaymin", "Suicune", "Uxie", "Zapdos"],
     "best_pokemon": [
       { "pokemon": "Krookodile", "move": "Power Trip", "role": "Damage dealer" },
       { "pokemon": "Scizor", "move": "Fury Cutter", "role": "Damage dealer" },
@@ -3160,6 +3162,16 @@
 
   "move_tutors_expanded": {
     "description": "Sistema completo de Move Tutors no PokeNexus",
+    "move_relearner": {
+      "location": "Prédio a leste do Pokémon Center em Vermilion City",
+      "currency": "Gratuito",
+      "function": "Reensina qualquer move de level-up que o Pokémon já aprendeu ou poderia aprender pelo nível"
+    },
+    "pre_evolution_move_tutor": {
+      "location": "Ao lado do Move Tutor em Vermilion City",
+      "currency": "50.000 PokéDollars por move",
+      "function": "Ensina moves de pré-evoluções do Pokémon que ele não poderia mais aprender na forma atual"
+    },
     "egg_move_tutor": {
       "location": "Dentro do Clan War Building — Vermilion City",
       "currency": "Egg Move Ticket (obtido no Clan War Prize Exchanger por 50 tokens)",
@@ -3169,12 +3181,17 @@
     "transfer_move_tutor": {
       "location": "Prédio a leste do Pokémon Center em Vermilion City",
       "currency": "Transfer Move Ticket",
-      "function": "Ensina moves de gerações anteriores (transfer moves)",
-      "restriction": "Pokémon NÃO pode ter Hidden Ability ao aprender um transfer move"
+      "function": "Ensina moves de gerações anteriores (somente Gen 3+)",
+      "restriction": "Pokémon NÃO pode ter Hidden Ability ao aprender um Transfer Move"
+    },
+    "special_move_tutor": {
+      "location": "Clan War Building — Vermilion City",
+      "currency": "Move Tutor Ticket (50 Clan War tokens no Clan War Prize Exchanger)",
+      "function": "Ensina moves especiais: Draco Meteor (tipos Dragon), Frenzy Plant/Blast Burn/Hydro Cannon (starters), entre outros"
     },
     "event_move_tickets": {
       "description": "Tickets especiais distribuídos durante eventos",
-      "function": "Ensinam moves exclusivos de eventos"
+      "function": "Ensinam moves exclusivos de eventos a Pokémon específicos"
     }
   },
 
