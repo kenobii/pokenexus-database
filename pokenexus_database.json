@@ -1871,7 +1871,7 @@
     { "name": "Enhanced Fire Stone", "effect": "+20% Entei encounter", "craft": "Legendary Bait + Fire Stone x3" },
     { "name": "Enhanced Water Stone", "effect": "+20% Suicune encounter", "craft": "Legendary Bait + Water Stone x3" },
     { "name": "Enhanced Thunder Stone", "effect": "+20% Raikou encounter", "craft": "Legendary Bait + Thunder Stone x3" },
-    { "name": "TM Box", "effect": "TM aleatória", "how_to_get": "Mystery Box / eventos" }
+    { "name": "TM Box", "effect": "TM aleatória (1 TM aleatória por caixa)", "cost_credits": 150, "how_to_get": "Credit Shop (150 créditos) — também dropa de Mystery Box e Item Bomb. Pode ser trocado com outros jogadores." }
   ],
 
   "crafting_additions": [
@@ -5562,11 +5562,13 @@
     "location": "Silph Co. — Saffron City (andar térreo, canto superior esquerdo)",
     "currency": "Philanthropist Points (PP)",
     "how_to_earn_pp": {
-      "altar_donation": "1 PP a cada $400 doados no Altar",
-      "portable_pc": "PP ao usar Portable PC",
-      "honey": "PP ao usar Honey",
-      "item_bomb": "PP ao usar Item Bomb",
-      "blessing": "PP ao usar Blessing"
+      "altar_donation": "1 PP a cada $800 doados no Altar",
+      "portable_pc": "200 PP ao usar Portable PC",
+      "honey": "700 PP ao usar Honey",
+      "world_blessing": "Até 500 PP (= nº de jogadores online no momento, cap 500)",
+      "drop_rate_blessing": "Até 500 PP (= nº de jogadores online no momento, cap 500)",
+      "item_bomb": "1500 PP + nº de jogadores online",
+      "enhanced_item_bomb": "5000 PP + (2× nº de jogadores online)"
     },
     "items": [
       { "item": "Ancient Key (Tooth Half)", "cost_pp": 15000, "note": "Uma das duas metades para acessar o Ancient Dungeon" },
@@ -5902,6 +5904,6 @@
     "note": "Para evoluções por trade-hold, o PokeNexus tem um mecanismo de trade — verificar se existe NPC de trade ou se requer outro jogador"
   },
 
-  "database_version": "33.8",
+  "database_version": "33.9",
   "last_updated": "2026-06-11"
 }
