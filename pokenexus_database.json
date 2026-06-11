@@ -6,7 +6,7 @@
     "name_changed": "March 2024",
     "description": "Free Monster Catching MMO - battle and level up alongside friends in real time",
     "database_version": "1.0",
-    "last_updated": "2026-06-05",
+    "last_updated": "2026-06-11",
     "sources": [
       "https://www.ppobuddy.com",
       "https://pokemon-planet.fandom.com/wiki",
@@ -1437,7 +1437,8 @@
     },
     {
       "name": "Hoenn Safari Zone",
-      "location": "Hoenn",
+      "location": "Oeste de Lilycove City — Hoenn",
+      "notable": "Considerada a melhor Safari Zone para ganhar dinheiro e caçar Pokémon de PvP",
       "ticket_cost": 400000,
       "ticket_duration": "24 horas",
       "extra_requirement": "Fishing Level 50+ para pescar na área"
@@ -4231,7 +4232,7 @@
       "money_tax": "30% de imposto sobre dinheiro dropado (área de map control)",
       "held_items": "Pokémon selvagens podem carregar held items"
     },
-    "notable_pokemon": ["Regigigas", "Deino"],
+    "notable_pokemon": ["Regigigas", "Deino", "Dratini"],
     "notable_drops": [
       {
         "item": "Legendary Bait",
