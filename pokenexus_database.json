@@ -569,13 +569,13 @@
     {
       "name": "Eon Ticket",
       "category": "Key Item",
-      "use": "Mostra localização atual de Latios/Latias em Hoenn",
+      "use": "Duplo-clique no ticket para ver localização atual de Latios/Latias em Hoenn",
       "how_to_get": "Recompensa por derrotar Elite 4 de Hoenn"
     },
     {
       "name": "Lunar Ticket",
       "category": "Key Item",
-      "use": "Mostra localização de Uxie/Mesprit/Azelf em Sinnoh + permite ver Treasure Chests",
+      "use": "Duplo-clique no ticket para ver localização atual de Uxie/Mesprit/Azelf em Sinnoh + permite ver Treasure Chests",
       "how_to_get": "Recompensa por derrotar Elite 4 de Sinnoh"
     },
     {
