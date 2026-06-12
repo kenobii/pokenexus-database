@@ -1523,6 +1523,10 @@
       { "pokemon": "Raikou", "sub_area": "Thunder Cavern", "direction": "direita" }
     ],
     "wild_pokemon": ["Yanma", "Exeggcute", "Ferroseed", "Scyther", "Pinsir", "Heracross", "Skorupi", "Klefki", "Sandile", "Chespin", "Milotic"],
+    "special_encounter": {
+      "pokemon": "Genesect",
+      "requirement": "Paleozoic Tracker no inventário"
+    },
     "youtube": "https://www.youtube.com/watch?v=N2PUQrWjtaw"
   },
 
@@ -4253,7 +4257,11 @@
         "feather_type": "Tipo Elétrico no líder para dropar Feather of Raikou"
       }
     ],
-    "other_pokemon": ["Yanma", "Exeggcute", "Ferroseed", "Scyther", "Pinsir", "Heracross", "Skorupi", "Klefki", "Sandile", "Chespin", "Milotic"]
+    "other_pokemon": ["Yanma", "Exeggcute", "Ferroseed", "Scyther", "Pinsir", "Heracross", "Skorupi", "Klefki", "Sandile", "Chespin", "Milotic"],
+    "special_encounter": {
+      "pokemon": "Genesect",
+      "requirement": "Paleozoic Tracker no inventário"
+    }
   },
 
   "ancient_dungeon_complete": {
