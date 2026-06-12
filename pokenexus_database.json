@@ -1054,8 +1054,10 @@
   },
 
   "swarms_detail": {
-    "description": "Evento em rota específica com drops especiais",
+    "description": "Evento em rota específica com drops especiais e boost de encontros",
     "command": "/swarm",
+    "encounter_boost": "+25% taxa de encontro na rota com swarm ativo (+10% para lendários)",
+    "shiny_boost": "+10% taxa de shiny na rota com swarm ativo",
     "drops_always": ["Beedrillite", "Soul Shard"],
     "soul_shard_use": "Ingrediente para craftar Soul Shard (Enhanced) — boost de 20% na taxa de encontro de Latios/Latias",
     "berry_drops": {
