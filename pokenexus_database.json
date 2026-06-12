@@ -327,7 +327,16 @@
       { "name": "Steel Rod", "level_required": 50, "how_to_get": "Craftar: Metal Coat + Steel Wire + Super Rod" },
       { "name": "Master Rod", "level_required": 100, "how_to_get": "Craftar: Master Ball + Steel Rod" }
     ],
-    "notable_pokemon": ["Dratini", "Milotic", "Feebas", "Mudkip", "Piplup", "Squirtle"]
+    "notable_pokemon_by_level": [
+      { "fishing_level": 15, "pokemon": "Dratini" },
+      { "fishing_level": 20, "pokemon": "Squirtle" },
+      { "fishing_level": 25, "pokemon": ["Feebas", "Milotic"] },
+      { "fishing_level": 30, "pokemon": "Totodile" },
+      { "fishing_level": 50, "pokemon": "Mudkip" },
+      { "fishing_level": 60, "pokemon": "Piplup" },
+      { "fishing_level": 80, "pokemon": "Manaphy (Water Temple — N Castle), Phione (Water Temple — N Castle)" },
+      { "fishing_level": 100, "pokemon": "Kyogre (localização a confirmar)" }
+    ]
   },
 
   "crafting": {
