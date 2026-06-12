@@ -4265,8 +4265,8 @@
     "spawn_mechanic": "Lendários de Sinnoh ficam restritos a mapas de Sinnoh. Área de spawn muda diariamente às 0:00 UTC",
     "encounter_types": "Podem ser encontrados em terra e na água (surfing)",
     "giratina": {
-      "availability": "Giratina NÃO está disponível no wild",
-      "how_to_get": "Apenas através de Egg — recompensa de 1º, 2º ou 3º lugar no evento de Halloween (chance, não garantido)"
+      "availability": "Disponível como wild encounter no Haunted Mansion 1F durante Halloween Event. Fora do evento: apenas via Egg (ranking 1/2/3 no Halloween Event)",
+      "how_to_get": "1) Wild em Haunted Mansion 1F (durante Halloween Event) | 2) Egg — recompensa de 1º/2º/3º no Halloween Event (chance, não garantido)"
     },
     "uxie_azelf_note": "Uxie e Azelf não possuem mais os moves Memento ou Explosion (removidos em patch)"
   },
@@ -4794,7 +4794,7 @@
       { "name": "Cresselia", "location": "Deep Full Moon Island (Sinnoh)" },
       { "name": "Heatran", "location": "Stark Mountain (Sinnoh)" },
       { "name": "Regigigas", "location": "Somente via Legendary Egg (World Boss top 3 ou PvP Tournament)" },
-      { "name": "Giratina", "location": "Somente via Egg do Halloween Event (1º/2º/3º no ranking)" },
+      { "name": "Giratina", "location": "Wild em Haunted Mansion 1F (Halloween Event) OU Egg (ranking 1/2/3 do Halloween Event)" },
       { "name": "Dialga", "location": "Spear Pillar (topo do Mt. Coronet)", "requirement": "Adamant Fragment no inventário + 600+ Pokédex únicos para entrar no mapa", "how_to_get_fragment": "a confirmar — provávelmente crafting similar à Lustrous Fragment", "access": "Falar com Cynthia no Spear Pillar para ser teleportado" },
       { "name": "Palkia", "location": "Spear Pillar (espaço — área separada)", "requirement": "Lustrous Fragment no inventário + 600+ Pokédex únicos para entrar no mapa", "how_to_get_fragment": "Crafting — ver lustrous_fragment_crafting", "access": "Falar com Cynthia no Spear Pillar para ser teleportado" },
       { "name": "Shaymin", "location": "Flower Paradise (Sinnoh — norte de Route 224)" }
