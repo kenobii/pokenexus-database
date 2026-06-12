@@ -1257,6 +1257,8 @@
       "600+ Pokémon registrados no Pokédex",
       "Legendary Map no inventário"
     ],
+    "lle_mechanic": "A cada 100 wild Pokémon encontrados em Mewtwo's Lair sem achar Mewtwo, o Mewtwo LLE aumenta em +100",
+    "fishing": "Milotic pode ser pescado em Cerulean Cave F4",
     "drops": ["Dome Shard", "Helix Shard", "Amber Shard"],
     "shard_use": "Trocar por Kabuto, Omanyte e Aerodactyl no Pokémon Lab de Cinnabar Island",
     "youtube": "https://www.youtube.com/watch?v=6J12ZxQYIVM"
