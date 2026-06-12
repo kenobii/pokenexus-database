@@ -3384,8 +3384,9 @@
 
   "legendary_lle_system": {
     "description": "LLE (Legendary Likelihood Encounter) — sistema de proteção de azar para lendários",
-    "how_it_works": "Cada encounter de Pokémon não-lendário no mapa do lendário: LLE +1",
-    "effect": "LLE maior = maior chance de encontrar o lendário",
+    "how_it_works": "Cada encounter de Pokémon não-lendário no mapa do lendário: LLE +1. O LLE é por lendário individualmente.",
+    "reset": "Zera ao encontrar o lendário específico",
+    "effect": "LLE maior = maior chance de encontrar o lendário (curva S — fórmula exata não divulgada)",
     "bad_luck_protection_starts": "~100.000 encounters sem encontrar o lendário",
     "average_encounter_rate": {
       "without_gm": "~1/95.000",
