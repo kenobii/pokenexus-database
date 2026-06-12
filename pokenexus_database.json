@@ -485,7 +485,8 @@
       },
       {
         "name": "Uxie / Mesprit / Azelf",
-        "location": "Rota aleatória de Sinnoh (muda diariamente)",
+        "location": "Rota aleatória de Sinnoh (muda às 0:00 UTC)",
+        "possible_locations": ["Sinnoh Safari Zone", "Eterna Forest", "Old Chateau", "Deep Sinnoh Victory Road B2", "Rotas 201-230 (exceto 219, 220, 223)"],
         "requirement": "Derrotar Elite 4 de Sinnoh + Lunar Ticket"
       }
     ],
@@ -1633,7 +1634,7 @@
       { "pokemon": "Jirachi", "location": "PP Shop (custo em PP)" }
     ],
     "sinnoh": [
-      { "pokemon": "Uxie / Mesprit / Azelf", "location": "Rota aleatória de Sinnoh (muda às 0:00 UTC)", "requirement": "Elite 4 Sinnoh + Lunar Ticket" },
+      { "pokemon": "Uxie / Mesprit / Azelf", "location": "Rota aleatória de Sinnoh (muda às 0:00 UTC) — possíveis: Sinnoh Safari Zone, Eterna Forest, Old Chateau, Deep Sinnoh Victory Road B2, rotas 201-230 (exceto 219, 220, 223)", "requirement": "Elite 4 Sinnoh + Lunar Ticket" },
       { "pokemon": "Heatran", "location": "Stark Mountain (Battle Island)", "requirement": "Derrotar Elite 4 de Sinnoh → ferry para Battle Island" },
       { "pokemon": "Darkrai", "location": "Deep New Moon Island", "requirement": "Derrotar Elite 4 de Sinnoh → ferry" },
       { "pokemon": "Cresselia", "location": "Deep Full Moon Island", "requirement": "Derrotar Elite 4 de Sinnoh → ferry" },
