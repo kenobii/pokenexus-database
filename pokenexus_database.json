@@ -1937,7 +1937,7 @@
     { "name": "Sinnoh Underground", "location": "Toda a região Sinnoh", "notable": "Mining: Prism, Pale, Dark, Rainbow (lv.50+ mining). Acesso por escada no jogo." },
     { "name": "Mt. Coronet", "location": "Centro de Sinnoh", "notable": "Mining: todos os tipos de rocha. Caminho para Spear Pillar." },
     { "name": "Spear Pillar", "location": "Pico do Mt. Coronet", "access": "Falar com Cynthia no Spear Pillar para ser teleportado ao mapa interno. Requer 600+ Pokédex únicos capturados.", "notable": "Local lendário de criação de Dialga/Palkia/Giratina. Mining: Green, Prism, Pale, Dark, Rainbow." },
-    { "name": "Stark Mountain", "location": "Battle Island (ferry após Elite 4 Sinnoh)", "notable": "Heatran. Mining: Pale, Dark, Rainbow." },
+    { "name": "Stark Mountain", "location": "Battle Island (ferry após Elite 4 Sinnoh)", "notable": "Heatran (lendário). Wild: Charizard, Lampent, Hydreigon, Volcarona, Salamence. Drop: Cameruptite. Mining: Pale, Dark, Rainbow. 1.5x stats, não pode fugir." },
     { "name": "Deep New Moon Island", "location": "Ferry após Elite 4 Sinnoh", "notable": "Darkrai." },
     { "name": "Deep Full Moon Island", "location": "Ferry após Elite 4 Sinnoh", "notable": "Cresselia." },
     { "name": "Celestic Ruins", "location": "Celestic Town", "notable": "Mining: Green, Prism, Pale." },
@@ -5745,6 +5745,8 @@
     "access": "Ferry após derrotar Elite 4 de Sinnoh",
     "hms_required": ["Strength", "Rock Smash"],
     "wild_pokemon_boost": "1.5x stats em todos os Pokémon selvagens — não é possível fugir",
+    "wild_pokemon": ["Charizard", "Lampent", "Hydreigon", "Volcarona", "Salamence"],
+    "notable_drops": ["Cameruptite"],
     "legendary": {
       "pokemon": "Heatran",
       "level": 85,
