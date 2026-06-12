@@ -1628,7 +1628,7 @@
       { "pokemon": "Regis (Regirock, Regice, Registeel)", "location": "Qualquer rocha de mineração (Mining lv.75+)", "rate": "1/75.000 por rocha", "alternative": "Altering Cave (10% chance diária)" },
       { "pokemon": "Kyogre", "location": "Summer Event Maps — disponível durante o evento anual de Verão" },
       { "pokemon": "Groudon", "location": "Summer Event Maps — disponível durante o evento anual de Verão (confirmado via PPOBuddy)" },
-      { "pokemon": "Rayquaza", "location": "A confirmar — também não encontrável no wild segundo Fandom wiki" },
+      { "pokemon": "Rayquaza", "location": "Não disponível no wild (confirmado pela Fandom wiki) — método de obtenção ainda não confirmado (possivelmente evento)" },
       { "pokemon": "Deoxys", "location": "PvP Prize Shop (PvP Tokens) — custo a confirmar" },
       { "pokemon": "Jirachi", "location": "PP Shop (custo em PP)" }
     ],
@@ -4856,7 +4856,7 @@
       },
       { "name": "Kyogre", "location": "Summer Event Maps — disponível durante o evento anual de Verão" },
       { "name": "Groudon", "location": "Summer Event Maps — disponível durante o evento anual de Verão (confirmado via PPOBuddy)" },
-      { "name": "Rayquaza", "location": "A confirmar — não disponível no wild fora de evento" }
+      { "name": "Rayquaza", "location": "Não disponível no wild (confirmado pela Fandom wiki) — método de obtenção possivelmente via evento exclusivo" }
     ]
   },
 
@@ -5013,7 +5013,7 @@
     "hoenn_weather_trio": {
       "kyogre": "Disponível no Summer Event Maps (anual) + encontrável via pesca nível 100 (capturabilidade a confirmar)",
       "groudon": "Provavelmente Summer Event Maps (vídeo de caça Jul/2024)",
-      "rayquaza": "Não disponível fora de evento — origem ainda não confirmada"
+      "rayquaza": "Não disponível no wild (confirmado pela Fandom wiki) — método de obtenção possivelmente via evento exclusivo"
     },
     "unova_legendaries": {
       "reshiram": "Não disponível",
