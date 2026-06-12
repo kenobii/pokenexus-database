@@ -1952,6 +1952,11 @@
       {
         "area": "N Castle Basement",
         "pokemon": ["Zapdos (sem Feather)", "Klefki", "Heliolisk"]
+      },
+      {
+        "area": "Water Temple (dentro do N Castle)",
+        "pokemon": ["Articuno (sem Feather)", "Manaphy (fishing)", "Phione (fishing)"],
+        "extra_requirement": "Fishing Level 80 + Surf + Waterfall"
       }
     ],
     "bonuses": "EXP e drop rate boosted em 1.5x para todos os Pokémon",
@@ -1960,7 +1965,8 @@
       "location": "Dentro do N Castle",
       "access": "Requer Collector IV (500 Pokémon únicos = Castle Key) + Fishing Level 80 + HM Surf + HM Waterfall",
       "fishing_requirement": 80,
-      "note": "Pokémon encontrados APENAS via fishing nessa área",
+      "notable_pokemon": ["Articuno (sem necessidade de Feather)", "Manaphy (via fishing)", "Phione (via fishing)"],
+      "note": "Pokémon principais encontrados via fishing. Articuno aparece sem necessidade de Feather (Enhanced Feather ainda dá boost).",
       "youtube": "https://www.youtube.com/watch?v=7B791dNuuEA"
     },
     "youtube": "https://www.youtube.com/watch?v=hYx6q5FXxNA"
