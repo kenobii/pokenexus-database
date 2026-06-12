@@ -211,7 +211,9 @@
     "rewards": {
       "legendary_egg": {
         "chance": { "top_1_damage": "15%", "top_2_damage": "10%", "top_3_damage": "5%" },
-        "note": "Egg é intransferível e contém o lendário derrotado"
+        "note": "Egg é intransferível e contém o lendário derrotado",
+        "possible_legendaries": ["Articuno", "Azelf", "Cresselia", "Darkrai", "Entei", "Heatran", "Latias", "Latios", "Mesprit", "Mew", "Moltres", "Raikou", "Regigigas", "Shaymin", "Suicune", "Uxie", "Zapdos"],
+        "also_obtainable_via": "PvP Tournament (top 3 recebem Legendary Egg)"
       },
       "killing_blow_bonus": "IV Reset (quem dá o último golpe)"
     },
